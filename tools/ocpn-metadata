@@ -3,6 +3,7 @@
 """Re-generation of ocpn-plugins.xml support tool."""
 
 import argparse
+import datetime
 import os.path
 import shutil
 import sys
@@ -69,15 +70,22 @@ def get_args(paths):
             '--destfile', metavar='path', default=paths["destfile"],
             help='destination path [%s]' % paths["destfile"])
     generate_parser.add_argument(
+            '--version', metavar='version', default="0.0.0",
+            help='version to tag output file with')
+    generate_parser.add_argument(
             '--force', action="store_true",
             help='Overwrite possibly existing ocpn-plugins.xml.')
     args = parser.parse_args()
     return args
 
 
-def generate(sourcedir, destfile):
+def generate(sourcedir, destfile, version):
     """Generate a new ocpn-plugins.xml."""
     tree = ET.Element('plugins')
+    version_elem = ET.SubElement(tree, "version")
+    version_elem.text = version
+    date_elem = ET.SubElement(tree, "date")
+    date_elem.text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     for path in Path(sourcedir).glob("*.xml"):
         subtree = ET.parse(path)
         subtree.getroot().tag = 'plugin'
@@ -121,7 +129,7 @@ def main():
             print("The file %s is in the way" % args.destfile)
             print("Please remove or use --force")
             sys.exit(1)
-        generate(args.userdir, args.destfile)
+        generate(args.userdir, args.destfile, args.version)
         print("Generated new ocpn-plugins.xml at " + args.destfile)
 
 
