@@ -56,14 +56,14 @@ The procedure is then done on the command line using the *ocpn-metadata*
 tool. This works in two steps. The first is to create a private set of
 xml source files, something like:
 
-    $ ocpn-metadata copy
+    $  python ocpn-metadata copy
     New xml sources copied to /home/al/.opencpn/plugins-metadata 
 
 Now is the time to patch or add new xml files in
 */home/al/.opencpn/plugins-metadata*. When done, generate the new 
 ocpn-plugins.xml using:
 
-    $ ocpn-metadata generate
+    $  python ocpn-metadata generate
     Generated new ocpn-plugins.xml at /home/al/.opencpn/ocpn-plugins.xml
 
 The generated file is by default placed in a location overriding the
@@ -142,5 +142,16 @@ System-wide metadata: */app/share/opencpn/ocpn-plugins.xml*
 
 User metadata (overrides system if existing): *~/.opencpn/ocpn-plugins.xml*
 
-Tarball layout: identical to linux with a manifest.json in the top directory
-added.
+Tarball layout: 
+
+   - .so dynamic libraries goes into *top-dir/lib/opencpn*
+
+   - Optional helper binaries goes into *top-dir/bin* 
+
+   - Plugin data files: *top-dir/share/opencpn/plugins/<name>*
+     where <name> is as in the plugin metadata.
+
+   - metadata.json is at top level.
+
+
+
