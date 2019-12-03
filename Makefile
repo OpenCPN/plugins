@@ -7,12 +7,12 @@
 
 all: ocpn-plugins.xml
 
-VERSION  = 0.0.1
+VERSION  ?= 0.0.1
 
 
 ocpn-plugins.xml: metadata/*.xml Makefile
-	tools/ocpn-metadata generate --force --destfile $@ \
+	python tools/ocpn-metadata generate --force --destfile $@ \
 	    --userdir metadata --version $(VERSION)
 
 clean:
-	rm ocpn-plugins.xml
+	rm -f ocpn-plugins.xml
