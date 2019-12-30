@@ -12,25 +12,34 @@ Dependencies
 ------------
 
   - python >= 3.4
+  - GNU make (optional)
 
 
 Fast track: creating a modified ocpn-plugins.xml
 ------------------------------------------------
 
-To create a  modified ocpn-plugins.xml drop new or modified xml files in the
-metadata directory. Then do
+Windows users need to fix the deps. First install chocolatey as described
+at https: //chocolatey.org. Then install the deps:
 
+    > choco install python
+    > choco install make
+    > choco install git
 
-     python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml
+Drop new or modified xml files in the metadata/ directory. Then do
+
+    > python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml
 
 This will create ocpn-plugins.xml in current directory. As an alternative, use
 
-
-     python tools/ocpn-metadata generate --userdir metadata
+    > python tools/ocpn-metadata generate --userdir metadata
 
 which installs the xml file in the user data directory where it will override 
 whatever file opencpn was installed with. You might want to add
 ```--version``` to mark the generated file with a new version.
+
+A third option is to just use `make` which creates a ocpn-plugins.xml in 
+current directory.
+
 
 Developer info
 --------------
