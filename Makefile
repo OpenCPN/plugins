@@ -3,6 +3,9 @@
 #
 #  Needs python >= 3.4 available as the command python. Should
 #  otherwise work on all platforms but only tested on Linux.
+#
+#  The validate target requires xmllint found in packages like
+#  xsltproc or libxslt
 
 
 all: ocpn-plugins.xml
@@ -16,3 +19,6 @@ ocpn-plugins.xml: metadata/*.xml Makefile
 
 clean:
 	rm -f ocpn-plugins.xml
+
+validate: ocpn-plugins.xml Makefile
+	xmllint  --schema ocpn-plugins.xsd  ocpn-plugins.xml --noout
