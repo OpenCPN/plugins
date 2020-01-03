@@ -17,15 +17,13 @@
       <xs:sequence>
         <xs:element name="meta-url" type="xs:token" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:sequence>
-        <xs:group ref="plugin-elements"/>
-      </xs:sequence>
+      <xs:group ref="metadata"/>
     </xs:choice>
     <xs:attribute name="version" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:element>
 
-<xs:group name="plugin-elements">
+<xs:group name="metadata">
   <xs:sequence>
     <xs:element name="name" type="xs:token"/>
     <xs:element name="version" type="xs:token"/>
