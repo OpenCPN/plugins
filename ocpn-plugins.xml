@@ -1,7 +1,26 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-02-14 21:08</date>
+  <date>2020-02-16 21:38</date>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-flatpak-18.08-tarball/versions/1.0.43.0+457.0f48625/testplugin_pi-1.0.43.0-ov50-1.16_flatpak-18.08.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
   <plugin version="1">
     <name> oeSENC </name>
     <version> 4.0.0 </version>
@@ -24,28 +43,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>darwin</target>
     <target-version>10.13.6</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-darwin-10.13.6-tarball/versions/1.2.0.3.118c8cb/oesenc_pi-1.2.0-3_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-ubuntu-16.04-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_ubuntu-16.04.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Squiddio </name>
@@ -114,6 +111,44 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/0.1.0.0.75c62be/oernc_pi-0.1.0-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-mingw-10-tarball/versions/1.0.43.0+454.0f48625/testplugin_pi-1.0.43.0-ov50-1.16_mingw-10.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-msvc-10.0.14393-tarball/versions/1.0.43.+321.0f48625/testplugin_pi-1.0.43.0-ov50-1.16_msvc-10.0.14393.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Squiddio </name>
     <version> 1.0.17 </version>
     <release> 6 </release>
@@ -178,6 +213,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>darwin</target>
     <target-version>10.13.6</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/0.1.0.0.75c62be/oernc_pi-0.1.0-0_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-ubuntu-18.04-tarball/versions/1.0.43.0+453.0f48625/opencpn-plugin-testplugin-1.0.43.0-ov50-1.16_ubuntu-18.04.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -295,28 +349,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-debian-10-tarball/versions/1.2.0.3.118c8cb/oesenc_pi-1.2.0-3_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture. Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars. Multiple brands can be mixed.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-msvc-10.0.14393-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_msvc-10.0.14393.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.0.7 </version>
     <release> 0 </release>
@@ -338,6 +370,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>debian</target>
     <target-version>10</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/0.1.0.0.75c62be/oernc_pi-0.1.0-0_debian-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-darwin-10.13.6-tarball/versions/1.0.43.0+452.0f48625/testplugin_pi-1.0.43.0-ov50-1.16_darwin-10.13.6.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -363,6 +414,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-16.04-tarball/versions/1.2.0.3.118c8cb/oesenc_pi-1.2.0-3_ubuntu-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-ubuntu-16.04-tarball/versions/1.0.43.0+456.0f48625/opencpn-plugin-testplugin-1.0.43.0-ov50-1.16_ubuntu-16.04.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Squiddio </name>
     <version> 1.0.17 </version>
     <release> 6 </release>
@@ -381,28 +451,6 @@ Android comes with sQuiddio built in.
     <target-version>10</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-mingw-10-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_mingw-10.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-flatpak-18.08-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_flatpak-18.08.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -426,28 +474,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>fedora</target>
     <target-version>29</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/0.1.0.0.75c62be/oernc_pi-0.1.0-0_fedora-29.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture. Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars. Multiple brands can be mixed.
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-raspbian-9.4-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_raspbian-9.4.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -539,6 +565,25 @@ Android comes with sQuiddio built in.
     <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-debian-10-tarball/versions/1.0.43.0+458.0f48625/opencpn-plugin-testplugin-1.0.43.0-ov50-1.16_debian-10.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.0.7 </version>
     <release> 0 </release>
@@ -585,28 +630,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/0.1.0.0.75c62be/oernc_pi-0.1.0-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-debian-10-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_debian-10.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Squiddio </name>
     <version> 1.0.17 </version>
     <release> 6 </release>
@@ -650,26 +673,23 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/1.2.0.3.118c8cb/oesenc_pi-1.2.0-3_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
+    <name> testplugin </name>
+    <version> 1.0.43 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
   </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-darwin-10.13.6-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_darwin-10.13.6.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-fedora-29-tarball/versions/1.0.43.0+455.0f48625/opencpn-plugin-testplugin-1.0.43.0-ov50-1.16_fedora-29.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -693,49 +713,5 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>flatpak</target>
     <target-version>18.08</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-flatpak-18.08-tarball/versions/1.2.0.3.118c8cb/oesenc_pi-1.2.0-3_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-fedora-29-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_fedora-29.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.0.4-beta6 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/radar-mingw-10-tarball/versions/5.0.4-beta6.3.7771fa4/radar_pi-5.0.4-beta6.3_mingw-10.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
 </plugins>
