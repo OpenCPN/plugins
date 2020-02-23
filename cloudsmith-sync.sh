@@ -17,7 +17,7 @@ PROJECT="${1}"
 CLOUDSMITH_USER="${2}"
 CLOUDSMITH_REPO="${3}"
 
-function check_branch_state
+function check_project_branch
 {
   if [ ! -d "../${PROJECT}" ]
   then
@@ -32,6 +32,25 @@ function check_branch_state
   exit 1
 }
 
+function check_plugin_branch
+{
+  local _branch
+
+  case "${CLOUDSMITH_REPO}" in
+    *-stable) 
+      _branch=master;;
+    *)
+      _branch=Beta;;
+  esac
+
+  if git status | grep -q "^On branch ${_branch}$" #> /dev/null 2>&1
+  then
+    return 0
+  fi
+  echo "$0: The plugins repo should be on branch ${_branch} as the Cloudsmith repo is ${CLOUDSMITH_REPO}"
+  exit 1
+}
+
 function get_branch_commit
 {
   (
@@ -40,7 +59,9 @@ function get_branch_commit
   )
 }
 
-check_branch_state
+check_plugin_branch
+check_project_branch
+
 commit=$(get_branch_commit)
 
 echo "Downloading files for commit '$commit'"
