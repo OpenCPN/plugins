@@ -27,6 +27,9 @@ function check_project_branch
   if (cd "../${PROJECT}"; git status) | grep -q "Your branch is up to date with 'origin/ci'" #> /dev/null 2>&1
   then
     return 0
+  elif (cd "../${PROJECT}"; git status) | grep -q "Your branch is up-to-date with 'origin/ci'" #> /dev/null 2>&1
+  then
+    return 0
   fi
   echo "$0: The project directory ../${PROJECT} should be up to date with 'origin/ci'."
   exit 1
