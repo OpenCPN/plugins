@@ -1,0 +1,32 @@
+Okay, here is what I have done:
+
+1.  Shifted hardcoded urls to OpenCPN/plugins project on github.
+2.  Created 3 new branches on that project: (Beta/Alpha/Experimental)
+3.  Implemented a meta-file structure in the plugin manager, allowing a plugin spec in any .xml file to re-direct to another .xml file, recursively.
+4.  I demonstrate this simply in the Experimental branch.  There, in ocpn-plugins.xml, you will see a plugin defined like this:
+
+  <plugin version="1">
+    <meta-url> https://raw.githubusercontent.com/bdbcat/oesenc_pi/master/catalog_entry.xml </meta-url>
+  </plugin>
+
+In the re-direct target ("catalog_entry" file) you will see a normal plugin definition .xml file.  At run time, with the manager channel directed to Experimental, the plugin manager will read this file and parse the contents.  If all goes well, you will see a new oesenc plugin ready for test.  Actually, for this demo, the redirected tarball has not been updated, but it is easy to see that it could be in real life. I changed only the <summary> tag.
+Some notes:
+1.  The re-direct can go anywhere.  I chose github, just to experiment with a possible workflow.
+2.  The re-direct can contain multiple plugin definitions. Specifying all plugins implemented for the array of targets to be supported seems natural.
+3.  The re-direct can contain re-directs itself, ad-infinitum.
+4.  If the re-direct contains an entry that matches an existing plugin, the existing plugin specification will be updated.  The match must be "exact", that is name, version, release, target, target_version, must match to enable updating.
+5.  And if not clear, the contents of the re-direct can point to tarballs residing anywhere accessible by url.
+
+I will accept PRs against OpenCPN/plugins, Experimental and Alpha branches, to add callouts to your plugins under test.  As you can imagine, the PRs will naturally migrate from Exp. to Alpha to Beta over time.
+
+Or, for active plugin devs, I can imagine that a reasonable PR (to branch Alpha) might add an entry to ocpn-plugins.xml that looks like:
+
+  <plugin version="1">
+    <meta-url> https://wherever.janedoe/plugins.xml </meta-url>
+  </plugin>
+
+This gives jane a private and extensible sandbox to play with, and allows all testers to access the results.  It then also falls on jane to communicate with testers as the plugin(s) evolve.
+
+I have tested some simple scenarios locally.  I have not tested deep recursive environments.  As noted in another issue, we do need XML validation against XSD to harden this code.  Should be a priority.
+
+Finally, please keep in mind that this is all a development assist tool.  In Production, the "master" ocpn-plugins.xml will not contain re-directs, in the interests of stability and security.  So maybe we can live with any quirks that appear as this scheme is exercised during development.

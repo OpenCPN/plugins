@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opencpn-plugin version="1">
+  <name> oeRNC Charts </name>
+  <version> 1.0.7 </version>
+  <release> 0 </release>
+  <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> no </open-source>
+  <author> David S Register </author>
+  <source> https://github.com/bdbcat/oernc_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+
+  <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.  
+
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and 
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+
+  <target>darwin</target>
+  <target-version>10.13.6</target-version>
+  <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_darwin-10.13.6.tar.gz </tarball-url>
+</opencpn-plugin>
+
