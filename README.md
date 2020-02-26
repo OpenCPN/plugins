@@ -48,5 +48,8 @@ Notes on the XML files, tarball layout and platform issues: DEVELOPER-INFO.md.
 Here is also mer elaborated instructions to create ocpn-plugins.xml if the
 fast track fails.
 
+The pre-commit file is a git hook which validates ocpn-plugins.xml when
+committed. See more info in this file.
+
 
 [1] https://github.com/OpenCPN/OpenCPN/pull/1457

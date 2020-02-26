@@ -14,7 +14,7 @@ VERSION  ?= 0.0.1
 
 
 ocpn-plugins.xml: metadata/*.xml Makefile
-	python tools/ocpn-metadata generate --force --destfile $@ \
+	python3 tools/ocpn-metadata generate --force --destfile $@ \
 	    --userdir metadata --version $(VERSION)
 
 clean:
@@ -22,3 +22,6 @@ clean:
 
 validate: ocpn-plugins.xml Makefile
 	xmllint  --schema ocpn-plugins.xsd  ocpn-plugins.xml --noout
+
+check-urls:
+	tools/check-metadata-urls ocpn-plugins.xml
