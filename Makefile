@@ -22,3 +22,6 @@ clean:
 
 validate: ocpn-plugins.xml Makefile
 	xmllint  --schema ocpn-plugins.xsd  ocpn-plugins.xml --noout
+
+check-urls:
+	tools/check-metadata-urls ocpn-plugins.xml
