@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-02-29 20:55</date>
+  <date>2020-03-01 19:25</date>
   <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.5 </version>
@@ -534,6 +534,29 @@ can only be used after purchasing decryption keys from o-charts.org.
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.0-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-18.04-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_ubuntu-18.04.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.45 </version>
     <release> 0 </release>
@@ -635,6 +658,29 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>fedora</target>
     <target-version>29</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_fedora-29.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.0-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-raspbian-9.4-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_raspbian-9.4.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -857,6 +903,29 @@ dual radar range and Doppler.
     https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugin-fedora-29-tarball/versions/1.0.45.0+463.99b791a/opencpn-plugin-testplugin-1.0.45.0-ov50-1.16_fedora-29.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.0-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-darwin-10.13.6-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_darwin-10.13.6.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
