@@ -116,10 +116,13 @@ case $filename in
         tar -cf - -C OpenCPN.app Contents \
             | tar -vC "$basedir" -xf - 2>&1 \
             | sed -e "s|^|$basedir/|" -e 's|/x ||'  > $manifest
-        sed -i '/exists/d' $manifest
         ;;
 esac
-echo "Files installed, manifest: $manifest"
+
+for f in $(cat $manifest); do
+    if [ -f "$f" ]; then count=$((count + 1)); fi
+done
+echo "$count files installed, manifest: $manifest"
 
 readonly version=$(echo $tarball | sed -e 's/[^-]*-\([^_]*\)_.*/\1/')
 echo "Rewriting version info using $version"
