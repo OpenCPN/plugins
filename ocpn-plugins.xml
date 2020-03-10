@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-03-08 23:27</date>
+  <date>2020-03-09 22:40</date>
   <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.5 </version>
@@ -134,7 +134,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -153,7 +153,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>mingw</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_mingw-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -192,6 +192,29 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-flatpak-18.08-tarball/versions/1.13.5.3+367.033dfa3/weather_routing_pi-1.13.5.3-ov50-1.16_flatpak-18.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-18.04-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -252,7 +275,7 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-beta/raw/names/testplugi
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 0.1.0 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -271,11 +294,11 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>flatpak</target>
     <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_flatpak-18.08.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -294,7 +317,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>darwin</target>
     <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_darwin-10.13.6.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -317,7 +340,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -336,11 +359,11 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>ubuntu</target>
     <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_ubuntu-16.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_ubuntu-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -359,7 +382,7 @@ can only be used after purchasing decryption keys from o-charts.org.
 </description>
     <target>raspbian</target>
     <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-9.4-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_raspbian-9.4.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-9.4-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_raspbian-9.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -474,7 +497,7 @@ https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weat
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -493,7 +516,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>debian</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_debian-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -661,7 +684,7 @@ dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -680,7 +703,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>fedora</target>
     <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_fedora-29.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_fedora-29.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -707,7 +730,7 @@ dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -726,7 +749,7 @@ can only be used after purchasing decryption keys from o-charts.org.
 </description>
     <target>raspbian</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_raspbian-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_raspbian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -795,7 +818,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -814,11 +837,11 @@ can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>ubuntu</target>
     <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-18.04-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_ubuntu-18.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-18.04-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_ubuntu-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
-    <version> 1.0.7 </version>
+    <version> 1.2.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
@@ -837,7 +860,7 @@ can only be used after purchasing decryption keys from o-charts.org.
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/0.1.0.0.743679a/oernc_pi-0.1.0-0_msvc-10.0.14393.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/1.2.0.0.8010470/oernc_pi-1.2.0-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
