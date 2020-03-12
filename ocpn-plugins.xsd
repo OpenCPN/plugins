@@ -17,13 +17,7 @@
       <xs:element name="name" type="xs:token"/>
       <xs:element name="version" type="xs:token"/>
       <xs:element name="release" type="xs:token"/>
-      <xs:element name="summary">
-        <xs:simpleType>
-          <xs:restriction base="xs:token">
-            <xs:maxLength value="72"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
+      <xs:element ref="summary">
       <xs:element name="api-version" type="xs:token"/>
       <xs:element name="open-source" type="xs:token"/>
       <xs:element name="author" type="xs:token"/>
@@ -37,14 +31,18 @@
       <!-- Tarball sha256 checksum , not implemented. -->
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
-      <!-- Path to downloadable ṕlugin icon, not implemented. -->
-      <xs:element name="icon-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
     <xs:attribute name="version" type="xs:string" use="required"/> 
   </xs:complexType>
 </xs:element>
- 
+
+<xs:element name="summary">
+  <xs:simpleType>
+    <xs:restriction base="xs:token">
+      <xs:maxLength value="72"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
 
 </xs:schema>
-

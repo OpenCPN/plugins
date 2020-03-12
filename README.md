@@ -4,9 +4,8 @@ OpenCPN plugins project README
 This project is currently in an utterly experimental state. It is
 aimed to be an important groundwork for the proposed plugin installer [1].
 
-The project exports the fundamental pieces required to install a plugin using
-the new installer: The plugin catalogue `ocpn-plugins.xml` and the plugin
-icons in the `icons/` directory.
+The project exports the fundamental piece required to install a plugin using
+the new installer: the plugin catalogue `ocpn-plugins.xml`.
 
 Dependencies
 ------------
