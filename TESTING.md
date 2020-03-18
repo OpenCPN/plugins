@@ -37,6 +37,16 @@ The installed tarball can be uninstalled using the plugin manager or
 using _tools/ocpn-uninstall_.
 
 
+
+Checking xml file basic syntax
+------------------------------
+
+Check that the new xml file is well-formed XML using
+
+    $ xmllint path/to/plugin/build/oesenc-plugin-flatpak-18.08.xml
+
+
+
 Checking urls in the xml file
 ------------------------------
 
