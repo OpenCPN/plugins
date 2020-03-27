@@ -75,6 +75,9 @@ def get_args(paths):
     generate_parser.add_argument(
             '--force', action="store_true",
             help='Overwrite possibly existing ocpn-plugins.xml.')
+    generate_parser.add_argument(
+            '--verbose', action="store_true",
+            help='Add verbose output')
     args = parser.parse_args()
     return args
 
@@ -87,7 +90,8 @@ def generate(args):
     date_elem = ET.SubElement(tree, "date")
     date_elem.text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     for path in Path(args.userdir).glob("*.xml"):
-        print(f'Processing:  {path}')
+        if args.verbose:
+            print(f'Processing:  {path}')
         subtree = ET.parse(str(path))
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
