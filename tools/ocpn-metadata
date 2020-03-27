@@ -79,20 +79,20 @@ def get_args(paths):
     return args
 
 
-def generate(sourcedir, destfile, version):
+def generate(args):
     """Generate a new ocpn-plugins.xml."""
     tree = ET.Element('plugins')
     version_elem = ET.SubElement(tree, "version")
-    version_elem.text = version
+    version_elem.text = args.version
     date_elem = ET.SubElement(tree, "date")
     date_elem.text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
-    for path in Path(sourcedir).glob("*.xml"):
+    for path in Path(args.userdir).glob("*.xml"):
         print(f'Processing:  {path}')
         subtree = ET.parse(str(path))
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
     dom = minidom.parseString(ET.tostring(tree))
-    with open(destfile, "w") as f:
+    with open(args.destfile, "w") as f:
         for line in dom.toprettyxml(indent="  ").split("\n"):
             line = line.rstrip()
             if line:
@@ -130,7 +130,7 @@ def main():
             print("The file %s is in the way" % args.destfile)
             print("Please remove or use --force")
             sys.exit(1)
-        generate(args.userdir, args.destfile, args.version)
+        generate(args)
         print("Generated new ocpn-plugins.xml at " + args.destfile)
 
 
