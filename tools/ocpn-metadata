@@ -12,6 +12,7 @@ import xml.dom.minidom as minidom
 
 from sys import platform
 from pathlib import Path
+from xml.etree.ElementTree import ParseError
 
 
 def get_paths():
@@ -92,7 +93,13 @@ def generate(args):
     for path in Path(args.userdir).glob("*.xml"):
         if args.verbose:
             print(f'Processing:  {path}')
-        subtree = ET.parse(str(path))
+        try:
+            subtree = ET.parse(str(path))
+        except ParseError as e:
+            print("Error parsing %s at line %d" %
+                          (path.as_posix(), e.position[0]),
+                  file=sys.stderr)
+            sys.exit(2)
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
     dom = minidom.parseString(ET.tostring(tree))
