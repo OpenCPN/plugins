@@ -69,7 +69,6 @@ if [ ! -f "$2" ]; then
     exit 1;
 fi
 
-
 readonly here=$(abspath $(dirname $0))
 readonly tarball=$(abspath $1)
 readonly metadata=$(abspath $2)
@@ -79,6 +78,7 @@ readonly tmpdir=$(mktemp -d)
 name_vers="$(parse_metadata $metadata)"
 readonly plugin_name="${name_vers%=*}"
 readonly meta_vers="${name_vers##*=}"
+
 
 echo "Unpacking tarball $tarball"
 cd $tmpdir
@@ -109,8 +109,8 @@ version_file="$installdir/$plugin_name.version"
 
 if [ -f "$manifest" ]; then
     echo "Cleaning up old files in $basedir"
-    rm -f $(cat $manifest) 2>/dev/null
-    rm $manifest
+    rm -f $(sed -e 's/$/"/' -e 's/^/"/' "$manifest") 2>/dev/null
+    rm "$manifest"
 fi
 
 case $filename in 
@@ -118,20 +118,20 @@ case $filename in
         echo "Installing windows plugin into $basedir/{plugins,share}"
         tar -cf - plugins \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" > $manifest
+            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" > "$manifest"
         tar -cf - share \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" >> $manifest
+            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" >> "$manifest"
         ;;
 
     *flatpak*.tar.gz)
         echo "Installing flatpak plugin into $basedir"
         tar -cf - bin lib \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"   > $manifest
+            | sed -e "s|^|$basedir/|"   > "$manifest"
         tar -cf - -C share locale opencpn \
             | tar -vC $basedir/data -xf - \
-            | sed -e "s|^|$basedir/|"   >> $manifest
+            | sed -e "s|^|$basedir/|"   >> "$manifest"
         ;;
 
     *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
@@ -140,27 +140,28 @@ case $filename in
         echo "Installing linux plugin into $basedir"
         tar -cf - bin lib share \
             | tar -vC $basedir -xf - \
-            | sed "s|^|$basedir/|" >$manifest
+            | sed "s|^|$basedir/|" >"$manifest"
         ;;
 
     *darwin*.tar.gz)
         echo "Installing macos plugin into \"$basedir\""
         tar -cf - -C OpenCPN.app Contents \
-            | tar -vC "$basedir" -xf - 2>&1 \
-            | sed -e "s|^|$basedir/|" -e 's|/x ||'  > $manifest
+            | tar -vC "$basedir" -xf -? 2>&1 \
+            | sed -e "s|^|$basedir/|" -e 's|/x ||'  > "$manifest"
         ;;
 esac
 
-echo "Plugin commeon name: $plugin_name"
+echo "Plugin common name: $plugin_name"
 
-for f in $(cat $manifest); do
-    if [ -f "$f" ]; then count=$((count + 1)); fi
+count=0
+for f in $(cat "$manifest"); do
+    if [ -f  $f ]; then count=$((count + 1)); fi
 done
 echo "$count files installed, manifest: $manifest"
 
 readonly version=$(echo $tarball | sed -e 's/[^-]*-\([^_]*\)_.*/\1/')
 echo "Rewriting version info using $version"
-echo $version > $version_file
+echo $version > "$version_file"
 
 cd $here
 rm -rf $tmpdir
