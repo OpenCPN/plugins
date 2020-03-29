@@ -135,6 +135,8 @@ case $filename in
         ;;
 
     *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
+        if [ -d usr ]; then cd usr; fi
+        if [ -d local ]; then cd local; fi
         echo "Installing linux plugin into $basedir"
         tar -cf - bin lib share \
             | tar -vC $basedir -xf - \
