@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-03-17 20:08</date>
+  <date>2020-03-28 21:56</date>
   <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.5 </version>
@@ -20,52 +20,6 @@
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-darwin-10.13.6-tarball/versions/1.13.5.3+364.033dfa3/weather_routing_pi-1.13.5.3-ov50-1.16_darwin-10.13.6.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-darwin-10.13.6-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-18.04-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_ubuntu-gtk3-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -108,29 +62,6 @@ dual radar range and Doppler.
     <target-version>16.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-16.04-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_ubuntu-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-18.04-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_ubuntu-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -192,6 +123,42 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-flatpak-18.08-tarball/versions/1.13.5.3+367.033dfa3/weather_routing_pi-1.13.5.3-ov50-1.16_flatpak-18.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+	</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-msvc-10.0.14393-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_msvc-10.0.14393.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-14.04.tar.gz-ubuntu-14.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-14.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -297,6 +264,42 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/1.2.0.0.cc90d08/oernc_pi-1.2.0-0_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_mingw-10.tar.gz-mingw-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_fedora-29.tar.gz-fedora-29-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_fedora-29.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.0 </version>
     <release> 0 </release>
@@ -385,75 +388,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-9.4-tarball/versions/1.2.0.0.cc90d08/oernc_pi-1.2.0-0_raspbian-9.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-msvc-10.0.14393-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-9.4-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_raspbian-9.4.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-debian-10-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_debian-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.0-beta2 </version>
     <release> 3 </release>
@@ -538,27 +472,40 @@ can only be used after purchasing decryption keys from o-charts.org.
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-16.04-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_ubuntu-16.04.tar.gz </tarball-url>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+	</description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_raspbian-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_darwin-10.13.6.tar.gz-darwin-10.13.6-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -578,6 +525,24 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-mingw-10-tarball/versions/1.13.5.3+365.033dfa3/weather_routing_pi-1.13.5.3-ov50-1.16_mingw-10.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 0.5.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_flatpak-18.08.tar.gz-flatpak-18.08-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -601,6 +566,24 @@ dual radar range and Doppler.
     <target-version>18.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-18.04-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_ubuntu-18.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-16.04.tar.gz-ubuntu-16.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -752,52 +735,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/1.2.0.0.cc90d08/oernc_pi-1.2.0-0_raspbian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-fedora-29-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_fedora-29.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-10-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_raspbian-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.45 </version>
     <release> 0 </release>
@@ -886,27 +823,22 @@ dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_mingw-10.tar.gz </tarball-url>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+	</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-9.4-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_raspbian-9.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -974,27 +906,22 @@ dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-flatpak-18.08-tarball/versions/4.2.0.3.5146d20/oesenc_pi-4.2.0-3_flatpak-18.08.tar.gz </tarball-url>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-gtk3-18.04.tar.gz-ubuntu-gtk3-18.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-gtk3-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -1014,6 +941,42 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-fedora-29-tarball/versions/1.13.5.3+369.033dfa3/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_fedora-29.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-18.04.tar.gz-ubuntu-18.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 1 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+	  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_debian-10.tar.gz-debian-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1061,260 +1024,4 @@ dual radar range and Doppler.
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-mingw-10-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_mingw-10.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
-<plugin version="1">
-	<name> VDR </name>
-	<version> 1.2.0 </version>
-	<release> 1 </release>
-	<summary> Voyage Data Recorder and Player </summary>
-
-	<api-version> 1.16 </api-version>
-	<open-source> no </open-source>
-	<author> Jean-Eudes Onfray </author>
-	<source> https://github.com/SethDart/vdr_pi/ </source>
-	<info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	<description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-	</description>
-
-	<target>raspbian</target>
-	<target-version>9.4</target-version>
-	<tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-9.4-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_raspbian-9.4.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	<name> VDR </name>
-	<version> 1.2.0 </version>
-	<release> 1 </release>
-	<summary> Voyage Data Recorder and Player </summary>
-
-	<api-version> 1.16 </api-version>
-	<open-source> no </open-source>
-	<author> Jean-Eudes Onfray </author>
-	<source> https://github.com/SethDart/vdr_pi/ </source>
-	<info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	<description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-	</description>
-
-	<target>msvc</target>
-	<target-version>10.0.14393</target-version>
-	<tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-msvc-10.0.14393-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_msvc-10.0.14393.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>mingw</target>
-	  <target-version>10</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_mingw-10.tar.gz-mingw-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_mingw-10.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 0.5.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>flatpak</target>
-	  <target-version>18.08</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_flatpak-18.08.tar.gz-flatpak-18.08-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_flatpak-18.08.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>fedora</target>
-	  <target-version>29</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_fedora-29.tar.gz-fedora-29-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_fedora-29.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>debian</target>
-	  <target-version>10</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_debian-10.tar.gz-debian-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_debian-10.tar.gz </tarball-url>
-	</plugin>
-
-	<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>darwin</target>
-	  <target-version>10.13.6</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_darwin-10.13.6.tar.gz-darwin-10.13.6-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_darwin-10.13.6.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>ubuntu-gtk3</target>
-	  <target-version>18.04</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-gtk3-18.04.tar.gz-ubuntu-gtk3-18.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-gtk3-18.04.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>ubuntu</target>
-	  <target-version>18.04</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-18.04.tar.gz-ubuntu-18.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-18.04.tar.gz </tarball-url>
-	</plugin>
-
-	<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>ubuntu</target>
-	  <target-version>16.04</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-16.04.tar.gz-ubuntu-16.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-16.04.tar.gz </tarball-url>
-</plugin>
-<plugin version="1">
-	  <name> VDR </name>
-	  <version> 1.2.0 </version>
-	  <release> 1 </release>
-	  <summary> Voyage Data Recorder and Player </summary>
-
-	  <api-version> 1.16 </api-version>
-	  <open-source> no </open-source>
-	  <author> Jean-Eudes Onfray </author>
-	  <source> https://github.com/SethDart/vdr_pi/ </source>
-	  <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	  <description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-	  </description>
-
-	  <target>ubuntu</target>
-	  <target-version>14.04</target-version>
-	  <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr_pi-0.5.0-1_ubuntu-14.04.tar.gz-ubuntu-14.04-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_ubuntu-14.04.tar.gz </tarball-url>
-	</plugin>
-
-	<plugin version="1">
-	<name> VDR </name>
-	<version> 1.2.0 </version>
-	<release> 1 </release>
-	<summary> Voyage Data Recorder and Player </summary>
-
-	<api-version> 1.16 </api-version>
-	<open-source> no </open-source>
-	<author> Jean-Eudes Onfray </author>
-	<source> https://github.com/SethDart/vdr_pi/ </source>
-	<info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-
-	<description>
-	VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-	Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-	</description>
-
-	<target>raspbian</target>
-	<target-version>10</target-version>
-	<tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-10-tarball/versions/v0.5.0/vdr_pi-0.5.0-1_raspbian-10.tar.gz </tarball-url>
-</plugin>
-
 </plugins>
