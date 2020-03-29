@@ -9,17 +9,25 @@
 #     For windows, available in the git package.
 #
 #  Usage: 
-#     ocpn-install.sh <tarball>  <metadata>
-#
-#  Parameters
-#     tarball: tar.gz plugin archive aimed to be installed by installer.
-#     metadata: xml file with metadata, used to build catalog.
-#
-#  See:
-#     https://github.com/leamas/opencpn/wiki/Tarballs
-#     https://github.com/leamas/opencpn/wiki/Catalog
+#     See usage()
 #
 
+
+function usage() {
+cat << EOF
+Usage:
+   ocpn-install.sh <tarball>  <metadata>
+
+Parameters
+   tarball: tar.gz plugin archive aimed to be installed by installer.
+   metadata: xml file with metadata, used to build catalog.
+
+See:
+   https://github.com/leamas/opencpn/wiki/Tarballs
+   https://github.com/leamas/opencpn/wiki/Catalog
+
+EOF
+}
 
 function abspath() {
     # Make path absolute
@@ -57,8 +65,12 @@ EOF
 
 
 if [ $# -ne 2 ]; then
-    echo "Usage: local-install.sh <tarball> <metadata>" >&2
+    usage;
     exit 2
+fi
+if [ "$1" == '-h' -o "$1" 0 '--help' ]; then
+    usage;
+    exit 0
 fi
 if [ ! -f "$1" ]; then
     echo "Cannot find tarball file \"$1\""
