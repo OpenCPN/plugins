@@ -63,7 +63,7 @@ case $filename in
         basedir=$HOME/.var/app/org.opencpn.OpenCPN
         installdir="$HOME/.opencpn/plugins/install_data"
         ;;
-    *ubuntu*.tar.gz | *debian*.tar.gz)
+    *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
         basedir=$HOME/.local
         installdir="$HOME/.opencpn/plugins/install_data"
         ;;
@@ -104,7 +104,7 @@ case $filename in
             | sed -e "s|^|$basedir/|"   >> $manifest
         ;;
 
-    *ubuntu*.tar.gz | *debian*.tar.gz)
+    *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
         echo "Installing linux plugin into $basedir"
         tar -cf - bin lib share \
             | tar -vC $basedir -xf - \
