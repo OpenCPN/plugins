@@ -9,8 +9,17 @@
 #     For windows, available in the git package.
 #
 #  Usage: 
-#     ocpn-install.sh <tarball>
+#     ocpn-install.sh <tarball>  <metadata>
 #
+#  Parameters
+#     tarball: tar.gz plugin archive aimed to be installed by installer.
+#     metadata: xml file with metadata, used to build catalog.
+#
+#  See:
+#     https://github.com/leamas/opencpn/wiki/Tarballs
+#     https://github.com/leamas/opencpn/wiki/Catalog
+#
+
 
 function abspath() {
     # Make path absolute
@@ -32,23 +41,44 @@ function abspath() {
     fi 
 }
 
+function parse_metadata()
+{
+    tmpfile=$(mktemp)
+cat << EOF > $tmpfile
+import sys, xml.etree.ElementTree as ET
+
+tree = ET.parse(sys.argv[1])
+version = tree.find("./version").text.strip()
+name = tree.find("./name").text.strip()
+print("%s=%s" % (name, version))
+EOF
+    python3 $tmpfile $1 && rm $tmpfile
+}
 
 
-if [ $# -ne 1 ]; then
-    echo "Usage: local-install.sh <tarball>" >&2
+if [ $# -ne 2 ]; then
+    echo "Usage: local-install.sh <tarball> <metadata>" >&2
     exit 2
 fi
 if [ ! -f "$1" ]; then
     echo "Cannot find tarball file \"$1\""
     exit 1;
 fi
+if [ ! -f "$2" ]; then
+    echo "Cannot find metadata file \"$2\""
+    exit 1;
+fi
+
 
 readonly here=$(abspath $(dirname $0))
 readonly tarball=$(abspath $1)
+readonly metadata=$(abspath $2)
 readonly filename=$(basename $tarball)
 readonly plugin_piname=${filename%%-*}
-readonly plugin_name=${plugin_piname%%_pi}
 readonly tmpdir=$(mktemp -d)
+name_vers="$(parse_metadata $metadata)"
+readonly plugin_name="${name_vers%=*}"
+readonly meta_vers="${name_vers##*=}"
 
 echo "Unpacking tarball $tarball"
 cd $tmpdir
@@ -118,6 +148,8 @@ case $filename in
             | sed -e "s|^|$basedir/|" -e 's|/x ||'  > $manifest
         ;;
 esac
+
+echo "Plugin commeon name: $plugin_name"
 
 for f in $(cat $manifest); do
     if [ -f "$f" ]; then count=$((count + 1)); fi
