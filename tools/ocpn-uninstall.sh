@@ -15,12 +15,13 @@ function usage() {
 Usage: ocpn-uninstall.sh <plugin> <platform | manifest>
 
 Parameters:
-    plugin:    Name of plugin, typically with a _pi suffix.
+    plugin:    Common name of plugin as of GetCommonName(), typically
+               without a _pi suffix.
     platform:  windows, linux, darwin or flatpak.
-    manifest:  Path to installation manifest, as printed at installation
+    manifest:  Path to installation manifest, as printed at installation.
 
 Example:
-    ./ocpn-uninstall.sh oesenc_pi windows
+    ./ocpn-uninstall.sh oeSENC windows
 EOF
 }
 
