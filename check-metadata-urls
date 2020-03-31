@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+
+"""Check urls in ocpn-plugins.xml.
+
+Digs for info-url and tarball-url in an ocpn-plugins.xml-ish file
+and checks that all urls are accessible. Pure python3 without
+external dependencies.
+
+Diagnostics printouts goes to stdout, list of broken urls to stderr.
+
+Usage:
+    check-metadata-urls [path]
+
+Arguments:
+    path: File to check, defaults to ocpn-plugins.xml.
+"""
+
+import http.client as httplib
+import xml.etree.ElementTree as ET
+import sys
+
+from http.client import HTTPException
+from urllib.parse import urlparse
+
+
+def get_status_code(urlstring):
+    """ Retreive the status code of a website by requesting HEAD data
+        (i. e., the headers) from host. If host cannot be reached
+        or something else goes wrong, return None.
+
+        See: http://stackoverflow.com/a/1140822/401554
+    """
+    url = urlparse(urlstring)
+    headers = {
+        'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0)'
+             + ' Gecko/20100101 Firefox/42.0'
+    }
+    try:
+        if (url.scheme == 'https'):
+            conn = httplib.HTTPSConnection(url.hostname)
+        else:
+            conn = httplib.HTTPConnection(url.hostname)
+        conn.request("HEAD", url.path, None, headers)
+        return conn.getresponse().status
+    except HTTPException:
+        return None
+
+
+def check_urls(urls):
+    """Check that each url in urls is accessible, return list
+    of broken urls."""
+    col = 0
+    bad_urls = []
+    for url in urls:
+        if col > 72:
+            print("")
+            col = 0
+        status = get_status_code(url.text.strip())
+        dot = '.'
+        if not status or status >= 400:
+            dot = 'E'
+            bad_urls.append(url.text.strip() + ": " + str(status))
+        print(dot, end = '', flush = True)
+        col +=1
+    return bad_urls
+
+
+def main():
+    """Check urls in sys.argv[1], defaults to ocpn-plugins.xml."""
+    if len(sys.argv) == 2:
+        path = sys.argv[1]
+    elif len(sys.argv) == 1:
+        path = 'ocpn-plugins.xml'
+    else:
+        print("Usage: check-metadata-urls [xml file]", file = sys.stderr)
+        sys.exit(1)
+    tree = ET.parse(path)
+    urls = tree.findall('*/info-url')
+    urls.extend(tree.findall('*/tarball-url'))
+    bad_urls = check_urls(urls)
+    print("\n%d urls checked, %d errors" % (len(urls), len(bad_urls)))
+    for url in bad_urls:
+        print(url, file = sys.stderr)
+    sys.exit(0 if len(bad_urls) == 0 else 2)
+
+
+if __name__ == '__main__':
+    main()
