@@ -40,11 +40,14 @@ whatever file opencpn was installed with. You might want to add
 A third option is to just use `make` which creates a ocpn-plugins.xml in 
 current directory.
 
+For verbose output of xml files used add --verbose. (disable if not using python 3.6)
+
 
 Fast track: Checking URL's used in ocpn-plugins.xml
 ------------------------------------------------
+Run from the 'plugins' directory:
 
-    > python tools/ocpn-metadata-urls [path]  path assumed is to ocpn-plugins.xml
+    > python ocpn-metadata-urls [path]  (path assumed is to ocpn-plugins.xml)
 	
 
 Fast track: Batch Files to use the above commands
@@ -54,7 +57,8 @@ Fast track: Batch Files to use the above commands
 
     > runcheck.bat   - to be run from the "tools" directory
 
-
+     Note: Disable --verbose  if not using python 3.6
+	 
 Developer info
 --------------
 
