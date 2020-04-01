@@ -1,29 +1,25 @@
 <?xml version="1.0" ?>
 <plugins>
-  <version>0.0.1</version>
-  <date>2019-12-29 16:16</date>
+  <version>0.0.0</version>
+  <date>2020-04-01 17:09</date>
   <plugin version="1">
-    <name> oesenc </name>
-    <version> 3.3.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
   </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-ubuntu-16.04-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_ubuntu-16.04.tar.gz </tarball-url>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-raspbian-9.4-stretch-armhf-tarball/versions/1.0.52.0+1.f9238a6/testplugin_pi-1.0.52.0_raspbian-9.4-stretch-armhf.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -46,130 +42,27 @@ Android comes with sQuiddio built in.
     <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> bsb4 </name>
-    <version> 1.5 </version>
+    <name> oesenc </name>
+    <version> 3.3.0 </version>
     <release> 3 </release>
-    <summary> OpenCPN support for BSB4 raster charts </summary>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
-    <source> https://github.com/bdbcat/bsb4_pi</source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
     <description>
-BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
-the format used by many hydrographic authorities throughout the world.
-Supported charts must have been installed with appropriate encryption
-certificates in place.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-msvc-10.0.14393-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.0.18 </version>
-    <release> 2 </release>
-    <summary> Repository of sailing destination waypoints </summary>
-    <api-version>  </api-version>
-    <open-source> no </open-source>
-    <author>  </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-Squiddio Plugin makes its global user-sourced and user-maintained
-repository of sailing destinations (marinas, anchorages, yacht clubs,
-docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
-Android comes with sQuiddio built in.
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio_pi/versions/1.0.18.2/opencpn-plugin-squiddio-1.0.18.2_ubuntu-16.04.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> radar </name>
-    <version> 5.0.4-beta2 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-mingw-10-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_mingw-10.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> radar </name>
-    <version> 5.0.4-beta2 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-ubuntu-16.04-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_ubuntu-16.04.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.0.17 </version>
-    <release> 6 </release>
-    <summary> Repository of sailing destination waypoints </summary>
-    <api-version> </api-version>
-    <open-source> no </open-source>
-    <author> </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-Squiddio Plugin makes its global user-sourced and user-maintained
-repository of sailing destinations (marinas, anchorages, yacht clubs,
-docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
-Android comes with sQuiddio built in.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-msvc-10.0.14393-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_msvc-10.0.14393.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> radar </name>
-    <version> 5.0.4-beta2 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-fedora-29-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_fedora-29.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-darwin-10.13.6-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oesenc </name>
@@ -205,14 +98,14 @@ can only be used after purchasing decryption keys from o-charts.org.
     <source> https://github.com/bdbcat/bsb4_pi</source>
     <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
     <description>
-    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
-    the format used by many hydrographic authorities throughout the world.
-    Supported charts must have been installed with appropriate encryption
-    certificates in place.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-mingw-10-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_mingw-10.tar.gz </tarball-url>
+BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
+the format used by many hydrographic authorities throughout the world.
+Supported charts must have been installed with appropriate encryption
+certificates in place.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-msvc-10.0.14393-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -233,46 +126,6 @@ Android comes with sQuiddio built in.
     <target-version>16.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-ubuntu-16.04-tarball/versions/v1.0.17.6/opencpn-plugin-squiddio-1.0.17.6_ubuntu-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.0.17 </version>
-    <release> 6 </release>
-    <summary> Repository of sailing destination waypoints </summary>
-    <api-version>  </api-version>
-    <open-source> no </open-source>
-    <author>  </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-Squiddio Plugin makes its global user-sourced and user-maintained
-repository of sailing destinations (marinas, anchorages, yacht clubs,
-docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
-Android comes with sQuiddio built in.
-  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-darwin-10.13.6-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_darwin-10.13.6.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> bsb4 </name>
-    <version> 1.5.0 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for BSB4 raster charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/bsb4_pi</source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
-    <description>
-    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
-    the format used by many hydrographic authorities throughout the world.
-    Supported charts must have been installed with appropriate encryption
-    certificates in place.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-flatpak-18.08-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oesenc </name>
@@ -298,27 +151,373 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-mingw-10-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> oesenc </name>
-    <version> 3.3.0 </version>
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-ubuntu-18.04-bionic-gtk3-tarball/versions/1.0.52.0+1107.a653bdf/testplugin_pi-1.0.52.0_ubuntu-18.04-bionic-gtk3.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-ubuntu-18.04-bionic-tarball/versions/1.0.52.0+1112.a653bdf/testplugin_pi-1.0.52.0_ubuntu-18.04-bionic.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-flatpak-18.08-flatpak-tarball/versions/1.6.39.0+63.908eab1/ocpn_draw_pi-1.6.39.0_flatpak-18.08.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-msvc-10.0.14393-MSVC-tarball/versions/1.0.52.0+474.a653bdf/testplugin_pi-1.0.52.0_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> bsb4 </name>
+    <version> 1.5 </version>
     <release> 3 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <summary> OpenCPN support for BSB4 raster charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <source> https://github.com/bdbcat/bsb4_pi</source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
+    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
+    the format used by many hydrographic authorities throughout the world.
+    Supported charts must have been installed with appropriate encryption
+    certificates in place.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-ubuntu-16.04-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-flatpak-18.08-flatpak-tarball/versions/1.0.52.0+1106.a653bdf/testplugin_pi-1.0.52.0_flatpak-18.08.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-fedora-29-fedora-tarball/versions/1.0.52.0+1111.a653bdf/testplugin_pi-1.0.52.0_fedora-29-fedora.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> bsb4 </name>
+    <version> 1.5.0 </version>
+    <release> 3 </release>
+    <summary> OpenCPN support for BSB4 raster charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/bsb4_pi</source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
+    <description>
+    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
+    the format used by many hydrographic authorities throughout the world.
+    Supported charts must have been installed with appropriate encryption
+    certificates in place.
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-flatpak-18.08-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_flatpak-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-ubuntu-18.04-bionic-tarball/versions/1.6.39.0+59.908eab1/ocpn_draw_pi-1.6.39.0_ubuntu-18.04-bionic.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> radar </name>
+    <version> 5.0.4-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin overlays the radar picture on OpenCPN. A versatile plugin that
+can be easily adapted to most broadband radars.
+Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
+different radars. Revised multi radar type architecture. Adding a new radar
+only requires radar knowledge and can reuse the existing display technology.
+Support for four simultaneously active radars. Multiple brands can be mixed.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-msvc-10.0.14393-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_msvc-10.0.14393.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-msvc-10.0.14393-MSVC-tarball/versions/1.6.39.0+335.908eab1/ocpn_draw_pi-1.6.39.0_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.0.17 </version>
+    <release> 6 </release>
+    <summary> Repository of sailing destination waypoints </summary>
+    <api-version>  </api-version>
+    <open-source> no </open-source>
+    <author>  </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+Squiddio Plugin makes its global user-sourced and user-maintained
+repository of sailing destinations (marinas, anchorages, yacht clubs,
+docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
+Android comes with sQuiddio built in.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-mingw-10-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_mingw-10.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> bsb4 </name>
+    <version> 1.5 </version>
+    <release> 3 </release>
+    <summary> OpenCPN support for BSB4 raster charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/bsb4_pi</source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
+    <description>
+    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
+    the format used by many hydrographic authorities throughout the world.
+    Supported charts must have been installed with appropriate encryption
+    certificates in place.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-mingw-10-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.0.18 </version>
+    <release> 2 </release>
+    <summary> Repository of sailing destination waypoints </summary>
+    <api-version>  </api-version>
+    <open-source> no </open-source>
+    <author>  </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+Squiddio Plugin makes its global user-sourced and user-maintained
+repository of sailing destinations (marinas, anchorages, yacht clubs,
+docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
+Android comes with sQuiddio built in.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio_pi/versions/1.0.18.2/opencpn-plugin-squiddio-1.0.18.2_ubuntu-16.04.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-ubuntu-14.04-trusty-tarball/versions/1.6.39.0+64.908eab1/ocpn_draw_pi-1.6.39.0_ubuntu-14.04-trusty.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
   </description>
     <target>darwin</target>
     <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-darwin-10.13.6-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_darwin-10.13.6.tar.gz </tarball-url>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-darwin-10.13.6-macos-tarball/versions/1.0.52.0+1114.a653bdf/testplugin_pi-1.0.52.0_darwin-10.13.6-macos.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-mingw-10-mingw-tarball/versions/1.6.39.0+58.908eab1/ocpn_draw_pi-1.6.39.0_mingw-10-mingw.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-debian-10-buster-tarball/versions/1.0.52.0+1108.a653bdf/testplugin_pi-1.0.52.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-mingw-10-mingw-tarball/versions/1.0.52.0+1110.a653bdf/testplugin_pi-1.0.52.0_mingw-10-mingw.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -343,24 +542,120 @@ Android comes with sQuiddio built in.
     <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> bsb4 </name>
-    <version> 1.5 </version>
-    <release> 3 </release>
-    <summary> OpenCPN support for BSB4 raster charts </summary>
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/bsb4_pi</source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/bsb4.html </info-url>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
     <description>
-    BSB4 plugin for OpenCPN provides support of BSB Version 4 Raster charts,
-    the format used by many hydrographic authorities throughout the world.
-    Supported charts must have been installed with appropriate encryption
-    certificates in place.
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-fedora-29-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_fedora-29.tar.gz </tarball-url>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-ubuntu-16.04-xenial-tarball/versions/1.6.39.0+57.908eab1/ocpn_draw_pi-1.6.39.0_ubuntu-16.04-xenial.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-ubuntu-18.04-bionic-gtk3-tarball/versions/1.6.39.0+62.908eab1/ocpn_draw_pi-1.6.39.0_ubuntu-18.04-bionic-gtk3.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.0.17 </version>
+    <release> 6 </release>
+    <summary> Repository of sailing destination waypoints </summary>
+    <api-version>  </api-version>
+    <open-source> no </open-source>
+    <author>  </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+Squiddio Plugin makes its global user-sourced and user-maintained
+repository of sailing destinations (marinas, anchorages, yacht clubs,
+docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
+Android comes with sQuiddio built in.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-darwin-10.13.6-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_darwin-10.13.6.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-ubuntu-14.04-trusty-tarball/versions/1.0.52.0+1113.a653bdf/testplugin_pi-1.0.52.0_ubuntu-14.04-trusty.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+  </description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-raspbian-10-buster-armhf-tarball/versions/1.0.52.0+1.f9238a6/testplugin_pi-1.0.52.0_raspbian-10-buster-armhf.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.0.17 </version>
+    <release> 6 </release>
+    <summary> Repository of sailing destination waypoints </summary>
+    <api-version> </api-version>
+    <open-source> no </open-source>
+    <author> </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+Squiddio Plugin makes its global user-sourced and user-maintained
+repository of sailing destinations (marinas, anchorages, yacht clubs,
+docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
+Android comes with sQuiddio built in.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-msvc-10.0.14393-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_msvc-10.0.14393.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> bsb4 </name>
@@ -383,6 +678,44 @@ Android comes with sQuiddio built in.
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-darwin-10.13.6-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-debian-10-buster-tarball/versions/1.6.39.0+60.908eab1/ocpn_draw_pi-1.6.39.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-darwin-10.13.6-macos-tarball/versions/1.6.39.0+56.908eab1/ocpn_draw_pi-1.6.39.0_darwin-10.13.6-macos.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> radar </name>
     <version> 5.0.4-beta2 </version>
     <release> 3 </release>
@@ -395,13 +728,13 @@ Android comes with sQuiddio built in.
 This plugin overlays the radar picture on OpenCPN. A versatile plugin that
 can be easily adapted to most broadband radars.
 Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture. Adding a new radar
+different radars. Revised multi radar type architecture.  Adding a new radar
 only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars. Multiple brands can be mixed.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-msvc-10.0.14393-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_msvc-10.0.14393.tar.gz </tarball-url>
+Support for four simultaneously active radars.  Multiple brands can be mixed.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-ubuntu-16.04-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_ubuntu-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
@@ -428,46 +761,23 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-flatpak-18.08-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.0.17 </version>
-    <release> 6 </release>
-    <summary> Repository of sailing destination waypoints </summary>
-    <api-version>  </api-version>
-    <open-source> no </open-source>
-    <author>  </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-Squiddio Plugin makes its global user-sourced and user-maintained
-repository of sailing destinations (marinas, anchorages, yacht clubs,
-docks, fuel stations etc.) available as waypoints in OpenCPN. OpenCPN
-Android comes with sQuiddio built in.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/squiddio-mingw-10-tarball/versions/v1.0.17.6/squiddio_pi-1.0.17.6_mingw-10.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/sQuiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> radar </name>
-    <version> 5.0.4-beta2 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
+    <name> testplugin </name>
+    <version> 1.0.52 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-This plugin overlays the radar picture on OpenCPN. A versatile plugin that
-can be easily adapted to most broadband radars.
-Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
-different radars. Revised multi radar type architecture.  Adding a new radar
-only requires radar knowledge and can reuse the existing display technology.
-Support for four simultaneously active radars.  Multiple brands can be mixed.
+    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
   </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-darwin-10.13.6-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_darwin-10.13.6.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-alpha/raw/names/testplugin_pi-1.0.52-ubuntu-16.04-xenial-tarball/versions/1.0.52.0+1109.a653bdf/testplugin_pi-1.0.52.0_ubuntu-16.04-xenial.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oesenc </name>
@@ -509,6 +819,50 @@ different radars. Revised multi radar type architecture.  Adding a new radar
 only requires radar knowledge and can reuse the existing display technology.
 Support for four simultaneously active radars.  Multiple brands can be mixed.
   </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-fedora-29-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_fedora-29.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> radar </name>
+    <version> 5.0.4-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin overlays the radar picture on OpenCPN. A versatile plugin that
+can be easily adapted to most broadband radars.
+Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
+different radars. Revised multi radar type architecture.  Adding a new radar
+only requires radar knowledge and can reuse the existing display technology.
+Support for four simultaneously active radars.  Multiple brands can be mixed.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-darwin-10.13.6-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_darwin-10.13.6.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> radar </name>
+    <version> 5.0.4-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin overlays the radar picture on OpenCPN. A versatile plugin that
+can be easily adapted to most broadband radars.
+Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
+different radars. Revised multi radar type architecture.  Adding a new radar
+only requires radar knowledge and can reuse the existing display technology.
+Support for four simultaneously active radars.  Multiple brands can be mixed.
+  </description>
     <target>flatpak</target>
     <target-version>18.08</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-flatpak-18.08-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_flatpak-18.08.tar.gz </tarball-url>
@@ -530,8 +884,72 @@ Support for four simultaneously active radars.  Multiple brands can be mixed.
     Supported charts must have been installed with appropriate encryption
     certificates in place.
   </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-fedora-29-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_fedora-29.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.39 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-fedora-29-fedora-tarball/versions/1.6.39.0+61.908eab1/ocpn_draw_pi-1.6.39.0_fedora-29-fedora.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oesenc </name>
+    <version> 3.3.0 </version>
+    <release> 3 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
     <target>ubuntu</target>
     <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/bsb4-ubuntu-16.04-tarball/versions/v1.5.0.3/bsb4_pi-1.5.0.3_ubuntu-16.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/oesenc-ubuntu-16.04-tarball/versions/v1.2.0.3/oesenc_pi-1.2.0-3_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> radar </name>
+    <version> 5.0.4-beta2 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin overlays the radar picture on OpenCPN. A versatile plugin that
+can be easily adapted to most broadband radars.
+Support for OpenCPN V 5.0 and multi canvas with simultaneous overlay of two
+different radars. Revised multi radar type architecture.  Adding a new radar
+only requires radar knowledge and can reuse the existing display technology.
+Support for four simultaneously active radars.  Multiple brands can be mixed.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/radar-mingw-10-tarball/versions/v5.0.4.3-beta2/radar_pi-5.0.4-beta2.3_mingw-10.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
 </plugins>
