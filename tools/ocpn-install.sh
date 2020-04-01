@@ -9,8 +9,25 @@
 #     For windows, available in the git package.
 #
 #  Usage: 
-#     ocpn-install.sh <tarball>
+#     See usage()
 #
+
+
+function usage() {
+cat << EOF
+Usage:
+   ocpn-install.sh <tarball>  <metadata>
+
+Parameters
+   tarball: tar.gz plugin archive aimed to be installed by installer.
+   metadata: xml file with metadata, used to build catalog.
+
+See:
+   https://github.com/leamas/opencpn/wiki/Tarballs
+   https://github.com/leamas/opencpn/wiki/Catalog
+
+EOF
+}
 
 function abspath() {
     # Make path absolute
@@ -32,23 +49,48 @@ function abspath() {
     fi 
 }
 
+function parse_metadata()
+{
+    tmpfile=$(mktemp)
+cat << EOF > $tmpfile
+import sys, xml.etree.ElementTree as ET
+
+tree = ET.parse(sys.argv[1])
+version = tree.find("./version").text.strip()
+name = tree.find("./name").text.strip()
+print("%s=%s" % (name, version))
+EOF
+    python3 $tmpfile $1 && rm $tmpfile
+}
 
 
-if [ $# -ne 1 ]; then
-    echo "Usage: local-install.sh <tarball>" >&2
+if [ $# -ne 2 ]; then
+    usage;
     exit 2
+fi
+if [ "$1" == '-h' -o "$1" 0 '--help' ]; then
+    usage;
+    exit 0
 fi
 if [ ! -f "$1" ]; then
     echo "Cannot find tarball file \"$1\""
     exit 1;
 fi
+if [ ! -f "$2" ]; then
+    echo "Cannot find metadata file \"$2\""
+    exit 1;
+fi
 
 readonly here=$(abspath $(dirname $0))
 readonly tarball=$(abspath $1)
+readonly metadata=$(abspath $2)
 readonly filename=$(basename $tarball)
 readonly plugin_piname=${filename%%-*}
-readonly plugin_name=${plugin_piname%%_pi}
 readonly tmpdir=$(mktemp -d)
+name_vers="$(parse_metadata $metadata)"
+readonly plugin_name="${name_vers%=*}"
+readonly meta_vers="${name_vers##*=}"
+
 
 echo "Unpacking tarball $tarball"
 cd $tmpdir
@@ -63,7 +105,7 @@ case $filename in
         basedir=$HOME/.var/app/org.opencpn.OpenCPN
         installdir="$HOME/.opencpn/plugins/install_data"
         ;;
-    *ubuntu*.tar.gz | *debian*.tar.gz)
+    *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
         basedir=$HOME/.local
         installdir="$HOME/.opencpn/plugins/install_data"
         ;;
@@ -79,8 +121,8 @@ version_file="$installdir/$plugin_name.version"
 
 if [ -f "$manifest" ]; then
     echo "Cleaning up old files in $basedir"
-    rm -f $(cat $manifest) 2>/dev/null
-    rm $manifest
+    rm -f $(sed -e 's/$/"/' -e 's/^/"/' "$manifest") 2>/dev/null
+    rm "$manifest"
 fi
 
 case $filename in 
@@ -88,45 +130,50 @@ case $filename in
         echo "Installing windows plugin into $basedir/{plugins,share}"
         tar -cf - plugins \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" > $manifest
+            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" > "$manifest"
         tar -cf - share \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" >> $manifest
+            | sed -e "s|^|$basedir/|"  -e "s|/c/|C:/|" >> "$manifest"
         ;;
 
     *flatpak*.tar.gz)
         echo "Installing flatpak plugin into $basedir"
         tar -cf - bin lib \
             | tar -vC $basedir -xf - \
-            | sed -e "s|^|$basedir/|"   > $manifest
+            | sed -e "s|^|$basedir/|"   > "$manifest"
         tar -cf - -C share locale opencpn \
             | tar -vC $basedir/data -xf - \
-            | sed -e "s|^|$basedir/|"   >> $manifest
+            | sed -e "s|^|$basedir/|"   >> "$manifest"
         ;;
 
-    *ubuntu*.tar.gz | *debian*.tar.gz)
+    *ubuntu*.tar.gz | *debian*.tar.gz | *raspbian*.tar.gz)
+        if [ -d usr ]; then cd usr; fi
+        if [ -d local ]; then cd local; fi
         echo "Installing linux plugin into $basedir"
         tar -cf - bin lib share \
             | tar -vC $basedir -xf - \
-            | sed "s|^|$basedir/|" >$manifest
+            | sed "s|^|$basedir/|" >"$manifest"
         ;;
 
     *darwin*.tar.gz)
         echo "Installing macos plugin into \"$basedir\""
         tar -cf - -C OpenCPN.app Contents \
-            | tar -vC "$basedir" -xf - 2>&1 \
-            | sed -e "s|^|$basedir/|" -e 's|/x ||'  > $manifest
+            | tar -vC "$basedir" -xf -? 2>&1 \
+            | sed -e "s|^|$basedir/|" -e 's|/x ||'  > "$manifest"
         ;;
 esac
 
-for f in $(cat $manifest); do
-    if [ -f "$f" ]; then count=$((count + 1)); fi
+echo "Plugin common name: $plugin_name"
+
+count=0
+for f in $(cat "$manifest"); do
+    if [ -f  $f ]; then count=$((count + 1)); fi
 done
 echo "$count files installed, manifest: $manifest"
 
 readonly version=$(echo $tarball | sed -e 's/[^-]*-\([^_]*\)_.*/\1/')
 echo "Rewriting version info using $version"
-echo $version > $version_file
+echo $version > "$version_file"
 
 cd $here
 rm -rf $tmpdir
