@@ -41,15 +41,26 @@ A third option is to just use `make` which creates a ocpn-plugins.xml in
 current directory.
 
 
+Fast track: Checking URL's used in ocpn-plugins.xml
+------------------------------------------------
+
+    > python tools/ocpn-metadata-urls [path]  path assumed is to ocpn-plugins.xml
+	
+
+Fast track: Batch Files to use the above commands
+------------------------------------------------
+
+    > check.bat   - to be run from the "plugins" directory
+
+    > runcheck.bat   - to be run from the "tools" directory
+
+
 Developer info
 --------------
 
 Notes on the XML files, tarball layout and platform issues: DEVELOPER-INFO.md.
 Here is also mer elaborated instructions to create ocpn-plugins.xml if the
 fast track fails.
-
-The pre-commit file is a git hook which validates ocpn-plugins.xml when
-committed. See more info in this file.
 
 
 [1] https://github.com/OpenCPN/OpenCPN/pull/1457
