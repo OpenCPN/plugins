@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-04-01 17:19</date>
+  <date>2020-04-02 11:31</date>
   <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.52 </version>
@@ -392,6 +392,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-debian-10-tarball/versions/4.2.2.0.ea7b652/oesenc_pi-4.2.2_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-ubuntu-18.04-bionic-gtk3-tarball/versions/1.6.40.0+67.5a7a57b/ocpn_draw_pi-1.6.40.0_ubuntu-18.04-bionic-gtk3.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.52 </version>
     <release> 0 </release>
@@ -432,6 +451,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>ubuntu</target>
     <target-version>16.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/1.2.0.0.cc90d08/oernc_pi-1.2.0-0_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-mingw-10-mingw-tarball/versions/1.6.40.0+70.5a7a57b/ocpn_draw_pi-1.6.40.0_mingw-10-mingw.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -654,6 +692,25 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-debian-10-buster-tarball/versions/1.6.40.0+73.5a7a57b/ocpn_draw_pi-1.6.40.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.0 </version>
     <release> 2 </release>
@@ -761,6 +818,25 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>10</target-version>
     <tarball-url>
     https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-mingw-10-mingw-tarball/versions/1.6.39.0+58.908eab1/ocpn_draw_pi-1.6.39.0_mingw-10-mingw.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-ubuntu-18.04-bionic-tarball/versions/1.6.40.0+68.5a7a57b/ocpn_draw_pi-1.6.40.0_ubuntu-18.04-bionic.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
@@ -891,6 +967,25 @@ dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-msvc-10.0.14393-MSVC-tarball/versions/1.6.40.0+336.5a7a57b/ocpn_draw_pi-1.6.40.0_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.0-beta2 </version>
     <release> 3 </release>
@@ -996,6 +1091,44 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>ubuntu-gtk3</target>
     <target-version>18.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-18.04-tarball/versions/1.2.0.0.cc90d08/oernc_pi-1.2.0-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-ubuntu-16.04-xenial-tarball/versions/1.6.40.0+66.5a7a57b/ocpn_draw_pi-1.6.40.0_ubuntu-16.04-xenial.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-ubuntu-14.04-trusty-tarball/versions/1.6.40.0+72.5a7a57b/ocpn_draw_pi-1.6.40.0_ubuntu-14.04-trusty.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -1139,6 +1272,25 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10</target-version>
     <tarball-url>
     https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.39-debian-10-buster-tarball/versions/1.6.39.0+60.908eab1/ocpn_draw_pi-1.6.39.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-darwin-10.13.6-macos-tarball/versions/1.6.40.0+71.5a7a57b/ocpn_draw_pi-1.6.40.0_darwin-10.13.6-macos.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
@@ -1365,6 +1517,25 @@ dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-flatpak-18.08-flatpak-tarball/versions/1.6.40.0+65.5a7a57b/ocpn_draw_pi-1.6.40.0_flatpak-18.08.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.2 </version>
     <release> 0 </release>
@@ -1409,6 +1580,25 @@ dual radar range and Doppler.
     <target-version>29</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-fedora-29-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_fedora-29.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.40 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.40-fedora-29-fedora-tarball/versions/1.6.40.0+69.5a7a57b/ocpn_draw_pi-1.6.40.0_fedora-29-fedora.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
