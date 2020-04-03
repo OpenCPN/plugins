@@ -37,7 +37,7 @@ function check_plugin_branch
   local _branch
 
   case "${CLOUDSMITH_REPO}" in
-    *-stable) 
+    *-stable)
       _branch=master;;
     *)
       _branch=Beta;;
@@ -55,22 +55,38 @@ function get_branch_commit
 {
   (
     cd "../${PROJECT}"
-    git log -1 | awk '{printf("%-1.7s\n", $2); exit}'
+    git rev-parse --short=7 HEAD
+  )
+}
+
+function get_branch_tag
+{
+  (
+    cd "../${PROJECT}"
+    git tag --contains HEAD
   )
 }
 
 check_plugin_branch
 check_project_branch
 
-commit=$(get_branch_commit)
+case "${CLOUDSMITH_REPO}" in
+  *-stable)
+    query="$(get_branch_tag)"
+    echo "Downloading files for tag '$query'"
+    ;;
+  *)
+    query="$(get_branch_commit)"
+    echo "Downloading files for commit '$query'"
+    ;;
+esac
 
-echo "Downloading files for commit '$commit'"
 
 cd metadata
 for url in $(
-curl -s -S "https://api.cloudsmith.io/packages/${CLOUDSMITH_USER}/${CLOUDSMITH_REPO}/?page_size=9999&query=${commit}" | 
-  jq -r '.[] | 
-         select(.extension == ".xml") | 
+curl -s -S "https://api.cloudsmith.io/packages/${CLOUDSMITH_USER}/${CLOUDSMITH_REPO}/?page_size=9999&query=${query}" |
+  jq -r '.[] |
+         select(.extension == ".xml") |
          .cdn_url'
 )
 do
