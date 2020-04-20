@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-04-19 22:25</date>
+  <date>2020-04-20 12:41</date>
   <plugin version="1">
     <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
+    <version> 1.6.67 </version>
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
@@ -14,10 +14,90 @@
     <description>
     OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
-    <target>debian</target>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-ubuntu-18.04-bionic-tarball/versions/1.6.67.0+495.4b17eb1/ocpn_draw_pi-1.6.67.0_ubuntu-18.04-bionic.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+Weather_Routing Plugin optimizes weather routing
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-msvc-10.0.14393-tarball/versions/1.13.5.+151.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_msvc-10.0.14393.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    Weather_Routing Plugin optimizes weather routing
+  </description>
+    <target>mingw</target>
     <target-version>10</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-debian-10-buster-tarball/versions/1.6.59.0+378.5a81c45/ocpn_draw_pi-1.6.59.0_debian-10-buster.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-mingw-10-tarball/versions/1.13.5.3+511.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_mingw-10.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-raspbian-9.4-stretch-armhf-tarball/versions/1.6.67.0+494.4b17eb1/ocpn_draw_pi-1.6.67.0_raspbian-9.4-stretch-armhf.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
@@ -33,12 +113,146 @@
     <description>
     Weather_Routing Plugin optimizes weather routing
   </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-darwin-10.13.6-tarball/versions/1.13.5.3+506.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_darwin-10.13.6.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-flatpak-18.08-tarball/versions/1.13.5.3+505.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_flatpak-18.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_flatpak-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>20.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-ubuntu-20.04-focal-tarball/versions/1.6.67.0+497.4b17eb1/ocpn_draw_pi-1.6.67.0_ubuntu-20.04-focal.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+Weather_Routing Plugin optimizes weather routing
+</description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-10-tarball/versions/1.13.5..c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-16.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-msvc-10.0.14393-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_msvc-10.0.14393.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-mingw-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-ubuntu-18.04-bionic-gtk3-tarball/versions/1.6.67.0+502.4b17eb1/ocpn_draw_pi-1.6.67.0_ubuntu-18.04-bionic-gtk3.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -82,55 +296,13 @@ EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-18.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-Weather_Routing Plugin optimizes weather routing
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-9.4-tarball/versions/1.13.5..b6843e4/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-9.4.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.1.1 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves), Guard zones,
-AIS overlay on PPI, and various radar dependent features such as
-dual radar range and Doppler.
-</description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-ubuntu-16.04-tarball/versions/v5.1.1/radar_pi-5.1.1.3_ubuntu-16.04.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-fedora-29-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_fedora-29.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
+    <version> 1.6.67 </version>
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
@@ -138,97 +310,14 @@ dual radar range and Doppler.
     <author> Jon Gough </author>
     <source> https://github.com/jongough/ocpn_draw_pi </source>
     <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-raspbian-10-buster-armhf-tarball/versions/1.6.59.0+1.5a81c45/ocpn_draw_pi-1.6.59.0_raspbian-10-buster-armhf.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.7 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-18.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-flatpak-18.08-tarball/versions/1.13.5.3+505.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_flatpak-18.08.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-msvc-10.0.14393-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_msvc-10.0.14393.tar.gz </tarball-url>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-msvc-10.0.14393-MSVC-tarball/versions/1.6.67.0+384.4b17eb1/ocpn_draw_pi-1.6.67.0_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -244,108 +333,9 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
 VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
 Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
      </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-14.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-14.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-18.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-darwin-10.13.6-macos-tarball/versions/1.6.59.0+379.5a81c45/ocpn_draw_pi-1.6.59.0_darwin-10.13.6-macos.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
     <target>debian</target>
     <target-version>10</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-debian-10-tarball/versions/1.13.5.3+508.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_debian-10.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-fedora-29-fedora-tarball/versions/1.6.59.0+376.5a81c45/ocpn_draw_pi-1.6.59.0_fedora-29-fedora.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-18.04-tarball/versions/1.13.5.3+507.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-18.04.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-debian-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -365,46 +355,10 @@ are based on the same data -- the legal conditions are described in the
 EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>mingw</target>
+</description>
+    <target>raspbian</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-mingw-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-fedora-29-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_fedora-29.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_raspbian-10-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -417,36 +371,13 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
     Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-14.04-tarball/versions/1.13.5.3+510.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-14.04.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>darwin</target>
     <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_darwin-10.13.6.tar.gz </tarball-url>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-darwin-10.13.6-tarball/versions/1.13.5.3+506.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_darwin-10.13.6.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -467,9 +398,9 @@ EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_fedora-29.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -489,10 +420,10 @@ are based on the same data -- the legal conditions are described in the
 EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-9.4-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_raspbian-9.4-armhf.tar.gz </tarball-url>
+  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>20.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-20.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-gtk3-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -512,14 +443,14 @@ are based on the same data -- the legal conditions are described in the
 EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-msvc-10.0.14393-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_msvc-10.0.14393.tar.gz </tarball-url>
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
+    <version> 1.6.67 </version>
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
@@ -529,35 +460,12 @@ can only be used after purchasing decryption keys from o-charts.org.
     <description>
     OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-mingw-10-mingw-tarball/versions/1.6.59.0+380.5a81c45/ocpn_draw_pi-1.6.59.0_mingw-10-mingw.tar.gz
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-flatpak-18.08-flatpak-tarball/versions/1.6.67.0+500.4b17eb1/ocpn_draw_pi-1.6.67.0_flatpak-18.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.7 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-9.4-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_raspbian-9.4-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -583,6 +491,127 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-debian-10-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.7 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-18.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/VDR-raspbian-9.4-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_raspbian-9.4.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-mingw-10-mingw-tarball/versions/1.6.67.0+504.4b17eb1/ocpn_draw_pi-1.6.67.0_mingw-10-mingw.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+Weather_Routing Plugin optimizes weather routing
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-9.4-tarball/versions/1.13.5..b6843e4/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-9.4.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-debian-10-buster-tarball/versions/1.6.67.0+503.4b17eb1/ocpn_draw_pi-1.6.67.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.1 </version>
     <release> 3 </release>
@@ -606,66 +635,6 @@ dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-Weather_Routing Plugin optimizes weather routing
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-msvc-10.0.14393-tarball/versions/1.13.5.+151.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_msvc-10.0.14393.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/VDR-raspbian-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_raspbian-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.7 </version>
     <release> 0 </release>
@@ -683,10 +652,48 @@ are based on the same data -- the legal conditions are described in the
 EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-9.4-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_raspbian-9.4-armhf.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-16.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-16.04.tar.gz </tarball-url>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-darwin-10.13.6-macos-tarball/versions/1.6.67.0+498.4b17eb1/ocpn_draw_pi-1.6.67.0_darwin-10.13.6-macos.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-raspbian-10-buster-armhf-tarball/versions/1.6.67.0+1.4b17eb1/ocpn_draw_pi-1.6.67.0_raspbian-10-buster-armhf.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -702,28 +709,9 @@ can only be used after purchasing decryption keys from o-charts.org.
 VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
 Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
      </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-darwin-10.13.6-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-mingw-10-tarball/versions/1.13.5.3+511.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_mingw-10.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-18.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -744,48 +732,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-flatpak-18.08-tarball/versions/0.5.0.2.c4b48a8/vdr_pi-0.5.0-2_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-flatpak-18.08-flatpak-tarball/versions/1.6.59.0+381.5a81c45/ocpn_draw_pi-1.6.59.0_flatpak-18.08.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.1.1 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves), Guard zones,
-AIS overlay on PPI, and various radar dependent features such as
-dual radar range and Doppler.
-</description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-ubuntu-18.04-tarball/versions/v5.1.1/radar_pi-5.1.1.3_ubuntu-18.04.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.0 </version>
     <release> 2 </release>
@@ -800,172 +746,8 @@ VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA 
 Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
      </description>
     <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-16.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-ubuntu-18.04-bionic-tarball/versions/1.6.59.0+374.5a81c45/ocpn_draw_pi-1.6.59.0_ubuntu-18.04-bionic.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url>
-https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-msvc-10.0.14393-MSVC-tarball/versions/1.6.59.0+368.5a81c45/ocpn_draw_pi-1.6.59.0_msvc-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.58 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-  </description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.58-raspbian-10-buster-armhf-tarball/versions/1.6.58.0+1.09d3fe9/ocpn_draw_pi-1.6.58.0_raspbian-10-buster-armhf.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-16.04-tarball/versions/1.13.5.3+509.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-16.04.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-Weather_Routing Plugin optimizes weather routing
-</description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-10-tarball/versions/1.13.5..c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-10.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.1.1 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves), Guard zones,
-AIS overlay on PPI, and various radar dependent features such as
-dual radar range and Doppler.
-</description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-flatpak-18.08-tarball/versions/v5.1.1/radar_pi-5.1.1.3_flatpak-18.08.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.7 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>20.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-20.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-gtk3-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-fedora-29-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_fedora-29.tar.gz </tarball-url>
+    <target-version>14.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-14.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-14.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1010,27 +792,73 @@ way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
 </description>
     <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_raspbian-10-armhf.tar.gz </tarball-url>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-9.4-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_raspbian-9.4-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+    Weather_Routing Plugin optimizes weather routing
   </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>18.04</target-version>
+    <target>debian</target>
+    <target-version>10</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-ubuntu-18.04-bionic-gtk3-tarball/versions/1.6.59.0+377.5a81c45/ocpn_draw_pi-1.6.59.0_ubuntu-18.04-bionic-gtk3.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-debian-10-tarball/versions/1.13.5.3+508.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_debian-10.tar.gz
   </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.1 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-ubuntu-18.04-tarball/versions/v5.1.1/radar_pi-5.1.1.3_ubuntu-18.04.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.1 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-debian-10-tarball/versions/v5.1.1/radar_pi-5.1.1.3_debian-10.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -1051,9 +879,32 @@ EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-fedora-29-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_fedora-29.tar.gz </tarball-url>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-18.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-18.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-gtk3-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -1080,7 +931,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
+    <version> 1.6.67 </version>
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1090,12 +941,95 @@ can only be used after purchasing decryption keys from o-charts.org.
     <description>
     OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
+    <target>fedora</target>
+    <target-version>29</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-ubuntu-14.04-trusty-tarball/versions/1.6.59.0+373.5a81c45/ocpn_draw_pi-1.6.59.0_ubuntu-14.04-trusty.tar.gz
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-fedora-29-fedora-tarball/versions/1.6.67.0+499.4b17eb1/ocpn_draw_pi-1.6.67.0_fedora-29-fedora.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    Weather_Routing Plugin optimizes weather routing
+  </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-fedora-29-tarball/versions/1.13.5.3+504.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_fedora-29.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-fedora-29-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_fedora-29.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1121,27 +1055,79 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-18.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
+    <name> OCPN Draw </name>
+    <version> 1.6.67 </version>
     <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+    OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-ubuntu-16.04-xenial-tarball/versions/1.6.67.0+501.4b17eb1/ocpn_draw_pi-1.6.67.0_ubuntu-16.04-xenial.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    Weather_Routing Plugin optimizes weather routing
+  </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-18.04-tarball/versions/1.13.5.3+507.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-18.04.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-darwin-10.13.6-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    Weather_Routing Plugin optimizes weather routing
+  </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-14.04-tarball/versions/1.13.5.3+510.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-14.04.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1161,32 +1147,14 @@ Supports MARPA (even on radars that do not support this themselves), Guard zones
 AIS overlay on PPI, and various radar dependent features such as
 dual radar range and Doppler.
 </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-debian-10-tarball/versions/v5.1.1/radar_pi-5.1.1.3_debian-10.tar.gz </tarball-url>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-ubuntu-16.04-tarball/versions/v5.1.1/radar_pi-5.1.1.3_ubuntu-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/VDR-raspbian-9.4-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_raspbian-9.4.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
-    <version> 1.6.59 </version>
+    <version> 1.6.67 </version>
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1197,9 +1165,9 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
     <target>ubuntu</target>
-    <target-version>16.04</target-version>
+    <target-version>14.04</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-alpha/raw/names/ocpn_draw_pi-1.6.59-ubuntu-16.04-xenial-tarball/versions/1.6.59.0+375.5a81c45/ocpn_draw_pi-1.6.59.0_ubuntu-16.04-xenial.tar.gz
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.67-ubuntu-14.04-trusty-tarball/versions/1.6.67.0+505.4b17eb1/ocpn_draw_pi-1.6.67.0_ubuntu-14.04-trusty.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
@@ -1222,78 +1190,9 @@ EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>20.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-20.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-gtk3-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.1.1 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves), Guard zones,
-AIS overlay on PPI, and various radar dependent features such as
-dual radar range and Doppler.
-</description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-raspbian-10-tarball/versions/v5.1.1/radar_pi-5.1.1.3_raspbian-10.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.1.1 </version>
-    <release> 3 </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <description>
-This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves), Guard zones,
-AIS overlay on PPI, and various radar dependent features such as
-dual radar range and Doppler.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-darwin-10.13.6-tarball/versions/v5.1.1/radar_pi-5.1.1.3_darwin-10.13.6.tar.gz </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-flatpak-18.08-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_flatpak-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1332,64 +1231,55 @@ EULA. The charts has world-wide coverage and provides a cost-effective
 way to access the national chart databases. Charts are encrypted and
 can only be used after purchasing decryption keys from o-charts.org.
   </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-flatpak-18.08-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_flatpak-18.08.tar.gz </tarball-url>
+    <target>ubuntu-gtk3</target>
+    <target-version>20.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-20.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-gtk3-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
+    <name> Radar </name>
+    <version> 5.1.1 </version>
     <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-    Weather_Routing Plugin optimizes weather routing
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-fedora-29-tarball/versions/1.13.5.3+504.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_fedora-29.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+    <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-ubuntu-18.04-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_ubuntu-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 2 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>debian</target>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>raspbian</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/vdr-debian-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_debian-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-raspbian-10-tarball/versions/v5.1.1/radar_pi-5.1.1.3_raspbian-10.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.7 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-msvc-10.0.14393-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1413,6 +1303,135 @@ dual radar range and Doppler.
     <target-version>29</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-fedora-29-tarball/versions/5.1.0-beta2.3.50f50e7/radar_pi-5.1.0-beta2.3_fedora-29.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.5 </version>
+    <release> 3 </release>
+    <summary> Plugin to complete optimal routing with weather files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    Weather_Routing Plugin optimizes weather routing
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-16.04-tarball/versions/1.13.5.3+509.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-16.04.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.1 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-darwin-10.13.6-tarball/versions/v5.1.1/radar_pi-5.1.1.3_darwin-10.13.6.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.1.1 </version>
+    <release> 3 </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <description>
+This plugin connects OpenCPN to Garmin (x)HD and Navico Broadband and HALO radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves), Guard zones,
+AIS overlay on PPI, and various radar dependent features such as
+dual radar range and Doppler.
+</description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-stable/raw/names/radar-flatpak-18.08-tarball/versions/v5.1.1/radar_pi-5.1.1.3_flatpak-18.08.tar.gz </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.7 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-16.04-tarball/versions/4.2.7.0.d8345cc/oesenc_pi-4.2.7-0_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 2 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/VDR-raspbian-10-tarball/versions/1.2.0.2.c4b48a8/vdr_pi-0.5.0-2_raspbian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
