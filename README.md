@@ -11,7 +11,7 @@ icons in the `icons/` directory.
 Dependencies
 ------------
 
-  - python >= 3.4
+  - python >= 3.6    (for print f)
   - GNU make (optional)
 
 
