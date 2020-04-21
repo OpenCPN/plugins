@@ -1,24 +1,21 @@
-ECHO off
+REM ECHO off
 REM  Alternative: command && success action || failure action
-IF EXIST ..\ocpn-plugins.xml ( 
-DEL ..\ocpn-plugins-bak.xml 
-ECHO ocpn-plugins.xml found and ocpn-plugins-bak.xml removed or does not exist.
+ECHO on
+IF EXIST ..\ocpn-plugins.xml (
+DEL ..\ocpn-plugins-bak.xml
+ECHO ocpn-plugins.xml found and ocpn-plugins-bak.xml removed 
 COPY ..\ocpn-plugins.xml ..\ocpn-plugins-bak.xml
 ECHO ocpn-plugins.xml file copied to ocpn-plugins-bak.xml   
 ECHO Generating new ocpn-plugins.xml  
-python ocpn-metadata generate --userdir ..\metadata --destfile ..\ocpn-plugins.xml --force --verbose
-CD ..
-ECHO Checking all metadata urls.
-python check-metadata-urls
-DIR
+python ocpn-metadata generate --userdir ..\metadata --destfile ..\ocpn-plugins.xml --force
 ) ELSE (
-ECHO ocpn-plugins.xml not found. Generating new ocpn-plugins.xml
-python ocpn-metadata generate --userdir ..\metadata --destfile ..\ocpn-plugins.xml --verbose
+ECHO ocpn-plugins.xml not found
+ECHO Generating new ocpn-plugins.xml
+python ocpn-metadata generate --userdir ..\metadata --destfile ..\ocpn-plugins.xml 
+ )
 CD ..
 ECHO Checking all metadata urls.
-python check-metadata-urls
-DIR ..
-)
+python  tools\check-metadata-urls
 ::   ECHO Check all metadata urls?
 ::   ECHO 1 Yes
 ::   ECHO 2 No
