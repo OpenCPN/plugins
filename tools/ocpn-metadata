@@ -92,13 +92,12 @@ def generate(args):
     date_elem.text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     for path in Path(args.userdir).glob("*.xml"):
         if args.verbose:
-            print(f'Processing:  {path}')
+            print("Processing:  {path}")
         try:
             subtree = ET.parse(str(path))
         except ParseError as e:
             print("Error parsing %s at line %d" %
-                          (path.as_posix(), e.position[0]),
-                  file=sys.stderr)
+                          (path.as_posix(), e.position[0]))
             sys.exit(2)
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
