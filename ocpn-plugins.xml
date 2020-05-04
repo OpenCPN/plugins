@@ -1,222 +1,166 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-04-30 12:01</date>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <date>2020-05-04 12:35</date>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-darwin-10.13.6-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_darwin-10.13.6.tar.gz </tarball-url>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-debian-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
     <target>fedora</target>
     <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-fedora-29-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_fedora-29.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-fedora-29-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_fedora-29.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 0.5.1 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-flatpak-18.08-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
     <target>mingw</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-mingw-10-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_mingw-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-mingw-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 3 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url> </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-msvc-10.0.14393-tarball/versions/v0.5.1/vdr_pi-0.5.1-3_msvc-10.0.14393.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-msvc-10.0.14393-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url> </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-10-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_raspbian-10-armhf.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
 </description>
     <target>raspbian</target>
     <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-9.4-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_raspbian-9.4-armhf.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/NmeaConverter-raspbian-9.4-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_raspbian-9.4.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-14.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-14.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
     <target>ubuntu</target>
     <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-16.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-16.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-16.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
     <target>ubuntu</target>
     <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-18.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-18.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-18.04.tar.gz </tarball-url>
   </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
     <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <info-url>  </info-url>
     <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-gtk3</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.0 </version>
-    <release> 5 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-gtk3</target>
+Plugin for manipulating nmea sentences.
+Cherry picking from existing sentences, calculate new data with
+spreadsheet like formulas or just plain send  new sentences.
+Not easy, although it is easy to make errors and crash OpenCPN
+  </description>
+    <target>ubuntu</target>
     <target-version>20.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-20.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-20.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-20.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1480,211 +1424,465 @@ https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-alpha/raw/names/squ
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-darwin-10.13.6-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-fedora-29-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_fedora-29.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 0.5.1 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-flatpak-18.08-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_flatpak-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-mingw-10-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
     <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-msvc-10.0.14393-tarball/versions/v0.5.1/vdr_pi-0.5.1-3_msvc-10.0.14393.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-10-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_raspbian-10-armhf.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-9.4-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_raspbian-9.4-armhf.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-14.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-14.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-16.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>20.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-20.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>darwin</target>
     <target-version>10.13.6</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-darwin-10.13.6-tarball/versions/1.13.5.3+506.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_darwin-10.13.6.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-darwin-10.13.6-macos-tarball/versions/1.13.7.0+1323.c7fc1ad/weather_routing_pi-1.13.7.0_darwin-10.13.6-macos.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>debian</target>
     <target-version>10</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-debian-10-tarball/versions/1.13.5.3+508.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_debian-10.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-debian-10-buster-tarball/versions/1.13.7.0+1333.c7fc1ad/weather_routing_pi-1.13.7.0_debian-10-buster.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>fedora</target>
     <target-version>29</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-fedora-29-tarball/versions/1.13.5.3+504.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_fedora-29.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-fedora-29-fedora-tarball/versions/1.13.7.0+1330.c7fc1ad/weather_routing_pi-1.13.7.0_fedora-29-fedora.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>flatpak</target>
     <target-version>18.08</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-flatpak-18.08-tarball/versions/1.13.5.3+505.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_flatpak-18.08.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-flatpak-18.08-flatpak-tarball/versions/1.13.7.0+1326.c7fc1ad/weather_routing_pi-1.13.7.0_flatpak-18.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>mingw</target>
     <target-version>10</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-mingw-10-tarball/versions/1.13.5.3+511.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_mingw-10.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-mingw-10-mingw-tarball/versions/1.13.7.0+1324.c7fc1ad/weather_routing_pi-1.13.7.0_mingw-10-mingw.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Weather_Routing Plugin optimizes weather routing
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-msvc-10.0.14393-tarball/versions/1.13.5.+151.c4cdefd/weather_routing_pi-1.13.5.3-ov50-1.16_msvc-10.0.14393.tar.gz
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-msvc-10.0.14393-MSVC-tarball/versions/1.13.7.0+239.c7fc1ad/weather_routing_pi-1.13.7.0_msvc-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Weather_Routing Plugin optimizes weather routing
-</description>
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+  </description>
     <target>raspbian</target>
     <target-version>10</target-version>
     <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-10-tarball/versions/1.13.5..c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-10.tar.gz
-</tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-raspbian-10-buster-armhf-tarball/versions/1.13.7.0+1325.c7fc1ad/weather_routing_pi-1.13.7.0_raspbian-10-buster-armhf.tar.gz
+  </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Weather_Routing Plugin optimizes weather routing
-</description>
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+  </description>
     <target>raspbian</target>
     <target-version>9.4</target-version>
     <tarball-url>
-https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-raspbian-9.4-tarball/versions/1.13.5..b6843e4/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_raspbian-9.4.tar.gz
-</tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-raspbian-9.4-stretch-armhf-tarball/versions/1.13.7.0+1.c7fc1ad/weather_routing_pi-1.13.7.0_raspbian-9.4-stretch-armhf.tar.gz
+  </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>ubuntu</target>
     <target-version>14.04</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-14.04-tarball/versions/1.13.5.3+510.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-14.04.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-ubuntu-14.04-trusty-tarball/versions/1.13.7.0+1331.c7fc1ad/weather_routing_pi-1.13.7.0_ubuntu-14.04-trusty.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>ubuntu</target>
     <target-version>16.04</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-16.04-tarball/versions/1.13.5.3+509.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-16.04.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-ubuntu-16.04-xenial-tarball/versions/1.13.7.0+1328.c7fc1ad/weather_routing_pi-1.13.7.0_ubuntu-16.04-xenial.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.5 </version>
-    <release> 3 </release>
-    <summary> Plugin to complete optimal routing with weather files </summary>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
     <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-    Weather_Routing Plugin optimizes weather routing
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+  </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-ubuntu-18.04-bionic-gtk3-tarball/versions/1.13.7.0+1329.c7fc1ad/weather_routing_pi-1.13.7.0_ubuntu-18.04-bionic-gtk3.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
   </description>
     <target>ubuntu</target>
     <target-version>18.04</target-version>
     <tarball-url>
-    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-ubuntu-18.04-tarball/versions/1.13.5.3+507.c4cdefd/opencpn-plugin-weather_routing-1.13.5.3-ov50-1.16_ubuntu-18.04.tar.gz
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-ubuntu-18.04-bionic-tarball/versions/1.13.7.0+1322.c7fc1ad/weather_routing_pi-1.13.7.0_ubuntu-18.04-bionic.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+    WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+  </description>
+    <target>ubuntu</target>
+    <target-version>20.04</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-ubuntu-20.04-focal-tarball/versions/1.13.7.0+1327.c7fc1ad/weather_routing_pi-1.13.7.0_ubuntu-20.04-focal.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
@@ -1934,165 +2132,5 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-beta/raw/names/windvane_pi
     https://dl.cloudsmith.io/public/jon-gough/windvane_pi-beta/raw/names/windvane_pi-1.0.8-ubuntu-20.04-focal-tarball/versions/1.0.8.0+127.d8547f9/windvane_pi-1.0.8.0_ubuntu-20.04-focal.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-</description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/NmeaConverter-raspbian-9.4-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_raspbian-9.4.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
-    <target-version>20.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-20.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-debian-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-fedora-29-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_fedora-29.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-msvc-10.0.14393-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-18.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-16.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>  </info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-mingw-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
   </plugin>
 </plugins>
