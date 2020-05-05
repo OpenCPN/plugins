@@ -11,14 +11,11 @@
 
 function usage() {
      cat << EOF
-
 Usage: ocpn-uninstall.sh <plugin> <platform | manifest>
-
 Parameters:
     plugin:    Name of plugin, typically with a _pi suffix.
     platform:  windows, linux, darwin or flatpak.
     manifest:  Path to installation manifest, as printed at installation
-
 Example:
     ./ocpn-uninstall.sh oesenc_pi windows
 EOF
