@@ -130,3 +130,4 @@ echo $version > $version_file
 
 cd $here
 rm -rf $tmpdir
+
