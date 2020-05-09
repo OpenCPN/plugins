@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-05-08 20:06</date>
+  <date>2020-05-08 20:34</date>
   <plugin version="2">
     <name> Nmea_Converter </name>
     <version> 1.2.1 </version>
@@ -1638,6 +1638,44 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target>ubuntu-gtk3</target>
     <target-version>20.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-20.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.8 </version>
+    <release> 1 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/watchdog_pi-2.4.8-msvc-10.0.14393-MSVC-tarball/versions/v2.4.8.1/watchdog_pi-2.4.8.1_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.7 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing_pi-1.13.7-msvc-10.0.14393-MSVC-tarball/versions/1.13.7.0+239.c7fc1ad/weather_routing_pi-1.13.7.0_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
