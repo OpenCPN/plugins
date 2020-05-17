@@ -1,10 +1,17 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
+<<<<<<< HEAD
   <date>2020-05-16 23:05</date>
   <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.7 </version>
+=======
+  <date>2020-05-08 20:34</date>
+  <plugin version="2">
+    <name> Nmea_Converter </name>
+    <version> 1.2.1 </version>
+>>>>>>> 7d9b882f1884396722edeb5f17fd9f6a8e1967cb
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -1709,6 +1716,7 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/VDR-raspbian-9.4-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_raspbian-9.4-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+<<<<<<< HEAD
     <name> oeSENC </name>
     <version> 4.2.8 </version>
     <release> 0 </release>
@@ -1730,6 +1738,115 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>mingw</target>
     <target-version>10</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.8.0.430ab71/oesenc_pi-4.2.8-0_mingw-10.tar.gz </tarball-url>
+=======
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-14.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-14.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-16.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>18.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-18.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.0 </version>
+    <release> 5 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3</target>
+    <target-version>20.04</target-version>
+    <tarball-url> https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/vdr-ubuntu-gtk3-20.04-tarball/versions/v0.5.1.5/vdr_pi-0.5.1-5_ubuntu-gtk3-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.8 </version>
+    <release> 1 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <tarball-url>
+https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-prod/raw/names/watchdog_pi-2.4.8-msvc-10.0.14393-MSVC-tarball/versions/v2.4.8.1/watchdog_pi-2.4.8.1_msvc-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+>>>>>>> 7d9b882f1884396722edeb5f17fd9f6a8e1967cb
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1755,6 +1872,7 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-20.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-gtk3-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+<<<<<<< HEAD
     <name> Radar </name>
     <version> 5.1.3 </version>
     <release> 0 </release>
@@ -1855,6 +1973,48 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.6.70 </version>
+=======
+    <name> windvane </name>
+    <version> 1.0.8 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+  </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-beta/raw/names/windvane_pi-1.0.8-darwin-10.13.6-macos-tarball/versions/1.0.8.0+136.d8547f9/windvane_pi-1.0.8.0_darwin-10.13.6-macos.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.8 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+  </description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-beta/raw/names/windvane_pi-1.0.8-debian-10-buster-tarball/versions/1.0.8.0+137.d8547f9/windvane_pi-1.0.8.0_debian-10-buster.tar.gz
+  </tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.8 </version>
+>>>>>>> 7d9b882f1884396722edeb5f17fd9f6a8e1967cb
     <release> 0 </release>
     <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
     <api-version> 1.16 </api-version>
