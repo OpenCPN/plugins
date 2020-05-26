@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
   <name> OCPN Draw </name>
-  <version> 1.6.70 </version>
+  <version> 1.6.93.0 </version>
   <release> 0 </release>
   <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
@@ -14,10 +14,11 @@
     OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
   </description>
 
-  <target>mingw</target>
-  <target-version>10</target-version>
+  <target>fedora</target>
+  <target-version>29</target-version>
+  <target-arch>amd64</target-arch>
   <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-beta/raw/names/ocpn_draw_pi-1.6.70-mingw-10-mingw-tarball/versions/1.6.70.0+585.60aaf7f/ocpn_draw_pi-1.6.70.0_mingw-10-mingw.tar.gz
+    https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.6.93.0-fedora-amd64_29-fedora-tarball/versions/v1.6.93/ocpn_draw_pi-1.6.93.0_fedora-amd64_29-fedora.tar.gz
   </tarball-url>
   <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
 </plugin>
