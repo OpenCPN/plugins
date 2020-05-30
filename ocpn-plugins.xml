@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-05-30 12:33</date>
+  <date>2020-05-30 19:11</date>
   <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.1 </version>
@@ -50,6 +50,46 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-x86_64-18.04-tarball/versions/4.2.8.0.adf78a4/oesenc_pi-4.2.8-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_raspbian-armhf_9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>20.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_20.04-focal-gtk3-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.1 </version>
     <release> 0 </release>
@@ -71,6 +111,66 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>flatpak</target>
     <target-version>18.08</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-18.08-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_flatpak-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>20.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_20.04-focal-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_20.04-focal.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_18.04-bionic-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -172,7 +272,7 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -180,14 +280,14 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
     <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>20.04</target-version>
+    <target-arch>amd64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_18.04-bionic-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_18.04-bionic.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_20.04-focal-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_20.04-focal.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
@@ -324,6 +424,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_raspbian-10-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.2 </version>
     <release> 4 </release>
@@ -361,26 +481,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.6.95.0-ubuntu-amd64_14.04-trusty-tarball/versions/v1.6.95.0/ocpn_draw_pi-1.6.95.0_ubuntu-amd64_14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-debian-x86_64_10-buster-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_debian-x86_64_10-buster.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -493,7 +593,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -501,35 +601,15 @@ can only be used after purchasing decryption keys from o-charts.org.
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
     <target>ubuntu</target>
     <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>amd64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_16.04-xenial-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_16.04-xenial.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_16.04-xenial-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_16.04-xenial.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-raspbian-armhf_10-buster-armhf-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_raspbian-armhf_10-buster-armhf.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -595,26 +675,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_msvc-x86_64_10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.6.95.0 </version>
     <release> 0 </release>
@@ -635,24 +695,24 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
+    <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>mingw</target>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>debian</target>
     <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>amd64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-mingw-x86_64_10-mingw-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_mingw-x86_64_10-mingw.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-debian-amd64_10-buster-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_debian-amd64_10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -777,24 +837,24 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-16.04-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
+    <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
     <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>14.04</target-version>
+    <target-arch>amd64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_18.04-bionic-gtk3-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_18.04-bionic-gtk3.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_14.04-trusty-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -821,24 +881,44 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-x86_64-16.04-tarball/versions/4.2.8.0.adf78a4/oesenc_pi-4.2.8-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
+    <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>ubuntu</target>
-    <target-version>20.04</target-version>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_20.04-focal-gtk3-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_20.04-focal-gtk3.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-darwin-x86_64_10.13.6-macos-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_darwin-x86_64_10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_18.04-bionic-gtk3-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="2">
     <name> Nmea_Converter </name>
@@ -984,6 +1064,26 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-fedora-x86_64_29-fedora-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_fedora-x86_64_29-fedora.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.8 </version>
     <release> 0 </release>
@@ -1006,26 +1106,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-armhf-10-tarball/versions/4.2.8.0.adf78a4/oesenc_pi-4.2.8-0_raspbian-armhf-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>ubuntu</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_20.04-focal-gtk3-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_20.04-focal-gtk3.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1109,46 +1189,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-darwin-x86_64_10.13.6-macos-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_darwin-x86_64_10.13.6-macos.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_msvc-x86_64_10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.2 </version>
     <release> 5 </release>
@@ -1166,6 +1206,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-20.04-tarball/versions/v1.2.2/vdr_pi-1.2.2-5_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_18.04-bionic-gtk3-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1231,6 +1291,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-darwin-x86_64_10.13.6-macos-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_darwin-x86_64_10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.2 </version>
     <release> 5 </release>
@@ -1248,26 +1328,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-flatpak-18.08-tarball/versions/v1.2.2/vdr_pi-1.2.2-5_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-fedora-x86_64_29-fedora-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_fedora-x86_64_29-fedora.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -1314,46 +1374,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_14.04-trusty-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_14.04-trusty.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_18.04-bionic-gtk3-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_18.04-bionic-gtk3.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.5.15 </version>
     <release> 15 </release>
@@ -1375,7 +1395,7 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -1383,35 +1403,15 @@ such as dual radar range and Doppler.
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu</target>
+    <target-version>20.04</target-version>
+    <target-arch>amd64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-debian-x86_64_10-buster-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_debian-x86_64_10-buster.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_20.04-focal-gtk3-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_20.04-focal-gtk3.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>raspbian</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_raspbian-armhf_9.4-stretch-armhf.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -1496,6 +1496,26 @@ Not easy, although it is easy to make errors and crash OpenCPN
     <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-mingw-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian</target>
+    <target-version>10</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-debian-amd64_10-buster-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_debian-amd64_10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
     <release> 7 </release>
@@ -1518,26 +1538,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-x86_64-16.04-tarball/versions/5.1.4.7.29db9fe/radar_pi-ubuntu-x86_64-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>raspbian</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-raspbian-armhf_10-buster-armhf-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_raspbian-armhf_10-buster-armhf.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -1604,6 +1604,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-x86_64-18.04-tarball/versions/4.2.8.0.adf78a4/oesenc_pi-4.2.8-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-raspbian-armhf_10-buster-armhf-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_raspbian-armhf_10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.1 </version>
     <release> 0 </release>
@@ -1645,26 +1665,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.6.95.0-ubuntu-amd64_16.04-xenial-tarball/versions/v1.6.95.0/ocpn_draw_pi-1.6.95.0_ubuntu-amd64_16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>ubuntu</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_18.04-bionic-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_18.04-bionic.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1826,7 +1826,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -1834,34 +1834,14 @@ can only be used after purchasing decryption keys from o-charts.org.
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0-x86_64_flatpak-18.08.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
     <target>raspbian</target>
     <target-version>9.4</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_raspbian-armhf_9.4-stretch-armhf.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_raspbian-armhf_9.4-stretch-armhf.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="2">
@@ -1883,26 +1863,6 @@ Not easy, although it is easy to make errors and crash OpenCPN
     <target>ubuntu</target>
     <target-version>20.04</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-20.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_16.04-xenial-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_16.04-xenial.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1945,6 +1905,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-alpha/raw/names/squiddio_pi-1.3.2-raspbian-10-buster-armhf-tarball/versions/1.3.2.4+1549.29d9cee/squiddio_pi-1.3.2.4_raspbian-10-buster-armhf.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>fedora</target>
+    <target-version>29</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-fedora-x86_64_29-fedora-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_fedora-x86_64_29-fedora.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2107,6 +2087,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-darwin-10.13.6-tarball/versions/v1.2.2/vdr_pi-1.2.2-5_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>14.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_14.04-trusty-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.2 </version>
     <release> 4 </release>
@@ -2124,6 +2124,46 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-alpha/raw/names/squiddio_pi-1.3.2-raspbian-9.4-stretch-armhf-tarball/versions/1.3.2.4+1538.0e37bf9/squiddio_pi-1.3.2.4_raspbian-9.4-stretch-armhf.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_msvc-x86_64_10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu</target>
+    <target-version>18.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-ubuntu-amd64_18.04-bionic-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_ubuntu-amd64_18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -2213,26 +2253,6 @@ Not easy, although it is easy to make errors and crash OpenCPN
     <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-msvc-10.0.14393-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>ubuntu</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_20.04-focal-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_20.04-focal.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
     <release> 7 </release>
@@ -2278,7 +2298,7 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -2286,14 +2306,14 @@ such as dual radar range and Doppler.
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>mingw</target>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>raspbian</target>
     <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-mingw-x86_64_10-mingw-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_mingw-x86_64_10-mingw.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-raspbian-armhf_10-buster-armhf-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_raspbian-armhf_10-buster-armhf.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
@@ -2345,26 +2365,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
-    <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>ubuntu</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-ubuntu-x86_64_20.04-focal-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_ubuntu-x86_64_20.04-focal.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.6.95.0 </version>
     <release> 0 </release>
@@ -2404,24 +2404,24 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-14.04-tarball/versions/v1.2.2/vdr_pi-1.2.2-5_ubuntu-x86_64-14.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
     <release> 0 </release>
-    <summary> Plugin to provide windvane like autopilot </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/windvane_pi </source>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-darwin-x86_64_10.13.6-macos-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_darwin-x86_64_10.13.6-macos.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-mingw-x86_64_10-mingw-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_mingw-x86_64_10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2445,7 +2445,7 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
   </plugin>
   <plugin version="1">
     <name> windvane </name>
-    <version> 1.0.12.0 </version>
+    <version> 1.0.13.0 </version>
     <release> 0 </release>
     <summary> Plugin to provide windvane like autopilot </summary>
     <api-version> 1.16 </api-version>
@@ -2453,35 +2453,15 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <author> Jon Gough </author>
     <source> https://github.com/jongough/windvane_pi </source>
     <description>
-    Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
-  </description>
-    <target>fedora</target>
-    <target-version>29</target-version>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.12.0-fedora-x86_64_29-fedora-tarball/versions/v1.0.12.0/windvane_pi-1.0.12.0_fedora-x86_64_29-fedora.tar.gz
-  </tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-mingw-x86_64_10-mingw-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_mingw-x86_64_10-mingw.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0-x86_64_flatpak-18.08.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -2528,26 +2508,6 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/ocpn_draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.98.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-    testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-  </description>
-    <target>ubuntu</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.98.0-ubuntu-x86_64_14.04-trusty-tarball/versions/v1.0.98/testplugin_pi-1.0.98.0_ubuntu-x86_64_14.04-trusty.tar.gz
-  </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.1 </version>
     <release> 0 </release>
@@ -2570,6 +2530,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10.13.6</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.13.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.13.0-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.0.13.0/windvane_pi-1.0.13.0_msvc-x86_64_10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
   <plugin version="2">
     <name> Nmea_Converter </name>
     <version> 1.2.1 </version>
@@ -2589,5 +2569,25 @@ Not easy, although it is easy to make errors and crash OpenCPN
     <target>raspbian</target>
     <target-version>9.4</target-version>
     <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/NmeaConverter-raspbian-9.4-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_raspbian-9.4.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.102.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW 1234# </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu</target>
+    <target-version>16.04</target-version>
+    <target-arch>amd64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.102.0-ubuntu-amd64_16.04-xenial-tarball/versions/v1.0.102.0/testplugin_pi-1.0.102.0_ubuntu-amd64_16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
 </plugins>
