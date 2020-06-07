@@ -26,7 +26,7 @@
       <xs:element name="description" type="xs:string"/>
       <xs:element name="target" type="xs:token"/>
       <xs:element name="target-version" type="xs:token"/>
-      <xs:element name="target-arch" type="xs:token"/>
+      <xs:element ref="target-arch"/>
       <xs:element name="tarball-url" type="xs:token"/>
       <!-- Tarball sha256 checksum , not implemented. -->
       <xs:element name="tarball-checksum" type="xs:token"
@@ -44,5 +44,17 @@
     </xs:restriction>
   </xs:simpleType>
 </xs:element>
+
+
+<xs:element name="target-arch">
+  <xs:simpleType>
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "i386"/>
+      <xs:enumeration value = "x86_64"/>
+      <xs:enumeration value = "armhf"/>
+      <xs:enumeration value = "arm64"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
 
 </xs:schema>
