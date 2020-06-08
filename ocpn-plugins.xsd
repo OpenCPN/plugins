@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<xs:include schemaLocation="ocpn-plugin.xsd"/>
+
 <xs:element name="plugins">
   <xs:complexType>
     <xs:sequence>
@@ -10,71 +12,5 @@
    </xs:sequence>
   </xs:complexType>
 </xs:element>
-
-<xs:element name="plugin">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="name" type="xs:token"/>
-      <xs:element name="version" type="xs:token"/>
-      <xs:element name="release" type="xs:token"/>
-      <xs:element ref="summary"/>
-      <xs:element name="api-version" type="xs:token"/>
-      <xs:element name="open-source" type="xs:token"/>
-      <xs:element name="author" type="xs:token"/>
-      <xs:element name="source" type="xs:token"/>
-      <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="description" type="xs:string"/>
-      <xs:element ref="target"/>
-      <xs:element name="target-version" type="xs:token"/>
-      <xs:element ref="target-arch"/>
-      <xs:element name="tarball-url" type="xs:token"/>
-      <!-- Tarball sha256 checksum , not implemented. -->
-      <xs:element name="tarball-checksum" type="xs:token"
-                  minOccurs="0" maxOccurs="1"/>
-      <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-    </xs:sequence>
-    <xs:attribute name="version" type="xs:string" use="required"/> 
-  </xs:complexType>
-</xs:element>
-
-<xs:element name="summary">
-  <xs:simpleType>
-    <xs:restriction base="xs:token">
-      <xs:maxLength value="72"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:element>
-
-
-<xs:element name="target-arch">
-  <xs:simpleType>
-    <xs:restriction base = "xs:string">
-      <xs:enumeration value = "i386"/>
-      <xs:enumeration value = "x86_64"/>
-      <xs:enumeration value = "armhf"/>
-      <xs:enumeration value = "arm64"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:element> 
-
-<xs:element name="target">
-  <xs:simpleType>
-    <xs:restriction base = "xs:string">
-      <xs:enumeration value = "darwin"/>
-      <xs:enumeration value = "debian-armhf"/>
-      <xs:enumeration value = "debian-x86_64"/>
-      <xs:enumeration value = "flatpak"/>
-      <xs:enumeration value = "flatpak-x86_64"/>
-      <xs:enumeration value = "mingw"/>
-      <xs:enumeration value = "msvc"/>
-      <xs:enumeration value = "raspbian-armhf"/>
-      <xs:enumeration value = "ubuntu-arm64"/>
-      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
-      <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
-      <xs:enumeration value = "ubuntu-x86_64"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:element> 
-
 
 </xs:schema>
