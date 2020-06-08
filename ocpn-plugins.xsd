@@ -24,7 +24,7 @@
       <xs:element name="source" type="xs:token"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="description" type="xs:string"/>
-      <xs:element name="target" type="xs:token"/>
+      <xs:element ref="target"/>
       <xs:element name="target-version" type="xs:token"/>
       <xs:element ref="target-arch"/>
       <xs:element name="tarball-url" type="xs:token"/>
@@ -56,5 +56,25 @@
     </xs:restriction>
   </xs:simpleType>
 </xs:element> 
+
+<xs:element name="target">
+  <xs:simpleType>
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "darwin"/>
+      <xs:enumeration value = "debian-armhf"/>
+      <xs:enumeration value = "debian-x86_64"/>
+      <xs:enumeration value = "flatpak"/>
+      <xs:enumeration value = "flatpak-x86_64"/>
+      <xs:enumeration value = "mingw"/>
+      <xs:enumeration value = "msvc"/>
+      <xs:enumeration value = "raspbian-armhf"/>
+      <xs:enumeration value = "ubuntu-arm64"/>
+      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
+      <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
+      <xs:enumeration value = "ubuntu-x86_64"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
 
 </xs:schema>
