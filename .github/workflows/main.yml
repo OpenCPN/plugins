@@ -23,7 +23,9 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: create ocpn-plugins.xml
-      run: python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
+      run: |
+        pip install pathlib,
+        python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force.
 #        echo "testing",
 #        python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force.
 
