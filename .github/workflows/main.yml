@@ -23,7 +23,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: create ocpn-plugins.xml
-      run: python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
+      run: |
+        echo testing,
+        echo "testing",
+        python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force.
 
     # Runs a set of commands using the runners shell
 #    - name: Run a multi-line script
