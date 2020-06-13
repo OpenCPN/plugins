@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: create ocpn-plugins.xml
       run: |
-         if: ${{github.event.pull_request.merged == true}}
+         if: github.event.pull_request.merged
             pip install pathlib
             python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
 
