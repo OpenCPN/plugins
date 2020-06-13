@@ -19,7 +19,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: create ocpn-plugins.xml
-        run: if: ${{github.event.pull_request.merged == true}}
+      run: |
+         if: ${{github.event.pull_request.merged == true}}
             pip install pathlib
             python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
 
