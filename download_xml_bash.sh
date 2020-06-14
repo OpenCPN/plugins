@@ -14,21 +14,33 @@ if [ "$#" -ne "4" ]; then
 fi
 
 REPO="https://cloudsmith.io/~$3/repos/"
-echo "Issuing command: lynx -dump $REPO$1-$4/packages/?q=*$2*.xml |  awk {'print $2'} |grep '.xml$' |grep $1-$2"
+echo "Issuing command: wget -O - $REPO$1-$4/packages/?q=*$2*.xml |  awk {'print $2'} |grep '.xml$' |grep $1-$2"
 my_array=()
 echo "Show current files that match criteria"
 ls metadata/$1-$2*xml -la
 echo "Deleting current files that match criteria"
 rm metadata/$1-$2*xml
 echo "Finding files on remote cloudsmith repository"
-while IFS= read -r line; do
-    my_array+=( "$line" )
-done < <( lynx -dump $REPO$1-$4/packages/?q=*$2*.xml |  awk {'print $2'} |grep '.xml$' |grep $1-$2 )
+delimiter="href=\""
+delimiter1=".xml\" title"
+s=$str$delimiter
+my_array=();
+while read -r line; do
+	if [[ $line == *$delimiter* ]] && [[ $line == *$delimiter1* ]]; then
+		start=`awk -v a="$line" -v b="$delimiter" 'BEGIN{print index(a,b)}'`
+		start=$((start + ${#delimiter} - 1))
+		end=`awk -v a="$line" -v b="$delimiter1" 'BEGIN{print index(a,b)}'`
+		end=$((end + 3 - start))
+		line=${line:$start:$end}
+		my_array+=( $line );
+		echo"line: $line"
+	fi
+done < <(wget -O - "$REPO$1-$4/packages/?q=*$2*xml")
 
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
 do
-  echo $URL
+  echo "URL: $URL"
   wget --progress=bar:force:noscroll -c $URL -P metadata
 done
 echo "Files downloaded"
