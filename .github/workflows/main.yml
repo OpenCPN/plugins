@@ -29,14 +29,14 @@ jobs:
         git add ocpn-plugins.xml
         git commit -m "Updating the repository GitHub ocpn-plugins.xml" -a
     - name: Push changes # push the output folder to your repo
-      uses: ad-m/github-push-action@master
-      if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
+    - uses: ad-m/github-push-action@master
+      #if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
 
     - name: check xml files
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       if: ${{github.event_name == 'pull_request' && github.event.action == 'opened'}}
       run: |
         ./validate_xml.sh testplugin_pi 1.0.155
