@@ -4,7 +4,7 @@ name: CI
 # events but only for the master branch
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ Alpha ]
     types: [closed]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -28,12 +28,12 @@ jobs:
         git config --local user.name "$GITHUB_ACTOR"
         git add ocpn-plugins.xml
         git commit -m "Updating the repository GitHub ocpn-plugins.xml" -a
-    - name: Push changes # push the output folder to your repo
-      uses: ad-m/github-push-action@master
-      #if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+    #- name: Push changes # push the output folder to your repo
+    #  uses: ad-m/github-push-action@master
+    #  #if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    force: true
 
     - name: check xml files
       if: ${{github.event_name == 'pull_request' && github.event.action == 'opened'}}
