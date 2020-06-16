@@ -52,4 +52,5 @@ jobs:
     - name: check xml files
       run: |
         ./validate_xml.sh
-        #force: true
+        rc=$?
+        return $rc
