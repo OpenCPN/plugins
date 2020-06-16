@@ -4,7 +4,7 @@ name: CI
 # events but only for the master branch
 on:
   pull_request:
-    branches: [ master Alpha Beta Experimental]
+    branches: [ master Alpha Beta Experimental ]
     types: [opened closed]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -17,8 +17,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - name: create ocpn-plugins.xml
     - uses: actions/checkout@v2
+    - name: create ocpn-plugins.xml
       if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
       run: |
         pip install pathlib
