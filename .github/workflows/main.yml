@@ -5,21 +5,21 @@ name: CI
 on:
   pull_request:
     branches: [ master Alpha Beta Experimental]
-    types: [closed]
+    types: [opened closed]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  job1:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
     - name: create ocpn-plugins.xml
-      if: ${{github.event.pull_request.merged}}
+    - uses: actions/checkout@v2
+      if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
       run: |
         pip install pathlib
         python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
@@ -29,28 +29,15 @@ jobs:
         git add ocpn-plugins.xml
         git commit -m "Updating the repository GitHub ocpn-plugins.xml" -a
     - name: Push changes # push the output folder to your repo
+      if: ${{github.event.pull_request.merged && github.event.action == 'closed'}}
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
-on:
-  # Validate provided xml when pull request generated
-  pull_request:
-    branches: [ master Alpha Beta Experimental]
-    types: [opened]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
     - name: check xml files
+      if: ${{github.event_name == 'pull_request' && github.event.action == 'opened'}}
+      uses: actions/checkout@v2
       run: |
         ./validate_xml.sh testplugin_pi 1.0.155
         rc=$?
