@@ -5,7 +5,7 @@ name: CI_Merge
 on:
   pull_request:
     branches: [ master ]
-    types: [closed]
+    types: [created closed]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,3 +29,12 @@ jobs:
         git add ocpn-plugins.xml
         git commit -m "Updating the repository GitHub ocpn-plugins.xml" -a
         git push
+    - name: pull new xml
+      if: ${{github.event.pull_request.merged && github.event.action == 'created'}}
+      run: |
+        apt install xmllint
+        chmod a+x validate_xml.sh
+        ./validate_xml.sh testplugin_pi 1.0.155
+        rc=$?
+        return $rc
+
