@@ -17,6 +17,7 @@ do
 	rc=$?
 	if [ $rc -gt 0 ]; then
 		`xmllint  --schema ocpn-plugins.xsd $file --noout`
+		exit_rc=$rc
 	fi
 done
-
+exit $exit_rc
