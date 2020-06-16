@@ -21,6 +21,7 @@ jobs:
     - name: check xml files
       if: ${{github.event_name == 'pull_request' && github.event.action == 'opened'}}
       run: |
+        apt install xmllint
         chmod a+x validate_xml.sh
         ./validate_xml.sh testplugin_pi 1.0.155
         rc=$?
