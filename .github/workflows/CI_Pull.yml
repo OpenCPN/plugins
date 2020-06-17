@@ -18,14 +18,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    #- uses: actions/checkout@v2
-    #- name: check xml files
-    #  run: |
-    #    dpkg --install xmllint
-    #    bash ./validate_xml.sh testplugin_pi 1.0.155
-    #    rc=$?
-    #    return $rc
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      #- uses: actions/checkout@v2
+      #- name: check xml files
+      #  run: |
+      #    dpkg --install xmllint
+      #    bash ./validate_xml.sh testplugin_pi 1.0.155
+      #    rc=$?
+      #    return $rc
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build Docker image
