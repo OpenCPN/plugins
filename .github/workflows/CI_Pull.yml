@@ -32,6 +32,6 @@ jobs:
       uses: ./.docker/lint-xml-configuration
 
     - name: Lint XML configuration files
-        uses: ./.docker/lint-xml-configuration
-        with:
-            args: bash ./validate_xml.sh testplugin_pi 1.0.11
+      uses: ./.docker/lint-xml-configuration
+      with:
+        args: bash ./validate_xml.sh testplugin_pi 1.0.11
