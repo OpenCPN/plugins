@@ -5,7 +5,7 @@ name: CI_Pull
 on:
   pull_request:
     branches: [ master ]
-    types: [ created, opened ]
+    types: [ opened, reopened, review_requested ]
   check_run:
 
 
@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: check xml files
       run: |
-        apt install xmllint
+        dpkg --install xmllint
         bash ./validate_xml.sh testplugin_pi 1.0.155
         rc=$?
         return $rc
