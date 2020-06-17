@@ -5,8 +5,9 @@ name: CI_Pull
 on:
   pull_request:
     branches: [ master ]
-    types:
-      - created
+    types: [ created ]
+  check_run:
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,7 +23,6 @@ jobs:
     - name: check xml files
       run: |
         apt install xmllint
-        chmod a+x validate_xml.sh
-        ./validate_xml.sh testplugin_pi 1.0.155
+        bash ./validate_xml.sh testplugin_pi 1.0.155
         rc=$?
         return $rc
