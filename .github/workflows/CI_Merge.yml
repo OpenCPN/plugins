@@ -3,9 +3,9 @@ name: CI_Merge
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  pull_request:
+  # only deal with push events
+  push:
     branches: [ master ]
-    types: [ closed ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,7 +19,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: create ocpn-plugins.xml
-      if: ${{github.event.pull_request.merged}}
       run: |
         pip install pathlib
         python tools/ocpn-metadata generate --userdir metadata --destfile ocpn-plugins.xml --force
