@@ -21,4 +21,12 @@ do
 		exit_rc=$rc
 	fi
 done
+while read -r file; do
+	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
+	rc=$?
+	if [ $rc -gt 0 ]; then
+		`xmllint  --schema ocpn-plugins.xsd $file --noout`
+		exit_rc=$rc
+	fi
+done < <(git --no-pager diff --name-only FETCH_HEAD)
 exit $exit_rc
