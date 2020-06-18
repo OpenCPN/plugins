@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt install libxml2-utils
           #ls -l metadata
-          git diff --name-only master...HEAD
+          git --no-pager diff --name-only master...HEAD
           bash ./validate_xml.sh testplugin_pi 1.0.117
           rc=$?
           return $rc
