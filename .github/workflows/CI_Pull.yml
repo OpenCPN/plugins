@@ -23,6 +23,7 @@ jobs:
       - name: check xml files
         run: |
           sudo apt install libxml2-utils
-          bash ./validate_xml.sh testplugin_pi 1.0.155
+          ls -l metadata
+          bash ./validate_xml.sh testplugin_pi 1.0.117
           rc=$?
           return $rc
