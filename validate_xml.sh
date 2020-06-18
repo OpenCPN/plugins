@@ -12,15 +12,15 @@
 #fi
 
 #for file in metadata/$1-$2*.xml
-for file in metadata/*.xml
-do
-	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
-	rc=$?
-	if [ $rc -gt 0 ]; then
-		`xmllint  --schema ocpn-plugins.xsd $file --noout`
-		exit_rc=$rc
-	fi
-done
+#for file in metadata/*.xml
+#do
+#	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
+#	rc=$?
+#	if [ $rc -gt 0 ]; then
+#		`xmllint  --schema ocpn-plugins.xsd $file --noout`
+#		exit_rc=$rc
+#	fi
+#done
 while read -r file; do
 	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
 	rc=$?
