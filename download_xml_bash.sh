@@ -33,7 +33,7 @@ while read -r line; do
 		end=$((end + 3 - start))
 		line=${line:$start:$end}
 		my_array+=( $line );
-		echo"line: $line"
+		echo "line: $line"
 	fi
 done < <(wget -O - "$REPO$1-$4/packages/?q=*$2*xml")
 
