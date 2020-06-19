@@ -21,7 +21,7 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
             exit_rc=$rc
         fi
     done
-    if [ "$rc" == "0" ]; then
+    if [[ $exit_rc == 0 ]]; then
         echo "All files pass xsd check"
     fi
     exit $exit_rc
@@ -38,7 +38,7 @@ else
             fi
         fi
     done < <( git show --name-only --oneline HEAD )
-    if [ "$rc" == "0" ]; then
+    if [[ $exit_rc == 0 ]]; then
         echo "All files pass xsd check"
     fi
     exit $exit_rc
