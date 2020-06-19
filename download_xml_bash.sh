@@ -3,7 +3,7 @@
 if [ "$#" -ne "4" ]; then
 	echo "Incorrect invocation: Should be download_xml_bash.sh cloudsmith_repository plugin_version cloudsmith_user cloudsmith_level"
 	echo "where:"
-	echo "   cloudsmith_repository is the name of the repository on cloudsmith the files are in, i.e. testplugin-prod"
+	echo "   cloudsmith_repository is the name of the repository on cloudsmith the files are in, i.e. testplugin"
 	echo "   plugin_version is the version number, i.e. 1.0.114.0"
 	echo "   cloudsmith_user is the user name associated with the cloudsmith repository, i.e. jon-gough or opencpn"
 	echo "   cloudsmith_level is the level of the repository and is one of: prod, beta, alpha"
