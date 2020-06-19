@@ -29,7 +29,7 @@ fi
 
 exit_rc=0
 while read -r file; do
-    if [[ $file == *".xml" ]]; then
+    if [[ $file == "metadata"*".xml" ]]; then
         echo "Processing file: $file"
         `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
         rc=$?
