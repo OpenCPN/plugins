@@ -1,27 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-06-19 18:47</date>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-flatpak-x86_64-18.08-flatpak-tarball/versions/1.3.4.7+1805.87eabb0/squiddio_pi-1.3.4.7-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
+  <date>2020-06-19 21:03</date>
   <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.115.0 </version>
@@ -153,26 +133,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.9-mingw-x86_64-10-mingw-tarball/versions/v1.8.0.9/ocpn_draw_pi-1.8.0.9-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-raspbian-armhf-10-buster-armhf-tarball/versions/1.3.4.7+1815.87eabb0/squiddio_pi-1.3.4.7-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -341,6 +301,26 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -404,26 +384,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-x86_64-16.04-tarball/versions/1.2.2.0.9827207/oernc_pi-1.2.2-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.3.4.7+393.87eabb0/squiddio_pi-1.3.4.7-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -442,6 +402,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -466,6 +446,46 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-arm64-18.04-tarball/versions/4.2.10.0.9b1b34a/oesenc_pi-4.2.10-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -548,26 +568,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-mingw-10-tarball/versions/1.2.2.0.9827207/oernc_pi-1.2.2-0_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>debian-gtk3-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-debian-x86_64-10-focal-gtk3-tarball/versions/1.3.4.7+1810.87eabb0/squiddio_pi-1.3.4.7-debian-x86_64-10-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -920,6 +920,46 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -958,26 +998,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.113.0-ubuntu-x86_64_20.04-focal-gtk3-tarball/versions/v1.0.113.0/testplugin_pi-1.0.113.0_ubuntu-x86_64_20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-x86_64-16.04-xenial-tarball/versions/1.3.4.7+1811.87eabb0/squiddio_pi-1.3.4.7-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1157,6 +1177,46 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.9-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.8.0.9/ocpn_draw_pi-1.8.0.9-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-mingw-x86_64-10-mingw-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -1415,26 +1475,6 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.3.4.7+1809.87eabb0/squiddio_pi-1.3.4.7-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -1475,6 +1515,26 @@ automatic boat polar computation.
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-debian-x86_64-10-buster-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1767,46 +1827,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-mingw-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.3.4.7+1812.87eabb0/squiddio_pi-1.3.4.7-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-darwin-x86_64-10.13.6-macos-tarball/versions/1.3.4.7+1808.87eabb0/squiddio_pi-1.3.4.7-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.8.0 </version>
     <release> 0 </release>
@@ -1847,6 +1867,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -2059,26 +2099,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-debian-x86_64-10-tarball/versions/4.2.10.0.9b1b34a/oesenc_pi-4.2.10-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-x86_64-20.04-focal-tarball/versions/1.3.4.7+1806.87eabb0/squiddio_pi-1.3.4.7-ubuntu-x86_64-20.04-focal.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.10 </version>
     <release> 0 </release>
@@ -2141,6 +2161,26 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.115.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.0.115.0/testplugin_pi-1.0.115.0-darwin-x86_64-10.13.6-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -2253,26 +2293,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-darwin-10.13.6-tarball/versions/4.2.10.0.9b1b34a/oesenc_pi-4.2.10-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-x86_64-18.04-bionic-tarball/versions/1.3.4.7+1817.87eabb0/squiddio_pi-1.3.4.7-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.2 </version>
     <release> 0 </release>
@@ -2315,26 +2335,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.115.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.115.0/testplugin_pi-1.0.115.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-x86_64-14.04-trusty-tarball/versions/1.3.4.7+1807.87eabb0/squiddio_pi-1.3.4.7-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2442,6 +2442,26 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_raspbian-armhf-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.6.0 </version>
     <release> 0 </release>
@@ -2482,26 +2502,6 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-debian-x86_64-10-buster-tarball/versions/1.3.4.7+1813.87eabb0/squiddio_pi-1.3.4.7-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.11.0 </version>
     <release> 0 </release>
@@ -2520,26 +2520,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.11.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.4.11.0/watchdog_pi-2.4.11.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-mingw-x86_64-10-mingw-tarball/versions/1.3.4.7+1816.87eabb0/squiddio_pi-1.3.4.7-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -2624,6 +2604,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-ubuntu-x86_64-20.04-focal-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-ubuntu-x86_64-20.04-focal.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.6.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -2756,26 +2756,6 @@ such as dual radar range and Doppler.
     <target-arch>i386</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-mingw-10-tarball/versions/5.1.4.7.29db9fe/radar_pi-mingw-10.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> squiddio </name>
-    <version> 1.3.4.7 </version>
-    <release> 7 </release>
-    <summary> Plugin to download and display Points of Interest on a chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mauro Calvi </author>
-    <source> https://github.com/rgleason/squiddio_pi </source>
-    <description>
-Plugin to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.4.7-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.3.4.7+1.87eabb0/squiddio_pi-1.3.4.7-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
