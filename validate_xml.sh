@@ -21,6 +21,7 @@
 #		exit_rc=$rc
 #	fi
 #done
+git show --name-only --oneline HEAD
 while read -r file; do
 	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
 	rc=$?
@@ -28,5 +29,5 @@ while read -r file; do
 		`xmllint  --schema ocpn-plugins.xsd $file --noout`
 		exit_rc=$rc
 	fi
-done < <(git --no-pager diff --name-only FETCH_HEAD)
+done < <( git show --name-only --oneline HEAD)
 exit $exit_rc
