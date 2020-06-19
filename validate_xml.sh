@@ -23,11 +23,13 @@
 #done
 git show --name-only --oneline HEAD
 while read -r file; do
-	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
-	rc=$?
-	if [ $rc -gt 0 ]; then
-		`xmllint  --schema ocpn-plugins.xsd $file --noout`
-		exit_rc=$rc
+    if [[ $file == *".xml" ]]; then
+        `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
+        rc=$?
+        if [ $rc -gt 0 ]; then
+            `xmllint  --schema ocpn-plugins.xsd $file --noout`
+            exit_rc=$rc
+        fi
 	fi
 done < <( git show --name-only --oneline HEAD)
 exit $exit_rc
