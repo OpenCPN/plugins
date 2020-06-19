@@ -1,20 +1,21 @@
 #!/bin/bash
 
-if [ "$#" -ne "3" ]; then
-	echo "Incorrect invocation: Should be download_xml_bash.sh cloudsmith_repository plugin_version cloudsmith_user"
+if [ "$#" -ne "4" ]; then
+	echo "Incorrect invocation: Should be download_xml_bash.sh cloudsmith_repository plugin_version cloudsmith_user cloudsmith_level"
 	echo "where:"
 	echo "   cloudsmith_repository is the name of the repository on cloudsmith the files are in, i.e. testplugin-prod"
 	echo "   plugin_version is the version number, i.e. 1.0.114.0"
 	echo "   cloudsmith_user is the user name associated with the cloudsmith repository, i.e. jon-gough or opencpn"
+	echo "   cloudsmith_level is the level of the repository and is one of: prod, beta, alpha"
 	echo ""
 	echo "   Full command should look like:"
-	echo "      download_xml_bash.sh testplugin_pi-prod 1.0.114.0 jon-gough"
-	echo "      download_xml_bash.sh weather-routing-prod 1.13.8.0 opencpn"
+	echo "      download_xml_bash.sh testplugin_pi 1.0.114.0 jon-gough prod"
+	echo "      download_xml_bash.sh weather-routing 1.13.8.0 opencpn prod"
 	exit
 fi
 
 REPO="https://cloudsmith.io/~$3/repos/"
-echo "Issuing command: wget -q -O - $REPO$1/packages/?q=*$2*.xml"
+echo "Issuing command: wget -q -O - $REPO$1-$4/packages/?q=*$2*.xml"
 my_array=()
 echo "Show current files that match criteria"
 ls metadata/$1*-$2*xml -la
@@ -34,7 +35,7 @@ while read -r line; do
 		my_array+=( $line );
 		echo "found: $line"
 	fi
-done < <(wget -q -O - "$REPO$1/packages/?q=*$2*xml")
+done < <(wget -q -O - "$REPO$1-$4/packages/?q=*$2*xml")
 
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
