@@ -21,7 +21,6 @@
 #		exit_rc=$rc
 #	fi
 #done
-git show --name-only --oneline HEAD
 while read -r file; do
     if [[ $file == *".xml" ]]; then
         `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
