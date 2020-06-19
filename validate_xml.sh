@@ -22,7 +22,9 @@
 #	fi
 #done
 while read -r file; do
+    echo "Read file: $file"
     if [[ $file == *".xml" ]]; then
+        echo "Processing file: $file"
         `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
         rc=$?
         if [ $rc -gt 0 ]; then
@@ -30,5 +32,5 @@ while read -r file; do
             exit_rc=$rc
         fi
 	fi
-done < <( git show --name-only --oneline HEAD)
+done < <( git show --name-only --oneline HEAD | grep "*.xml")
 exit $exit_rc
