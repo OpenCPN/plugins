@@ -25,21 +25,21 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
         echo "All files pass xsd check"
     fi
     exit $exit_rc
-fi
-
-exit_rc=0
-while read -r file; do
-    if [[ $file == "metadata"*".xml" ]]; then
-        echo "Processing file: $file"
-        `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
-        rc=$?
-        if [ $rc -gt 0 ]; then
-            `xmllint  --schema ocpn-plugins.xsd $file --noout`
-            exit_rc=$rc
+else
+    exit_rc=0
+    while read -r file; do
+        if [[ $file == "metadata"*".xml" ]]; then
+            echo "Processing file: $file"
+            `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
+            rc=$?
+            if [ $rc -gt 0 ]; then
+                `xmllint  --schema ocpn-plugins.xsd $file --noout`
+                exit_rc=$rc
+            fi
         fi
-	fi
-done < <( git show --name-only --oneline HEAD )
-if [[ $rc == 0 ]]; then
-    echo "All files pass xsd check"
+    done < <( git show --name-only --oneline HEAD )
+    if [[ $rc == 0 ]]; then
+        echo "All files pass xsd check"
+    fi
+    exit $exit_rc
 fi
-exit $exit_rc
