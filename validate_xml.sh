@@ -1,28 +1,34 @@
 #!/bin/bash
 
-#if [ "$#" -ne "2" ]; then
-#	echo "Incorrect invocation: Should be validate_xml.sh plugin_name plugin_version"
-#	echo "where:"
-#	echo "   plugin_name is the name of the plugin, i.e. testplugin_pi"
-#	echo "   plugin_version is the version number, i.e. 1.0.114.0"
-#	echo ""
-#	echo "   Full command should look like:"
-#	echo "      validate_xml.sh testplugin_pi 1.0.114.0"
-#	exit
-#fi
+if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
+    if [ "$#" -ne "2" ]; then
+        echo "Incorrect invocation: Should be validate_xml.sh plugin_name plugin_version"
+        echo "where:"
+        echo "   plugin_name is the name of the plugin, i.e. testplugin_pi"
+        echo "   plugin_version is the version number, i.e. 1.0.114.0"
+        echo ""
+        echo "   Full command should look like:"
+        echo "      validate_xml.sh testplugin_pi 1.0.114.0"
+        exit
+    fi
+    exit_rc=0
+    for file in metadata/$1-$2*.xml
+    do
+        `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
+        rc=$?
+        if [ $rc -gt 0 ]; then
+            `xmllint  --schema ocpn-plugins.xsd $file --noout`
+            exit_rc=$rc
+        fi
+    done
+    if [[ $rc == 0 ]]; then
+        echo "All files pass xsd check"
+    fi
+    exit $exit_rc
+fi
 
-#for file in metadata/$1-$2*.xml
-#for file in metadata/*.xml
-#do
-#	`xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
-#	rc=$?
-#	if [ $rc -gt 0 ]; then
-#		`xmllint  --schema ocpn-plugins.xsd $file --noout`
-#		exit_rc=$rc
-#	fi
-#done
+exit_rc=0
 while read -r file; do
-    echo "Read file: $file"
     if [[ $file == *".xml" ]]; then
         echo "Processing file: $file"
         `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
@@ -33,4 +39,7 @@ while read -r file; do
         fi
 	fi
 done < <( git show --name-only --oneline HEAD )
+if [[ $rc == 0 ]]; then
+    echo "All files pass xsd check"
+fi
 exit $exit_rc
