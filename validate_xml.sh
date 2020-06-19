@@ -32,5 +32,5 @@ while read -r file; do
             exit_rc=$rc
         fi
 	fi
-done < <( git show --name-only --oneline HEAD | grep "*.xml")
+done < <( git show --name-only --oneline HEAD )
 exit $exit_rc
