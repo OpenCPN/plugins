@@ -4,7 +4,7 @@ name: CI_Pull
 # events but only for the master branch
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ master, Alpha, Beta, Experimental ]
     types: [ opened, reopened, review_requested ]
     paths:
     - 'metadata/**.xml'
