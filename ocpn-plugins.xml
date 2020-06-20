@@ -1,166 +1,295 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-06-14 19:28</date>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
+  <date>2020-06-20 13:13</date>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
     <version> 1.2.1 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
   </description>
     <target>debian</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-debian-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/nmeaconvert.html  </info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>fedora</target>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-darwin-10.13.6-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-debian-x86_64-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_debian-x86_64-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>fedora-x86_64</target>
     <target-version>29</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-fedora-29-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_fedora-29.tar.gz </tarball-url>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-fedora-x86_64-29-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_fedora-x86_64-29.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>flatpak</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-flatpak-18.08-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_flatpak-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
     <target>mingw</target>
     <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-mingw-10-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_mingw-10.tar.gz </tarball-url>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-mingw-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_mingw-10.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/nmeaconvert.html</info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-msvc-10.0.14393-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_msvc-10.0.14393.tar.gz </tarball-url>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-msvc-10.0.14393-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
 </description>
-    <target>raspbian</target>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_raspbian-armhf-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>raspbian-armhf</target>
     <target-version>9.4</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/NmeaConverter-raspbian-9.4-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_raspbian-9.4.tar.gz </tarball-url>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-9.4-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_raspbian-armhf-9.4.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
-    <target-version>16.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-16.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html</info-url>
-    <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
+</description>
+    <target>ubuntu-arm64</target>
     <target-version>18.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-18.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-18.04.tar.gz </tarball-url>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-ubuntu-arm64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
-  <plugin version="2">
-    <name> Nmea_Converter </name>
-    <version> 1.2.1 </version>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
     <release> 0 </release>
-    <summary> OpenCPN plugin to manipulate nmea sentences </summary>
+    <summary> Voyage Data Recorder and Player </summary>
     <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
     <description>
-Plugin for manipulating nmea sentences.
-Cherry picking from existing sentences, calculate new data with
-spreadsheet like formulas or just plain send  new sentences.
-Not easy, although it is easy to make errors and crash OpenCPN
-  </description>
-    <target>ubuntu</target>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter-ubuntu-20.04-tarball/versions/1.2.1.0.c7db9ac/nmeaconverter_pi-1.2.1-0_ubuntu-20.04.tar.gz </tarball-url>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-20.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-14.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-14.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-16.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.2.3 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder and Player </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Jean-Eudes Onfray  </author>
+    <source> https://github.com/SethDart/vdr_pi/ </source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description>
+VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
+     </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -465,29 +594,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10.13.6</target-version>
     <target-arch>i386</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.2.0.24a711d/oernc_pi-1.2.2-0_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeRNC Charts </name>
-    <version> 1.2.1 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/oernc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
-    <description>
-OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
-  </description>
-    <target>debian</target>
-    <target-version>10</target-version>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-debian-10-tarball/versions/1.2.1.0.8bb8426/oernc_pi-1.2.1-0_debian-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -2144,272 +2250,6 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-darwin-10.13.6-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-debian-x86_64-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_debian-x86_64-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>fedora-x86_64</target>
-    <target-version>29</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-fedora-x86_64-29-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_fedora-x86_64-29.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-flatpak-18.08-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-mingw-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-msvc-10.0.14393-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-10-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_raspbian-armhf-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-9.4-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_raspbian-armhf-9.4.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth Dart
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-ubuntu-arm64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-20.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-14.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-14.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-16.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.2.3 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder and Player </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Jean-Eudes Onfray  </author>
-    <source> https://github.com/SethDart/vdr_pi/ </source>
-    <info-url>https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description>
-VDR Voyage Data Recorder Use Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth Dart
-     </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.8.3 </version>
     <release> 3 </release>
@@ -2688,306 +2528,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.8.3-ubuntu-x86_64_20.04-focal-tarball/versions/v2.4.8.3/watchdog_pi-2.4.8.3_ubuntu-x86_64_20.04-focal.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-darwin-x86_64_10.13.6-macos-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_darwin-x86_64_10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-debian-x86_64_10-buster-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_debian-x86_64_10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>fedora-x86_64</target>
-    <target-version>29</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-fedora-x86_64_29-fedora-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_fedora-x86_64_29-fedora.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-mingw-x86_64_10-mingw-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_mingw-x86_64_10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_msvc-x86_64_10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-raspbian-armhf_10-buster-armhf-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_raspbian-armhf_10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_raspbian-armhf_9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-arm64_18.04-bionic-armh64-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-arm64_18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_14.04-trusty-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_16.04-xenial-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_18.04-bionic-gtk3-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_18.04-bionic-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_20.04-focal-gtk3-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.5.19 </version>
-    <release> 19 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_20.04-focal-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_20.04-focal.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -3320,6 +2860,306 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-darwin-x86_64_10.13.6-macos-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_darwin-x86_64_10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-debian-x86_64_10-buster-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_debian-x86_64_10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>fedora-x86_64</target>
+    <target-version>29</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-fedora-x86_64_29-fedora-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_fedora-x86_64_29-fedora.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-flatpak-x86_64_18.08-flatpak-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-mingw-x86_64_10-mingw-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_mingw-x86_64_10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-msvc-x86_64_10.0.14393-MSVC-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_msvc-x86_64_10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-raspbian-armhf_10-buster-armhf-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_raspbian-armhf_10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-raspbian-armhf_9.4-stretch-armhf-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_raspbian-armhf_9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-arm64_18.04-bionic-armh64-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-arm64_18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_14.04-trusty-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_16.04-xenial-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_18.04-bionic-gtk3-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_18.04-bionic-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_20.04-focal-gtk3-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.5.19 </version>
+    <release> 19 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.5.19-ubuntu-x86_64_20.04-focal-tarball/versions/v1.9.5.19/weatherfax_pi-1.9.5.19_ubuntu-x86_64_20.04-focal.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.0 </version>
     <release> 0 </release>
@@ -3598,5 +3438,245 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.0-ubuntu-x86_64_20.04-focal-tarball/versions/v1.0.17.0/windvane_pi-1.0.17.0_ubuntu-x86_64_20.04-focal.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+244.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+239.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-debian-x86_64-10-buster-tarball/versions/1.2.0.2+241.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial-tarball/versions/1.2.0.2+240.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.2.0.2+1.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+237.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf-tarball/versions/1.2.0.2+234.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.2.0.2+238.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty-tarball/versions/1.2.0.2+232.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+54.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-tarball/versions/1.2.0.2+235.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>fedora-x86_64</target>
+    <target-version>29</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-fedora-x86_64-29-fedora-tarball/versions/1.2.0.2+233.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-fedora-x86_64-29-fedora.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
 </plugins>
