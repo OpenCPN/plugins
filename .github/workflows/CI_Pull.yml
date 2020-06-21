@@ -24,6 +24,14 @@ jobs:
       - name: install_utils
         run: sudo apt install libxml2-utils
 
+      -name: get changed files
+        id: getfile
+        run: |
+            echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | xargs)"
+      -name: echo output
+        run: |
+          echo $${{ steps.getfile.outputs.files }}
+
       - name: more_files
         uses: lots0logs/gh-action-get-changed-files@2.1.4
         with:
