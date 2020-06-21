@@ -21,9 +21,25 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: install_utils
+        run: sudo apt install libxml2-utils
+
+      - name: more_files
+        uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+          done
+
       - name: check xml files
         run: |
-          sudo apt install libxml2-utils
+          echo "All: ${{ steps.more_files.FILES_ADDED }}"
+          ls -l
           bash ./validate_xml.sh
           rc=$?
           exit $rc
