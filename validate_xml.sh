@@ -27,7 +27,7 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
     exit $exit_rc
 else
     exit_rc=0
-    gitdiff="$(`git --no-pager diff --name-only ${{ github.event.after }}`)"
+    gitdiff="$(`git diff-tree --no-commit-id --name-only -r ${{ github.event.after }}`)"
     echo "gitdiff: ${gitdiff}"
     gitdifffiles=`$(git diff-files --name-only)`
     echo "gitdifffiles: ${gitdifffiles}"
