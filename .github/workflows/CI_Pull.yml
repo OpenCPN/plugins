@@ -29,13 +29,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - id: files
-        uses: jitterbit/get-changed-files@v1
-      - run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
-            echo "Do something with this ${changed_file}."
-          done
-
       - name: check xml files
         run: |
           echo "All: ${{ steps.more_files.FILES_ADDED }}"
@@ -43,3 +36,11 @@ jobs:
           bash ./validate_xml.sh
           rc=$?
           exit $rc
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+          done
+
