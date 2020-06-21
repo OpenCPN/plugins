@@ -24,11 +24,11 @@ jobs:
       - name: install_utils
         run: sudo apt install libxml2-utils
 
-      -name: get changed files
+      -name: get_changed_files
         id: getfile
         run: |
             echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | xargs)"
-      -name: echo output
+      -name: echo_output
         run: |
           echo $${{ steps.getfile.outputs.files }}
 
