@@ -29,8 +29,8 @@ else
     exit_rc=0
     gitdiff="$(git --no-pager diff --name-only master...HEAD)"
     echo "gitdiff: ${gitdiff}"
-    gitdiffhead="$(git diff-head --name-only)"
-    echo "gitdiff: ${gitdiffhead}"
+    gitdifffiles="$(git diff-files --name-only)"
+    echo "gitdifffiles: ${gitdifffiles}"
     while read -r file; do
         if [[ $file == "metadata"*".xml" ]]; then
             echo "Processing file: $file"
