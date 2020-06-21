@@ -30,7 +30,7 @@ jobs:
             echo "Do something with this ${changed_file}."
           done
       - name: more_files
-      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        uses: lots0logs/gh-action-get-changed-files@2.1.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: check xml files
