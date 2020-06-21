@@ -40,7 +40,7 @@ else
         fi
     done < <( git diff --name-only)
     if [[ $exit_rc == 0 ]]; then
-        echo "All files pass xsd check"
+        echo "All files pass git pull xsd check"
     fi
     exit $exit_rc
 fi
