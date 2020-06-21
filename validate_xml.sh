@@ -27,7 +27,7 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
     exit $exit_rc
 else
     exit_rc=0
-    gitdiff="$(git --no-pager diff --name-only master...HEAD)"
+    gitdiff="$(git --no-pager diff --name-only ..master)"
     echo "gitdiff: ${gitdiff}"
     gitdifffiles="$(git diff-files --name-only)"
     echo "gitdifffiles: ${gitdifffiles}"
@@ -41,7 +41,7 @@ else
                 exit_rc=$rc
             fi
         fi
-    done < <( git diff --name-only)
+    done < <( git diff --name-only ..master)
     if [[ $exit_rc == 0 ]]; then
         echo "All files pass git pull xsd check"
     fi
