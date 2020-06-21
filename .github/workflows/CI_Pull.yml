@@ -5,7 +5,7 @@ name: CI_Pull
 on:
   pull_request:
     branches: [ master, Alpha, Beta, Experimental ]
-    types: [ opened, reopened, review_requested ]
+    types: [ opened, reopened, edited, review_requested ]
     paths:
     - 'metadata/**.xml'
 
@@ -31,7 +31,7 @@ jobs:
 
       - name: check xml files
         run: |
-          echo "All: ${{ steps.more_files.FILES_ADDED }}"
+          echo "All: ${{ steps.more_files.all }}"
           ls -l
           bash ./validate_xml.sh
           rc=$?
