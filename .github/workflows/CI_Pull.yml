@@ -23,16 +23,19 @@ jobs:
       - uses: actions/checkout@v2
       - name: install_utils
         run: sudo apt install libxml2-utils
+
+      - name: more_files
+        uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - id: files
         uses: jitterbit/get-changed-files@v1
       - run: |
           for changed_file in ${{ steps.files.outputs.all }}; do
             echo "Do something with this ${changed_file}."
           done
-      - name: more_files
-        uses: lots0logs/gh-action-get-changed-files@2.1.4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: check xml files
         run: |
           echo "All: ${{ steps.more_files.FILES_ADDED }}"
