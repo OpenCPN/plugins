@@ -27,7 +27,8 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
     exit $exit_rc
 else
     exit_rc=0
-    git diff --name-only
+    gitdiff<<(git diff --name-only)
+    echo "gitdiff: $gitdiff"
     while read -r file; do
         if [[ $file == "metadata"*".xml" ]]; then
             echo "Processing file: $file"
