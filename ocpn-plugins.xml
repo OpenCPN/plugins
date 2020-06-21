@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-06-21 02:30</date>
+  <date>2020-06-21 13:23</date>
   <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.115.0 </version>
@@ -133,6 +133,26 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.9-mingw-x86_64-10-mingw-tarball/versions/v1.8.0.9/ocpn_draw_pi-1.8.0.9-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.2.0.2+1.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -980,6 +1000,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+239.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.113.0 </version>
     <release> 0 </release>
@@ -1157,6 +1197,46 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.11.0-debian-x86_64-10-buster-tarball/versions/v2.4.11.0/watchdog_pi-2.4.11.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+237.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-debian-x86_64-10-buster-tarball/versions/1.2.0.2+241.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1475,6 +1555,26 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf-tarball/versions/1.2.0.2+234.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -1639,6 +1739,26 @@ Simple image overlay calibration, Converts any image image into a raster chart. 
 https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.6.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.9.6/weatherfax_pi-1.9.6.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-tarball/versions/1.2.0.2+235.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -1806,6 +1926,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-18.04-tarball/versions/v1.2.3.0/vdr_pi-1.2.3-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+244.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -2502,6 +2642,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial-tarball/versions/1.2.0.2+240.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.11.0 </version>
     <release> 0 </release>
@@ -2584,6 +2744,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-x86_64-16.04-tarball/versions/4.2.10.0.9b1b34a/oesenc_pi-4.2.10-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+54.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -2712,6 +2892,26 @@ such as dual radar range and Doppler.
     <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-darwin-10.13.6-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty-tarball/versions/1.2.0.2+232.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -2962,5 +3162,25 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN NmeaConverter </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.2.0.2+238.9c8000e/ocpn_NmeaConverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
 </plugins>
