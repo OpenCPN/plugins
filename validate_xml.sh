@@ -27,8 +27,8 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
     exit $exit_rc
 else
     exit_rc=0
-    gitdiffcached="$(git diff --name-only --cached)"
-    echo "gitdiffcached: ${gitdiffcached}"
+    gitdiff="$(git --no-pager diff --name-only master...HEAD)"
+    echo "gitdiff: ${gitdiff}"
     while read -r file; do
         if [[ $file == "metadata"*".xml" ]]; then
             echo "Processing file: $file"
