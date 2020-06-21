@@ -21,6 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: install_utils
         run: sudo apt install libxml2-utils
 
@@ -28,9 +30,12 @@ jobs:
         id: getfile
         run: |
           echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | xargs)"
+          echo "::set-output name=files1::$(git diff-tree --no-commit-id --name-only ${{ github.event.after }} | xargs)"
+
       - name: echo_output
         run: |
           echo $${{ steps.getfile.outputs.files }}
+          echo $${{ steps.getfile.outputs.files1 }}
 
       - name: more_files
         uses: lots0logs/gh-action-get-changed-files@2.1.4
@@ -39,7 +44,7 @@ jobs:
 
       - name: check xml files
         run: |
-          echo "All: ${{ steps.more_files.all }}"
+          echo "All: ${{ steps.more_files.outputs.all }}"
           ls -l
           bash ./validate_xml.sh
           rc=$?
