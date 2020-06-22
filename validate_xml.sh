@@ -27,7 +27,11 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
     exit $exit_rc
 else
     exit_rc=0
-    while read -r file; do
+    URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/${REQUEST_NO}/files"
+    FILES_FOUND=$(curl -s -X GET -G $URL | jq -r '.[] | .filename')
+    files_array=($FILES_FOUND)
+    for file in "${files_array[@]}"
+    do
         if [[ $file == "metadata"*".xml" ]]; then
             echo "Processing file: $file"
             `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
@@ -37,9 +41,10 @@ else
                 exit_rc=$rc
             fi
         fi
-    done < <( git show --name-only --oneline HEAD )
+    done
+
     if [[ $exit_rc == 0 ]]; then
-        echo "All files pass xsd check"
+        echo "All files pass git pull xsd check"
     fi
     exit $exit_rc
 fi
