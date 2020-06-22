@@ -5,7 +5,7 @@ name: CI_Pull
 on:
   pull_request:
     branches: [ master, Alpha, Beta, Experimental ]
-    types: [ opened, reopened, review_requested ]
+    types: [ opened, reopened, edited, review_requested, synchronize ]
     paths:
     - 'metadata/**.xml'
 
@@ -21,9 +21,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: install_utils
+        run: sudo apt install libxml2-utils
+
+      - name: check pr files
+        run: |
+          echo ::set-env name=REQUEST_NO::${{ github.event.pull_request.number }}
+          echo "github.repository: ${{ github.repository }}"
+
       - name: check xml files
         run: |
-          sudo apt install libxml2-utils
           bash ./validate_xml.sh
           rc=$?
           exit $rc
+
+
