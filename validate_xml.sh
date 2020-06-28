@@ -28,7 +28,7 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
 else
     exit_rc=0
     URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/${REQUEST_NO}/files"
-    FILES_FOUND=$(curl -s -X GET -G $URL | jq -r '.[] | .filename')
+    FILES_FOUND=$(curl -s -X GET -G $URL | jq -r 'map(select(.status != "removed")) | .[] | .filename')
     files_array=($FILES_FOUND)
     for file in "${files_array[@]}"
     do
