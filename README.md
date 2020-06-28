@@ -52,6 +52,25 @@ Fast track: Batch Files to use the above commands
     > runcheck.bat   - to be run from the "tools" directory
 
 
+Download cloudsmith files
+-------------------------
+
+Having generated the installation files they are stored in a cloudsmith repository. These need
+to be download and made into a pull request for the plugins repository. This can be done using
+the 'download_xml_bash.sh' script. This script will run on Linux and Windows using the 'git_bash'
+command.
+	
+	> ./download_xml_bash.sh cloudsmith_repository plugin_version cloudsmith_user cloudsmith_level
+	i.e. 
+		./download_xml_bash.sh testplugin_pi 1.0.114.0 jon-gough prod
+		./download_xml_bash.sh weather-routing 1.13.8.0 opencpn prod
+
+These files can then be added to the push request in git. 
+
+With the new process do NOT generate the ocpn-plugins.xml file as this will be done for you
+automatically when your push is merged into the mainline.
+
+
 Developer info
 --------------
 

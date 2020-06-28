@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-06-27 14:04</date>
+  <date>2020-06-28 14:16</date>
   <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
@@ -25,6 +25,28 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-x86_64-16.04-tarball/versions/5.1.4.7.29db9fe/radar_pi-ubuntu-x86_64-16.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-darwin-x86_64-10.13.6-macos-tarball/versions/1.13.9.0+1655.3b2c388/weather_routing_pi-1.13.9.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -89,6 +111,26 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.13-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.8.0.13/ocpn_draw_pi-1.8.0.13-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-mingw-x86_64-10-mingw-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -156,7 +198,7 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-ubunt
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
+    <version> 1.13.9.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -168,13 +210,33 @@ WR features include:
 optimal routing subject to various constraints based on weather data,
 automatic boat polar computation.
 </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
+    <target>mingw</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-mingw-x86_64-10-mingw-tarball/versions/1.13.9.0+1649.3b2c388/weather_routing_pi-1.13.9.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -197,48 +259,24 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
     <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-mingw-x86_64-10-mingw-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -258,6 +296,26 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/VDR-ubuntu-arm64-18.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+270.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -297,28 +355,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.11.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.11.0/watchdog_pi-2.4.11.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -379,6 +415,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-mingw-x86_64-10-mingw-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -528,6 +584,26 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-tarball/versions/1.2.0.2+265.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.6.0 </version>
     <release> 0 </release>
@@ -546,6 +622,28 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.13.9.0+1659.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -668,6 +766,26 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.120.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.120.0/testplugin_pi-1.0.120.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -814,6 +932,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.2.0.2+260.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.12 </version>
     <release> 0 </release>
@@ -958,6 +1096,46 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.11.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.11.0/watchdog_pi-2.4.11.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+266.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -1118,6 +1296,48 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.13.9.0+1657.3b2c388/weather_routing_pi-1.13.9.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf-tarball/versions/1.2.0.2+258.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.11.0 </version>
     <release> 0 </release>
@@ -1136,28 +1356,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.11.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.11.0/watchdog_pi-2.4.11.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -1238,6 +1436,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.13.9.0+1650.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -1378,6 +1598,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.4 </version>
     <release> 0 </release>
@@ -1439,6 +1679,26 @@ OpenCPN support for S63 Vector Charts
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-arm64-18.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial-tarball/versions/1.2.0.2+261.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.11.0 </version>
     <release> 0 </release>
@@ -1477,6 +1737,28 @@ SAR Plugin is used to create search patterns for SAR
 https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-debian-x86_64-10-buster-tarball/versions/v2.6.17-opencpn/sar_pi-2.6.17.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:chart_work:sar_search_patterns </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.13.9.0+1.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -1645,7 +1927,7 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-raspb
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
+    <version> 1.13.9.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -1657,13 +1939,33 @@ WR features include:
 optimal routing subject to various constraints based on weather data,
 automatic boat polar computation.
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-raspbian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.13.9.0+1656.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.2.0.2+1.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1685,6 +1987,28 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-darwin-10.13.6-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.13.9.0+273.3b2c388/weather_routing_pi-1.13.9.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.120.0 </version>
     <release> 0 </release>
@@ -1703,6 +2027,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.120.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.120.0/testplugin_pi-1.0.120.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-debian-x86_64-10-buster-tarball/versions/1.13.9.0+1658.3b2c388/weather_routing_pi-1.13.9.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1749,28 +2095,6 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-debian-x86_64-10-buster-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.12 </version>
     <release> 0 </release>
@@ -1795,6 +2119,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.12.0.3216613/oesenc_pi-4.2.12-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-x86_64-14.04-trusty-tarball/versions/1.13.9.0+1651.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -1815,26 +2161,24 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
     <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster-tarball/versions/1.2.0.2+263.b5236e0/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -1855,6 +2199,26 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.6.0-debian-x86_64-10-buster-tarball/versions/v1.3.6.0/squiddio_pi-1.3.6.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1981,26 +2345,24 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
     <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
 </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
+    <target>ubuntu-x86_64</target>
+    <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-darwin-x86_64-10.13.6-macos.tar.gz
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+264.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -2047,28 +2409,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-armhf-10-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_raspbian-armhf-10-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -2109,6 +2449,28 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-raspb
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:chart_work:sar_search_patterns </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.13.9.0+1652.3b2c388/weather_routing_pi-1.13.9.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.4 </version>
     <release> 0 </release>
@@ -2126,6 +2488,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-debian-x86_64-10-buster-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -2225,28 +2607,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.13-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.8.0.13/ocpn_draw_pi-1.8.0.13-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -2388,6 +2748,26 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-mingw
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:chart_work:sar_search_patterns </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.16.606 </version>
     <release> 0 </release>
@@ -2404,28 +2784,6 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.17.0-mingw
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -2470,6 +2828,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -2902,6 +3280,26 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/VDR-raspbian-armhf-10-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_raspbian-armhf-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+56.b5236e0/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.6.0 </version>
     <release> 0 </release>
@@ -3022,6 +3420,28 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.13.9.0+1654.3b2c388/weather_routing_pi-1.13.9.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> SAR </name>
     <version> 2.6.17.0 </version>
     <release> 0 </release>
@@ -3080,6 +3500,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.2.0.2 </version>
+    <release> 2 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty-tarball/versions/1.2.0.2+267.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -3188,28 +3628,6 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-raspbian-armhf-9.4-tarball/versions/5.1.4.7.29db9fe/radar_pi-raspbian-armhf-9.4.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.8.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.8.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.13.8/weather_routing_pi-1.13.8.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -3334,6 +3752,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-darwin-10.13.6-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.120.0 </version>
     <release> 0 </release>
@@ -3392,6 +3830,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.19.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.19.0/windvane_pi-1.0.19.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.7.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.7.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.9.7/weatherfax_pi-1.9.7.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -3602,6 +4060,28 @@ OpenCPN support for S63 Vector Charts
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-10-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_raspbian-armhf-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.9.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-alpha/raw/names/weather_routing_pi-1.13.9.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.13.9.0+1653.3b2c388/weather_routing_pi-1.13.9.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
