@@ -75,6 +75,12 @@ it will not be merged.
 
 Create a new ocpn-plugins.xml
 ------------------------------
+This process is only needed if you really want to have the ocpn-plugins.xml file. In the current version of OCPN
+this is not needed as there is a button on the plugins page of the OCPN options that will let you directly
+import the '*tar.gz' file. This is much easer and cleaner than createing ocpn-pluginxs.xml file.
+
+Any time you push your xml files to the plugins repository and they are accepted the ocpn-plugins.xml file is 
+updated on the git repository as part of the merge process.
 
 To create a new, modified ocpn-plugins.xml first create a private set
 of xml source files,
