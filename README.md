@@ -7,7 +7,6 @@ groundwork for the new plugin installer.
 The project exports the fundamental piece required to install plugins using
 the new installer: the plugin catalog `ocpn-plugins.xml`
 
-
 Dependencies
 ------------
 
