@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-07-10 14:22</date>
+  <date>2020-07-12 01:02</date>
   <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
@@ -45,26 +45,6 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-ubuntu-x86_64-14.04-trusty-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-debian-x86_64-10-buster-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -151,26 +131,44 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-msvc-x86_64-10.0.14393-MSVC-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
     <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <source> https://github.com/rgleason/watchdog_pi </source>
     <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-debian-x86_64-10-buster-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -191,6 +189,26 @@ otcurrent displays tidal currents for selected dates and times
 https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-darwin-x86_64-10.13.6-macos-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -261,26 +279,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.1.10.0-r
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> polar </name>
     <version> 1.1.10.0 </version>
     <release> 0 </release>
@@ -321,6 +319,26 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.19.0-ubunt
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
   </plugin>
   <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.7.0 </version>
     <release> 0 </release>
@@ -359,46 +377,6 @@ SAR is used to create search patterns for SAR
 https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.19.0-mingw-x86_64-10-mingw-tarball/versions/v2.6.19.0/sar_pi-2.6.19.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -460,6 +438,28 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.7.7.2 </version>
     <release> 2 </release>
@@ -519,8 +519,28 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-ubuntu-x86_64-16.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-raspbian-armhf-9.4-stretch-armhf-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
+    <version> 1.9.13.0 </version>
     <release> 0 </release>
     <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
@@ -530,11 +550,11 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <description>
 Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>raspbian-armhf</target>
+    <target>mingw</target>
     <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-raspbian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-mingw-x86_64-10-mingw-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -559,8 +579,28 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.19.0-msvc-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
   </plugin>
   <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-flatpak-x86_64-18.08-flatpak-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
+    <version> 2.4.17.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -570,57 +610,13 @@ https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.19.0-msvc-
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -662,9 +658,9 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/VDR-raspbian-armhf-9.4-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_raspbian-armhf-9.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
     <summary> Produce KAP charts from downloaded satellite images </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -673,11 +669,11 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <description>
 Download and install KAP charts from VentureFarther.com
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
@@ -726,28 +722,8 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-debian-x86_64-10-buster-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
+    <version> 1.13.14.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -759,11 +735,11 @@ WR features include:
 optimal routing subject to various constraints based on weather data,
 automatic boat polar computation.
 </description>
-    <target>raspbian-armhf</target>
+    <target>mingw</target>
     <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-raspbian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-mingw-x86_64-10-mingw-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
@@ -786,26 +762,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-mingw-x86_64-10-mingw-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -846,6 +802,26 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-mingw-x86_64-10-mingw-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -890,26 +866,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-arm64-18.04-tarball/versions/4.2.14.0.a6e904c/oesenc_pi-4.2.14-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -971,6 +927,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-debian-x86_64-10-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-debian-x86_64-10-buster-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.7.7.2 </version>
     <release> 2 </release>
@@ -989,6 +965,26 @@ otcurrent displays tidal currents for selected dates and times
 https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1048,6 +1044,26 @@ otcurrent displays tidal currents for selected dates and times
 https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1136,6 +1152,48 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-gtk3-x86_64-20.04-tarball/versions/5.1.4.7.29db9fe/radar_pi-ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-16.04-xenial-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1287,21 +1345,41 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
 OpenCPN support for S63 Vector Charts
 </description>
     <target>raspbian-armhf</target>
     <target-version>9.4</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-9.4-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_raspbian-armhf-9.4.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-9.4-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_raspbian-armhf-9.4.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-mingw-x86_64-10-mingw-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -1365,7 +1443,7 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
+    <version> 1.13.14.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -1377,53 +1455,13 @@ WR features include:
 optimal routing subject to various constraints based on weather data,
 automatic boat polar computation.
 </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-mingw-x86_64-10-mingw-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-mingw-x86_64-10-mingw.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-raspbian-armhf-10-buster-armhf-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -1447,43 +1485,21 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
 OpenCPN support for S63 Vector Charts
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-msvc-10.0.14393-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-msvc-10.0.14393-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -1507,39 +1523,59 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>mingw</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-mingw-10-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_mingw-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-mingw-10-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_mingw-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> DR </name>
@@ -1560,6 +1596,68 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-ubuntu-x86_64-18.04-bionic-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-raspbian-armhf-10-buster-armhf-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-14.04-trusty-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -1726,28 +1824,6 @@ https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-flatpak-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DR </name>
     <version> 3.1.1.3 </version>
     <release> 3 </release>
@@ -1766,26 +1842,6 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -1809,7 +1865,7 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
+    <version> 1.9.13.0 </version>
     <release> 0 </release>
     <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
@@ -1820,30 +1876,10 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
 Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
     <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
+    <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-mingw-x86_64-10-mingw-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-mingw-x86_64-10-mingw.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -1908,26 +1944,6 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-darwin-x86_64-10.13.6-macos-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.120.0 </version>
     <release> 0 </release>
@@ -1948,42 +1964,62 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -2106,21 +2142,21 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
 OpenCPN support for S63 Vector Charts
 </description>
     <target>ubuntu-arm64</target>
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-arm64-18.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-arm64-18.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -2163,24 +2199,24 @@ https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-debian-x
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-Download and install KAP charts from VentureFarther.com
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-msvc-x86_64-10.0.14393-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> polar </name>
@@ -2267,50 +2303,6 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.14 </version>
     <release> 0 </release>
@@ -2336,7 +2328,7 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
+    <version> 1.9.13.0 </version>
     <release> 0 </release>
     <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
@@ -2346,11 +2338,11 @@ can only be used after purchasing decryption keys from o-charts.org.
     <description>
 Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-debian-x86_64-10-buster-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -2374,64 +2366,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-ubuntu-x86_64-18.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-darwin-x86_64-10.13.6-macos-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> S63 </name>
-    <version> 1.16.606 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for S63 Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> David S Register </author>
-    <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description>
-  OpenCPN support for S63 Vector Charts
-  </description>
-    <target>flatpak</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-flatpak-18.08-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_flatpak-18.08.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.7.7.2 </version>
     <release> 2 </release>
@@ -2450,6 +2384,70 @@ otcurrent displays tidal currents for selected dates and times
 https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-debian-x86_64-10-buster-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-darwin-x86_64-10.13.6-macos-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -2492,26 +2490,6 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.4 </version>
     <release> 0 </release>
@@ -2551,24 +2529,26 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
     <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
 </description>
-    <target>ubuntu-arm64</target>
+    <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -2613,28 +2593,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-fedora-x86_64-29-fedora-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-fedora-x86_64-29-fedora.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -2805,6 +2763,26 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.120.0 </version>
     <release> 0 </release>
@@ -2869,6 +2847,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-armhf-10-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_raspbian-armhf-10-armhf.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -2929,7 +2927,7 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
+    <version> 1.9.13.0 </version>
     <release> 0 </release>
     <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
@@ -2939,33 +2937,33 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <description>
 Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
     <description>
-Download and install KAP charts from VentureFarther.com
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -2985,26 +2983,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-mingw-10-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_mingw-10.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3047,6 +3025,46 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-debian-x86_64-10-buster-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
     <name> SAR </name>
     <version> 2.6.19.0 </version>
     <release> 0 </release>
@@ -3085,6 +3103,26 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -3167,46 +3205,6 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.17.2 </version>
     <release> 2 </release>
@@ -3245,26 +3243,6 @@ SAR is used to create search patterns for SAR
 https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.19.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.6.19.0/sar_pi-2.6.19.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.9.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.9.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.9.9.0/weatherfax_pi-1.9.9.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3366,8 +3344,28 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
+    <name> vfkaps </name>
+    <version> 2.1.1.7 </version>
+    <release> 7 </release>
+    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <description>
+Download and install KAP charts from VentureFarther.com
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-18.04-bionic-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
+    <version> 1.13.14.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -3379,51 +3377,73 @@ WR features include:
 optimal routing subject to various constraints based on weather data,
 automatic boat polar computation.
 </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
 </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-darwin-x86_64-10.13.6-macos.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -3444,6 +3464,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.17.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.17.2/windvane_pi-1.0.17.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -3601,26 +3641,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.1.10.0-r
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DR </name>
     <version> 3.1.1.3 </version>
     <release> 3 </release>
@@ -3730,21 +3750,21 @@ can only be used after purchasing decryption keys from o-charts.org.
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>ubuntu-x86_64</target>
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-16.04-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-16.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -3765,6 +3785,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.19.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.19.0/windvane_pi-1.0.19.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-debian-x86_64-10-buster-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> polar </name>
@@ -3805,6 +3845,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.120.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.120.0/testplugin_pi-1.0.120.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DR </name>
@@ -3871,44 +3933,48 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Download and install KAP charts from VentureFarther.com
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-raspbian-armhf-9.4-stretch-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
+    <name> WeatherRouting </name>
+    <version> 1.13.14.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Download and install KAP charts from VentureFarther.com
+WR features include:
+optimal routing subject to various constraints based on weather data,
+automatic boat polar computation.
 </description>
     <target>flatpak-x86_64</target>
     <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-x86_64_flatpak-18.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> polar </name>
@@ -3955,6 +4021,44 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.16.710 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
+    <description>
+  OpenCPN support for S63 Vector Charts
+  </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-flatpak-x86_64-18.08-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_flatpak-x86_64-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.2 </version>
     <release> 0 </release>
@@ -3977,6 +4081,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -4024,21 +4148,21 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>debian-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-debian-x86_64-10-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_debian-x86_64-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-debian-x86_64-10-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -4240,26 +4364,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> VFkaps </name>
-    <version> 2.1.1.6 </version>
-    <release> 6 </release>
-    <summary> Produce KAP charts from downloaded satellite images </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/vfkaps_pi </source>
-    <description>
-Download and install KAP charts from VentureFarther.com
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.6-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.1.1.6/vfkaps_pi-2.1.1.6-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.14 </version>
     <release> 0 </release>
@@ -4328,6 +4432,26 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.17.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.17.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v2.4.17.0/watchdog_pi-2.4.17.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
     <release> 7 </release>
@@ -4350,26 +4474,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-ubuntu-x86_64-18.04-tarball/versions/5.1.4.7.29db9fe/radar_pi-ubuntu-x86_64-18.04.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-raspbian-armhf-10-buster-armhf-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -4452,26 +4556,6 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.120.0 </version>
     <release> 0 </release>
@@ -4513,21 +4597,21 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
   OpenCPN support for S63 Vector Charts
   </description>
     <target>darwin</target>
     <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-darwin-10.13.6-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_darwin-10.13.6.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-darwin-10.13.6-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_darwin-10.13.6.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -4570,28 +4654,6 @@ https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.13.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include:
-optimal routing subject to various constraints based on weather data,
-automatic boat polar computation.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.11.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.13.11.0/weather_routing_pi-1.13.11.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.0.13 </version>
     <release> 13 </release>
@@ -4612,24 +4674,24 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.15.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.13.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+Simple image overlay calibration, Converts any image image into a raster chart. Db for HF radio fax stations via SSB and Metro URL internet retrieval.
 </description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.15.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.4.15.0/watchdog_pi-2.4.15.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.13.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.9.13.0/weatherfax_pi-1.9.13.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -4745,21 +4807,21 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.16.606 </version>
+    <version> 1.16.710 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
     <author> David S Register </author>
     <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
     <description>
 OpenCPN support for S63 Vector Charts
 </description>
     <target>raspbian-armhf</target>
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-10-tarball/versions/1.16.606.0.ede76c1/s63_pi-1.16.606-0_raspbian-armhf-10.tar.gz </tarball-url>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-10-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_raspbian-armhf-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
