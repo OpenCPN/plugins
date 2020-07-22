@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-07-22 13:50</date>
+  <date>2020-07-22 18:01</date>
   <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.17.0 </version>
@@ -212,6 +212,26 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.1.4 </version>
     <release> 7 </release>
@@ -393,6 +413,26 @@ PhotoLayer reads satellite geotiff photo overlay files with tranparency
 https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer_pi-3.1.21.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v3.1.21.0/photolayer_pi-3.1.21.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:photolayer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1049,6 +1089,26 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.7.7.2 </version>
     <release> 2 </release>
@@ -1697,6 +1757,26 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.21.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.21.0/windvane_pi-1.0.21.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2530,6 +2610,26 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.0.17 </version>
     <release> 17 </release>
@@ -2608,6 +2708,26 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.129.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.0.129.0/testplugin_pi-1.0.129.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -2825,6 +2945,26 @@ automatic boat polar computation.
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.14.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.13.14/weather_routing_pi-1.13.14.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-mingw-x86_64-10-mingw-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -3299,6 +3439,26 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.16.710.0.8ebb805/s63_pi-1.16.710-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> photolayer </name>
     <version> 3.1.21.0 </version>
     <release> 0 </release>
@@ -3463,6 +3623,26 @@ https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.16.0 </version>
     <release> 0 </release>
@@ -3483,6 +3663,26 @@ automatic boat polar computation.
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.16.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.13.16.0/weather_routing_pi-1.13.16.0-darwin-x86_64-10.13.6-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-debian-x86_64-10-buster-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DR </name>
@@ -4157,6 +4357,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-armhf-10-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_raspbian-armhf-10-armhf.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.4.13.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.4.13.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.4.13.0/climatology_pi-1.4.13.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
