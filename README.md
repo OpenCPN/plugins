@@ -40,7 +40,7 @@ This will create ocpn-plugins.xml in current directory. You might want to add
 Fast track: Checking URL's used in ocpn-plugins.xml
 ------------------------------------------------
 
-    > python tools/ocpn-metadata-urls [path]  path assumed is to ocpn-plugins.xml
+    > python tools/check-metadata-urls [path]  path assumed is to ocpn-plugins.xml
 	
 
 Fast track: Batch Files to use the above commands
