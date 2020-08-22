@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-08-21 01:46</date>
+  <date>2020-08-22 01:59</date>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
@@ -204,6 +204,46 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-ubuntu-x86_64-16.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> photolayer </name>
+    <version> 3.1.27.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to read geotiffs and adjust tranparency </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <description>
+PhotoLayer reads satellite geotiff photo overlay files with tranparency
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer_pi-3.1.27.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v3.1.27/photolayer_pi-3.1.27.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:photolayer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -1094,6 +1134,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-beta/raw/names/vdr-ubuntu-x86_64-18.04-tarball/versions/1.2.4.0.f6bc114/vdr_pi-1.2.4-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.2.0.0 </version>
     <release> 0 </release>
@@ -1525,6 +1585,26 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.129.0 </version>
     <release> 0 </release>
@@ -1624,6 +1704,26 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-debian-x86_64-10-buster-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.7.7.2 </version>
     <release> 2 </release>
@@ -1662,6 +1762,26 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-14.04-trusty-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -2719,6 +2839,26 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.2.0.0 </version>
     <release> 0 </release>
@@ -2895,6 +3035,26 @@ PhotoLayer reads satellite geotiff photo overlay files with tranparency
 https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer_pi-3.1.21.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v3.1.21.0/photolayer_pi-3.1.21.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:photolayer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
   </plugin>
   <plugin version="1">
     <name> photolayer </name>
@@ -3503,6 +3663,26 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/jon-gough/testplugin_pi-prod/raw/names/testplugin_pi-1.0.129.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.129.0/testplugin_pi-1.0.129.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -4818,6 +4998,46 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-mingw-x86_64-10-mingw-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -5337,6 +5557,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-arm64-18.04-tarball/versions/4.2.15.0.e2b0bd8/oesenc_pi-4.2.15-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.20.0 </version>
     <release> 0 </release>
@@ -5677,6 +5917,26 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-debian-x86_64-10-buster-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> uktides </name>
+    <version> 1.0.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download UK times for high/low water </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/UKTides_pi </source>
+    <description>
+UKTides plugin is used to download UK Tide times. The plugin retains 7 days predictions, offline
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/uktides_pi-1.0.4.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.4/uktides_pi-1.0.4.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/uktides.html </info-url>
   </plugin>
   <plugin version="1">
     <name> photolayer </name>
