@@ -39,7 +39,6 @@
 <xs:element name="target-arch">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
-      <xs:enumeration value = "i386"/>
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>
@@ -53,7 +52,6 @@
       <xs:enumeration value = "darwin"/>
       <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
-      <xs:enumeration value = "flatpak"/>
       <xs:enumeration value = "flatpak-x86_64"/>
       <xs:enumeration value = "mingw"/>
       <xs:enumeration value = "msvc"/>
