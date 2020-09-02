@@ -87,7 +87,6 @@ def generate(sourcedir, destfile, version):
     date_elem = ET.SubElement(tree, "date")
     date_elem.text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     for path in Path(sourcedir).glob("*.xml"):
-        print(" Processing: {path}")
         subtree = ET.parse(str(path))
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
