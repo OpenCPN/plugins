@@ -13,6 +13,10 @@ import xml.dom.minidom as minidom
 from sys import platform
 from pathlib import Path
 
+def errprint(*args):
+    """ Print to stderr shorthand. """
+    sys.stderr.write(' '.join(map(str,args)) + '\n')
+
 
 def get_paths():
     """Return dict of platform-dependent default paths."""
@@ -90,8 +94,8 @@ def generate(sourcedir, destfile, version):
         try:
             subtree = ET.parse(str(path))
         except ET.ParseError as ex:
-            print("Error processing %s at line %d" % (path, ex.position[0]))
-            print("Aborted")
+            errprint("Error processing %s at line %d" % (path, ex.position[0]))
+            errprint("Aborted")
             sys.exit(1)
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
@@ -108,31 +112,31 @@ def main():
     paths = get_paths()
     args = get_args(paths)
     if not args.mode:
-        print("Error: no mode specified. Use -h for help.")
+        errprint("Error: no mode specified. Use -h for help.")
         sys.exit(1)
     if args.mode == "copy":
         if not os.path.exists(args.systemdir):
-            print("Cannot find system metadata directory " + args.systemdir)
-            print("Consider using --systemdir option.")
+            errprint("Cannot find system metadata directory " + args.systemdir)
+            errprint("Consider using --systemdir option.")
             sys.exit(1)
         if os.path.exists(args.destdir) and args.force:
             shutil.rmtree(args.destdir)
         if os.path.exists(args.destdir):
-            print("The directory %s is in the way" % args.destdir)
-            print("Please remove or use --force")
+            errprint("The directory %s is in the way" % args.destdir)
+            errprint("Please remove or use --force")
             sys.exit(1)
         shutil.copytree(args.systemdir, args.destdir)
         print("New xml sources copied to " + args.destdir)
     else:
         if not os.path.exists(args.userdir):
-            print("No private sources found. Did you forget to run copy first?")
-            print("Otherwise consider using --userdir.")
+            errprint("No private sources found. Did you forget to run copy first?")
+            errprint("Otherwise consider using --userdir.")
             sys.exit(1)
         if os.path.exists(args.destfile) and args.force:
             os.remove(args.destfile)
         if os.path.exists(args.destfile):
-            print("The file %s is in the way" % args.destfile)
-            print("Please remove or use --force")
+            errprint("The file %s is in the way" % args.destfile)
+            errprint("Please remove or use --force")
             sys.exit(1)
         generate(args.userdir, args.destfile, args.version)
         print("Generated new ocpn-plugins.xml at " + args.destfile)
