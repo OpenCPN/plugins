@@ -27,6 +27,9 @@
   </xs:complexType>
 </xs:element>
 
+<!-- Metadata files uses opencpn-plugin, ocpn-plugins.xml uses plugin. -->
+<xs:element name="opencpn-plugin" substitutionGroup="plugin"/>
+
 <xs:element name="summary">
   <xs:simpleType>
     <xs:restriction base="xs:token">
