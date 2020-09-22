@@ -45,6 +45,7 @@
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>
+      <xs:enumeration value = "noarch"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:element> 
@@ -52,6 +53,7 @@
 <xs:element name="target">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
+      <xs:enumeration value = "all"/>
       <xs:enumeration value = "darwin"/>
       <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
