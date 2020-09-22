@@ -95,8 +95,8 @@ def generate(sourcedir, destfile, version):
             subtree = ET.parse(str(path))
         except ET.ParseError as ex:
             errprint("Error processing %s at line %d" % (path, ex.position[0]))
-            errprint("Aborted")
-            sys.exit(1)
+            errprint("Skipping file")
+            continue
         subtree.getroot().tag = 'plugin'
         tree.append(subtree.getroot())
     dom = minidom.parseString(ET.tostring(tree))
