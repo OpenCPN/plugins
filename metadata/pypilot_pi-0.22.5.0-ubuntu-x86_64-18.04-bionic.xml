@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> pypilot </name>
-<version> 0.22.4.7 </version>
-<release> 7 </release>
+<version> 0.22.5.0 </version>
+<release> 0 </release>
 <summary> Pypilot PlugIn for OpenCPN </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,11 +14,11 @@
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
 
-<target>raspbian-armhf</target>
-<target-version>10</target-version>
-<target-arch>armhf</target-arch>
+<target>ubuntu-x86_64</target>
+<target-version>18.04</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-alpha/raw/names/pypilot_pi-0.22.4.7-raspbian-armhf-10-buster-armhf-tarball/versions/0.22.4.7+329.a951d38/pypilot_pi-0.22.4.7-raspbian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
