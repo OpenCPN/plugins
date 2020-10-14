@@ -10,7 +10,7 @@
 
 all: ocpn-plugins.xml
 
-VERSION  ?= 0.0.1
+VERSION  ?= $(shell git rev-parse --short HEAD)
 
 
 ocpn-plugins.xml: metadata/*.xml Makefile
