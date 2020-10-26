@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> testplugin </name>
-<version> 1.0.133.0 </version>
+<version> 1.0.139.0 </version>
 <release> 0 </release>
 <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
 
 <api-version> 1.16 </api-version>
 <open-source> yes </open-source>
 <author> Jon Gough </author>
-<source> https://github.com/rgleason/testplugin_pi </source>
+<source> https://github.com/rgleason/testplugin_pi.git </source>
 
 <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
 
-<target>raspbian-armhf</target>
-<target-version>9.4</target-version>
-<target-arch>armhf</target-arch>
+<target>android-arm64</target>
+<target-version>16</target-version>
+<target-arch>arm64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-android-arm64-16-android-arm64-tarball/versions/1.0.139.0+2090.fbd98b6/testplugin_pi-1.0.139.0-android-arm64-16.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
