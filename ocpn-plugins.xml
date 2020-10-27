@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-10-27 00:09</date>
+  <date>2020-10-27 02:58</date>
   <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.0.0 </version>
@@ -209,26 +209,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.16.725 </version>
     <release> 0 </release>
@@ -325,6 +305,26 @@ otcurrent displays tidal currents for selected dates and times
 https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-raspbian-armhf-10-buster-armhf-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-debian-x86_64-10-buster-tarball/versions/1.0.139.0+2087.fbd98b6/testplugin_pi-1.0.139.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -451,24 +451,24 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
     <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
+    <target>mingw-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-raspbian-armhf-9.4-stretch-armhf-tarball/versions/0.2.3.1+216.32aa36d/gps-odometer_pi-0.2.3.1-raspbian-armhf-9.4-stretch-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-mingw-x86_64-x86_64-10-mingw-tarball/versions/1.0.139.0+2091.fbd98b6/testplugin_pi-1.0.139.0-mingw-x86_64-x86_64-10-mingw.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -513,6 +513,26 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.139.0+2086.fbd98b6/testplugin_pi-1.0.139.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> photolayer </name>
@@ -803,6 +823,26 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-x86_64-14.04-trusty-tarball/versions/1.0.139.0+2096.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -943,26 +983,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-u
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-debian-x86_64-10-buster-tarball/versions/0.2.3.1+228.32aa36d/gps-odometer_pi-0.2.3.1-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> photolayer </name>
     <version> 3.1.21.0 </version>
     <release> 0 </release>
@@ -1039,26 +1059,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-raspbian-armhf-10-buster-armhf-tarball/versions/0.2.3.1+221.32aa36d/gps-odometer_pi-0.2.3.1-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -1220,6 +1220,26 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-ubuntu-arm64-18.04-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.0.139.0+2088.fbd98b6/testplugin_pi-1.0.139.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.0.0 </version>
     <release> 0 </release>
@@ -1320,6 +1340,26 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-m
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.0.139.0+2092.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> photolayer </name>
     <version> 3.1.21.0 </version>
     <release> 0 </release>
@@ -1358,26 +1398,6 @@ Thanks to the community for their helpful suggestions. If you find a bug post it
 https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.13.0-debian-x86_64-10-buster-tarball/versions/v1.4.13.0/logbookkonni_pi-1.4.13.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-14.04-trusty-tarball/versions/0.2.3.1+218.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1437,26 +1457,6 @@ Plots PlugIn for OpenCPN Plot speed and course over ground to make the result of
 https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.2.4.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.2.4.0/plots_pi-2.2.4.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/0.2.3.1+1.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -2285,26 +2285,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-mingw-x86_64-10-mingw-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.1.17.0 </version>
     <release> 0 </release>
@@ -2504,26 +2484,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> FindIt </name>
     <version> 1.2.5.0 </version>
     <release> 0 </release>
@@ -2582,26 +2542,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.1.17.0/Polar_pi-1.1.17.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-darwin-x86_64-10.13.6-macos-tarball/versions/0.2.3.1+219.32aa36d/gps-odometer_pi-0.2.3.1-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3154,26 +3094,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-flatpak-x86_64-18.08-flatpak-tarball/versions/0.2.3.1+227.32aa36d/gps-odometer_pi-0.2.3.1-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.2.6.0 </version>
     <release> 0 </release>
@@ -3312,6 +3232,26 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-14.04-trusty-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-darwin-x86_64-10.13.6-macos-tarball/versions/1.0.139.0+2094.fbd98b6/testplugin_pi-1.0.139.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -3614,26 +3554,6 @@ https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.14.0 </version>
     <release> 0 </release>
@@ -3672,26 +3592,6 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3752,26 +3652,6 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -4421,26 +4301,6 @@ https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-debian-x86_64-10-buster-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.1.17.0 </version>
     <release> 0 </release>
@@ -4479,26 +4339,6 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.2.6.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.2.6.0/aisradar_pi-1.2.6.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -4603,6 +4443,26 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.20.0-debian-x86_64-10-buster-tarball/versions/v2.4.20.0/watchdog_pi-2.4.20.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.0.139.0+2089.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -4911,26 +4771,6 @@ Implements nautical almanac for sun, moon, planets and various navigational star
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/celestial_navigation_pi-2.3.3.14-ubuntu-x86_64-16.04-xenial-tarball/versions/2.3.3.14+285.42b31c0/celestial_navigation_pi-2.3.3.14-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi.git </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-android-arm64-16-android-arm64-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -5341,26 +5181,6 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>mingw-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-mingw-x86_64-10-mingw-tarball/versions/0.2.3.1+225.32aa36d/gps-odometer_pi-0.2.3.1-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Logbook </name>
     <version> 1.4.13.0 </version>
     <release> 0 </release>
@@ -5457,6 +5277,26 @@ OpenCPN support for S63 Vector Charts
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-10-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_raspbian-armhf-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.139.0+2093.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -5575,6 +5415,26 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-android-armhf-16-android-armhf-tarball/versions/1.0.139.0+2095.fbd98b6/testplugin_pi-1.0.139.0-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -5825,26 +5685,6 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer.git </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-android-arm64-16-android-arm64-tarball/versions/0.2.3.1+222.32aa36d/gps-odometer_pi-0.2.3.1-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.1.17.0 </version>
     <release> 0 </release>
@@ -5907,26 +5747,6 @@ such as dual radar range and Doppler.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-16.04-xenial-tarball/versions/0.2.3.1+223.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.16.725 </version>
     <release> 0 </release>
@@ -5943,26 +5763,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-16.04-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-18.04-bionic-tarball/versions/0.2.3.1+217.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -6205,26 +6005,6 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> SAR </name>
     <version> 2.6.20.0 </version>
     <release> 0 </release>
@@ -6267,46 +6047,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10.13.6</target-version>
     <target-arch>i386</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.2.0.092abe9/oernc_pi-1.2.2-0_darwin-10.13.6.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer.git </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-android-armhf-16-android-armhf-tarball/versions/0.2.3.1+224.32aa36d/gps-odometer_pi-0.2.3.1-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -6593,26 +6333,6 @@ https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/0.2.3.1+220.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -6775,6 +6495,26 @@ DR creates GPX files for dead reckoning positions
 https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/dr_pi-3.1.1.3-ubuntu-x86_64-14.04-trusty-tarball/versions/3.1.1.3/dr_pi-3.1.1.3-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:dead_reckoning </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.0.139.0+2097.fbd98b6/testplugin_pi-1.0.139.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -7207,26 +6947,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/0.2.3.1+226.32aa36d/gps-odometer_pi-0.2.3.1-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -7305,26 +7025,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.19.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.13.19.0/weather_routing_pi-1.13.19.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -7425,6 +7125,26 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.10.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.3.10.0/squiddio_pi-1.3.10.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-android-arm64-16-android-arm64-tarball/versions/1.0.139.0+2090.fbd98b6/testplugin_pi-1.0.139.0-android-arm64-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -7818,6 +7538,26 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-mingw-x86_64-10-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_mingw-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.0.139.0+1.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.16.725 </version>
     <release> 0 </release>
@@ -7834,26 +7574,6 @@ OpenCPN support for S63 Vector Charts
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-msvc-10.0.14393-tarball/versions/1.16.725.0.6cbce26/s63_pi-1.16.725-0_msvc-10.0.14393.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -8016,6 +7736,26 @@ https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.0.139.0+2085.fbd98b6/testplugin_pi-1.0.139.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -8054,46 +7794,6 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.3.1 </version>
-    <release> 1 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-beta/raw/names/gps-odometer_pi-0.2.3.1-msvc-x86_64-10.0.14393-MSVC-tarball/versions/0.2.3.1+138.32aa36d/gps-odometer_pi-0.2.3.1-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi.git </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-android-armhf-16-android-armhf-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -9216,6 +8916,26 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.139.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.139.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.139.0+896.c2736b0/testplugin_pi-1.0.139.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> pypilot </name>
     <version> 0.22.5.0 </version>
     <release> 0 </release>
@@ -9232,26 +8952,6 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
     <target-arch>x86_64</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.133.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.133.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.133.0/testplugin_pi-1.0.133.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
