@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-10-30 14:04</date>
+  <date>2020-11-06 15:58</date>
   <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.0.0 </version>
@@ -108,21 +108,21 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
+    <version> 0.3.0.0 </version>
     <release> 0 </release>
     <summary> GPS Odometer plugin for OpenCPN </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
     <description>
 GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
 </description>
-    <target>mingw</target>
-    <target-version>10</target-version>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-mingw-x86_64-10-mingw-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-mingw-x86_64-10-mingw.tar.gz
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
@@ -305,26 +305,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-mingw-x86_64-10-mingw-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -553,6 +533,26 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-debian-x86_64-10-buster-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -1439,26 +1439,6 @@ https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.2.4.0-ub
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-debian-x86_64-10-buster-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Logbook </name>
     <version> 1.4.13.0 </version>
     <release> 0 </release>
@@ -1659,6 +1639,26 @@ SAR is used to create search patterns for SAR
 https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.20.0-debian-x86_64-10-buster-tarball/versions/v2.6.20.0/sar_pi-2.6.20.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -1961,26 +1961,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-gtk3-x86_64-18.04-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -2482,26 +2462,6 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
@@ -3092,6 +3052,26 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-debian-x86_64-10-buster-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -3881,6 +3861,26 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.20
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -3959,26 +3959,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.21.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.4.21.0/watchdog_pi-2.4.21.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -4221,6 +4201,26 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-darwin-x86_64-10.13.6-macos-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -4403,26 +4403,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.20.0-debian-x86_64-10-buster-tarball/versions/v2.4.20.0/watchdog_pi-2.4.20.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -4613,26 +4593,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-mingw-10-tarball/versions/4.2.17.0.0.2c49724/oesenc_pi-4.2.17.0-0_mingw-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-raspbian-armhf-10-buster-armhf-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.13.19.0 </version>
     <release> 0 </release>
@@ -4671,26 +4631,6 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.10.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.3.10.0/squiddio_pi-1.3.10.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer.git </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-android-armhf-16-android-armhf-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -5261,6 +5201,26 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-raspbian-armhf-10-buster-armhf-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -5685,6 +5645,26 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Polar </name>
     <version> 1.1.17.0 </version>
     <release> 0 </release>
@@ -5727,26 +5707,6 @@ such as dual radar range and Doppler.
     <target-arch>i386</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-msvc-10.0.14393-tarball/versions/5.1.4.7.29db9fe/radar_pi-msvc-10.0.14393.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-darwin-x86_64-10.13.6-macos-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -6005,6 +5965,26 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-mingw-x86_64-10-mingw-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> SAR </name>
     <version> 2.6.20.0 </version>
     <release> 0 </release>
@@ -6147,26 +6127,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.21.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.21.0/windvane_pi-1.0.21.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -6625,6 +6585,46 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-raspbian-armhf-10-tarball/versions/4.2.17.1.0.7853d5a/oesenc_pi-4.2.17.1-0_raspbian-armhf-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.2 </version>
     <release> 0 </release>
@@ -7067,26 +7067,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.3.3.14 </version>
     <release> 14 </release>
@@ -7209,26 +7189,6 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.10.0-android-armhf-16-android-armhf-tarball/versions/v1.3.10.0/squiddio_pi-1.3.10.0-android-armhf-16.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer.git </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-android-arm64-16-android-arm64-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -8157,6 +8117,26 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-gtk3-x86_64-18.04-tarball/versions/4.2.17.1.0.7853d5a/oesenc_pi-4.2.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> GPS Odometer </name>
+    <version> 0.3.0.0 </version>
+    <release> 0 </release>
+    <summary> GPS Odometer plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> LennartG </author>
+    <source> https://github.com/LennartG-Sve/GPS-Odometer_pi </source>
+    <description>
+GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.3.3.14 </version>
     <release> 14 </release>
@@ -8656,26 +8636,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/cel
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -9002,25 +8962,5 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-arm64-18.04-tarball/versions/4.2.17.1.0.7853d5a/oesenc_pi-4.2.17.1-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> GPS Odometer </name>
-    <version> 0.2.5.0 </version>
-    <release> 0 </release>
-    <summary> GPS Odometer plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> LennartG </author>
-    <source> https://github.com/LennartG-Sve/GPS-Odometer </source>
-    <description>
-GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.2.5.0/gps-odometer_pi-0.2.5.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
 </plugins>
