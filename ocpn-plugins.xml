@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2020-11-06 15:58</date>
+  <date>2020-11-15 00:37</date>
   <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.0.0 </version>
@@ -613,6 +613,27 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.7.6.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.7.6.0/statusbar_pi-0.7.6.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1175.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-darwin-10.13.6-tarball/versions/2.5.52+1175.v2.5.52/ShipDriver-2.5.52+1175.v2.5.52_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 9165c7b54b2a4fd8d99512ddb3ed23b669a896cb1a497d60a1bc902a07a76e58 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1457,6 +1478,27 @@ Thanks to the community for their helpful suggestions. If you find a bug post it
 https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.13.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.4.13.0/logbookkonni_pi-1.4.13.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1179.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-flatpak-18.08-tarball/versions/2.5.52+1179.v2.5.52/ShipDriver-2.5.52+1179.v2.5.52_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 5a875c4e14979d53fe0e1bcc9c1160bb40b03ab08086e2f069c9e2e297525b96 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -2325,6 +2367,27 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1178.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>mingw-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-mingw-10-tarball/versions/2.5.52+1178.v2.5.52/ShipDriver-2.5.52+1178.v2.5.52_mingw-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> ce2610e8469d8ea2b9a13feca7ee3cb1af908a5d697c40c878d040d9945a4623 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.2.0.0 </version>
     <release> 0 </release>
@@ -2722,6 +2785,27 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1182.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-ubuntu-18.04-tarball/versions/2.5.52+1182.v2.5.52/ShipDriver-2.5.52+1182.v2.5.52_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 92f8f0108e8cb46fab5e58604c0793d4c57ef28a21bbc45e13ca36127de71c2f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.4.15.0 </version>
     <release> 0 </release>
@@ -2928,6 +3012,27 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-raspbian-armhf-9.4-stretch-armhf-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+240.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-msvc-10.0.14393-tarball/versions/2.5.52+240.v2.5.52/ShipDriver-2.5.52+240.v2.5.52_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 3267146f447f763e525e777e718a177ab26caadd8e3fe09368ed6cfdf03d103d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -3632,6 +3737,27 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1173.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-raspbian-9.13-tarball/versions/2.5.52+1173.v2.5.52/ShipDriver-2.5.52+1173.v2.5.52_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 55b43f2656a5360a38e1ba5184a2e6ed98646b9befca26eacc6c7305853431f7 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -5221,6 +5347,27 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1177.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-raspbian-10-tarball/versions/2.5.52+1177.v2.5.52/ShipDriver-2.5.52+1177.v2.5.52_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 320eedd0a581921c3e4b8324f867b33747a22abc1f2d431fe0c4a192aa1de079 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -5883,6 +6030,27 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.4.15.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.4.15.0/climatology_pi-1.4.15.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1176.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-ubuntu-16.04-tarball/versions/2.5.52+1176.v2.5.52/ShipDriver-2.5.52+1176.v2.5.52_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> cdb95a8b30a058379a1146a14f7f888bfa664d9205661d499b2edf73c841a83f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -6623,6 +6791,27 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gps-odometer_pi-0.3.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.3.0.0/gps-odometer_pi-0.3.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1180.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-ubuntu-20.04-tarball/versions/2.5.52+1180.v2.5.52/ShipDriver-2.5.52+1180.v2.5.52_ubuntu-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e76c76eda4b4af8fb44be848e59406284622b89864bc70eb4c36722bb4b54e12 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -8275,6 +8464,27 @@ Open image files directly or decode audio faxes to an image. With simple calibra
 https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.14.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.9.14.0/weatherfax_pi-1.9.14.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 2.5.52+1174.v2.5.52 </version>
+    <release> 1 </release>
+    <summary> Ship movements simulator - or is it a game? </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-debian-10-tarball/versions/2.5.52+1174.v2.5.52/ShipDriver-2.5.52+1174.v2.5.52_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 8d014ab0a15eb8d6807edfddb6e0e33ca267c9463f7efe151f4e8226c77c520a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
