@@ -93,6 +93,7 @@
 <xs:element name="build-gtk">
     <xs:simpleType>
         <xs:restriction base = "xs:string">
+            <xs:enumeration value = ""/>
             <xs:enumeration value = "gtk2"/>
             <xs:enumeration value = "gtk3"/>
         </xs:restriction>
