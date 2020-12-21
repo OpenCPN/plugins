@@ -31,6 +31,8 @@
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="description" type="xs:string"/>
       <xs:element name="target" type="xs:token"/>
+      <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="build-gtk" minOccurs="0" maxOccurs="1"/>
       <xs:element name="target-version" type="xs:token"/>
       <xs:element name="tarball-url" type="xs:token"/>
       <!-- Tarball sha256 checksum , not implemented. -->
@@ -44,6 +46,31 @@
   </xs:complexType>
 </xs:element>
  
+<xs:element name="build-target">
+    <xs:simpleType>
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value = "all"/>
+            <xs:enumeration value = "darwin"/>
+            <xs:enumeration value = "debian"/>
+            <xs:enumeration value = "flatpak"/>
+            <xs:enumeration value = "mingw"/>
+            <xs:enumeration value = "msvc"/>
+            <xs:enumeration value = "raspbian"/>
+            <xs:enumeration value = "ubuntu"/>
+            <xs:enumeration value = "android"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="build-gtk">
+    <xs:simpleType>
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value = ""/>
+            <xs:enumeration value = "gtk2"/>
+            <xs:enumeration value = "gtk3"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
 
 </xs:schema>
 
