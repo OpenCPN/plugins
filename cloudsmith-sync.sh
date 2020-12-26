@@ -17,6 +17,7 @@ PROJECT="${1}"
 CLOUDSMITH_USER="${2}"
 CLOUDSMITH_REPO="${3}"
 QUERY="${4}"
+TOPDIR="${PWD}"
 
 cd metadata
 for url in $(
@@ -30,4 +31,5 @@ do
   # -r to clobber existing file
   file=$(basename "${url}")
   curl -s -S -o "${file}" "${url}"
+  xmllint --schema "${TOPDIR}/ocpn-plugins.xsd" "${file}"
 done
