@@ -29,6 +29,9 @@
   </xs:complexType>
 </xs:element>
 
+<!-- Metadata files uses opencpn-plugin, ocpn-plugins.xml uses plugin. -->
+<xs:element name="opencpn-plugin" substitutionGroup="plugin"/>
+
 <xs:element name="summary">
   <xs:simpleType>
     <xs:restriction base="xs:token">
@@ -41,10 +44,10 @@
 <xs:element name="target-arch">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
-      <xs:enumeration value = "i386"/>
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>
+      <xs:enumeration value = "noarch"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:element> 
@@ -52,12 +55,13 @@
 <xs:element name="target">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
+      <xs:enumeration value = "all"/>
       <xs:enumeration value = "darwin"/>
       <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
-      <xs:enumeration value = "flatpak"/>
       <xs:enumeration value = "flatpak-x86_64"/>
-      <xs:enumeration value = "mingw"/>
+      <xs:enumeration value = "mingw"/> <!-- transitional, see OpenCPN#2061 -->
+      <xs:enumeration value = "mingw-x86_64"/>
       <xs:enumeration value = "msvc"/>
       <xs:enumeration value = "raspbian-armhf"/>
       <xs:enumeration value = "ubuntu-arm64"/>
