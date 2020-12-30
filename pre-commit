@@ -7,15 +7,16 @@
 
 function files_to_update()
 {
-    git diff --cached --name-status | grep -v ^D | awk '$1 $2 { print $2}'
+    git diff --cached --name-status | grep -v ^D | awk '$1 $2 { print $NF; }'
 }
+topdir="$(git rev-parse --show-toplevel)"
+here="$(dirname $0)"
 
-topdir=$( git rev-parse --show-toplevel )
-
-XML_SOURCES=( $( files_to_update | grep -E '\.xml$'))
+XML_SOURCES=( $(files_to_update | grep -E '\.xml$'))
 
 if [ -n "$XML_SOURCES" ]; then
-  xmllint --schema $topdir/ocpn-plugins.xsd  $XML_SOURCES --noout || exit 1
+  xmllint --schema $topdir/ocpn-plugin.xsd  $XML_SOURCES --noout || exit 1
+  "${here}/../../tools/check-metadata-urls" $XML_SOURCES  || exit 1
 fi
 
 # If there are whitespace errors, print the offending file names and fail.
