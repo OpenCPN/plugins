@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<xs:include schemaLocation="ocpn-plugin.xsd"/>
+
 <xs:element name="plugins">
   <xs:complexType>
     <xs:sequence>
@@ -11,66 +13,4 @@
   </xs:complexType>
 </xs:element>
 
-<xs:element name="plugin">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="name" type="xs:token"/>
-      <xs:element name="version" type="xs:token"/>
-      <xs:element name="release" type="xs:token"/>
-      <xs:element name="summary">
-        <xs:simpleType>
-          <xs:restriction base="xs:token">
-            <xs:maxLength value="72"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="api-version" type="xs:token"/>
-      <xs:element name="open-source" type="xs:token"/>
-      <xs:element name="author" type="xs:token"/>
-      <xs:element name="source" type="xs:token"/>
-      <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="description" type="xs:string"/>
-      <xs:element name="target" type="xs:token"/>
-      <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>
-      <xs:element ref="build-gtk" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="target-version" type="xs:token"/>
-      <xs:element name="tarball-url" type="xs:token"/>
-      <!-- Tarball sha256 checksum , not implemented. -->
-      <xs:element name="tarball-checksum" type="xs:token"
-                  minOccurs="0" maxOccurs="1"/>
-      <!-- Path to downloadable ṕlugin icon, not implemented. -->
-      <xs:element name="icon-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-    </xs:sequence>
-    <xs:attribute name="version" type="xs:string" use="required"/>
-  </xs:complexType>
-</xs:element>
-
-<xs:element name="build-target">
-    <xs:simpleType>
-        <xs:restriction base = "xs:string">
-            <xs:enumeration value = "all"/>
-            <xs:enumeration value = "darwin"/>
-            <xs:enumeration value = "debian"/>
-            <xs:enumeration value = "flatpak"/>
-            <xs:enumeration value = "mingw"/>
-            <xs:enumeration value = "msvc"/>
-            <xs:enumeration value = "raspbian"/>
-            <xs:enumeration value = "ubuntu"/>
-            <xs:enumeration value = "android"/>
-        </xs:restriction>
-    </xs:simpleType>
-</xs:element>
-
-<xs:element name="build-gtk">
-    <xs:simpleType>
-        <xs:restriction base = "xs:string">
-            <xs:enumeration value = ""/>
-            <xs:enumeration value = "gtk2"/>
-            <xs:enumeration value = "gtk3"/>
-        </xs:restriction>
-    </xs:simpleType>
-</xs:element>
-
 </xs:schema>
-
