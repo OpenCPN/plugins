@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> GPS Odometer </name>
-<version> 0.4.0.0 </version>
+<version> 0.4.1.0 </version>
 <release> 0 </release>
 <summary> GPS Odometer plugin for OpenCPN </summary>
 
@@ -14,13 +14,13 @@
 GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calculated Log and Trip information
 </description>
 
-<target>ubuntu-x86_64</target>
+<target>ubuntu-gtk3-arm64</target>
 <build-target>ubuntu</build-target>
-<build-gtk></build-gtk>
-<target-version>16.04</target-version>
-<target-arch>x86_64</target-arch>
+<build-gtk>gtk3</build-gtk>
+<target-version>18.04</target-version>
+<target-arch>arm64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.0.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.4.0.0/gpsodometer_pi-0.4.0.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.1.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.4.1.0/gpsodometer_pi-0.4.1.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
 </plugin>
