@@ -1,7 +1,396 @@
 <?xml version="1.0" ?>
 <plugins>
-  <version>0.0.0</version>
-  <date>2021-01-11 01:43</date>
+  <version>0.0.1</version>
+  <date>2021-01-13 21:34</date>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta2</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-mingw-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-mingw-10.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-raspbian-armhf-9.4-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-raspbian-armhf-9.4.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+102.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-msvc-10.0.14393-tarball/versions/1.3.2+102.v1.3.2-beta/TideFinder-1.3.2+102.v1.3.2-beta_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 37a2e37546c2d83c56d3c82053cddb37e19428085a19ee4bd70e37d9d7a6fced </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.21.9 </version>
+    <release> 9 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi.git </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.21.9-android-armhf-16-android-armhf-tarball/versions/2.4.21.9+1222.3de83c5/watchdog_pi-2.4.21.9-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-raspbian-armhf-10-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-raspbian-armhf-10.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+893.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-raspbian-9.13-tarball/versions/1.3.2+893.v1.3.2-beta/TideFinder-1.3.2+893.v1.3.2-beta_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 301c052a55019da1f099c66fa1ea6515e73f17d08f2c1123c16661d2cbdee6bf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-darwin-x86_64-10.13.6-macos-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-darwin-x86_64-10.13.6-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+898.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-16.04-tarball/versions/1.3.2+898.v1.3.2-beta/TideFinder-1.3.2+898.v1.3.2-beta_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a6b788b4300fcf5b4835efc2d0a05f2812af615f07bcc43ead04623111d151f1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta2</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-msvc-10.0.14393-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-msvc-10.0.14393.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.0.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/ </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.0.0-android-armhf-16-android-armhf-tarball/versions/v0.22.0.0/pypilot_pi-0.22.0.0-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-mingw-10-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-mingw-10.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-android-armhf-16-android-armhf-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>darwin</target>
+    <target-version>10.15.1</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-darwin-10.15.1-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-darwin-10.15.1.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-raspbian-armhf-10-buster-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-debian-x86_64-10-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-debian-x86_64-10.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
   <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.137.0 </version>
@@ -19,6 +408,289 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
     <target-arch>armhf</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-raspbian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta2</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-gtk3-x86_64-20.04-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-ubuntu-gtk3-x86_64-20.04.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/ </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-android-armhf-16-android-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+894.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-18.04-tarball/versions/1.3.2+894.v1.3.2-beta/TideFinder-1.3.2+894.v1.3.2-beta_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 5d47a9fd26b4c9cd507c652d9adbff53f0bb382f81addd62a342d6b287d9f8a4 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>raspbian-armhf</target>
+    <target-version>9.4</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-arm64</target>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi.git </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-android-arm64-16-android-arm64-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-android-arm64-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -59,173 +731,63 @@ such as dual radar range and Doppler.
     <description>
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-debian-x86_64-10-buster-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
     <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
 </description>
     <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-x86_64-18.04-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-ubuntu-x86_64-18.04.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
     <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
 </description>
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.21.9 </version>
-    <release> 9 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi.git </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.21.9-android-armhf-16-android-armhf-tarball/versions/2.4.21.9+1222.3de83c5/watchdog_pi-2.4.21.9-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-msvc-10.0.14393-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-msvc-10.0.14393.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
     <name>Radar</name>
@@ -246,71 +808,11 @@ Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
 </description>
-    <target>darwin</target>
-    <target-version>10.15.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-darwin-10.15.1-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-darwin-10.15.1.tar.gz</tarball-url>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-raspbian-armhf-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-raspbian-armhf-10.tar.gz</tarball-url>
     <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-mingw-x86_64-10-mingw-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-debian-x86_64-10-buster-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-darwin-x86_64-10.13.6-macos-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -333,26 +835,6 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-raspbian-armhf-10-buster-armhf-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> pypilot </name>
     <version> 0.22.4.0 </version>
     <release> 0 </release>
@@ -364,152 +846,13 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <description>
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
     <target>ubuntu-x86_64</target>
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.0.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/ </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.0.0-android-arm64-16-android-arm64-tarball/versions/v0.22.0.0/pypilot_pi-0.22.0.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+102.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-msvc-10.0.14393-tarball/versions/1.3.2+102.v1.3.2-beta/TideFinder-1.3.2+102.v1.3.2-beta_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> 37a2e37546c2d83c56d3c82053cddb37e19428085a19ee4bd70e37d9d7a6fced </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+902.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-gtk3-20.04-tarball/versions/1.3.2+902.v1.3.2-beta/TideFinder-1.3.2+902.v1.3.2-beta_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 384e04e7f2f1688234087eaa3b3089b6fd5025c4a8b2d6fcbb8538bf45f3d1c8 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+896.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>mingw-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-mingw-10-tarball/versions/1.3.2+896.v1.3.2-beta/TideFinder-1.3.2+896.v1.3.2-beta_mingw-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 5b6075848bbf95bd20f45fd8edc3eca190a46b9bc47dafd9a54ce7ea702b01d1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name>Radar</name>
-    <version>5.2.0-beta2</version>
-    <release>0</release>
-    <summary>Overlays the radar picture on OpenCPN</summary>
-    <api-version>1.16</api-version>
-    <open-source>yes</open-source>
-    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
-    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
-    <description>
-Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-gtk3-x86_64-20.04-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-ubuntu-gtk3-x86_64-20.04.tar.gz</tarball-url>
-    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -532,42 +875,29 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+897.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-flatpak-18.08-tarball/versions/1.3.2+897.v1.3.2-beta/TideFinder-1.3.2+897.v1.3.2-beta_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 4e2815b46151d8e88a0e8c5c65f2a0b2186ddfc1f09d45390592dccf526bde0f </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
     <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
 </description>
     <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
+    <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-x86_64-16.04-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-ubuntu-x86_64-16.04.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -581,11 +911,11 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-x86_64_flatpak-18.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
@@ -601,37 +931,60 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
     <target>debian-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-debian-x86_64-10-buster-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-debian-x86_64-10-buster-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+899.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-darwin-10.13.6-tarball/versions/1.3.2+899.v1.3.2-beta/TideFinder-1.3.2+899.v1.3.2-beta_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 33ce1e63089bb483b621c1cfa5e3e6b44305f4eb2c10c9d61d5a131a072b406b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta3</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-gtk3-x86_64-20.04-tarball/versions/5.2.0-beta3.0.28b90a5/radar_pi-5.2.0-beta3-ov51-ubuntu-gtk3-x86_64-20.04.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
     <name> pypilot </name>
-    <version> 0.22.4.0 </version>
+    <version> 0.22.0.0 </version>
     <release> 0 </release>
     <summary> Pypilot PlugIn for OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -645,45 +998,7 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
     <target-version>16</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-android-arm64-16-android-arm64-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+895.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-gtk3-18.04-tarball/versions/1.3.2+895.v1.3.2-beta/TideFinder-1.3.2+895.v1.3.2-beta_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 0a2e1afa54ac1762de916456aec7382eb8e25a15b4cd8dd053f82787b4eb9942 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/ </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-android-armhf-16-android-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-android-armhf-16.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.0.0-android-arm64-16-android-arm64-tarball/versions/v0.22.0.0/pypilot_pi-0.22.0.0-android-arm64-16.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -713,62 +1028,24 @@ such as dual radar range and Doppler.
     <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi.git </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
     <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-android-arm64-16-android-arm64-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+894.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
     <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-18.04-tarball/versions/1.3.2+894.v1.3.2-beta/TideFinder-1.3.2+894.v1.3.2-beta_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 5d47a9fd26b4c9cd507c652d9adbff53f0bb382f81addd62a342d6b287d9f8a4 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
+    <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-mingw-x86_64-10-mingw-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-mingw-x86_64-10-mingw.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -778,77 +1055,17 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi.git </source>
+    <source> https://github.com/rgleason/watchdog_pi </source>
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-android-armhf-16-android-armhf-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.21.9 </version>
-    <release> 9 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi.git </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.21.9-android-arm64-16-android-arm64-tarball/versions/2.4.21.9+1224.3de83c5/watchdog_pi-2.4.21.9-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-raspbian-armhf-10-buster-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -862,205 +1079,11 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <description>
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-debian-x86_64-10-buster-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+899.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-darwin-10.13.6-tarball/versions/1.3.2+899.v1.3.2-beta/TideFinder-1.3.2+899.v1.3.2-beta_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 33ce1e63089bb483b621c1cfa5e3e6b44305f4eb2c10c9d61d5a131a072b406b </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+898.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
     <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-16.04-tarball/versions/1.3.2+898.v1.3.2-beta/TideFinder-1.3.2+898.v1.3.2-beta_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> a6b788b4300fcf5b4835efc2d0a05f2812af615f07bcc43ead04623111d151f1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.22.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi.git </source>
-    <description>
-Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
-</description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-android-arm64-16-android-arm64-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-android-arm64-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi.git </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-android-armhf-16-android-armhf-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+893.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-raspbian-9.13-tarball/versions/1.3.2+893.v1.3.2-beta/TideFinder-1.3.2+893.v1.3.2-beta_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 301c052a55019da1f099c66fa1ea6515e73f17d08f2c1123c16661d2cbdee6bf </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1083,11 +1106,49 @@ Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
 </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
+    <target>darwin</target>
+    <target-version>10.15.1</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-msvc-10.0.14393-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-msvc-10.0.14393.tar.gz</tarball-url>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-darwin-10.15.1-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-darwin-10.15.1.tar.gz</tarball-url>
     <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.21.9 </version>
+    <release> 9 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi.git </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.21.9-android-arm64-16-android-arm64-tarball/versions/2.4.21.9+1224.3de83c5/watchdog_pi-2.4.21.9-android-arm64-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+901.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-raspbian-10-tarball/versions/1.3.2+901.v1.3.2-beta/TideFinder-1.3.2+901.v1.3.2-beta_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 0271cc17dbdf6dfe1ff1c1d388f7ec424cafe36497117e839a2225f66d0c639a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -1110,22 +1171,22 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> testplugin </name>
-    <version> 1.0.137.0 </version>
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/ </source>
     <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-x86_64_flatpak-18.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-android-arm64-16-android-arm64-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-android-arm64-16.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1168,11 +1229,268 @@ Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
 </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-raspbian-armhf-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-raspbian-armhf-10.tar.gz</tarball-url>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-x86_64-18.04-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-ubuntu-x86_64-18.04.tar.gz</tarball-url>
     <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-debian-x86_64-10-buster-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-mingw-x86_64-10-mingw-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-android-arm64-16-android-arm64-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-android-arm64-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+900.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-debian-10-tarball/versions/1.3.2+900.v1.3.2-beta/TideFinder-1.3.2+900.v1.3.2-beta_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 656f9e4acba76f90ecfabe9a4e45b1468d014b10fc637c0bf16e5bafec852f4b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Radar</name>
+    <version>5.2.0-beta2</version>
+    <release>0</release>
+    <summary>Overlays the radar picture on OpenCPN</summary>
+    <api-version>1.16</api-version>
+    <open-source>yes</open-source>
+    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
+    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
+    <description>
+Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+</description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-debian-x86_64-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-debian-x86_64-10.tar.gz</tarball-url>
+    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+895.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-gtk3-18.04-tarball/versions/1.3.2+895.v1.3.2-beta/TideFinder-1.3.2+895.v1.3.2-beta_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 0a2e1afa54ac1762de916456aec7382eb8e25a15b4cd8dd053f82787b4eb9942 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> pypilot </name>
+    <version> 0.22.4.0 </version>
+    <release> 0 </release>
+    <summary> Pypilot PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/pypilot_pi </source>
+    <description>
+Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
+</description>
+    <target>mingw</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-mingw-x86_64-10-mingw-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.22.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi.git </source>
+    <description>
+Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
+</description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-android-armhf-16-android-armhf-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-android-armhf-16.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+897.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-flatpak-18.08-tarball/versions/1.3.2+897.v1.3.2-beta/TideFinder-1.3.2+897.v1.3.2-beta_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4e2815b46151d8e88a0e8c5c65f2a0b2186ddfc1f09d45390592dccf526bde0f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> TideFinder </name>
+    <version> 1.3.2+902.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-ubuntu-gtk3-20.04-tarball/versions/1.3.2+902.v1.3.2-beta/TideFinder-1.3.2+902.v1.3.2-beta_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 384e04e7f2f1688234087eaa3b3089b6fd5025c4a8b2d6fcbb8538bf45f3d1c8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -1206,56 +1524,13 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-raspbian-armhf-10-buster-armhf-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+900.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-debian-10-tarball/versions/1.3.2+900.v1.3.2-beta/TideFinder-1.3.2+900.v1.3.2-beta_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 656f9e4acba76f90ecfabe9a4e45b1468d014b10fc637c0bf16e5bafec852f4b </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name>Radar</name>
-    <version>5.2.0-beta2</version>
-    <release>0</release>
-    <summary>Overlays the radar picture on OpenCPN</summary>
-    <api-version>1.16</api-version>
-    <open-source>yes</open-source>
-    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
-    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
-    <description>
-Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-x86_64-18.04-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-ubuntu-x86_64-18.04.tar.gz</tarball-url>
-    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1269,13 +1544,33 @@ such as dual radar range and Doppler.
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.137.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -1289,38 +1584,31 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <description>
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
-    <target>ubuntu-arm64</target>
+    <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name>Radar</name>
-    <version>5.2.0-beta2</version>
-    <release>0</release>
-    <summary>Overlays the radar picture on OpenCPN</summary>
-    <api-version>1.16</api-version>
-    <open-source>yes</open-source>
-    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
-    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
-    <description>
-Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
-</description>
-    <target>mingw</target>
+    <name> TideFinder </name>
+    <version> 1.3.2+896.v1.3.2-beta </version>
+    <release> 1 </release>
+    <summary> Help for tidal prediction  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/TideFinder_pi </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
+    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
+ </description>
+    <target>mingw-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-mingw-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-mingw-10.tar.gz</tarball-url>
-    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-mingw-10-tarball/versions/1.3.2+896.v1.3.2-beta/TideFinder-1.3.2+896.v1.3.2-beta_mingw-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> 5b6075848bbf95bd20f45fd8edc3eca190a46b9bc47dafd9a54ce7ea702b01d1 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1334,75 +1622,12 @@ such as dual radar range and Doppler.
     <description>
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> TideFinder </name>
-    <version> 1.3.2+901.v1.3.2-beta </version>
-    <release> 1 </release>
-    <summary> Help for tidal prediction  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/TideFinder_pi </source>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:otides </info-url>
-    <description> Simplifies the prediction of tides for dates in the future. Selects the tidal stations within the area of the vessel
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.3-raspbian-10-tarball/versions/1.3.2+901.v1.3.2-beta/TideFinder-1.3.2+901.v1.3.2-beta_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 0271cc17dbdf6dfe1ff1c1d388f7ec424cafe36497117e839a2225f66d0c639a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name>Radar</name>
-    <version>5.2.0-beta2</version>
-    <release>0</release>
-    <summary>Overlays the radar picture on OpenCPN</summary>
-    <api-version>1.16</api-version>
-    <open-source>yes</open-source>
-    <author>Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register</author>
-    <source>https://github.com/opencpn-radar-pi/radar_pi</source>
-    <description>
-Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-debian-x86_64-10-tarball/versions/5.2.0-beta2.0.306de23/radar_pi-5.2.0-beta2-ov51-debian-x86_64-10.tar.gz</tarball-url>
-    <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.22.0.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/ </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
-</description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.0.0-android-armhf-16-android-armhf-tarball/versions/v0.22.0.0/pypilot_pi-0.22.0.0-android-armhf-16.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
 </plugins>
