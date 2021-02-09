@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> OCPN Draw </name>
-<version> 1.8.0.18 </version>
-<release> 18 </release>
+<version> 1.8.5.2 </version>
+<release> 2 </release>
 <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,11 +14,13 @@
 OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
 
-<target>ubuntu-x86_64</target>
-<target-version>18.04</target-version>
-<target-arch>x86_64</target-arch>
+<target>android-armhf</target>
+<build-target>android</build-target>
+<build-gtk></build-gtk>
+<target-version>16</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/jon-gough/ocpn_draw_pi-prod/raw/names/ocpn_draw_pi-1.8.0.18-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.8.0.18/ocpn_draw_pi-1.8.0.18-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.8.5.2-android-armhf-16-android-armhf-tarball/versions/v1.8.5.2/ocpn_draw_pi-1.8.5.2-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
 </plugin>
