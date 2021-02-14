@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Watchdog </name>
-<version> 2.4.21.0 </version>
+<version> 2.4.23.0 </version>
 <release> 0 </release>
 <summary> Implement watchdog ability for opencpn </summary>
 
@@ -14,11 +14,13 @@
 Multiple Configurable alarms for changing conditions for boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman, etc.
 </description>
 
-<target>ubuntu-x86_64</target>
-<target-version>16.04</target-version>
+<target>ubuntu-gtk3-x86_64</target>
+<build-target>ubuntu</build-target>
+<build-gtk>gtk3</build-gtk>
+<target-version>20.04</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.21.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.21.0/watchdog_pi-2.4.21.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.23.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/2.4.23.0+1584.8dfb00b/watchdog_pi-2.4.23.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
 </plugin>
