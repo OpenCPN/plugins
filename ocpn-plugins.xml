@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-02-14 19:39</date>
+  <date>2021-02-18 00:14</date>
   <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.6.0 </version>
@@ -1017,6 +1017,24 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3673.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-darwin-10.13.6-tarball/versions/3.4.2+3673.v3.4.2/photolayer-3.4.2+3673.v3.4.2_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 053330a01ceffd3c29d898d2d247c19defd4feb10389cacac5af11a167c3db21 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -1199,24 +1217,6 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.4.23.0-android-arm64-16-android-arm64-tarball/versions/v1.4.23.0/climatology_pi-1.4.23.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3102.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-darwin-10.13.6-tarball/versions/3.3.1+3102.v3.3.1/photolayer-3.3.1+3102.v3.3.1_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f40a090dfdeaddbdd83fd2599a20851991c9b81ad67d7c7d2bc91f7f72d2c564 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -1647,24 +1647,6 @@ https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.2.4.0-ra
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3106.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-debian-10-tarball/versions/3.3.1+3106.v3.3.1/photolayer-3.3.1+3106.v3.3.1_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 5907e15981fb354a8283d8815017920d642e0409ac6d8f7beace0079e37b9ff5 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.143.0 </version>
     <release> 0 </release>
@@ -2053,6 +2035,24 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3677.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-debian-10-tarball/versions/3.4.2+3677.v3.4.2/photolayer-3.4.2+3677.v3.4.2_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 640dc14cf2d49c2b4593ab6e9defca3cd9485d78805b88ebff6e16e7c9d4f48d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.20.0 </version>
     <release> 0 </release>
@@ -2295,24 +2295,6 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3109.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-ubuntu-gtk3-18.04-tarball/versions/3.3.1+3109.v3.3.1/photolayer-3.3.1+3109.v3.3.1_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 29f313e0aec3eff16502dc51595961312172fd8e64f03db2305ed9209948c006 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -3064,24 +3046,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3105.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-ubuntu-18.04-tarball/versions/3.3.1+3105.v3.3.1/photolayer-3.3.1+3105.v3.3.1_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 89fe36185e6e2427d5dea61480e894559dc5ddbbbed8023f2604100626215160 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> vfkaps </name>
     <version> 2.1.1.7 </version>
     <release> 7 </release>
@@ -3476,6 +3440,24 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3676.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-raspbian-10-tarball/versions/3.4.2+3676.v3.4.2/photolayer-3.4.2+3676.v3.4.2_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 94895a72b62f9ba7d98b44980af64f8fc744a33ba444088ae44b8328441be143 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.143.0 </version>
     <release> 0 </release>
@@ -3696,24 +3678,6 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.10.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.3.10.0/squiddio_pi-1.3.10.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3104.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-raspbian-10-tarball/versions/3.3.1+3104.v3.3.1/photolayer-3.3.1+3104.v3.3.1_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> ac52daa1ca5ccaeb48ca1d9bbd9d3d889f495a17934e6993a084ef3fd6d3e3a3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -4799,6 +4763,24 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3671.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-ubuntu-gtk3-18.04-tarball/versions/3.4.2+3671.v3.4.2/photolayer-3.4.2+3671.v3.4.2_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 80e7cf40c87f3d79fb1d1dea411283b7b9613561f2bdcaf64eb2f070cefd5c8d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.4.23.0 </version>
     <release> 0 </release>
@@ -5047,6 +5029,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+400.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-msvc-10.0.14393-tarball/versions/3.4.2+400.v3.4.2/photolayer-3.4.2+400.v3.4.2_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 72f66a7c14dd63c7821477b3ccbaacc3f24ec50d8323fd841604e5c70b035be6 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.10.0 </version>
     <release> 0 </release>
@@ -5085,24 +5085,6 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-mingw-x86_64-10-mingw-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3107.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-ubuntu-16.04-tarball/versions/3.3.1+3107.v3.3.1/photolayer-3.3.1+3107.v3.3.1_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f732a082c4fbed17927d2fa0f7d39959c89f746faaea07ca404a3f6a7a853eb3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -5679,24 +5661,6 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+322.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-msvc-10.0.14393-tarball/versions/3.3.1+322.v3.3.1/photolayer-3.3.1+322.v3.3.1_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> cb9efd51e663220ada67df8c8a69e6061a5f2b6d045c0c577021785bbe297c24 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -6191,6 +6155,24 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3670.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-raspbian-9.13-tarball/versions/3.4.2+3670.v3.4.2/photolayer-3.4.2+3670.v3.4.2_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 0e241eff0c25bbdaadd9abae3f0278c20db116d8197da68c5a769a655cb1ca7a </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.5.2 </version>
     <release> 2 </release>
@@ -6277,6 +6259,24 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.8.5.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.8.5.2/ocpn_draw_pi-1.8.5.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3675.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-ubuntu-16.04-tarball/versions/3.4.2+3675.v3.4.2/photolayer-3.4.2+3675.v3.4.2_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e033ca126911dd493403c25e2cf4f0f5254c41c9be46bf83e452765ec2eb0ae8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -7356,24 +7356,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3103.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-ubuntu-gtk3-20.04-tarball/versions/3.3.1+3103.v3.3.1/photolayer-3.3.1+3103.v3.3.1_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 7145708b1367311f635d70c7caf98c312c1abb84410a41ec1cfb04bd286cafba </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.6.0 </version>
     <release> 0 </release>
@@ -7554,6 +7536,42 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3674.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-ubuntu-18.04-tarball/versions/3.4.2+3674.v3.4.2/photolayer-3.4.2+3674.v3.4.2_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b6dfacc6b31fec10ef6ffc5ba8b17869c369c31edf1d9ab599fe1ad500915b19 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3672.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-flatpak-18.08-tarball/versions/3.4.2+3672.v3.4.2/photolayer-3.4.2+3672.v3.4.2_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b6373df1896f498b3b80a5ced8795bede96b345e527385e7bcfb4d271b17e899 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -8189,6 +8207,24 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Photolayer </name>
+    <version> 3.4.2+3669.v3.4.2 </version>
+    <release> 1 </release>
+    <summary> Import GeoTiff satellite photo overlay files</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/photolayer_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
+    <description> Display geotiff files with adjustable transparency, as an overlay.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-ubuntu-gtk3-20.04-tarball/versions/3.4.2+3669.v3.4.2/photolayer-3.4.2+3669.v3.4.2_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4296e8347ac068379f3a4c8f945d715bbb7dcf5d777aadc1afe4c4c8a4645900 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -8269,24 +8305,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboardtactics_pi-1.6.6.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.6.6.0/dashboardtactics_pi-1.6.6.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3101.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-flatpak-18.08-tarball/versions/3.3.1+3101.v3.3.1/photolayer-3.3.1+3101.v3.3.1_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 863b77d3debfa77680d55ed0856a53a241b8b3665945ff6db9dd5d05e20fa3a3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -8954,24 +8972,6 @@ Download and install KAP charts from VentureFarther.com
 https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf-tarball/versions/V2.1.1.7/vfkaps_pi-2.1.1.7-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Photolayer </name>
-    <version> 3.3.1+3108.v3.3.1 </version>
-    <release> 1 </release>
-    <summary> Import GeoTiff satellite photo overlay files</summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/photolayer_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/photolayer.html </info-url>
-    <description> Display geotiff files with adjustable transparency, as an overlay.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.3-raspbian-9.13-tarball/versions/3.3.1+3108.v3.3.1/photolayer-3.3.1+3108.v3.3.1_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 830b9b65b02617d466ecc4eff820ed5f89461f956a6b10427f275a533af2f43c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
