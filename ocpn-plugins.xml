@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-02-19 01:13</date>
+  <date>2021-02-20 15:46</date>
   <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.6.0 </version>
@@ -261,26 +261,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-r
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -1279,6 +1259,25 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+93.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-msvc-10.0.14393-tarball/versions/2.8.7+93.v2.8.7/otcurrent-2.8.7+93.v2.8.7_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 572855fab44abb89e60867d3bbf1da6cfa4eeab196d533bb05dcf78e4d76222b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -1806,6 +1805,25 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+845.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-ubuntu-gtk3-20.04-tarball/versions/2.8.7+845.v2.8.7/otcurrent-2.8.7+845.v2.8.7_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 9aeee35c04960e44797de2cca07d63453dc4b0076729a3a73e03d1350bc05993 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.14.0 </version>
     <release> 0 </release>
@@ -1846,26 +1864,6 @@ Implements nautical almanac for sun, moon, planets and various navigational star
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.3.4.0-raspbian-armhf-10-buster-armhf-tarball/versions/v2.3.4.0/celestial_navigation_pi-2.3.4.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -2425,26 +2423,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-debian-x86_64-10-buster-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
-  </plugin>
-  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.9 </version>
     <release> 0 </release>
@@ -2590,26 +2568,6 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.23.2-darwin-x86_64-10.14.4-macos-tarball/versions/2.4.23.2+1621.ee3f0de/watchdog_pi-2.4.23.2-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-flatpak-x86_64-18.08-flatpak-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> SAR </name>
@@ -3102,6 +3060,44 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+270.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+853.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-ubuntu-16.04-tarball/versions/2.8.7+853.v2.8.7/otcurrent-2.8.7+853.v2.8.7_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 9e9ccfe62ff1d14b4311af840ca6778d3c6421d7f6b9c36f6b239fd49bd2d533 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+846.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-ubuntu-18.04-tarball/versions/2.8.7+846.v2.8.7/otcurrent-2.8.7+846.v2.8.7_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6b2e8210ed12e63ed5fc8a10f595d9c0f76eebee854291cd2a3a22bdbd034e17 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> vfkaps </name>
@@ -4008,26 +4004,6 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.2.0.0 </version>
     <release> 0 </release>
@@ -4771,6 +4747,25 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+850.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-ubuntu-gtk3-18.04-tarball/versions/2.8.7+850.v2.8.7/otcurrent-2.8.7+850.v2.8.7_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2dbff45da9569e35745b6319323777cbc5f7d422652375d7cbcdab20fb5ad346 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -5607,6 +5602,25 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+847.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-debian-10-tarball/versions/2.8.7+847.v2.8.7/otcurrent-2.8.7+847.v2.8.7_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 131fb176e6c556c3b142a7b8097780acbbf5278a87a8b29752a63a61f931fd81 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.10.0 </version>
     <release> 0 </release>
@@ -5707,6 +5721,25 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.23.2-ubuntu-x86_64-18.04-bionic-tarball/versions/2.4.23.2+1624.ee3f0de/watchdog_pi-2.4.23.2-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+848.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-darwin-10.13.6-tarball/versions/2.8.7+848.v2.8.7/otcurrent-2.8.7+848.v2.8.7_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 30ed3847878b6b61011fc7c0c224028b70fb5cd23a7f952f304ae0a632b4d134 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -6057,26 +6090,6 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-raspbian-armhf-10-buster-armhf-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -6177,6 +6190,25 @@ Open image files directly or decode audio faxes to an image. With simple calibra
 https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.14.0-mingw-x86_64-10-mingw-tarball/versions/v1.9.14.0/weatherfax_pi-1.9.14.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+851.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>mingw-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-mingw-10-tarball/versions/2.8.7+851.v2.8.7/otcurrent-2.8.7+851.v2.8.7_mingw-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> cde4cc50bcf89e2c0215d7d6296c1448fac92142d8fb9af0cccb527b8de52db6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -6341,26 +6373,6 @@ SAR is used to create search patterns for SAR
 https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar_pi-2.6.20.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v2.6.20.0/sar_pi-2.6.20.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:sar </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-darwin-x86_64-10.13.6-macos-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-darwin-x86_64-10.13.6-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -7130,23 +7142,22 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
+    <version> 2.8.7+849.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-flatpak-18.08-tarball/versions/2.8.7+849.v2.8.7/otcurrent-2.8.7+849.v2.8.7_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c697a610429ed07e5c2a09c5717584316958e976627378a15f680077453b7def </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -7378,6 +7389,25 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+844.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-raspbian-10-tarball/versions/2.8.7+844.v2.8.7/otcurrent-2.8.7+844.v2.8.7_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> d026a48809c63dc79bbf84f1ed836ca3f28aa83f71bf0ee22e4e4a00a3e3ffe0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.6.0 </version>
     <release> 0 </release>
@@ -7594,26 +7624,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/photolayer-prod/raw/names/photolayer-3.4-flatpak-18.08-tarball/versions/3.4.2+3672.v3.4.2/photolayer-3.4.2+3672.v3.4.2_flatpak-18.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> b6373df1896f498b3b80a5ced8795bede96b345e527385e7bcfb4d271b17e899 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-14.04-trusty-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> windvane </name>
@@ -8165,46 +8175,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-debian-x86_64-10-buster-tarball/versions/v1.1.17.0/Polar_pi-1.1.17.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>mingw</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-mingw-x86_64-10-mingw-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> Photolayer </name>
@@ -8974,6 +8944,25 @@ https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
+    <name> otcurrent </name>
+    <version> 2.8.7+852.v2.8.7 </version>
+    <release> 1 </release>
+    <summary> Plugin to show tidal currents for selected dates and times  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi.git </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-raspbian-9.13-tarball/versions/2.8.7+852.v2.8.7/otcurrent-2.8.7+852.v2.8.7_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 7a369cb76c807e1ce14dab3ec23a16704e1c2936d77f35029ecabf18241639a5 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> FindIt </name>
     <version> 1.2.5.0 </version>
     <release> 0 </release>
@@ -9016,26 +9005,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/kees-verruijt/ocpn-plugins-unstable/raw/names/radar-debian-x86_64-10-tarball/versions/5.1.4.7.29db9fe/radar_pi-debian-x86_64-10.tar.gz </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -9219,26 +9188,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oesenc-ubuntu-x86_64-16.04-tarball/versions/4.2.17.1.0.7853d5a/oesenc_pi-4.2.17.1-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> 2.7.7.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to show tidal currents for selected dates and times </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rasbats </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <description>
-otcurrent displays tidal currents for selected dates and times
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent_pi-2.7.7.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v2.7.7.2/otcurrent_pi-2.7.7.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:navigation:otcurrent </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
