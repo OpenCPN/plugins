@@ -19,7 +19,13 @@ CLOUDSMITH_REPO="${3}"
 QUERY="${4}"
 TOPDIR="${PWD}"
 
+
+echo "Running: curl -s -S 'https://api.cloudsmith.io/packages/${CLOUDSMITH_USER}/${CLOUDSMITH_REPO}/?page_size=9999&query=${QUERY}'"
+
 cd metadata
+
+rm "${PROJECT}"*.xml 2>/dev/null || :
+
 for url in $(
 curl -s -S "https://api.cloudsmith.io/packages/${CLOUDSMITH_USER}/${CLOUDSMITH_REPO}/?page_size=9999&query=${QUERY}" |
   jq -r '.[] |
@@ -31,5 +37,7 @@ do
   # -r to clobber existing file
   file=$(basename "${url}")
   curl -s -S -o "${file}" "${url}"
-  xmllint --schema "${TOPDIR}/ocpn-plugins.xsd" "${file}"
+  xmllint --schema "${TOPDIR}/ocpn-plugins.xsd" --noout "${file}"
 done
+
+git status
