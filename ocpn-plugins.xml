@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-03-19 15:33</date>
+  <date>2021-03-22 15:08</date>
   <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.137.0 </version>
@@ -43,6 +43,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-android-arm64-16-android-arm64-tarball/versions/1.8.6.9+2609.85cc178/ocpn_draw_pi-1.8.6.9-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.22.0 </version>
     <release> 0 </release>
@@ -81,6 +103,28 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.21.9-android-armhf-16-android-armhf-tarball/versions/2.4.21.9+1222.3de83c5/watchdog_pi-2.4.21.9-android-armhf-16.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-flatpak-x86_64-18.08-flatpak-tarball/versions/1.8.6.9+2614.85cc178/ocpn_draw_pi-1.8.6.9-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -498,6 +542,50 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> ccb216d78199dcd10a609a1de4bf710bdb3ae59399f66d60e8978a435ed20ba7 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.21.5+913.2f1367f/windvane_pi-1.0.21.5-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-android-armhf-16-android-armhf-tarball/versions/1.8.6.9+2605.85cc178/ocpn_draw_pi-1.8.6.9-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.137.0 </version>
     <release> 0 </release>
@@ -535,6 +623,28 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-darwin-10.13.6-tarball/versions/1.4.3+1312.v1.4.3-beta/TideFinder-1.4.3+1312.v1.4.3-beta_darwin-10.13.6-x86_64.tar.gz </tarball-url>
     <tarball-checksum> e2e6aebb0aaec7217873eb92735687e23e41174628409ffd39f3d1f86854c603 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-debian-x86_64-10-buster-tarball/versions/1.8.6.9+2607.85cc178/ocpn_draw_pi-1.8.6.9-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -635,6 +745,72 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.5.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.8.5.2+590.416b2fe/ocpn_draw_pi-1.8.5.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi.git </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-raspbian-armhf-10-buster-armhf-tarball/versions/1.0.21.5+917.2f1367f/windvane_pi-1.0.21.5-raspbian-armhf-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>10.14.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-darwin-x86_64-10.14.4-macos-tarball/versions/1.0.159.0+6430.e54aa14/testplugin_pi-1.0.159.0-darwin-x86_64-10.14.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.159.0+6443.e54aa14/testplugin_pi-1.0.159.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -937,6 +1113,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.0.159.0+6436.e54aa14/testplugin_pi-1.0.159.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name>Radar</name>
     <version>5.2.0-beta4</version>
     <release>0</release>
@@ -1061,6 +1259,50 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-x86_64-14.04-trusty-tarball/versions/1.0.159.0+6441.e54aa14/testplugin_pi-1.0.159.0-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-android-armhf-16-android-armhf-tarball/versions/1.0.159.0+6433.e54aa14/testplugin_pi-1.0.159.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1314.v1.4.3-beta </version>
     <release> 1 </release>
@@ -1138,6 +1380,50 @@ easier future predictions.
     <tarball-checksum> 23d27d8179e5f2abb6aa2b61c2b8492881a1143004f087d065c2756b0159900d </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>mingw-x86_64</target>
+    <build-target>mingw</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-mingw-x86_64-10-mingw-tarball/versions/1.0.21.5+911.2f1367f/windvane_pi-1.0.21.5-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-ubuntu-x86_64-14.04-trusty-tarball/versions/1.0.21.5+920.2f1367f/windvane_pi-1.0.21.5-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
     <name> UKTides </name>
     <version> 1.1.2+379.v1.1.2-beta </version>
     <release> 1 </release>
@@ -1155,6 +1441,28 @@ Tides for 600+ UK Ports from the UKHO
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/uktides-beta/raw/names/UKTides-1.1-msvc-10.0.14393-tarball/versions/1.1.2+379.v1.1.2-beta/UKTides-1.1.2+379.v1.1.2-beta_msvc-10.0.14393-win32.tar.gz </tarball-url>
     <tarball-checksum> d57e88f30e31463a76e39f08964515331952ee6ac5f6158393a39c1f12622172 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-android-arm64-16-android-arm64-tarball/versions/1.0.21.5+916.2f1367f/windvane_pi-1.0.21.5-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1177,6 +1485,50 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.5.2-darwin-x86_64-10.14.4-macos-tarball/versions/1.8.5.2+2384.416b2fe/ocpn_draw_pi-1.8.5.2-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.8.6.9+2608.85cc178/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.0.21.5+915.2f1367f/windvane_pi-1.0.21.5-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1260,6 +1612,50 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.5.3-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.8.5.3+2445.b8b045f/ocpn_draw_pi-1.8.5.3-raspbian-armhf-9.13.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-16.04-xenial-tarball/versions/1.8.6.9+2603.85cc178/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>10.14.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-darwin-x86_64-10.14.4-macos-tarball/versions/1.0.21.5+909.2f1367f/windvane_pi-1.0.21.5-darwin-x86_64-10.14.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1390,6 +1786,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-android-arm64-16-android-arm64-tarball/versions/1.0.159.0+6437.e54aa14/testplugin_pi-1.0.159.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name>Radar</name>
     <version>5.2.0-beta4</version>
     <release>0</release>
@@ -1473,6 +1891,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-debian-x86_64-10-buster-tarball/versions/1.0.159.0+6435.e54aa14/testplugin_pi-1.0.159.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> 0.9.1+21.v0.9.1-beta </version>
     <release> 1 </release>
@@ -1489,6 +1929,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-0.9-msvc-10.0.14393-tarball/versions/0.9.1+21.v0.9.1-beta/otidalplan-0.9.1+21.v0.9.1-beta_msvc-10.0.14393-win32.tar.gz </tarball-url>
     <tarball-checksum> 0e5edcd329bacf32cef890910d5b9ba92ed523b334753abe3062f3d4686bf2d0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-raspbian-armhf-10-buster-armhf-tarball/versions/1.8.6.9+2610.85cc178/ocpn_draw_pi-1.8.6.9-raspbian-armhf-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -1528,6 +1990,28 @@ Tides for 600+ UK Ports from the UKHO
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/uktides-beta/raw/names/UKTides-1.1-darwin-10.13.6-tarball/versions/1.1.2+2533.v1.1.2-beta/UKTides-1.1.2+2533.v1.1.2-beta_darwin-10.13.6-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 57ab8f518f0d0238c7169a2dc7b4dfec80a6fba03538c75b20a33ba4c98f8f2b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-android-armhf-16-android-armhf-tarball/versions/1.0.21.5+912.2f1367f/windvane_pi-1.0.21.5-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
     <name>Radar</name>
@@ -1613,6 +2097,28 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <tarball-checksum> 6f5de73cf1cb5a1323b8d78d2dee20dabdc7651728f21331d2afdf9800368adf </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.0.159.0+6438.e54aa14/testplugin_pi-1.0.159.0-raspbian-armhf-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> UKTides </name>
     <version> 1.1.2+2534.v1.1.2-beta </version>
     <release> 1 </release>
@@ -1694,6 +2200,94 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi.git </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu-arm64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.0.21.5+921.2f1367f/windvane_pi-1.0.21.5-ubuntu-arm64-18.04.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.0.159.0+6440.e54aa14/testplugin_pi-1.0.159.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>mingw-x86_64</target>
+    <build-target>mingw</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-mingw-x86_64-10-mingw-tarball/versions/1.0.159.0+6432.e54aa14/testplugin_pi-1.0.159.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>10.14.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-darwin-x86_64-10.14.4-macos-tarball/versions/1.8.6.9+2602.85cc178/ocpn_draw_pi-1.8.6.9-darwin-x86_64-10.14.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.22.0 </version>
     <release> 0 </release>
@@ -1712,6 +2306,72 @@ Multiple Configurable alarms for changing conditions for boundaries, cog, landfa
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v2.4.22.0/watchdog_pi-2.4.22.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.21.5+922.2f1367f/windvane_pi-1.0.21.5-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>14.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-14.04-trusty-tarball/versions/1.8.6.9+2613.85cc178/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>mingw-x86_64</target>
+    <build-target>mingw</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-mingw-x86_64-10-mingw-tarball/versions/1.8.6.9+2604.85cc178/ocpn_draw_pi-1.8.6.9-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -1753,6 +2413,28 @@ Tides for 600+ UK Ports from the UKHO
     <tarball-checksum> c20ee594b7df1b0500d84f1f845243a5168eb43b2965dde6a465d32aba5d20ea </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi.git </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.21.5+918.2f1367f/windvane_pi-1.0.21.5-raspbian-armhf-9.13.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.137.0 </version>
     <release> 0 </release>
@@ -1771,6 +2453,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-prod/raw/names/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.0.137/testplugin_pi-1.0.137.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.8.6.9+2612.85cc178/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1853,6 +2557,28 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
     <target-arch>armhf</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v0.22.4.0/pypilot_pi-0.22.4.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-arm64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.0.159.0+6442.e54aa14/testplugin_pi-1.0.159.0-ubuntu-arm64-18.04.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1970,6 +2696,28 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/radar-ubuntu-x86_64-18.04-tarball/versions/5.2.0-beta4.0.eecba41/radar_pi-5.2.0-beta4-ov51-ubuntu-x86_64-18.04.tar.gz</tarball-url>
     <info-url>https://opencpn.org/OpenCPN/plugins/radarPI.html</info-url>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.0.159.0+6431.e54aa14/testplugin_pi-1.0.159.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2177,6 +2925,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-ubuntu-x86_64-16.04-xenial-tarball/versions/1.0.21.5+910.2f1367f/windvane_pi-1.0.21.5-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
     <name> UKTides </name>
     <version> 1.1.2+2535.v1.1.2-beta </version>
     <release> 1 </release>
@@ -2194,6 +2964,50 @@ Tides for 600+ UK Ports from the UKHO
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/uktides-beta/raw/names/UKTides-1.1-raspbian-10-tarball/versions/1.1.2+2535.v1.1.2-beta/UKTides-1.1.2+2535.v1.1.2-beta_raspbian-10-armhf.tar.gz </tarball-url>
     <tarball-checksum> f7fe3b34903be8ba2bc90dab6e71723aa136501c5b23f05543fa5382f99d2e69 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.159.0+1088.e54aa14/testplugin_pi-1.0.159.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-18.04-bionic-tarball/versions/1.8.6.9+2606.85cc178/ocpn_draw_pi-1.8.6.9-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -2258,6 +3072,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.159.0+6439.e54aa14/testplugin_pi-1.0.159.0-raspbian-armhf-9.13.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> UKTides </name>
     <version> 1.1.2+2538.v1.1.2-beta </version>
     <release> 1 </release>
@@ -2275,6 +3111,28 @@ Tides for 600+ UK Ports from the UKHO
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/uktides-beta/raw/names/UKTides-1.1-debian-10-tarball/versions/1.1.2+2538.v1.1.2-beta/UKTides-1.1.2+2538.v1.1.2-beta_debian-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 53bce48862edcb0f4adbfcf2da9c81fd32018f191ee3f1943f82a7e2fb07d775 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> testplugin </name>
+    <version> 1.0.159.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.159.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.159.0+6434.e54aa14/testplugin_pi-1.0.159.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> testplugin </name>
@@ -2315,6 +3173,50 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.0.0-android-armhf-16-android-armhf-tarball/versions/v0.22.0.0/pypilot_pi-0.22.0.0-android-armhf-16.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> windvane </name>
+    <version> 1.0.21.5 </version>
+    <release> 5 </release>
+    <summary> Plugin to provide windvane like autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/windvane_pi </source>
+    <description>
+Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.21.5-debian-x86_64-10-buster-tarball/versions/1.0.21.5+914.2f1367f/windvane_pi-1.0.21.5-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.8.6.9+2611.85cc178/ocpn_draw_pi-1.8.6.9-raspbian-armhf-9.13.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> UKTides </name>
@@ -2379,6 +3281,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
     <target-arch>x86_64</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.5.3-ubuntu-x86_64-14.04-trusty-tarball/versions/1.8.5.3+2447.b8b045f/ocpn_draw_pi-1.8.5.3-ubuntu-x86_64-14.04-trusty.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.6.9 </version>
+    <release> 9 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.9-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.8.6.9+612.85cc178/ocpn_draw_pi-1.8.6.9-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
