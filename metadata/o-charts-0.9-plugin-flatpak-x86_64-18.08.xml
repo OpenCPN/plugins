@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+  <name> o-charts </name>
+  <version> 0.9.0.13 </version>
+  <release> 1 </release>
+  <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> no </open-source>
+  <author> Dave register </author>
+  <source> https://github.com/bdbcat/oesenc_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+
+  <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.  
+
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and 
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+
+  <target>flatpak-x86_64</target>
+  <target-version>18.08</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-0.9-flatpak-x86_64-18.08-tarball/versions/0.9.0.13/o-charts-0.9.0.13_flatpak-18.08-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> fd353636245c9b8ed6177f64f753a98a447d4c9d74ed7bb0648d272168def26f </tarball-checksum>
+</plugin>
