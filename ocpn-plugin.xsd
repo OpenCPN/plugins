@@ -15,12 +15,11 @@
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="description" type="xs:string"/>
       <xs:element ref="target"/>
-      <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>
-      <xs:element ref="build-gtk" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>  <!-- Deprecated, not used. -->
+      <xs:element ref="build-gtk" minOccurs="0" maxOccurs="1"/>  <!-- Deprecated, not used. -->
       <xs:element name="target-version" type="xs:token"/>
       <xs:element ref="target-arch"/>
       <xs:element name="tarball-url" type="xs:token"/>
-      <!-- Tarball sha256 checksum , not implemented. -->
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
@@ -46,7 +45,8 @@
     <xs:restriction base = "xs:string">
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
-      <xs:enumeration value = "arm64"/>
+      <xs:enumeration value = "arm64"/>    <!-- Used on Debian -->
+      <xs:enumeration value = "aarch64"/>  <!-- Used for flatpak -->
       <xs:enumeration value = "noarch"/>
     </xs:restriction>
   </xs:simpleType>
@@ -93,6 +93,7 @@
     </xs:simpleType>
 </xs:element>
 
+<!-- Deprecated, not used. -->
 <xs:element name="build-gtk">
     <xs:simpleType>
         <xs:restriction base = "xs:string">
