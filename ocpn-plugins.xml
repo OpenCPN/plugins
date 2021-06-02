@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-05-29 00:51</date>
+  <date>2021-06-02 23:40</date>
   <plugin version="1">
     <name> VDR </name>
     <version> 1.2.9 </version>
@@ -85,28 +85,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-debian-10-tarball/versions/5.2.1-+991.v5.2.1/Radar-5.2.1-+991.v5.2.1_debian-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 7884866f6aecf9e50a8e2b43d06c31b45d37247c23268b46ee4a44544aff0ec0 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.9.16.0+2288.4546c93/weatherfax_pi-1.9.16.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -416,28 +394,6 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-flatpak-x86_64-18.08-flatpak-arm64-tarball/versions/1.9.16.0+2286.4546c93/weatherfax_pi-1.9.16.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> sar </name>
     <version> 2.7.4.0-+971.v2.7.4 </version>
     <release> 0 </release>
@@ -578,6 +534,28 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboardtactics_pi-1.6.6.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.6.6.0/dashboardtactics_pi-1.6.6.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -821,28 +799,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.21.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.0.21.0/windvane_pi-1.0.21.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.9.16.0+2285.4546c93/weatherfax_pi-1.9.16.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
@@ -1132,6 +1088,28 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> 2.8.7+848.v2.8.7 </version>
     <release> 1 </release>
@@ -1319,6 +1297,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>mingw-x86_64</target>
+    <build-target>mingw</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-mingw-x86_64-10-mingw-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-mingw-x86_64-10-mingw.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -1644,28 +1644,6 @@ OpenCPN.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-2.8-ubuntu-18.04-tarball/versions/2.8.7+846.v2.8.7/otcurrent-2.8.7+846.v2.8.7_ubuntu-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 6b2e8210ed12e63ed5fc8a10f595d9c0f76eebee854291cd2a3a22bdbd034e17 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>mingw-x86_64</target>
-    <build-target>mingw</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-mingw-x86_64-10-mingw-tarball/versions/1.9.16.0+2282.4546c93/weatherfax_pi-1.9.16.0-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -2001,6 +1979,28 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.17.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -3908,50 +3908,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.20
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.9.16.0+2281.4546c93/weatherfax_pi-1.9.16.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.9.16.0+2287.4546c93/weatherfax_pi-1.9.16.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DR </name>
     <version> 3.1.1.3 </version>
     <release> 3 </release>
@@ -4213,6 +4169,28 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <target-version>14.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-ubuntu-x86_64-14.04-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_ubuntu-x86_64-14.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-debian-x86_64-10-buster-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -4767,6 +4745,28 @@ OpenCPN.
     <tarball-checksum> 053330a01ceffd3c29d898d2d247c19defd4feb10389cacac5af11a167c3db21 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> vfkaps </name>
     <version> 2.1.1.7 </version>
     <release> 7 </release>
@@ -4825,6 +4825,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi-1.0.21.0-mingw-x86_64-10-mingw-tarball/versions/v1.0.21.0/windvane_pi-1.0.21.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -5280,7 +5302,7 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
+    <version> 1.9.17.0 </version>
     <release> 0 </release>
     <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
     <api-version> 1.16 </api-version>
@@ -5290,13 +5312,13 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <description>
 Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
 </description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
     <build-gtk/>
-    <target-version>18.04</target-version>
+    <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.9.16.0+2283.4546c93/weatherfax_pi-1.9.16.0-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-flatpak-x86_64-18.08-flatpak-arm64-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -5383,6 +5405,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
@@ -6211,28 +6255,6 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <tarball-checksum> d375b1bd5558b0ef510754ee5108014585481010f80e170041c3487eff9eaa14 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>10.14.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-darwin-x86_64-10.14.4-macos-tarball/versions/1.9.16.0+2280.4546c93/weatherfax_pi-1.9.16.0-darwin-x86_64-10.14.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.5.2 </version>
     <release> 2 </release>
@@ -6642,28 +6664,6 @@ Plots PlugIn for OpenCPN Plot speed and course over ground to make the result of
 https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.2.4.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.2.4.0/plots_pi-2.2.4.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-debian-x86_64-10-buster-tarball/versions/1.9.16.0+2284.4546c93/weatherfax_pi-1.9.16.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -8837,28 +8837,6 @@ https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.16.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.16.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.9.16.0+440.4546c93/weatherfax_pi-1.9.16.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> StatusBar </name>
     <version> 0.7.9.0 </version>
     <release> 0 </release>
@@ -9067,6 +9045,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.17.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image files or decode audio faxes and overlay on chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files directly or decode audio faxes to an image, simple calibration to overlay image on top of charts. Converts images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and for internet retrieval from meterological sites.
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>10.14.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.17.0-darwin-x86_64-10.14.4-macos-tarball/versions/v1.9.17.0/weatherfax_pi-1.9.17.0-darwin-x86_64-10.14.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
