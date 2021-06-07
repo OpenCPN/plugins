@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> pypilot </name>
-<version> 0.22.5.0 </version>
+<version> 0.22.6.0 </version>
 <release> 0 </release>
 <summary> Pypilot PlugIn for OpenCPN </summary>
 
@@ -14,11 +14,13 @@
 Control the free software autopilot pypilot. See http://pypilot.org for more details. The plugin connects to pypilot directly implementing a control interface to configure, calibrate and command pypilot from opencpn. For more control and tuning route-following logic, consider the autopilot route plugin.
 </description>
 
-<target>ubuntu-x86_64</target>
-<target-version>16.04</target-version>
+<target>mingw-x86_64</target>
+<build-target>mingw</build-target>
+<build-gtk></build-gtk>
+<target-version>10</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.22.5.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.22.5.0/pypilot_pi-0.22.5.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.22.6.0-mingw-x86_64-10-mingw-tarball/versions/v0.22.6.0/pypilot_pi-0.22.6.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
