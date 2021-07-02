@@ -56,9 +56,12 @@
   <xs:simpleType>
     <xs:restriction base = "xs:string">
       <xs:enumeration value = "all"/>
+      <xs:enumeration value = "android-arm64-v8a"/>
+      <xs:enumeration value = "android-armeabi-v7a"/>
       <xs:enumeration value = "darwin"/>
       <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
+      <xs:enumeration value = "flatpak-aarch64"/>
       <xs:enumeration value = "flatpak-x86_64"/>
       <xs:enumeration value = "mingw"/> <!-- transitional, see OpenCPN#2061 -->
       <xs:enumeration value = "mingw-x86_64"/>
