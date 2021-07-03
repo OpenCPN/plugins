@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+  <name> oeSENC </name>
+  <version> 4.2.20.0 </version>
+  <release> 0 </release>
+  <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> no </open-source>
+  <author> Dave register </author>
+  <source> https://github.com/bdbcat/oesenc_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+
+  <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.  
+
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and 
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+
+  <target>raspbian-armhf</target>
+  <target-version>10</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-raspbian-10-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_raspbian-10-armhf.tar.gz </tarball-url>
+  <tarball-checksum> f0577050550dc0a035d325245b7b5d38b70bc7c580dad5263fbb96f70d84c2b3 </tarball-checksum>
+</plugin>
