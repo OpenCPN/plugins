@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-07-03 18:45</date>
+  <date>2021-07-03 19:17</date>
   <plugin version="1">
     <name> otcurrent </name>
     <version> 2.8.7+848.v2.8.7 </version>
@@ -589,30 +589,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-raspbian-armhf-10-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 18be5c9d96ffe4ab7236b1f2dd1aa61dbdd3bf81b328048e3f13957fdc64f299 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> VDR </name>
     <version> 1.2.9 </version>
     <release> 0 </release>
@@ -1117,30 +1093,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>9.4</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-raspbian-armhf-9.4-tarball/versions/1.2.5.0.fe52423/oernc_pi-1.2.5-0_raspbian-armhf-9.4-armhf.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-x86_64-16.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 7935ccae24c3f2fb4504a3fedc58a18f433c0665a84ed9e8083743011324737f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -2251,6 +2203,30 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-msvc-10.0.14393-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> d238b6af76af5e9402f33f51f1d751dccceb3ef3c5f04a4fce91ee34aa831130 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> windvane </name>
     <version> 1.0.21.0 </version>
     <release> 0 </release>
@@ -2289,6 +2265,30 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-gtk3-18.04-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f9af3d14faad9f0f76f2bb23a45932ee2c5c2822e7850337e0a99b24ea2a27a5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -2803,54 +2803,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.20
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-gtk3-x86_64-20.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 16f8949784424087efab423e531b1512a332a359b7fe158392550196a78ac617 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-raspbian-armhf-9.13-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> b4423ddbbdebff4f9f6e22cb4eb111048a3eaf600006202581c10e7251bf7dc1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.173.0 </version>
     <release> 0 </release>
@@ -3202,6 +3154,30 @@ Help on YouTube search LogbookKonni.
 https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.14.10-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.4.14.10/logbookkonni_pi-1.4.14.10-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-16.04-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 392c5271a0c451034071f7d64eaa64b4899fd7dda7f2d19098e1d7ac40f909f5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -3751,30 +3727,6 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-debian-x86_64-10-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f19bef459a052cbbd9ed7c56170f429614206b85a483af69f32155b6ef000033 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> pypilot </name>
     <version> 0.24.4.0 </version>
     <release> 0 </release>
@@ -3881,30 +3833,6 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.32.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.32.0/watchdog_pi-2.4.32.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-x86_64-18.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f4852fdb9e57f0304a336a47c2a7bbc5b6da207a6b3d75f0e85990d37bd3a690 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Photolayer </name>
@@ -4155,8 +4083,8 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
     <api-version> 1.16 </api-version>
     <open-source> no </open-source>
@@ -4174,8 +4102,8 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target>flatpak-x86_64</target>
     <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-flatpak-x86_64-18.08-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> cfe52dfddb9b7f2e82d132940406ed0740c15f132bac2c7a820c6f6a432c87d9 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-flatpak-18.08-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 120563c4d042d70c9064dc980c92664f515ac453de0b57cdebb163d25e5da473 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -4675,30 +4603,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-android-arm64-arm64-16-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 36fccda70341ee5d032c8df538e0199c98ca987a61fe16436934648db044d5aa </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -4862,6 +4766,30 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.28.1-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/v1.13.28.1/weather_routing_pi-1.13.28.1-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-darwin-10.13.6-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 76d2894cd5e540fc027ed5b0ba2dfae3fff7a395cace6708687cb4987d5f3e7d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -5329,30 +5257,6 @@ https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-gtk3-x86_64-18.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 19c2b023ea7e8b70d3046e7ab44238668ea8d2712503251098ba40e8a73165a3 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.5.2 </version>
     <release> 2 </release>
@@ -5538,6 +5442,30 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.24.4.0-raspbian-armhf-10-buster-armhf-tarball/versions/v0.24.4.0/pypilot_pi-0.24.4.0-raspbian-armhf-10.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-android-arm64-A64-16-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 1632f4731e462546d26dc047db23583d71f14da5016f113cb3b204a8a509935a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -5899,6 +5827,30 @@ https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps_pi-2.1.1.7-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:charts:vfkaps </info-url>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-18.04-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 521de3784c76db8dd13ac5e37404a62cb6302ea07c24e9d4873a6f721c2825a3 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -5961,30 +5913,6 @@ Open image files, decode audio fax to an image, calibrate chart overlay image. C
 https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.18.0-darwin-x86_64-10.14.4-macos-tarball/versions/v1.9.18.0/weatherfax_pi-1.9.18.0-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-msvc-win32-10.0.14393-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> 252a9c928f60f85b4797e14b25963f72d7c7c5b1261970e1e86a03b7d92c9442 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -6788,30 +6716,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-android-armhf-armhf-16-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 60c051debf5cdeb0b5d25f40b8a6215f48df7ed653c66d2811685aa185b6b5ed </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.2.10.0 </version>
     <release> 0 </release>
@@ -7145,6 +7049,30 @@ https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.2.6.0-ra
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-android-armhf-16-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> dda8cff1678959874281506de87e9263cf24ad67ee216a28dca8799a0d4bbfa9 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Polar </name>
     <version> 1.1.17.0 </version>
     <release> 0 </release>
@@ -7360,6 +7288,30 @@ such as dual radar range and Doppler.
     <tarball-checksum> 6959d15df4f168b34b6318055c2e135f2a484437d016dc68d17ec59c56aa4901 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>20.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-flatpak-A64-20.08-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_flatpak-20.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 260beda71980d187440d5590cf737b4f9b99edeccbd4d604b67e3d8b09ca9c2b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.4.23.0 </version>
     <release> 0 </release>
@@ -7508,6 +7460,30 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>20.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-flatpak-20.08-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a3570ca8b558789c494d9d5ad33ecb55ce8b74fbe473aa939dae05afb87c23c7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> testplugin </name>
     <version> 1.0.173.0 </version>
     <release> 0 </release>
@@ -7652,30 +7628,6 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.2.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.26 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>mingw-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-mingw-win32-10-tarball/versions/4.2.19.26/oeSENC-4.2.19.26_mingw-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 2abb178eb5d915453e18d045da8713ff3ca24e4c2a06bbc37b4ae27e4fee067f </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.5.2 </version>
     <release> 2 </release>
@@ -7758,6 +7710,30 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.8.5.2-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.8.5.2/ocpn_draw_pi-1.8.5.2-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-raspbian-10-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f0577050550dc0a035d325245b7b5d38b70bc7c580dad5263fbb96f70d84c2b3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -8357,6 +8333,30 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-raspbian-9.13-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 3e9dae9ee4c545028aedb9592384b36e84b0cc7c67f933241dbc5335704025fb </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.5 </version>
     <release> 0 </release>
@@ -8443,6 +8443,30 @@ Plots PlugIn for OpenCPN Plot speed and course over ground to make the result of
 https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.2.6.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v2.2.6.0/plots_pi-2.2.6.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-gtk3-20.04-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6cf9f9db9aba0f7970046bcebefd49e5b15d9eab60ac2e32716974e56b221edb </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -8898,30 +8922,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Plugin by Seth
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/vdr-debian-x86_64-10-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-arm64-18.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-18.04-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 682742bdac6dcd71bdfa99da89cc9f9e3374beaa7a4251d9d17036d49f146a40 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.5.2 </version>
     <release> 2 </release>
@@ -9201,6 +9201,30 @@ such as dual radar range and Doppler.
     <tarball-checksum> 946ffdce7ecb104553d6794d429158b2d618a402db98c6c29d8568f9ccb77ef1 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> oeSENC </name>
+    <version> 4.2.20.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-debian-10-tarball/versions/4.2.20.0/oeSENC-4.2.20.0_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a0f00fcd68c824d721029982f4b231d193a1f00f5dd9edcd763326538486bcdc </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> StatusBar </name>
     <version> 0.7.9.0 </version>
     <release> 0 </release>
@@ -9385,30 +9409,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.1.17.0/Polar_pi-1.1.17.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> oeSENC </name>
-    <version> 4.2.19.28 </version>
-    <release> 1 </release>
-    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> no </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/oesenc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
-    <description> OCPN Vector Charts licensed and sourced from chart providers like
-Hydrographic Offices.
-While the charts are not officially approved official ENC charts they
-are based on the same data -- the legal conditions are described in the
-EULA. The charts has world-wide coverage and provides a cost-effective
-way to access the national chart databases. Charts are encrypted and
-can only be used after purchasing decryption keys from o-charts.org.
- </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-darwin-x86_64-10.13.6-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 537fb3bdbd25e8781c4c1b49123fda533d389713fb96805dc2a3c284a401b524 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
