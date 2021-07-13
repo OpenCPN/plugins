@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-07-12 14:08</date>
+  <date>2021-07-13 13:42</date>
   <plugin version="1">
     <name> otcurrent </name>
     <version> 2.8.7+848.v2.8.7 </version>
@@ -1194,28 +1194,6 @@ Save NMEA stream to a file. Replay NMEA stream previously saved. Plugin by Seth 
     <target-version>9.4</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-raspbian-armhf-9.4-tarball/versions/v1.2.9.0/vdr_pi-1.2.9-0_raspbian-armhf-9.4.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -2483,6 +2461,26 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+960.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-ubuntu-gtk3-18.04-tarball/versions/1.4.16.0-+960.v1.4.16.0/Logbook-1.4.16.0-+960.v1.4.16.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ea2aeb224bfbdf938f74a7cc96d9a8976c5b073880cbe25b3fe65fb3f5fea09e </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.10.0 </version>
     <release> 0 </release>
@@ -2873,25 +2871,23 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
+    <version> 1.4.16.0-+956.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Del Elson </author>
     <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>mingw-x86_64</target>
-    <build-target>mingw</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-mingw-x86_64-10-mingw-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-mingw-x86_64-10-mingw.tar.gz
-</tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-ubuntu-18.04-tarball/versions/1.4.16.0-+956.v1.4.16.0/Logbook-1.4.16.0-+956.v1.4.16.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 82f1f27be9a37c01ba3d131517f8360bd5043e87e9382543f0adfd25b1a905d4 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -3120,6 +3116,26 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+961.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-android-armhf-16-tarball/versions/1.4.16.0-+961.v1.4.16.0/Logbook-1.4.16.0-+961.v1.4.16.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 7141a0918bed7a270921409f1b8f3b06f34e638766e5c1054c1841a15229c78b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -4881,28 +4897,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-darwin-x86_64-11.4-macos-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -5076,28 +5070,6 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.4.23.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.4.23.0/climatology_pi-1.4.23.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -5346,28 +5318,6 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
     <name> sar </name>
@@ -5729,28 +5679,6 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Plots </name>
     <version> 2.2.6.0 </version>
     <release> 0 </release>
@@ -5771,28 +5699,6 @@ Plots PlugIn for OpenCPN Plot speed and course over ground to make the result of
 https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.2.6.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.2.6.0/plots_pi-2.2.6.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-debian-x86_64-10-buster-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -6012,6 +5918,26 @@ https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni
     <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+959.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-ubuntu-16.04-tarball/versions/1.4.16.0-+959.v1.4.16.0/Logbook-1.4.16.0-+959.v1.4.16.0_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 753c1d900b1a0c7f3eea72c67d92e9ca1315db1673a633b5ffa864108840f48c </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.18.0 </version>
     <release> 0 </release>
@@ -6214,6 +6140,26 @@ Plugin to download and display harbours, anchorages, weather bouys, satellite ma
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.10.0-ubuntu-x86_64-14.04-trusty-tarball/versions/v1.3.10.0/squiddio_pi-1.3.10.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+957.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-ubuntu-gtk3-20.04-tarball/versions/1.4.16.0-+957.v1.4.16.0/Logbook-1.4.16.0-+957.v1.4.16.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 55684c492701277a77e3e21455a73d9bf58ee7740158050edf2cbef70659aaa6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -7015,6 +6961,26 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+121.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-msvc-10.0.14393-tarball/versions/1.4.16.0-+121.v1.4.16.0/Logbook-1.4.16.0-+121.v1.4.16.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> d2cb71ef0c0d6482118352f346d0e2821c5e4e3e3b595931d700773c321bf5dd </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.4.23.0 </version>
     <release> 0 </release>
@@ -7598,28 +7564,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.13.28.1-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.13.28.1/weather_routing_pi-1.13.28.1-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Logbook </name>
-    <version> 1.4.15.01 </version>
-    <release> 1 </release>
-    <summary> Logbook for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/LogbookKonni_pi </source>
-    <description>
-Help on YouTube search LogbookKonni.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/logbookkonni_pi-1.4.15.01-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.4.15.0/logbookkonni_pi-1.4.15.1-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -8405,6 +8349,26 @@ https://dl.cloudsmith.io/public/jon-gough/windvane_pi-prod/raw/names/windvane_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+955.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-android-arm64-A64-16-tarball/versions/1.4.16.0-+955.v1.4.16.0/Logbook-1.4.16.0-+955.v1.4.16.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 07554235ea93dc85d3b75e933925ac3cbb6b93f7a8ae21a7f78d223f1d25cac9 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> oeSENC </name>
     <version> 4.2.20.0 </version>
     <release> 0 </release>
@@ -8953,6 +8917,26 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.2.0.0-debian-x86_64-10-buster-tarball/versions/v1.2/engine_dashboard_pi-1.2.0.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+958.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-debian-10-tarball/versions/1.4.16.0-+958.v1.4.16.0/Logbook-1.4.16.0-+958.v1.4.16.0_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 449fd76988299148d2f5f62e79072d17e13e7a579c28ebf0f1080ac1fe7cd4df </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -9604,6 +9588,26 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.20.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.0.20.0/tactics_pi-1.0.20.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Logbook </name>
+    <version> 1.4.16.0-+954.v1.4.16.0 </version>
+    <release> 0 </release>
+    <summary> Complex, feature-rich logbook </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/LogbookKonni_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/logbookkonni.html </info-url>
+    <description> Complex logbook with a lot of features including a customizable layout.
+To use all the features, you will have to download and install the Layout Files as instructed when you run the plugin for the first time.
+Help is available on YouTube, search LogbookKonni
+ </description>
+    <target>darwin</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-1.4-darwin-10.13.6-tarball/versions/1.4.16.0-+954.v1.4.16.0/Logbook-1.4.16.0-+954.v1.4.16.0_darwin-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 228884a08dab78fe3a0ad4e9db50da77d4d4ec653c7e5fb9039197b32c9315ea </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
