@@ -23,7 +23,7 @@
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element ref="meta-url"/>
+      <xs:element name="meta-url" type="xs:token"/>
     </xs:sequence>
     <xs:attribute name="version" type="xs:string" use="required"/> 
   </xs:complexType>
