@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- https://cloud.drone.io/Rasbats/shipdriver_pi/256 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> 2.6.2.0+1853.v2.6.2.0 </version>
-  <release> 1 </release>
-  <summary> Ship movements simulator - or is it a game? </summary>
+  <version> 2.8.4.7+256.v2.8.4.7-beta </version>
+  <release> 7 </release>
+  <summary> Simulate ship movements </summary>
 
   <api-version> 1.16 </api-version>
   <open-source> yes </open-source>
@@ -17,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>debian-x86_64</target>
+  <target>raspbian-armhf</target>
   <target-version>10</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-2.6-debian-10-tarball/versions/2.6.2.0+1853.v2.6.2.0/ShipDriver-2.6.2.0+1853.v2.6.2.0_debian-10-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 315c213c90905b022d6a592a2eeb8e38ab92e48d8f80393fa41ff6a1b1cfc911 </tarball-checksum>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-2.8-raspbian-10-tarball/versions/2.8.4.7+256.v2.8.4.7-beta/ShipDriver-v2.8.4.7-beta_raspbian-10-armhf.tar.gz </tarball-url>
+  <tarball-checksum> 42436c1ffd468c1d31eb41528382d7a830511dc75eeb946fb48afad7f686f15b </tarball-checksum>
 </plugin>
