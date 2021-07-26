@@ -17,6 +17,7 @@ Arguments:
 
 import http.client as httplib
 import xml.etree.ElementTree as ET
+import socket
 import sys
 
 from http.client import HTTPException
@@ -43,7 +44,7 @@ def get_status_code(urlstring):
             conn = httplib.HTTPConnection(url.hostname)
         conn.request("HEAD", url.path, None, headers)
         return conn.getresponse().status
-    except HTTPException:
+    except (HTTPException, socket.gaierror):
         return None
 
 
@@ -78,6 +79,8 @@ def main():
     tree = ET.parse(path)
     urls = tree.findall('*/info-url')
     urls.extend(tree.findall('*/tarball-url'))
+    urls.extend(tree.findall('info-url'))
+    urls.extend(tree.findall('tarball-url'))
     bad_urls = check_urls(urls)
     print("\n%d urls checked, %d errors" % (len(urls), len(bad_urls)))
     for url in bad_urls:

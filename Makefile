@@ -10,7 +10,7 @@
 
 all: ocpn-plugins.xml
 
-VERSION  ?= 0.0.1
+VERSION  ?= $(shell git rev-parse --short HEAD)
 
 
 ocpn-plugins.xml: metadata/*.xml Makefile
@@ -22,3 +22,6 @@ clean:
 
 validate: ocpn-plugins.xml Makefile
 	xmllint  --schema ocpn-plugins.xsd  ocpn-plugins.xml --noout
+
+check-urls: ocpn-plugins.xml Makefile
+	python tools/check-metadata-urls ocpn-plugins.xml

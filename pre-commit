@@ -1,22 +1,17 @@
 #!/usr/bin/env bash
 #
-# Pre-commit hook: validate ocpn-plugins.xml and check whitespace errors
-#   - Requires xmlllint available on $PATH.
+# Pre-commit hook: validate ocpn-plugins.xml and check whitespace errors.
+#   - Requires xmllint and python available on $PATH.
 #   - Copy to .git/hooks to activate.
 #   - Use --no-verify to override.
 
-function files_to_update()
-{
-    git diff --cached --name-status | grep -v ^D | awk '$1 $2 { print $2}'
-}
+topdir=$(git rev-parse --show-toplevel)
 
-topdir=$( git rev-parse --show-toplevel )
-
-XML_SOURCES=( $( files_to_update | grep -E '\.xml$'))
-
-if [ -n "$XML_SOURCES" ]; then
-  xmllint --schema $topdir/ocpn-plugins.xsd  $XML_SOURCES --noout || exit 1
-fi
+for f in $(git diff --cached --name-only --diff-filter=ACMR); do
+    if [[ $f != *.xml ]]; then continue; fi
+    xmllint --schema $topdir/ocpn-plugin.xsd  $f --noout || exit 1
+    python $topdir/tools/check-metadata-urls $f || exit 1
+done
 
 # If there are whitespace errors, print the offending file names and fail.
 exec git diff-index --check --cached HEAD --
