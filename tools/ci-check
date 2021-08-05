@@ -13,9 +13,17 @@ if ! git ls-remote --exit-code --heads upstream $branch; then
 fi
 git fetch upstream $branch
 
+if [ "$(git rev-parse upstream/$branch)" = "$(git rev-parse HEAD)" ]; then
+    base=$(git hash-object -t tree /dev/null)  # compare against an empty tree
+else
+    base="upstream/$branch"
+fi
+
 topdir=$(git rev-parse --show-toplevel)
-for f in $(git diff --name-only --diff-filter=ACMR upstream/$branch HEAD); do
+return_code=0
+for f in $(git diff --name-only --diff-filter=ACMR $base HEAD); do
     if [[ $f != *.xml ]]; then continue; fi
-    xmllint --schema $topdir/ocpn-plugin.xsd  $f --noout || exit 1
-    python $topdir/tools/check-metadata-urls $f || exit 1
+    xmllint --schema $topdir/ocpn-plugin.xsd  $f --noout || return_code=1
+    python $topdir/tools/check-metadata-urls $f || return_code=1
 done
+exit $return_code
