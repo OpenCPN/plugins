@@ -7,6 +7,10 @@ sudo apt install -y libxml2-utils python3
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.*  2
 
 git remote add upstream https://github.com/OpenCPN/plugins.git
+if ! git ls-remote --exit-code --heads upstream $branch; then
+    echo "Branch $branch can not be found on upstream, no checks done"
+    exit 0;
+fi
 git fetch upstream $branch
 
 topdir=$(git rev-parse --show-toplevel)
