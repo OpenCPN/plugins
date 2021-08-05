@@ -5,8 +5,6 @@ jobs:
   urlcheck:
     docker:
       - image: circleci/buildpack-deps:focal-scm
-    environment:
-      - OCPN_TARGET: focal
     steps:
       - checkout
       - run: tools/ci-check
