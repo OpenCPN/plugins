@@ -1,0 +1,15 @@
+---
+version: 2.1
+
+jobs:
+  urlcheck:
+    docker:
+      - image: circleci/buildpack-deps:focal-scm
+    steps:
+      - checkout
+      - run: tools/ci-check
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - urlcheck
