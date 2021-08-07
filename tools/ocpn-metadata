@@ -92,10 +92,9 @@ def generate(sourcedir, destfile, version, date):
     version_elem = ET.SubElement(tree, "version")
     version_elem.text = version
     date_elem = ET.SubElement(tree, "date")
-
     date_elem.text = \
         date if date else datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
-    for path in Path(sourcedir).glob("*.xml"):
+    for path in sorted(Path(sourcedir).glob("*.xml")):
         try:
             subtree = ET.parse(str(path))
         except ET.ParseError as ex:
