@@ -16,10 +16,13 @@ Arguments:
     path: File to check, defaults to ocpn-plugins.xml.
 """
 
+import hashlib
 import http.client as httplib
 import xml.etree.ElementTree as ET
 import socket
 import sys
+import tempfile
+import urllib.request;
 
 from http.client import HTTPException
 from urllib.parse import urlparse
@@ -53,6 +56,7 @@ def download_url(url, destdir):
     """ Download url, store in destdir. """
     basename = url.rsplit('/', 1)[1].rstrip()
     path = destdir + "/" + basename
+
     with urllib.request.urlopen(url) as _if:
         with open(path, "wb") as of:
             while True:
@@ -61,6 +65,34 @@ def download_url(url, destdir):
                     break
                 of.write(block)
     return path
+
+
+def check_plugin(tree):
+    urls = [tree.find('./tarball-url').text.strip()]
+    bad_urls = check_urls(urls)
+    url_count = len(urls)
+    metadata_cs = tree.find('./tarball-checksum')
+    sha256_hash = hashlib.sha256()
+    if len(bad_urls) == 0 and metadata_cs != None:
+        metadata_cs = metadata_cs.text.strip()
+        with tempfile.TemporaryDirectory() as td:
+            # import pdb; pdb.set_trace()
+            path = download_url(urls[0], td)
+            with open(path, "rb") as f:
+                for byte_block in iter(lambda: f.read(4096),b""):
+                    sha256_hash.update(byte_block)
+            if sha256_hash.hexdigest() != metadata_cs:
+                bad_urls = [urls[0]]
+                name = tree.find('./name').text.strip()
+                print("")
+                print(name + ": " + urls[0][urls[0].rfind("/") + 1:])
+                print(name + (": metadata checksum: '%s'" % metadata_cs))
+                print(name + (": computed checksum: '%s'" % sha256_hash.hexdigest()))
+
+    urls = [tree.find('./info-url').text.strip()]
+    bad_urls.extend(check_urls(urls))
+    url_count += len(urls)
+    return url_count, bad_urls
 
 
 def check_urls(urls):
@@ -72,25 +104,14 @@ def check_urls(urls):
         if col > 72:
             print("")
             col = 0
-        status = get_status_code(url.text.strip())
+        status = get_status_code(url.strip())
         dot = '.'
         if not status or status >= 400:
             dot = 'E'
-            bad_urls.append(url.text.strip() + ": " + str(status))
+            bad_urls.append(url + ": " + str(status))
         print(dot, end = '', flush = True)
         col +=1
     return bad_urls
-
-
-def check_plugin(tree):
-    urls = [tree.find('./tarball-url')]
-    bad_urls = check_urls(urls)
-    url_count = len(urls)
-    urls = [tree.find('./info-url')]
-    bad_urls.extend(check_urls(urls))
-    url_count += len(urls)
-    return url_count, bad_urls
-
 
 def main():
     """Check urls in sys.argv[1], defaults to ocpn-plugins.xml."""
