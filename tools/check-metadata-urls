@@ -76,13 +76,18 @@ def main():
     else:
         print("Usage: check-metadata-urls [xml file]", file = sys.stderr)
         sys.exit(1)
+    bad_urls = []
+    url_count = 0
     tree = ET.parse(path)
-    urls = tree.findall('*/info-url')
-    urls.extend(tree.findall('*/tarball-url'))
-    urls.extend(tree.findall('info-url'))
+    urls = tree.findall('*/tarball-url')
     urls.extend(tree.findall('tarball-url'))
-    bad_urls = check_urls(urls)
-    print("\n%d urls checked, %d errors" % (len(urls), len(bad_urls)))
+    url_count += len(urls)
+    bad_urls.extend(check_urls(urls))
+    urls = tree.findall('*/info-url')
+    urls.extend(tree.findall('info-url'))
+    url_count += len(urls)
+    bad_urls.extend(check_urls(urls))
+    print("\n%d urls checked, %d errors" % (url_count, len(bad_urls)))
     for url in bad_urls:
         print(url, file = sys.stderr)
     sys.exit(0 if len(bad_urls) == 0 else 2)
