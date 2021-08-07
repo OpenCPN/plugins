@@ -9,7 +9,8 @@ external dependencies.
 Diagnostics printouts goes to stdout, list of broken urls to stderr.
 
 Usage:
-    check-metadata-urls [path]
+    check-metadata-urls <path> [path]...
+
 
 Arguments:
     path: File to check, defaults to ocpn-plugins.xml.
@@ -69,29 +70,25 @@ def check_urls(urls):
 
 def main():
     """Check urls in sys.argv[1], defaults to ocpn-plugins.xml."""
-    if len(sys.argv) == 2:
-        path = sys.argv[1]
-    elif len(sys.argv) == 1:
-        path = 'ocpn-plugins.xml'
-    else:
-        print("Usage: check-metadata-urls [xml file]", file = sys.stderr)
-        sys.exit(1)
+    if len(sys.argv) == 0:
+        sys.argv.extend(["ocpn-plugins.xml"])
     bad_urls = []
     url_count = 0
-    tree = ET.parse(path)
-    urls = tree.findall('*/tarball-url')
-    urls.extend(tree.findall('tarball-url'))
-    url_count += len(urls)
-    bad_urls.extend(check_urls(urls))
-    urls = tree.findall('*/info-url')
-    urls.extend(tree.findall('info-url'))
-    url_count += len(urls)
-    bad_urls.extend(check_urls(urls))
+    sys.argv = sys.argv[1:]
+    for path in sys.argv:
+        tree = ET.parse(path)
+        urls = tree.findall('*/tarball-url')
+        urls.extend(tree.findall('tarball-url'))
+        url_count += len(urls)
+        bad_urls.extend(check_urls(urls))
+        urls = tree.findall('*/info-url')
+        urls.extend(tree.findall('info-url'))
+        url_count += len(urls)
+        bad_urls.extend(check_urls(urls))
     print("\n%d urls checked, %d errors" % (url_count, len(bad_urls)))
     for url in bad_urls:
         print(url, file = sys.stderr)
     sys.exit(0 if len(bad_urls) == 0 else 2)
-
 
 if __name__ == '__main__':
     main()
