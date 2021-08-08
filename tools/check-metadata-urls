@@ -62,7 +62,7 @@ class Stats:
         self.col = 0
         max_col = 72
         try:
-            max_col = os.get_terminal_size().columns(0)
+            max_col = os.get_terminal_size(0).columns
         except OSError:
             pass
         max_col = max_col - 1 if max_col > 1  else max_col;
