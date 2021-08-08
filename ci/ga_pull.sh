@@ -29,5 +29,5 @@ done
 
 if [ $exit_rc = 0 ];          then echo "All files pass checks" fi; fi
 if [ $((exit_rc & 1 )) = 1 ]; then echo "xmllint error(s)"; fi
-if [ $((exit_rc & 2 )) = 2 ]; then echo "Inaccessible url error(s)"; fi
+if [ $((exit_rc & 2 )) = 2 ]; then echo "Url access or checksum error(s)"; fi
 exit $exit_rc

@@ -1,19 +1,28 @@
 #!/usr/bin/env python3
 
-"""Check urls in ocpn-plugins.xml.
+"""Check urls in ocpn-plugins.xml or metadata file(s)
 
-Digs for info-url and tarball-url in an ocpn-plugins.xml-ish file
-and checks that all urls are accessible. Pure python3 without
-external dependencies.
+Digs for info-url and tarball-url in ocpn-plugins.xml-ish file(s)
+and checks that all urls are accessible. If the plugins contains
+a checksum, the tarball is downloaded and the checksum is valifdated
 
-Diagnostics printouts goes to stdout, list of broken urls to stderr.
+Pure python3 without external dependencies.
+
+Diagnostics printouts goes to stdout.
 
 Usage:
     check-metadata-urls <path> [path]...
 
-
 Arguments:
     path: File to check, defaults to ocpn-plugins.xml.
+
+Exit code:
+    0: No errors
+    bit 0: XSD validaton errors
+    bit 1: Url inaccessible or checksum errors
+
+Example:
+    tools/check-metadata metadata/*xml
 """
 
 import hashlib
