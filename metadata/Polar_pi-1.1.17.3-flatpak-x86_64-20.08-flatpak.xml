@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Polar </name>
-<version> 1.1.17.0 </version>
-<release> 0 </release>
+<version> 1.1.17.3 </version>
+<release> 3 </release>
 <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
 
 <api-version> 1.16 </api-version>
@@ -15,10 +15,12 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 </description>
 
 <target>flatpak-x86_64</target>
-<target-version>18.08</target-version>
+<build-target>flatpak</build-target>
+<build-gtk></build-gtk>
+<target-version>20.08</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/Polar_pi-1.1.17.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.1.17.0/Polar_pi-1.1.17.0-x86_64_flatpak-18.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-alpha/raw/names/Polar_pi-1.1.17.3-flatpak-x86_64-20.08-flatpak-tarball/versions/1.1.17.3+296.d9cd3f0/Polar_pi-1.1.17.3-x86_64_flatpak-20.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
 </plugin>
