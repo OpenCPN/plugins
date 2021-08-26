@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> OCPN Draw </name>
-<version> 1.8.6.18 </version>
-<release> 18 </release>
+<version> 1.8.7.2 </version>
+<release> 2 </release>
 <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,13 +14,13 @@
 OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
 
-<target>ubuntu-x86_64</target>
+<target>ubuntu-gtk3-x86_64</target>
 <build-target>ubuntu</build-target>
-<build-gtk></build-gtk>
-<target-version>16.04</target-version>
+<build-gtk>gtk3</build-gtk>
+<target-version>20.04</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.6.18-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.8.6.18/ocpn_draw_pi-1.8.6.18-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.7.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.8.7.2+3329.44bb9fe/ocpn_draw_pi-1.8.7.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
 </plugin>
