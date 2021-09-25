@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-09-23 02:48</date>
+  <date>2021-09-25 23:37</date>
   <plugin version="1">
     <name> Logbook </name>
     <version> 1.4.17.0+1017.v1.4.17.0 </version>
@@ -4172,6 +4172,30 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
+    <version> 4.2.22.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/oesenc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oesenc.html </info-url>
+    <description> OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+ </description>
+    <target>darwin-wx315</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-darwin-wx315-10.13.6-tarball/versions/4.2.22.0/oeSENC-4.2.22.0_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7d26fd25b141a9876631a0468561a5cddb2af46f8b57acb2a2149e556491f040 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> oeSENC </name>
     <version> 4.2.20.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for encrypted OCPN Vector Charts  </summary>
@@ -4529,6 +4553,30 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10.13.6</target-version>
     <target-arch>i386</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-10.13.6-tarball/versions/1.2.5.0.fe52423/oernc_pi-1.2.5-0_darwin-10.13.6.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> oeRNC Charts </name>
+    <version> 1.2.7 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for encrypted OCPN Raster Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/oernc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/oernc.html </info-url>
+    <description>
+OCPN Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+  </description>
+    <target>darwin-wx315</target>
+    <target-version>10.14.4</target-version>
+    <target-arch>i386</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-darwin-wx315-10.14.4-tarball/versions/1.2.7.0.c6e6754/oernc_pi-1.2.7-0_darwin-wx315-10.14.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> oeRNC Charts </name>
@@ -6034,6 +6082,24 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <target-version>10.14.4</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/s63-darwin-10.14.4-tarball/versions/v1.17.6/s63_pi-1.17.6-0_darwin-10.14.4.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.17.8 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> no </open-source>
+    <author> David S Register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/s63.html </info-url>
+    <description>
+  OpenCPN support for S63 Vector Charts
+  </description>
+    <target>darwin-wx315</target>
+    <target-version>10.14.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-darwin-wx315-10.14.4-tarball/versions/1.17.8.0.9bbf784/s63_pi-1.17.8-0_darwin-wx315-10.14.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
