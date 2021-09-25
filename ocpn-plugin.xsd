@@ -24,7 +24,7 @@
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
-    <xs:attribute name="version" type="xs:string" use="required"/> 
+    <xs:attribute name="version" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:element>
 
@@ -50,7 +50,7 @@
       <xs:enumeration value = "noarch"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element> 
+</xs:element>
 
 <xs:element name="target">
   <xs:simpleType>
@@ -59,6 +59,7 @@
       <xs:enumeration value = "android-arm64-v8a"/>
       <xs:enumeration value = "android-armeabi-v7a"/>
       <xs:enumeration value = "darwin"/>
+      <xs:enumeration value = "darwin-wx315"/>
       <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
       <xs:enumeration value = "flatpak-aarch64"/>
@@ -75,7 +76,7 @@
       <xs:enumeration value = "android-arm64"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element> 
+</xs:element>
 
 <xs:element name="build-target">
     <xs:simpleType>
