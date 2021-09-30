@@ -1,105 +1,27 @@
 #!/usr/bin/env python3
 
-"""Check urls in ocpn-plugins.xml or metadata file(s)
+"""Check urls in ocpn-plugins.xml.
 
-Digs for info-url and tarball-url in ocpn-plugins.xml-ish file(s)
-and checks that all urls are accessible. If the plugins contains
-a checksum, the tarball is downloaded and the checksum is valifdated
+Digs for info-url and tarball-url in an ocpn-plugins.xml-ish file
+and checks that all urls are accessible. Pure python3 without
+external dependencies.
 
-Pure python3 without external dependencies.
-
-Diagnostics printouts goes to stdout.
+Diagnostics printouts goes to stdout, list of broken urls to stderr.
 
 Usage:
-    check-metadata-urls <path> [path]...
+    check-metadata-urls [path]
 
 Arguments:
     path: File to check, defaults to ocpn-plugins.xml.
-
-Exit code:
-    0: No errors
-    bit 0: XSD validaton errors
-    bit 1: Url inaccessible or checksum errors
-
-Example:
-    tools/check-metadata metadata/*xml
 """
 
-import hashlib
 import http.client as httplib
-import os
+import xml.etree.ElementTree as ET
 import socket
 import sys
-import tempfile
-import urllib.request;
-import xml.etree.ElementTree as ET
 
 from http.client import HTTPException
 from urllib.parse import urlparse
-
-class CsError:
-    """A checksum error"""
-    def __init__(self, tree,  path, found_cs):
-        self.found_cs = found_cs
-        self.path = path
-        self.name = tree.find('./name').text.strip()
-        self.url = tree.find('./tarball-url').text.strip()
-        self.metadata_cs = tree.find('./tarball-checksum').text.strip()
-
-    def message(self):
-        msg = ""
-        msg += self.path + ": " + self.url[self.url.rfind("/") + 1:] + "\n"
-        msg += "        metadata checksum: '%s'" % self.metadata_cs + "\n"
-        msg += "        computed checksum: '%s'" % self.found_cs + "\n"
-        return msg
-
-
-class Stats:
-    def __init__(self):
-        self.url_errors = []
-        self.cs_errors = []
-        self.url_count = 0
-        self.col = 0
-        max_col = 72
-        try:
-            max_col = os.get_terminal_size(0).columns
-        except OSError:
-            pass
-        max_col = max_col - 1 if max_col > 1  else max_col;
-        self.screenwidth = max_col
-
-    def print_dot(self, dot):
-        if self.col > self.screenwidth:
-            print("")
-            self.col = 0
-        print(dot, end = '', flush = True)
-        self.col +=1
-
-    def message(self):
-        if len(self.url_errors) == 0 and len(self.cs_errors) == 0:
-            return "Url validation passed"
-        msg = "\n"
-        msg += "%d errors detected\n" % (
-                len(self.url_errors) + len(self.cs_errors))
-        if len(self.url_errors) > 0:
-            msg += "Not accessible urls:\n\n"
-            for url in self.url_errors:
-                msg += url + "\n"
-        if len(self.cs_errors) > 0:
-            msg += "\nChecksum errors:\n\n"
-            for error in self.cs_errors:
-                msg += error.message()
-        return msg;
-
-    def exitcode(self):
-        if len(self.url_errors) == 0 and len(self.cs_errors) == 0:
-            return 0
-        code = 0
-        if len(self.url_errors) > 0:
-            code |= 1
-        if len(self.cs_errors) > 0:
-            code |= 2
-        return code;
 
 
 def get_status_code(urlstring):
@@ -126,75 +48,45 @@ def get_status_code(urlstring):
         return None
 
 
-def download_url(url, destdir):
-    """ Download url, store in destdir. """
-    basename = url.rsplit('/', 1)[1].rstrip()
-    path = destdir + "/" + basename
-
-    with urllib.request.urlopen(url) as _if:
-        with open(path, "wb") as of:
-            while True:
-                block = _if.read(4096)
-                if not block:
-                    break
-                of.write(block)
-    return path
-
-def get_checksum(url):
-    sha256_hash = hashlib.sha256()
-    with tempfile.TemporaryDirectory() as td:
-        path = download_url(url, td)
-        with open(path, "rb") as f:
-            for byte_block in iter(lambda: f.read(4096), b""):
-                sha256_hash.update(byte_block)
-    return sha256_hash.hexdigest()
-
-
-def is_accessible(url, path, tag, stats):
-    """Check that  url is accessible, return boolean """
-    status = get_status_code(url.strip())
-    dot = '.'
-    r = True
-    if not status or status >= 400:
-        dot = 'E'
-        stats.url_errors.append(path  + ": "  + tag + ": " + str(status))
-        r = False
-    stats.print_dot(dot)
-    return r
-
-
-def check_plugin(tree, path, stats):
-    url = tree.find('./tarball-url').text.strip()
-    if is_accessible(url, path, "tarball_url", stats):
-        metadata_cs = tree.find('./tarball-checksum')
-        if metadata_cs != None:
-            metadata_cs = metadata_cs.text.strip()
-            found_cs =  get_checksum(url)
-            if found_cs != metadata_cs:
-                stats.cs_errors.append(CsError(tree, path, found_cs))
-                stats.print_dot('C')
-    url = tree.find('./info-url').text.strip()
-    if not is_accessible(url, path, "info-url", stats):
-        stats.url_errors.extend(url)
+def check_urls(urls):
+    """Check that each url in urls is accessible, return list
+    of broken urls."""
+    col = 0
+    bad_urls = []
+    for url in urls:
+        if col > 72:
+            print("")
+            col = 0
+        status = get_status_code(url.text.strip())
+        dot = '.'
+        if not status or status >= 400:
+            dot = 'E'
+            bad_urls.append(url.text.strip() + ": " + str(status))
+        print(dot, end = '', flush = True)
+        col +=1
+    return bad_urls
 
 
 def main():
-    """Check urls in sys.argv[], defaults to ocpn-plugins.xml."""
-    if len(sys.argv) == 0:
-        sys.argv.extend(["ocpn-plugins.xml"])
-    stats = Stats()
-    sys.argv = sys.argv[1:]
-    for path in sys.argv:
-        tree = ET.parse(path)
-        if tree.getroot().tag == 'plugin':
-            plugins = [tree]
-        else:
-            plugins = tree.findall('./plugin')
-        for plugin in plugins:
-            check_plugin(plugin, path, stats)
-    print("")
-    print(stats.message())
-    sys.exit(stats.exitcode())
+    """Check urls in sys.argv[1], defaults to ocpn-plugins.xml."""
+    if len(sys.argv) == 2:
+        path = sys.argv[1]
+    elif len(sys.argv) == 1:
+        path = 'ocpn-plugins.xml'
+    else:
+        print("Usage: check-metadata-urls [xml file]", file = sys.stderr)
+        sys.exit(1)
+    tree = ET.parse(path)
+    urls = tree.findall('*/info-url')
+    urls.extend(tree.findall('*/tarball-url'))
+    urls.extend(tree.findall('info-url'))
+    urls.extend(tree.findall('tarball-url'))
+    bad_urls = check_urls(urls)
+    print("\n%d urls checked, %d errors" % (len(urls), len(bad_urls)))
+    for url in bad_urls:
+        print(url, file = sys.stderr)
+    sys.exit(0 if len(bad_urls) == 0 else 2)
+
 
 if __name__ == '__main__':
     main()
