@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/Rasbats/shipdriver_pi/3891 -->
+<!-- https://ci.appveyor.com/project/Rasbats/shipdriver-pi/builds/41142157 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> 2.8.6.0+3891.v2.8.6.0 </version>
-  <release> 0 </release>
+  <version> 2.8.7.2+745.v2.8.7.2 </version>
+  <release> 2 </release>
   <summary> Simulate ship movements </summary>
 
   <api-version> 1.16 </api-version>
@@ -18,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>flatpak-x86_64</target>
-  <target-version>20.08</target-version>
+  <target>msvc</target>
+  <target-version>10.0.14393</target-version>
   <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v2.8.6.0-flatpak-20.08-tarball/versions/2.8.6.0+3891.v2.8.6.0/ShipDriver-v2.8.6.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 80752ce96e2289db838deae5d7f73070520a0dde1832abc640abf42a83867310 </tarball-checksum>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v2.8.7.2-msvc-10.0.14393-tarball/versions/2.8.7.2+745.v2.8.7.2/ShipDriver-v2.8.7.2_msvc-10.0.14393-win32.tar.gz </tarball-url>
+  <tarball-checksum> 398ceb10d65e8cf3b6101880b43728d75c408ab81cb72ef05e99b62dbb296922 </tarball-checksum>
 </plugin>

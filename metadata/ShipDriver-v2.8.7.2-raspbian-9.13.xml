@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/Rasbats/shipdriver_pi/3884 -->
+<!-- https://cloud.drone.io/Rasbats/shipdriver_pi/313 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> 2.8.6.0+3884.v2.8.6.0 </version>
-  <release> 0 </release>
+  <version> 2.8.7.2+313.v2.8.7.2 </version>
+  <release> 2 </release>
   <summary> Simulate ship movements </summary>
 
   <api-version> 1.16 </api-version>
@@ -18,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>darwin</target>
-  <target-version>10.13.6</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v2.8.6.0-darwin-10.13.6-tarball/versions/2.8.6.0+3884.v2.8.6.0/ShipDriver-v2.8.6.0_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 05ae4873a8199a2d857aa5d824e77e72bb88ab7b8248c315303f7653f1243b6e </tarball-checksum>
+  <target>raspbian-armhf</target>
+  <target-version>9.13</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v2.8.7.2-raspbian-9.13-tarball/versions/2.8.7.2+313.v2.8.7.2/ShipDriver-v2.8.7.2_raspbian-9.13-armhf.tar.gz </tarball-url>
+  <tarball-checksum> a150875ad5cac4ae0b259fe7a9f847d6a3fb452a14b58af2c48290a44651d7b2 </tarball-checksum>
 </plugin>
