@@ -25,7 +25,6 @@ Example:
     tools/check-metadata metadata/*xml
 """
 
-from __future__ import print_function
 import hashlib
 import http.client as httplib
 import os
@@ -73,7 +72,7 @@ class Stats:
         if self.col > self.screenwidth:
             print("")
             self.col = 0
-        print(dot, end='', flush = True)
+        print(dot, end = '', flush = True)
         self.col +=1
 
     def message(self):
