@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> FindIt </name>
-<version> 1.2.5.0 </version>
+<version> 1.2.7.0 </version>
 <release> 0 </release>
 <summary> Stowage PlugIn for OpenCPN </summary>
 
@@ -14,11 +14,13 @@
 Stowage PlugIn for OpenCPN
 </description>
 
-<target>ubuntu-x86_64</target>
-<target-version>16.04</target-version>
+<target>debian-x86_64</target>
+<build-target>debian</build-target>
+<build-gtk></build-gtk>
+<target-version>10</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.7.0-debian-x86_64-10-buster-tarball/versions/v1.2.7.0/findit_pi-1.2.7.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
 </plugin>
