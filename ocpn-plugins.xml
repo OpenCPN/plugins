@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-11-17 23:32</date>
+  <date>2021-11-18 03:26</date>
   <plugin version="1">
     <name> DR </name>
     <version> 4.0.0+620.v4.0.0 </version>
@@ -1052,7 +1052,7 @@ data from itself. This can be replayed to simulate collision situations.
   </plugin>
   <plugin version="1">
     <name> VDR </name>
-    <version> 1.3.8.0+1454.v1.3.8.0 </version>
+    <version> 1.3.11.0+1547.v1.3.11.0 </version>
     <release> 0 </release>
     <summary> Voyage Data Recorder </summary>
     <api-version> 1.16 </api-version>
@@ -1066,12 +1066,12 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved.
     <target>android-arm64</target>
     <target-version>16</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-android-arm64-A64-16-tarball/versions/1.3.8.0+1454.v1.3.8.0/VDR-v1.3.8.0_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 7aa24ff8257e0c26595a5f4197132c1682dcd22e8bfd1597e4d49a6cf0e9d683 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-android-arm64-A64-16-tarball/versions/1.3.11.0+1547.v1.3.11.0/VDR-v1.3.11.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 4c070e77c86618c84dec329ca5926d9f2aebac8deed1eed7ac1003ce8a9d18cf </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
-    <version> 1.3.8.0+1458.v1.3.8.0 </version>
+    <version> 1.3.11.0+1542.v1.3.11.0 </version>
     <release> 0 </release>
     <summary> Voyage Data Recorder </summary>
     <api-version> 1.16 </api-version>
@@ -1085,8 +1085,198 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved.
     <target>android-armhf</target>
     <target-version>16</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-android-armhf-16-tarball/versions/1.3.8.0+1458.v1.3.8.0/VDR-v1.3.8.0_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 1e968f5430c1f915c366aad05234000669c27e96b081f973e37a7165babd709d </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-android-armhf-16-tarball/versions/1.3.11.0+1542.v1.3.11.0/VDR-v1.3.11.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 79db8e047fae4b8277f5acff83669c48fb0839bb745254492f00226ecbdf89b1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1543.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-debian-10-tarball/versions/1.3.11.0+1543.v1.3.11.0/VDR-v1.3.11.0_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 53c964f962ca87a4d4a4c20c8c09e4296ea36e7e6e57608c8431baa37c18dcca </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1550.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-flatpak-18.08-tarball/versions/1.3.11.0+1550.v1.3.11.0/VDR-v1.3.11.0_flatpak-18.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c2f401913053e34f05311cb3152881b496c49904913081b8e1d98a14ecc747e3 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1548.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>20.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-flatpak-20.08-tarball/versions/1.3.11.0+1548.v1.3.11.0/VDR-v1.3.11.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 016f4a97ad9418d7b3a1d40357cfa56a2377e047adac34bcbf0c51bde1063c43 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+152.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-msvc-10.0.14393-tarball/versions/1.3.11.0+152.v1.3.11.0/VDR-v1.3.11.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 9cfd305bbbc6354ceb9e8b254f7f30f3996a5db9f44054178869a55926ed7f32 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+36.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-raspbian-10-tarball/versions/1.3.11.0+36.v1.3.11.0/VDR-v1.3.11.0_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f5268bdd9bfc5e49e0ad6bc120951aa3540f25901a848d72de1f5316f646360d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+35.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-raspbian-9.13-tarball/versions/1.3.11.0+35.v1.3.11.0/VDR-v1.3.11.0_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 73d36883accf03256d3ce883497d7a7bb61402762b7fb315e50a642704bf0b56 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1545.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-ubuntu-16.04-tarball/versions/1.3.11.0+1545.v1.3.11.0/VDR-v1.3.11.0_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 3a31ae09d8ac1c0adcf7e9c9938e3be8f8f5226ae47b337b5bdb0e01aecd547c </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1549.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>ubuntu-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-ubuntu-18.04-tarball/versions/1.3.11.0+1549.v1.3.11.0/VDR-v1.3.11.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c782f8c6164d69532f457237b3d3f17217dea969a03e8bb9f0509e0f4a607c09 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1551.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-ubuntu-gtk3-18.04-tarball/versions/1.3.11.0+1551.v1.3.11.0/VDR-v1.3.11.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 41452dd1fdd59648526948fa60a45f85765fedf45ba4fee0c4bbd15ceaeaa22f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> 1.3.11.0+1546.v1.3.11.0 </version>
+    <release> 0 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source> https://github.com/rgleason/vdr_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved.
+ </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-ubuntu-gtk3-20.04-tarball/versions/1.3.11.0+1546.v1.3.11.0/VDR-v1.3.11.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2593c5894cd2cf886d333891e3d0966f2c5fbdd8169b5248340e722570aedfc7 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -1109,63 +1299,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved.
   </plugin>
   <plugin version="1">
     <name> VDR </name>
-    <version> 1.3.8.0+1461.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-debian-10-tarball/versions/1.3.8.0+1461.v1.3.8.0/VDR-v1.3.8.0_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 5cbbe40b0408cfd1f80d0a6329cdebed3227932dea3b6ac3ffd4acedb6f5174a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1463.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-flatpak-18.08-tarball/versions/1.3.8.0+1463.v1.3.8.0/VDR-v1.3.8.0_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 843046c0e0a8782a32e21c8733f0bd1fa705c01bb1cd5214da40e3ddba8e0e16 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1462.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-flatpak-20.08-tarball/versions/1.3.8.0+1462.v1.3.8.0/VDR-v1.3.8.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 71978127189fb5eb282e0336d2a74c849f09e5aeb2010db039777a45e4a46b0a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
     <version> 1.3.8.0+1456.v1.3.8.0 </version>
     <release> 0 </release>
     <summary> Voyage Data Recorder </summary>
@@ -1182,139 +1315,6 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-flatpak-A64-20.08-tarball/versions/1.3.8.0+1456.v1.3.8.0/VDR-v1.3.8.0_flatpak-20.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 040b01d44cdab482f33690a363639bf2f55d98c93e5759d4f873b1de9227182a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+142.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-msvc-10.0.14393-tarball/versions/1.3.8.0+142.v1.3.8.0/VDR-v1.3.8.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> b85d2cb979bbb861d0a131a89e98f9ed0e9f342cd5e2e795bee91fbd6f51fa57 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+26.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-raspbian-10-tarball/versions/1.3.8.0+26.v1.3.8.0/VDR-v1.3.8.0_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 498b469a8228c02321c9fd1aa06d8a928fb5c568db38b04a4928aad4e9b08248 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+26.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-raspbian-9.13-tarball/versions/1.3.8.0+26.v1.3.8.0/VDR-v1.3.8.0_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 8ddca5c53eccd8b89adb17b4a218bad905a66929239480ea3b1f8261d2fefbf5 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1459.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-ubuntu-16.04-tarball/versions/1.3.8.0+1459.v1.3.8.0/VDR-v1.3.8.0_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 925b863d09f23b6de3f82d65f3568407bc33b9597d911b9cbfdd9dbb3e6be092 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1453.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-ubuntu-18.04-tarball/versions/1.3.8.0+1453.v1.3.8.0/VDR-v1.3.8.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 49906cdbd9a155acf301776a2e4e639d57aad2234dce8a69a9458b9386e1da57 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1460.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-ubuntu-gtk3-18.04-tarball/versions/1.3.8.0+1460.v1.3.8.0/VDR-v1.3.8.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 410000a11dc1afcc40096859dfd33f4a88084af555906eff213398893f5c3110 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> VDR </name>
-    <version> 1.3.8.0+1457.v1.3.8.0 </version>
-    <release> 0 </release>
-    <summary> Voyage Data Recorder </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Rick Gleason </author>
-    <source> https://github.com/rgleason/vdr_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
-    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
-Save NMEA stream to a file.  Replay NMEA stream previously saved.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-ubuntu-gtk3-20.04-tarball/versions/1.3.8.0+1457.v1.3.8.0/VDR-v1.3.8.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 3498e02ab3435c4caf587e2362bf9a95980f928559555f9d829757bd0f1a26db </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://ci.appveyor.com/project/rgleason/vdr-pi/builds/40177392 -->
+<!-- https://circleci.com/gh/rgleason/vdr_pi/1551 -->
 <plugin version="1">
   <name> VDR </name>
-  <version> 1.3.8.0+142.v1.3.8.0 </version>
+  <version> 1.3.11.0+1551.v1.3.11.0 </version>
   <release> 0 </release>
   <summary> Voyage Data Recorder </summary>
 
@@ -16,9 +16,9 @@
 Save NMEA stream to a file.  Replay NMEA stream previously saved.
  </description>
 
-  <target>msvc</target>
-  <target-version>10.0.14393</target-version>
+  <target>ubuntu-gtk3-x86_64</target>
+  <target-version>18.04</target-version>
   <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.8.0-msvc-10.0.14393-tarball/versions/1.3.8.0+142.v1.3.8.0/VDR-v1.3.8.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
-  <tarball-checksum> b85d2cb979bbb861d0a131a89e98f9ed0e9f342cd5e2e795bee91fbd6f51fa57 </tarball-checksum>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.11.0-ubuntu-gtk3-18.04-tarball/versions/1.3.11.0+1551.v1.3.11.0/VDR-v1.3.11.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 41452dd1fdd59648526948fa60a45f85765fedf45ba4fee0c4bbd15ceaeaa22f </tarball-checksum>
 </plugin>
