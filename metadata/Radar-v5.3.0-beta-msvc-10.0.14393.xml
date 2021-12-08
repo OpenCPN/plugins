@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- https://ci.appveyor.com/project/keesverruijt/radar-pi/builds/41788749 -->
 <plugin version="1">
-
   <name> Radar </name>
-  <version> 5.2.2-beta+1325.f00d976 </version>
+  <version> 5.3.0-beta+465.v5.3.0-beta </version>
   <release>  </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
@@ -16,7 +16,7 @@
 
 WARNING: OPENGL MODE IS REQUIRED!
 
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
@@ -26,10 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>flatpak-aarch64</target>
-  <target-version>20.08</target-version>
-  <target-arch>aarch64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-5.2-flatpak-A64-20.08-tarball/versions/5.2.2-beta+1325.f00d976/Radar-5.2.2-beta+1325.f00d976_flatpak-20.08-aarch64.tar.gz </tarball-url>
-  <tarball-checksum> 7f146e0df15feb314e7cc2f52bfc0c49024b13a7e8791c93c802029b7f5e7496 </tarball-checksum>
-
+  <target>msvc</target>
+  <target-version>10.0.14393</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.3.0-beta-msvc-10.0.14393-tarball/versions/5.3.0-beta+465.v5.3.0-beta/Radar-v5.3.0-beta_msvc-10.0.14393-win32.tar.gz </tarball-url>
+  <tarball-checksum> 5f4f3e79b47c74cf7fc3d54aa89b9b6f91afe0cd60b7442979ad33f932c82f50 </tarball-checksum>
 </plugin>
