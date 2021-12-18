@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- https://cloud.drone.io/Rasbats/sar_pi/35 -->
 <plugin version="1">
   <name> sar </name>
-  <version> 2.8.2.0-+1021.v2.8.2 </version>
-  <release> 0 </release>
+  <version> v3.0.0 </version>
+  <release>  </release>
   <summary> Produces SAR search patterns as GPX files </summary>
 
   <api-version> 1.16 </api-version>
@@ -15,9 +16,9 @@
 be imported into OpenCPN to assist in performing searches.
  </description>
 
-  <target>darwin</target>
-  <target-version>10.13.6</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-darwin-10.13.6-tarball/versions/2.8.2.0-+1021.v2.8.2/sar-2.8.2.0-+1021.v2.8.2_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 3d9960af8512e6e124bbd19270feec07daa00b9af6e57231bf3767531c4b28ce </tarball-checksum>
+  <target>raspbian-armhf</target>
+  <target-version>10</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-raspbian-10-tarball/versions/v3.0.0/sar-v3.0.0_raspbian-10-armhf.tar.gz </tarball-url>
+  <tarball-checksum> 20c405530815b008d90b64f78460b0e52ca9373e883a27bf89a51972ab80eab3 </tarball-checksum>
 </plugin>
