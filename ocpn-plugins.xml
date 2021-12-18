@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-12-18 02:49</date>
+  <date>2021-12-18 14:42</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 0.3.4.13 </version>
@@ -7893,8 +7893,8 @@ OpenCPN support for S63 Vector Charts
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1021.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -7904,16 +7904,54 @@ OpenCPN support for S63 Vector Charts
     <description> Enables production of SAR search patterns, in GPX format, that can
 be imported into OpenCPN to assist in performing searches.
  </description>
-    <target>darwin</target>
-    <target-version>10.13.6</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-darwin-10.13.6-tarball/versions/2.8.2.0-+1021.v2.8.2/sar-2.8.2.0-+1021.v2.8.2_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 3d9960af8512e6e124bbd19270feec07daa00b9af6e57231bf3767531c4b28ce </tarball-checksum>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-android-arm64-A64-16-tarball/versions/v3.0.0/sar-v3.0.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 84cb395306b0155761d33961616922d0910b6f62dd416814724fd2c0a45dcc5f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1022.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
+    <summary> Produces SAR search patterns as GPX files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/sar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sar.html </info-url>
+    <description> Enables production of SAR search patterns, in GPX format, that can
+be imported into OpenCPN to assist in performing searches.
+ </description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-android-armhf-16-tarball/versions/v3.0.0/sar-v3.0.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 9245041f1365ef9d7406363e50ed04b6d94f268e77b8655ab510230e6779a55d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> sar </name>
+    <version> v3.0.0 </version>
+    <release>  </release>
+    <summary> Produces SAR search patterns as GPX files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/sar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sar.html </info-url>
+    <description> Enables production of SAR search patterns, in GPX format, that can
+be imported into OpenCPN to assist in performing searches.
+ </description>
+    <target>darwin-wx315</target>
+    <target-version>10.13.6</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-darwin-wx315-10.13.6-tarball/versions/v3.0.0/sar-v3.0.0_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4a8fe2c4d70efcd99c448e531f8bb617b9ed586cf4c83641c8e5875a134030c0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> sar </name>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -7926,13 +7964,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>debian-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-debian-10-tarball/versions/2.8.2.0-+1022.v2.8.2/sar-2.8.2.0-+1022.v2.8.2_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 2cefd7698fa8b08ca690c0f4ecebec491b36ea31792346bf9223db8614c6cc7c </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-debian-10-tarball/versions/v3.0.0/sar-v3.0.0_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 731d01c41403e0c2476b3f7c1c94fc4ba09e6ed6c647c22422e99a612b60fc87 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1024.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -7943,15 +7981,15 @@ be imported into OpenCPN to assist in performing searches.
 be imported into OpenCPN to assist in performing searches.
  </description>
     <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
+    <target-version>20.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-flatpak-18.08-tarball/versions/2.8.2.0-+1024.v2.8.2/sar-2.8.2.0-+1024.v2.8.2_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> c58b1b7978378149f8d1df5524292de957df8bc44d49539a3de8b23f8fd5c752 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-flatpak-20.08-tarball/versions/v3.0.0/sar-v3.0.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ac5f68603ff62a438ebcdeddbe458cbbf291bb55160d0a37ed1b8e796c67e297 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1020.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -7964,32 +8002,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>flatpak-aarch64</target>
     <target-version>20.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-flatpak-A64-20.08-tarball/versions/2.8.2.0-+1020.v2.8.2/sar-2.8.2.0-+1020.v2.8.2_flatpak-20.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 2a0ecd885926d90995ff7b8d76507166de14b918388d8a6f819c2518439b3c23 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-flatpak-A64-20.08-tarball/versions/v3.0.0/sar-v3.0.0_flatpak-20.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> bd8566f2213386afc1195ad77e54324e8749f89317fb8cfc7edc775d2deb7844 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+2108201406.8c9af67 </version>
-    <release> 0 </release>
-    <summary> Produces SAR search patterns as GPX files </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/sar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/sar.html </info-url>
-    <description> Enables production of SAR search patterns, in GPX format, that can
-be imported into OpenCPN to assist in performing searches.
- </description>
-    <target>mingw-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-alpha/raw/names/sar-2.8-mingw-10-tarball/versions/2.8.2.0-+2108201406.8c9af67/sar-2.8.2.0-+2108201406.8c9af67_mingw-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 233fe000948f42b8a079e0b5a10a796770eee527a52206c117718ab135060319 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> sar </name>
-    <version> 2.8.2.0-+107.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8002,13 +8021,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-msvc-10.0.14393-tarball/versions/2.8.2.0-+107.v2.8.2/sar-2.8.2.0-+107.v2.8.2_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> 705d0f51c3d9a856d2e7aa341a598e1be424e55bc54d7cb5bec527ce9ae56288 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-msvc-10.0.14393-tarball/versions/v3.0.0/sar-v3.0.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 5f4e1be352245cfcee8d3f4b21ff0db07848a243fc40b10f27c63d2c8ed97453 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+2108201407.8c9af67 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8021,13 +8040,32 @@ be imported into OpenCPN to assist in performing searches.
     <target>raspbian-armhf</target>
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-alpha/raw/names/sar-2.8-raspbian-10-tarball/versions/2.8.2.0-+2108201407.8c9af67/sar-2.8.2.0-+2108201407.8c9af67_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 8818c07e9f1f6a872030c15d24df698bbd8e99f7a5809250f0e67b49fa02ba0f </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-raspbian-10-tarball/versions/v3.0.0/sar-v3.0.0_raspbian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 20c405530815b008d90b64f78460b0e52ca9373e883a27bf89a51972ab80eab3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+2108201408.8c9af67 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
+    <summary> Produces SAR search patterns as GPX files </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/sar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/sar.html </info-url>
+    <description> Enables production of SAR search patterns, in GPX format, that can
+be imported into OpenCPN to assist in performing searches.
+ </description>
+    <target>raspbian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-raspbian-11-tarball/versions/v3.0.0/sar-v3.0.0_raspbian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f2fcee8db9c6280fd5f4ff076652389e679499eee9bec6e840cec7e98b05f217 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> sar </name>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8040,13 +8078,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>raspbian-armhf</target>
     <target-version>9.13</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-alpha/raw/names/sar-2.8-raspbian-9.13-tarball/versions/2.8.2.0-+2108201408.8c9af67/sar-2.8.2.0-+2108201408.8c9af67_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> c968fb4e1d541d358cba6e2123aee5cf1d555e29d07a2de5a41e43752c4f5712 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-raspbian-9.13-tarball/versions/v3.0.0/sar-v3.0.0_raspbian-9.13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> b1e1c97db53c41e00fcd1a538c6ebebdef0e8d34c56b89831cacf921a83a67aa </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1019.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8059,13 +8097,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>ubuntu-x86_64</target>
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-ubuntu-16.04-tarball/versions/2.8.2.0-+1019.v2.8.2/sar-2.8.2.0-+1019.v2.8.2_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8dd0f59df3fe10bf6376c5082b7b042d79c0fe264030ce2a94ca5515df833212 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-ubuntu-16.04-tarball/versions/v3.0.0/sar-v3.0.0_ubuntu-16.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 93e70a6dea304f10b94adf2b690549324a8f79374d5726a5324242ca321fa84f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1023.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8078,13 +8116,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-ubuntu-18.04-tarball/versions/2.8.2.0-+1023.v2.8.2/sar-2.8.2.0-+1023.v2.8.2_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d986b42aab995c5473c2702e6e99925b2905c4816fa8747bc502c87914fe7b03 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-ubuntu-18.04-tarball/versions/v3.0.0/sar-v3.0.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6da7084554bacf7c432437eb0a4df23f67c0d923bb02fd4acb87f27524a3b4a8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1017.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8097,13 +8135,13 @@ be imported into OpenCPN to assist in performing searches.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-ubuntu-gtk3-18.04-tarball/versions/2.8.2.0-+1017.v2.8.2/sar-2.8.2.0-+1017.v2.8.2_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d992af6ed9ffc961f0bf4c54a9c96ef50198448cce2825e628a5849b94d5da8f </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-ubuntu-gtk3-18.04-tarball/versions/v3.0.0/sar-v3.0.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6fbca62a7a0f0a53d3211248a4d2c4bdeb7dfff6b99f6435b7f1682e62b24fcd </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
-    <version> 2.8.2.0-+1018.v2.8.2 </version>
-    <release> 0 </release>
+    <version> v3.0.0 </version>
+    <release>  </release>
     <summary> Produces SAR search patterns as GPX files </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
@@ -8116,8 +8154,8 @@ be imported into OpenCPN to assist in performing searches.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-2.8-ubuntu-gtk3-20.04-tarball/versions/2.8.2.0-+1018.v2.8.2/sar-2.8.2.0-+1018.v2.8.2_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 700f9a8ca7c15367ee5f1b8b8687322872b125bbae382e55cb96ad31747eead7 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-ubuntu-gtk3-20.04-tarball/versions/v3.0.0/sar-v3.0.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ae4ec2de99f571e7f659cfc34b66ca4ec78d504a93f18f4747c4c49acd755922 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
