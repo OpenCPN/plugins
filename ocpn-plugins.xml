@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2021-12-14 00:40</date>
+  <date>2021-12-19 01:58</date>
   <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.20.3 </version>
@@ -333,6 +333,28 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.8.11.0+3687.d6a2183/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.35.0 </version>
     <release> 0 </release>
@@ -353,28 +375,6 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.35.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v2.4.35.0/watchdog_pi-2.4.35.0-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-android-arm64-16-android-arm64-tarball/versions/1.0.185.0+8187.860b729/testplugin_pi-1.0.185.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -526,28 +526,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-alpha/raw/names/tactics_pi-1.0.2
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-debian-x86_64-10-buster-tarball/versions/1.0.185.0+8185.860b729/testplugin_pi-1.0.185.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.3.4.0 </version>
     <release> 0 </release>
@@ -607,6 +585,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.8.11.0+3696.d6a2183/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -691,50 +691,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.0.185.0+8182.860b729/testplugin_pi-1.0.185.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.0.185.0+8183.860b729/testplugin_pi-1.0.185.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.24.0 </version>
     <release> 0 </release>
@@ -757,6 +713,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-android-armhf-16-android-armhf-tarball/versions/1.8.11.0+3686.d6a2183/ocpn_draw_pi-1.8.11.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.35.0 </version>
     <release> 0 </release>
@@ -777,6 +755,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.35.0-darwin-x86_64-11.4-macos-tarball/versions/v2.4.35.0/watchdog_pi-2.4.35.0-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.8.11.0+3691.d6a2183/ocpn_draw_pi-1.8.11.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1011,6 +1011,28 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <tarball-checksum> 9163780fa212e1f5851ab36d3d6386d013bede59968264cd02360ad49615397f </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-android-arm64-16-android-arm64-tarball/versions/1.8.11.0+3682.d6a2183/ocpn_draw_pi-1.8.11.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.2.13.0 </version>
     <release> 0 </release>
@@ -1031,28 +1053,6 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.2.13.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.2.13.0/aisradar_pi-1.2.13.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.8.10.0+3632.d6ac879/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -1125,28 +1125,6 @@ https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.2.7.0-an
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-android-armhf-16-android-armhf-tarball/versions/1.0.185.0+8175.860b729/testplugin_pi-1.0.185.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.20.3 </version>
     <release> 3 </release>
@@ -1189,6 +1167,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.35.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/v2.4.35.0/watchdog_pi-2.4.35.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.8.11.0+3692.d6a2183/ocpn_draw_pi-1.8.11.0-raspbian-armhf-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
@@ -1364,28 +1364,6 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.7.12.0-debian-x86_64-10-buster-tarball/versions/v0.7.12.0/statusbar_pi-0.7.12.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.8.10.0+3629.d6ac879/ocpn_draw_pi-1.8.10.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Plots </name>
@@ -1752,28 +1730,6 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.185.0+8178.860b729/testplugin_pi-1.0.185.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -1814,6 +1770,50 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.8.11.0+3688.d6a2183/ocpn_draw_pi-1.8.11.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.8.11.0+714.d6a2183/ocpn_draw_pi-1.8.11.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.11.0 </version>
     <release> 0 </release>
@@ -1834,50 +1834,6 @@ User Sourced database to download and display harbours, anchorages, weather bouy
 https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.11.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.3.11.0+2375.641d607/squiddio_pi-1.3.11.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.0.185.0+8186.860b729/testplugin_pi-1.0.185.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-debian-x86_64-10-buster-tarball/versions/1.8.10.0+3633.d6ac879/ocpn_draw_pi-1.8.10.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -2157,26 +2113,26 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
     <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
     <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-android-arm64-16-android-arm64-tarball/versions/1.8.10.0+3624.d6ac879/ocpn_draw_pi-1.8.10.0-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.186.0+8236.f2c6f2b/testplugin_pi-1.0.186.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -2241,6 +2197,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>20.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.186.0+8240.f2c6f2b/testplugin_pi-1.0.186.0-x86_64_flatpak-20.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2396,6 +2374,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-alpha/raw/names/climatology_
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.8.11.0+3694.d6a2183/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.22.0 </version>
     <release> 0 </release>
@@ -2456,28 +2456,6 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk/>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.8.10.0+3634.d6ac879/ocpn_draw_pi-1.8.10.0-raspbian-armhf-9.13.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -2680,6 +2658,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-checksum> 2abb178eb5d915453e18d045da8713ff3ca24e4c2a06bbc37b4ae27e4fee067f </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.8.11.0+3690.d6a2183/ocpn_draw_pi-1.8.11.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.5 </version>
     <release> 0 </release>
@@ -2746,28 +2746,6 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-0.7.12.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/v0.7.12.0/statusbar_pi-0.7.12.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi.git </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk/>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.185.0+8179.860b729/testplugin_pi-1.0.185.0-raspbian-armhf-9.13.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3135,28 +3113,6 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.8.10.0+3625.d6ac879/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.6.0 </version>
     <release> 0 </release>
@@ -3347,6 +3303,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.2.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-darwin-x86_64-11.4-macos-tarball/versions/1.8.11.0+3683.d6a2183/ocpn_draw_pi-1.8.11.0-darwin-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> 5.3.0-beta+1635.v5.3.0-beta </version>
     <release>  </release>
@@ -3479,7 +3457,7 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
+    <version> 1.0.186.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -3489,13 +3467,35 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64</target>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.0.186.0+8227.f2c6f2b/testplugin_pi-1.0.186.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-aarch64</target>
     <build-target>flatpak</build-target>
     <build-gtk/>
     <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>aarch64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.185.0+8184.860b729/testplugin_pi-1.0.185.0-x86_64_flatpak-20.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.186.0+8238.f2c6f2b/testplugin_pi-1.0.186.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -3564,28 +3564,6 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-alpha/raw/names/tactics_pi-1.0.20.3-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.20.3+315.9f78246/tactics_pi-1.0.20.3-raspbian-armhf-9.13.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.8.10.0+3637.d6ac879/ocpn_draw_pi-1.8.10.0-raspbian-armhf-10.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -3698,28 +3676,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.8.10.0+3626.d6ac879/ocpn_draw_pi-1.8.10.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.11.0 </version>
     <release> 0 </release>
@@ -3786,6 +3742,28 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.13.31.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.13.31.0+3247.4a090f1/weather_routing_pi-1.13.31.0-raspbian-armhf-9.13.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>20.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.8.11.0+3684.d6a2183/ocpn_draw_pi-1.8.11.0-aarch64_flatpak-20.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3897,28 +3875,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oeSENC-4.2-ubuntu-x86_64-16.04-tarball/versions/4.2.19.28/oeSENC-4.2.19.28_ubuntu-16.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 7935ccae24c3f2fb4504a3fedc58a18f433c0665a84ed9e8083743011324737f </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi.git </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.0.185.0+8177.860b729/testplugin_pi-1.0.185.0-raspbian-armhf-10.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -4335,28 +4291,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.8.10.0+3631.d6ac879/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.5 </version>
     <release> 0 </release>
@@ -4598,28 +4532,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.185.0+8181.860b729/testplugin_pi-1.0.185.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -4763,26 +4675,26 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
     <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <source> https://github.com/jongough/testplugin_pi </source>
     <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
     <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-darwin-x86_64-11.4-macos-tarball/versions/1.8.10.0+3627.d6ac879/ocpn_draw_pi-1.8.10.0-darwin-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-android-armhf-16-android-armhf-tarball/versions/1.0.186.0+8229.f2c6f2b/testplugin_pi-1.0.186.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -4805,28 +4717,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.13.31.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.13.31.0+428.4a090f1/weather_routing_pi-1.13.31.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.8.10.0+3635.d6ac879/ocpn_draw_pi-1.8.10.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -4897,28 +4787,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-flatpak-x86_64-18.08-tarball/versions/1.2.5.0.fe52423/oernc_pi-1.2.5-0_flatpak-x86_64-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-android-armhf-16-android-armhf-tarball/versions/1.8.10.0+3630.d6ac879/ocpn_draw_pi-1.8.10.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> oeRNC Charts </name>
     <version> 1.2.5 </version>
     <release> 0 </release>
@@ -4941,6 +4809,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>16.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-ubuntu-x86_64-16.04-tarball/versions/1.2.5.0.fe52423/oernc_pi-1.2.5-0_ubuntu-x86_64-16.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.8.11.0+3695.d6a2183/ocpn_draw_pi-1.8.11.0-raspbian-armhf-9.13.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -5078,50 +4968,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.8.10.0+3636.d6ac879/ocpn_draw_pi-1.8.10.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.8.10.0+709.d6ac879/ocpn_draw_pi-1.8.10.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.24.0 </version>
     <release> 0 </release>
@@ -5189,6 +5035,28 @@ https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-android-arm64-16-android-arm64-tarball/versions/1.0.186.0+8237.f2c6f2b/testplugin_pi-1.0.186.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.35.0 </version>
     <release> 0 </release>
@@ -5209,6 +5077,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.35.0-mingw-x86_64-10-mingw-tarball/versions/v2.4.35.0/watchdog_pi-2.4.35.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.186.0+1306.f2c6f2b/testplugin_pi-1.0.186.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> oeSENC </name>
@@ -5235,6 +5125,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-checksum> 18be5c9d96ffe4ab7236b1f2dd1aa61dbdd3bf81b328048e3f13957fdc64f299 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-debian-x86_64-10-buster-tarball/versions/1.8.11.0+3689.d6a2183/ocpn_draw_pi-1.8.11.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -5251,6 +5163,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-raspbian-armhf-10-buster-armhf-tarball/versions/1.0.186.0+8235.f2c6f2b/testplugin_pi-1.0.186.0-raspbian-armhf-10.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -5339,28 +5273,6 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> OCPN Draw </name>
-    <version> 1.8.10.0 </version>
-    <release> 0 </release>
-    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/ocpn_draw_pi </source>
-    <description>
-OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.10.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.8.10.0+3628.d6ac879/ocpn_draw_pi-1.8.10.0-x86_64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> FindIt </name>
     <version> 1.2.5.0 </version>
     <release> 0 </release>
@@ -5399,6 +5311,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.0.186.0+8228.f2c6f2b/testplugin_pi-1.0.186.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -5493,6 +5427,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/oernc-msvc-10.0.14393-tarball/versions/1.2.5.0.fe52423/oernc_pi-1.2.5-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>16.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-ubuntu-x86_64-16.04-xenial-tarball/versions/1.0.186.0+8241.f2c6f2b/testplugin_pi-1.0.186.0-ubuntu-x86_64-16.04-xenial.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -5577,6 +5533,28 @@ User Sourced database to download and display harbours, anchorages, weather bouy
 https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.11.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.3.11.0+2384.641d607/squiddio_pi-1.3.11.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.186.0+8234.f2c6f2b/testplugin_pi-1.0.186.0-darwin-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -6204,6 +6182,50 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-debian-x86_64-10-buster-tarball/versions/1.0.186.0+8231.f2c6f2b/testplugin_pi-1.0.186.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.186.0+8233.f2c6f2b/testplugin_pi-1.0.186.0-raspbian-armhf-9.13.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.11.0 </version>
     <release> 0 </release>
@@ -6569,28 +6591,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.185.0+8180.860b729/testplugin_pi-1.0.185.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.35.0 </version>
     <release> 0 </release>
@@ -6719,6 +6719,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi.git </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-raspbian-armhf-11-bullseye-armhf-tarball/versions/1.8.11.0+3685.d6a2183/ocpn_draw_pi-1.8.11.0-raspbian-armhf-11.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.2.13.0 </version>
     <release> 0 </release>
@@ -6739,6 +6761,28 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.2.13.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.2.13.0/aisradar_pi-1.2.13.0-raspbian-armhf-10.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.186.0+8232.f2c6f2b/testplugin_pi-1.0.186.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -6806,28 +6850,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.185.0+350.860b729/testplugin_pi-1.0.185.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -7246,6 +7268,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.0.186.0+8230.f2c6f2b/testplugin_pi-1.0.186.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> StatusBar </name>
     <version> 0.7.12.0 </version>
     <release> 0 </release>
@@ -7382,6 +7426,50 @@ oernc plugins. It thus obsoletes these two plugins.
     <tarball-checksum> 8024fb830a27c8202ac04f3fb30043e5ace49a2b506d05d97a28bfbd2bd31fde </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.186.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi.git </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.186.0-raspbian-armhf-11-bullseye-armhf-tarball/versions/1.0.186.0+8239.f2c6f2b/testplugin_pi-1.0.186.0-raspbian-armhf-11.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> OCPN Draw </name>
+    <version> 1.8.11.0 </version>
+    <release> 0 </release>
+    <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/ocpn_draw_pi </source>
+    <description>
+OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>20.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.11.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.8.11.0+3693.d6a2183/ocpn_draw_pi-1.8.11.0-x86_64_flatpak-20.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> StatusBar </name>
     <version> 0.7.12.0 </version>
     <release> 0 </release>
@@ -7422,28 +7510,6 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.2.5.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.2.5.0/findit_pi-1.2.5.0-darwin-x86_64-10.13.6-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.185.0+8176.860b729/testplugin_pi-1.0.185.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
@@ -7550,28 +7616,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.185.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.185.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.0.185.0+8188.860b729/testplugin_pi-1.0.185.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
