@@ -23,7 +23,6 @@
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="meta-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
     <xs:attribute name="version" type="xs:string" use="required"/>
   </xs:complexType>
@@ -84,6 +83,7 @@
         <xs:restriction base = "xs:string">
             <xs:enumeration value = "all"/>
             <xs:enumeration value = "darwin"/>
+            <xs:enumeration value = "darwin-wx315"/>
             <xs:enumeration value = "debian"/>
             <xs:enumeration value = "flatpak"/>
             <xs:enumeration value = "mingw"/>
