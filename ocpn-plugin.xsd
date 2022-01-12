@@ -13,6 +13,7 @@
       <xs:element name="author" type="xs:token"/>
       <xs:element name="source" type="xs:token"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="meta-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="description" type="xs:string"/>
       <xs:element ref="target"/>
       <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>  <!-- Deprecated, not used. -->
@@ -23,7 +24,6 @@
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="meta-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
     <xs:attribute name="version" type="xs:string" use="required"/>
   </xs:complexType>
@@ -69,8 +69,8 @@
       <xs:enumeration value = "mingw-x86_64"/>
       <xs:enumeration value = "msvc"/>
       <xs:enumeration value = "raspbian-armhf"/>
-      <xs:enumeration value = "ubuntu-arm64"/>
-      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
+      <xs:enumeration value = "ubuntu-armhf"/>
+      <xs:enumeration value = "ubuntu-gtk3-armhf"/>
       <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
       <xs:enumeration value = "ubuntu-x86_64"/>
       <xs:enumeration value = "android-armhf"/>
@@ -79,11 +79,13 @@
   </xs:simpleType>
 </xs:element>
 
+<!-- Deprecated, not used. -->
 <xs:element name="build-target">
     <xs:simpleType>
         <xs:restriction base = "xs:string">
             <xs:enumeration value = "all"/>
             <xs:enumeration value = "darwin"/>
+            <xs:enumeration value = "darwin-wx315"/>
             <xs:enumeration value = "debian"/>
             <xs:enumeration value = "flatpak"/>
             <xs:enumeration value = "mingw"/>
