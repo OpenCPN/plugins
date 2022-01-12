@@ -13,6 +13,7 @@
       <xs:element name="author" type="xs:token"/>
       <xs:element name="source" type="xs:token"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="meta-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="description" type="xs:string"/>
       <xs:element ref="target"/>
       <xs:element ref="build-target" minOccurs="0" maxOccurs="1"/>  <!-- Deprecated, not used. -->
