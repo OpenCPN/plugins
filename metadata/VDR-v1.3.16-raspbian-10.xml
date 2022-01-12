@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/rgleason/vdr_pi/1665 -->
+<!-- https://cloud.drone.io/rgleason/vdr_pi/59 -->
 <plugin version="1">
   <name> VDR </name>
-  <version> v1.3.15 </version>
+  <version> v1.3.16 </version>
   <release> 0 </release>
   <summary> Voyage Data Recorder </summary>
 
@@ -16,9 +16,9 @@
 Save NMEA stream to a file.  Replay NMEA stream previously saved. Used to test plugins.
  </description>
 
-  <target>android-arm64</target>
-  <target-version>16</target-version>
-  <target-arch>arm64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.15-android-arm64-A64-16-tarball/versions/v1.3.15/VDR-v1.3.15_android-arm64-16-arm64.tar.gz </tarball-url>
-  <tarball-checksum> 8c3d38d1e195abcfa4a90367279f2cae747155b064bdddd9642a9fd2c81d3233 </tarball-checksum>
+  <target>raspbian-armhf</target>
+  <target-version>10</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.16-raspbian-10-tarball/versions/v1.3.16/VDR-v1.3.16_raspbian-10-armhf.tar.gz </tarball-url>
+  <tarball-checksum> ffaa997e80d3e11a9af551dbecd74dda3ca2923f0012c2127d51f57fb2c19611 </tarball-checksum>
 </plugin>
