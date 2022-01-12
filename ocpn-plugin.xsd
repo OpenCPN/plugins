@@ -68,8 +68,8 @@
       <xs:enumeration value = "mingw-x86_64"/>
       <xs:enumeration value = "msvc"/>
       <xs:enumeration value = "raspbian-armhf"/>
-      <xs:enumeration value = "ubuntu-arm64"/>
-      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
+      <xs:enumeration value = "ubuntu-armhf"/>
+      <xs:enumeration value = "ubuntu-gtk3-armhf"/>
       <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
       <xs:enumeration value = "ubuntu-x86_64"/>
       <xs:enumeration value = "android-armhf"/>
@@ -78,6 +78,7 @@
   </xs:simpleType>
 </xs:element>
 
+<!-- Deprecated, not used. -->
 <xs:element name="build-target">
     <xs:simpleType>
         <xs:restriction base = "xs:string">
