@@ -24,7 +24,7 @@
                   minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
-    <xs:attribute name="version" type="xs:string" use="required"/> 
+    <xs:attribute name="version" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:element>
 
@@ -50,7 +50,7 @@
       <xs:enumeration value = "noarch"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element> 
+</xs:element>
 
 <xs:element name="target">
   <xs:simpleType>
@@ -58,32 +58,31 @@
       <xs:enumeration value = "all"/>
       <xs:enumeration value = "android-arm64-v8a"/>
       <xs:enumeration value = "android-armeabi-v7a"/>
+      <xs:enumeration value = "android-armhf"/>
+      <xs:enumeration value = "android-arm64"/>
       <xs:enumeration value = "darwin"/>
       <xs:enumeration value = "darwin-wx315"/>
-      <xs:enumeration value = "debian-armhf"/>
       <xs:enumeration value = "debian-x86_64"/>
       <xs:enumeration value = "flatpak-aarch64"/>
       <xs:enumeration value = "flatpak-x86_64"/>
       <xs:enumeration value = "mingw"/> <!-- transitional, see OpenCPN#2061 -->
       <xs:enumeration value = "mingw-x86_64"/>
       <xs:enumeration value = "msvc"/>
-      <xs:enumeration value = "raspbian-armhf"/>
-      <xs:enumeration value = "ubuntu-arm64"/>
-      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
       <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
       <xs:enumeration value = "ubuntu-x86_64"/>
-      <xs:enumeration value = "android-armhf"/>
-      <xs:enumeration value = "android-arm64"/>
+      <xs:enumeration value = "ubuntu-gtk3-armhf"/>
+      <xs:enumeration value = "ubuntu-armhf"/>
+      <xs:enumeration value = "raspbian-armhf"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element> 
+</xs:element>
 
 <xs:element name="build-target">
     <xs:simpleType>
         <xs:restriction base = "xs:string">
             <xs:enumeration value = "all"/>
             <xs:enumeration value = "darwin"/>
-	      	<xs:enumeration value = "darwin-wx315"/>
+            <xs:enumeration value = "darwin-wx315"/>
             <xs:enumeration value = "debian"/>
             <xs:enumeration value = "flatpak"/>
             <xs:enumeration value = "mingw"/>
