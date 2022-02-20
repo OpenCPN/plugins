@@ -75,6 +75,50 @@ and rebuild ocpn-plugins.xml:
     Generated new ocpn-plugins.xml at /home/al/.opencpn/ocpn-plugins.xml
 
 
+Publish a private catalog
+-------------------------
+
+A developer can publish a private catalog. This is a test tool not
+aimed regular users. The basic steps are
+
+  - Make sure the extended Catalog Settings UI is available
+  - Make sure user has a private clone of the OpenCPN/plugins project.
+  - Create a new catalog a. k. a. ocpn-plugins.xml
+  - Publish the catalog
+  - Obtain the published catalog url
+  - Use the url as a Custom URL in the Catalog Settings window.
+
+The details:
+
+ 1. Start OpenCPN  and go to _Settings_ | _Plugins_. Push the _Settings_
+    button bottom-right. If instructed, add `CatalogExpert=1` to the
+    configuration file, right under the `[PlugIns]`section. Check again
+    that _Settings_ | _Plugins_ | _Settings_ displays a new window.
+ 2. If not done already: `git clone https://github.com/OpenCPN/plugins.git`
+ 3. In the plugins clone add modified metadata files to the _metadata_
+    directory.
+ 4. Still in the plugins clone create the new catalog using
+
+        $ python tools/ocpn-metadata generate --userdir metadata \
+              --destfile ocpn-plugins.xml --force
+ 5. Add, commit and push the updated catalog:
+
+        $ git add ocpn-plugins.xml
+        $ git commit -m "Catalog: testing my plugin."
+        $ git push origin master:master.
+    This assumes working with the master branch, by no means necessary.
+
+ 6. Direct the web browser to the github plugins clone, click on the updated
+    ocpn-plugins.xml file. Click the top-right _Raw_ button
+
+ 7. The web browser URL window will display an url like
+     `https://raw.githubusercontent.com/some-user/plugins/master/ocpn-plugins.xml`
+    This is the custom url, take a note or just copy it.
+ 8. Use the url in OpenCPN _Settings_ | _Plugins_ | _Settings_.  The top pane
+    contains a _Select Plugin Catalog_ drop-down; choose _Custom_ and paste
+    the url from previous step into the url area.
+
+
 Check xml syntax:
 -----------------
 
