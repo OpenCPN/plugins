@@ -22,8 +22,8 @@ files in the metadata directory.
 The PR could be accepted into one of three branches:
 
   - master, used by regular users.
-  - beta, for reasonably stable test plugins.
-  - alpha, for experimental plugins.
+  - Beta, for reasonably stable test plugins.
+  - Alpha, for experimental plugins.
 
 
 Tools and workflows
