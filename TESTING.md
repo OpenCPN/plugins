@@ -96,15 +96,18 @@ The details:
     that _Settings_ | _Plugins_ | _Settings_ displays a new window.
  2. If not done already: `git clone https://github.com/OpenCPN/plugins.git`
  3. In the plugins clone add modified metadata files to the _metadata_
-    directory.
+    directory. Add and commit:
+
+        $ git add metadata
+        $ git commit -m "metadata: Updating my plugin."
  4. Still in the plugins clone create the new catalog using
 
         $ python tools/ocpn-metadata generate --userdir metadata \
               --destfile ocpn-plugins.xml --force
  5. Add, commit and push the updated catalog:
 
-        $ git add ocpn-plugins.xml
-        $ git commit -m "Catalog: testing my plugin."
+        $ git add  ocpn-plugins.xml
+        $ git commit --no-verify -m "Catalog: testing my plugin."
         $ git push origin master:master.
     This assumes working with the master branch, by no means necessary.
 
