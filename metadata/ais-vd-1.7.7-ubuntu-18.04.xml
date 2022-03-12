@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/Hakansv/ais-vd_pi/517 -->
+<plugin version="1">
+  <name> ais-vd </name>
+  <version> 1.7.7 </version>
+  <release>  </release>
+  <summary> Update AIS class A voyage data </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> yes </open-source>
+  <author> Dirk R and Hakan S </author>
+  <source> https://github.com/Hakansv/ais-vd_pi </source>
+  <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+
+  <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+
+  <target>ubuntu-x86_64</target>
+  <target-version>18.04</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.7.7-ubuntu-18.04-tarball/versions/1.7.7/ais-vd-1.7.7_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 544ff43a1fea36be0e9a53f0f0931da7087239983bf3f265ec12a0eb30fe9146 </tarball-checksum>
+</plugin>
