@@ -6,6 +6,7 @@
 
 set -e
 
+sudo apt-get update
 sudo apt-get install libxml2-utils
 
 base_branch=$GITHUB_BASE_REF
