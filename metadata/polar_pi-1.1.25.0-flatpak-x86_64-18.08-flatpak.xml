@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Polar </name>
-<version> 1.1.24.0 </version>
+<version> 1.1.25.0 </version>
 <release> 0 </release>
 <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
 
@@ -14,13 +14,13 @@
 Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
 </description>
 
-<target>ubuntu-x86_64</target>
-<build-target>ubuntu</build-target>
+<target>flatpak-x86_64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>16.04</target-version>
+<target-version>18.08</target-version>
 <target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.1.24.0-ubuntu-x86_64-16.04-xenial-tarball/versions/v1.1.24.0/polar_pi-1.1.24.0-ubuntu-x86_64-16.04-xenial.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.1.25.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.1.25/polar_pi-1.1.25.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
 </plugin>
