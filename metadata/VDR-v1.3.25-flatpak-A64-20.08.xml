@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/rgleason/vdr_pi/1773 -->
+<!-- https://circleci.com/gh/rgleason/vdr_pi/1862 -->
 <plugin version="1">
   <name> VDR </name>
-  <version> v1.3.20 </version>
+  <version> v1.3.25 </version>
   <release> 0 </release>
   <summary> Voyage Data Recorder </summary>
 
@@ -16,9 +16,9 @@
 Save NMEA stream to a file.  Replay NMEA stream previously saved. Used to test plugins.
  </description>
 
-  <target>ubuntu-gtk3-x86_64</target>
-  <target-version>20.04</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.20-ubuntu-gtk3-20.04-tarball/versions/v1.3.20/VDR-v1.3.20_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> c0f13ac6c229be44ef3c4d58bcec97c2d65eb45ce58172ca4965a3dcf84a21cd </tarball-checksum>
+  <target>flatpak-aarch64</target>
+  <target-version>20.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.25-flatpak-A64-20.08-tarball/versions/v1.3.25/VDR-v1.3.25_flatpak-20.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> b8555c25d75098f3ea0ffdcb0e32209d9cb978321415f1e08f7c3472d16b8059 </tarball-checksum>
 </plugin>
