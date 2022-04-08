@@ -108,7 +108,7 @@ The details:
 
         $ git add  ocpn-plugins.xml
         $ git commit --no-verify -m "Catalog: testing my plugin."
-        $ git push origin master:master.
+        $ git push origin master:master
     This assumes working with the master branch, by no means necessary.
 
  6. Direct the web browser to the github plugins clone, click on the updated
