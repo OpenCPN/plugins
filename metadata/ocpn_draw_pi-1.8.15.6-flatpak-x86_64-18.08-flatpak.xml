@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> OCPN Draw </name>
-<version> 1.8.15.5 </version>
-<release> 5 </release>
+<version> 1.8.15.6 </version>
+<release> 6 </release>
 <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,13 +14,13 @@
 OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
 
-<target>android-armhf</target>
-<build-target>android</build-target>
+<target>flatpak-x86_64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>16</target-version>
-<target-arch>armhf</target-arch>
+<target-version>18.08</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.15.5-android-armhf-16-android-armhf-tarball/versions/1.8.15.5+4378.7585f71/ocpn_draw_pi-1.8.15.5-android-armhf-16-android-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.15.6-flatpak-x86_64-18.08-flatpak-tarball/versions/1.8.15.6+4423.ddda78c/ocpn_draw_pi-1.8.15.6-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
 </plugin>
