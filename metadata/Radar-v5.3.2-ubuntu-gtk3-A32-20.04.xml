@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--  -->
 <plugin version="1">
-
   <name> Radar </name>
-  <version> 5.2.2-+2107121210.be299ce </version>
+  <version> v5.3.2 </version>
   <release>  </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
@@ -16,7 +16,7 @@
 
 WARNING: OPENGL MODE IS REQUIRED!
 
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
@@ -26,10 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>raspbian-armhf</target>
-  <target-version>9.13</target-version>
+  <target>ubuntu-gtk3-armhf</target>
+  <target-version>20.04</target-version>
   <target-arch>armhf</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-raspbian-9.13-tarball/versions/5.2.2-+2107121210.be299ce/Radar-5.2.2-+2107121210.be299ce_raspbian-9.13-armhf.tar.gz </tarball-url>
-  <tarball-checksum> b27cbfc76d42dda43d860d394423e36bdab7caa5ccba150ab27670c9c6851b17 </tarball-checksum>
-
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-v5.3.2-ubuntu-gtk3-A32-20.04-tarball/versions/v5.3.2/Radar-v5.3.2_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
+  <tarball-checksum> d4c27d4656e3d3efb57e90385ed4367c93ed878f2f410984f139e8dff7265c73 </tarball-checksum>
 </plugin>
