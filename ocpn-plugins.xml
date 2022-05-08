@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2022-04-30 02:26</date>
+  <date>2022-05-04 22:42</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 0.3.4.13 </version>
@@ -1222,7 +1222,7 @@ search LogbookKonni
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1311.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1232,22 +1232,22 @@ search LogbookKonni
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
-    <target>darwin</target>
+    <target>darwin-wx315</target>
     <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-darwin-10.13.6-tarball/versions/5.2.2-+1311.be299ce/Radar-5.2.2-+1311.be299ce_darwin-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d2c1fdfaf9d720916b0ce4d542464668f1b5c9b8a3344b39d67c9e6c618c9af4 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-darwin-wx315-10.13.6-tarball/versions/5.3.3/Radar-5.3.3_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4fa29d2102152fde3753f26231d25f330077bb4209aeb3ef5a47024e2a1ad690 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1315.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1257,7 +1257,7 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1267,12 +1267,12 @@ such as dual radar range and Doppler.
     <target>debian-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-debian-10-tarball/versions/5.2.2-+1315.be299ce/Radar-5.2.2-+1315.be299ce_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 9d8f21ea2566473b116f413d1c9d6ea7b95327456a6a5fe74d9838bf18f8fccc </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-debian-10-tarball/versions/5.3.3/Radar-5.3.3_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e235d4772435dacc6853034d0785d2fa075f40c9f53bbb06bb922e43674b0ef5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1313.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1282,22 +1282,22 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
-    <target>flatpak-x86_64</target>
-    <target-version>18.08</target-version>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-flatpak-18.08-tarball/versions/5.2.2-+1313.be299ce/Radar-5.2.2-+1313.be299ce_flatpak-18.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 88481f87889eef50333b9adaaf0f9a8fba669a4d20c3799734d58121eea014eb </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-debian-11-tarball/versions/5.3.3/Radar-5.3.3_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 111bbf77946e4b9dbb939fb931c04342ad102814449b18a6518e440ba1267412 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1308.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1307,7 +1307,57 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-debian-A32-10-tarball/versions/5.3.3/Radar-5.3.3_debian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 39454429d912d1d59cc5c9dcddd36be64b7d67658a5d8f7db300eeef14631f43 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.3.3 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-debian-A32-11-tarball/versions/5.3.3/Radar-5.3.3_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 2e3b5e29f5183c1e544a2f7b8c332cc4de672507561eeb5b6f7160dd45b7c83d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.3.3 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1317,12 +1367,12 @@ such as dual radar range and Doppler.
     <target>flatpak-x86_64</target>
     <target-version>20.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-flatpak-20.08-tarball/versions/5.2.2-+1308.be299ce/Radar-5.2.2-+1308.be299ce_flatpak-20.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 61e07da64f63bdad95e6da0997cbaf9bfc33491a08a59a529751aa82c5cb7934 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-flatpak-20.08-tarball/versions/5.3.3/Radar-5.3.3_flatpak-20.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ccb0680f69262d0d8c7be240c873ef367ad8971865e396b1c8a80bd25d707100 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1309.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1332,7 +1382,7 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1342,12 +1392,12 @@ such as dual radar range and Doppler.
     <target>flatpak-aarch64</target>
     <target-version>20.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-flatpak-A64-20.08-tarball/versions/5.2.2-+1309.be299ce/Radar-5.2.2-+1309.be299ce_flatpak-20.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 7ea6aaab38aaaeb96de9fb6923929ef14a56144c393e034759c5ed529b338eda </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-flatpak-A64-20.08-tarball/versions/5.3.3/Radar-5.3.3_flatpak-20.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 7de2d1e04413b2d0a012ad318d91b7deec20660d5e10fd77090b9420da2013f8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+424.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1357,7 +1407,7 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1367,12 +1417,12 @@ such as dual radar range and Doppler.
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-msvc-10.0.14393-tarball/versions/5.2.2-+424.be299ce/Radar-5.2.2-+424.be299ce_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> d0746ad11d8bb6156b66c7a37742b2eff22ffb058e3bf4f9a10bc15107d7d751 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-msvc-10.0.14393-tarball/versions/5.3.3/Radar-5.3.3_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 8816cbfa0f5af89da0940fd30dbeeebb6271e609ccaf5cdc131cab49be714e82 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+2107121208.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1382,82 +1432,7 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-raspbian-10-tarball/versions/5.2.2-+2107121208.be299ce/Radar-5.2.2-+2107121208.be299ce_raspbian-10-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 9885c09baa5597eef4ed85857e0380bb86b93b847a404be0c1134744511d1bc2 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.2.2-+2107121210.be299ce </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>raspbian-armhf</target>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-raspbian-9.13-tarball/versions/5.2.2-+2107121210.be299ce/Radar-5.2.2-+2107121210.be299ce_raspbian-9.13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> b27cbfc76d42dda43d860d394423e36bdab7caa5ccba150ab27670c9c6851b17 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.2.2-+1312.be299ce </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-ubuntu-16.04-tarball/versions/5.2.2-+1312.be299ce/Radar-5.2.2-+1312.be299ce_ubuntu-16.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 87f6139cb3d47fbefad1c56397ace54d10b054aea8b86e52a937f2190f700248 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> 5.2.2-+1314.be299ce </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1467,12 +1442,12 @@ such as dual radar range and Doppler.
     <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-ubuntu-18.04-tarball/versions/5.2.2-+1314.be299ce/Radar-5.2.2-+1314.be299ce_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> ed1cdb6835ecf91cf0c4a1715a99387ff8d48b791e95239fa7ce0c1884c5416a </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-ubuntu-18.04-tarball/versions/5.3.3/Radar-5.3.3_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a2ddb6ca03964ede95a84da63133e4b61e07a94eab9eee020fe8aec2110a3c6b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1310.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1482,7 +1457,32 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>ubuntu-armhf</target>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-ubuntu-A32-18.04-tarball/versions/5.3.3/Radar-5.3.3_ubuntu-18.04-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 58a41a0add06b42ec618bb8e36b9d4bd8b0626b1ba87fa9136a02b26b5027cc7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.3.3 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1492,12 +1492,12 @@ such as dual radar range and Doppler.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-ubuntu-gtk3-18.04-tarball/versions/5.2.2-+1310.be299ce/Radar-5.2.2-+1310.be299ce_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f08b8d594869cb98e638ed4ab3ca21ce124fbb8fa58ff99902681b608e2c5691 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-ubuntu-gtk3-18.04-tarball/versions/5.3.3/Radar-5.3.3_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 3fdbdd38556575d43cadc0d5d8d23440ab5499613ab603e3003f5e231b8ceec4 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> 5.2.2-+1316.be299ce </version>
+    <version> 5.3.3 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1507,7 +1507,7 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
     <description> Garmin, Navico and Raymarine radar support
 WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and older Raymarine radars.
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
 When a compass heading is provided it will allow radar overlay on the chart(s).
 It also allows separate display of a traditional radar picture (PPI).
 Supports MARPA (even on radars that do not support this themselves),
@@ -1517,8 +1517,33 @@ such as dual radar range and Doppler.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.2-ubuntu-gtk3-20.04-tarball/versions/5.2.2-+1316.be299ce/Radar-5.2.2-+1316.be299ce_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8b349dcb754f34fb23dcb94be869cf68f9bdf23a719d761602511a4fe2f30f79 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-ubuntu-gtk3-20.04-tarball/versions/5.3.3/Radar-5.3.3_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e1d722f784b4ebd296cd0ac1a0663ab210243a272eb8423518d014780bb1b18b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> 5.3.3 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>ubuntu-gtk3-armhf</target>
+    <target-version>20.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-ubuntu-gtk3-A32-20.04-tarball/versions/5.3.3/Radar-5.3.3_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 5710bac2c1378b2c4f95e2bbd7e67f1630bf75fa6abb326b8b812875a13d4760 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -5515,7 +5540,7 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5536,12 +5561,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>android-arm64</target>
     <target-version>16</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-android-arm64-A64-16-tarball/versions/1.0.17.0/o-charts-1.0.17.0_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 70268b5f029ddcd1b366556aa9c40ca5a1d24dc7a9614b8f92ec4c308b4d65b1 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-android-arm64-A64-16-tarball/versions/1.0.19.0/o-charts-1.0.19.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 6d533826817878dbc9918863cdac322fef6ab504f1e62670dcdb24e7762829f9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5562,12 +5587,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>android-armhf</target>
     <target-version>16</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-android-armhf-16-tarball/versions/1.0.17.0/o-charts-1.0.17.0_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 157696cb6b55fe4504f1a0e347f1a928bd4f177c7305fd365ef687ac0f243208 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-android-armhf-16-tarball/versions/1.0.19.0/o-charts-1.0.19.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ca094fc09910382421b5bf47d610f8b250000c54acbcc203a0ae579131babad2 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5588,12 +5613,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>darwin-wx315</target>
     <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-darwin-wx315-10.13.6-tarball/versions/1.0.17.0/o-charts-1.0.17.0_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> faa4989da708af4272cbe5abdac33d6f37cb5e5cb053afa1270c7f25bc1cc8a5 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-darwin-wx315-10.13.6-tarball/versions/1.0.19.0/o-charts-1.0.19.0_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 30f439655af73989a819c6a6a9687c9ab521e1cb26f21a0b80c3960159ccfc57 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5614,12 +5639,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>debian-x86_64</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-debian-10-tarball/versions/1.0.17.0/o-charts-1.0.17.0_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> bb66714ad83189292c91f43fd024ad4763f4afdc31b93e2111ff40993f3bccf7 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-debian-10-tarball/versions/1.0.19.0/o-charts-1.0.19.0_debian-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 8f584e5ed14ad6137ba12b47e12e64d98e642b4fa42063622b760d8351538405 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5640,12 +5665,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>flatpak-x86_64</target>
     <target-version>20.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-flatpak-20.08-tarball/versions/1.0.17.0/o-charts-1.0.17.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> e9e4f8fc992f8a19df31303738b470697ce1f73969fbc54bd7eb71aef8575d69 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-flatpak-20.08-tarball/versions/1.0.19.0/o-charts-1.0.19.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 215419f66e06ad31d65a719ae629c11ccc472a2ecfdb244f8a592a0267bef42b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5666,12 +5691,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>flatpak-aarch64</target>
     <target-version>20.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-flatpak-A64-20.08-tarball/versions/1.0.17.0/o-charts-1.0.17.0_flatpak-20.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> c90a87051c01103611b5636e5992bbf9485b4a3972d9edf65829d1c10bb3d6fa </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-flatpak-A64-20.08-tarball/versions/1.0.19.0/o-charts-1.0.19.0_flatpak-20.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 613cbe9a19c2be350deb4e8c78b7ff5c05d70ad77bc29f55395fbd0f77dc6770 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5692,12 +5717,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>msvc</target>
     <target-version>10.0.14393</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-msvc-10.0.14393-tarball/versions/1.0.17.0/o-charts-1.0.17.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> ee115ed1d97b96e8dc9e8034ebad7dad77c24de86844e1352a763a133b96e938 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-msvc-10.0.14393-tarball/versions/1.0.19.0/o-charts-1.0.19.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 767b990445b26f634a142613f4d1022bb52630611aaddb5cb39fd0b2edb92a2f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5718,12 +5743,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>ubuntu-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-ubuntu-18.04-tarball/versions/1.0.17.0/o-charts-1.0.17.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 098a8d1ac55ca5708e4f2f7473441b8727b00ba0005c2ea7447151732e3e1bef </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-ubuntu-18.04-tarball/versions/1.0.19.0/o-charts-1.0.19.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7d5a0115b1b9bda9856b574c1c73f9a92fbcb47b2119a73af36b8db4a269e583 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5744,12 +5769,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>ubuntu-armhf</target>
     <target-version>18.04</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-ubuntu-armhf-18.04-tarball/versions/1.0.17.0/o-charts-1.0.17.0_ubuntu-18.04-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 4fb562f974aab25632ab97da9ba976070909815bfe7a736b7f82f0963ecf7f6d </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-ubuntu-armhf-18.04-tarball/versions/1.0.19.0/o-charts-1.0.19.0_ubuntu-18.04-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ed84c1714be9211f67c30702a4c74d595f86b8367712891ac567717c3d465de9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5770,12 +5795,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-ubuntu-gtk3-18.04-tarball/versions/1.0.17.0/o-charts-1.0.17.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 0a8f12fe3cd6e143871288c1186996c04bde94f2e56d1843532242e861eeee84 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-ubuntu-gtk3-18.04-tarball/versions/1.0.19.0/o-charts-1.0.19.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4038a3f8132cd629094bc4976d90e58fdb4f6b138a2faf7a02e91956a46e3298 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5796,12 +5821,12 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>ubuntu-gtk3-x86_64</target>
     <target-version>20.04</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-ubuntu-gtk3-20.04-tarball/versions/1.0.17.0/o-charts-1.0.17.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> afd8485ee333dd8f1eb14537502b2259e5c4255d502453d0917b04a50ad94f90 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-ubuntu-gtk3-20.04-tarball/versions/1.0.19.0/o-charts-1.0.19.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 1d34f7d98c3a0ea613df211e19d7701e504a043c3a527dc687166a50e53acb16 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 1.0.17.0 </version>
+    <version> 1.0.19.0 </version>
     <release> 0 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
@@ -5822,8 +5847,8 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>ubuntu-gtk3-armhf</target>
     <target-version>20.04</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.17.0-ubuntu-gtk3-armhf-20.04-tarball/versions/1.0.17.0/o-charts-1.0.17.0_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
-    <tarball-checksum> d040a965e95e2e38089df0c3ed7eac5d159bb7ec22b122fd3943165a96309d04 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.19.0-ubuntu-gtk3-armhf-20.04-tarball/versions/1.0.19.0/o-charts-1.0.19.0_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
+    <tarball-checksum> c7d017a6a2b5c6738b9a10431ff1608e285f7bb9b53bde38ffccfc90ca1a7c74 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
