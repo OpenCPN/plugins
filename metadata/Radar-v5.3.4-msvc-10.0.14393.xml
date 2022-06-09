@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/1762 -->
+<!-- https://ci.appveyor.com/project/keesverruijt/radar-pi/builds/43809526 -->
 <plugin version="1">
   <name> Radar </name>
-  <version> 5.3.3 </version>
+  <version> v5.3.4 </version>
   <release>  </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>debian-x86_64</target>
-  <target-version>11</target-version>
+  <target>msvc</target>
+  <target-version>10.0.14393</target-version>
   <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-5.3.3-debian-11-tarball/versions/5.3.3/Radar-5.3.3_debian-11-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 111bbf77946e4b9dbb939fb931c04342ad102814449b18a6518e440ba1267412 </tarball-checksum>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-v5.3.4-msvc-10.0.14393-tarball/versions/v5.3.4/Radar-v5.3.4_msvc-10.0.14393-win32.tar.gz </tarball-url>
+  <tarball-checksum> ef0c7008a810312256413e992ac3c79d280ef0f745b7b35cf0c1e86c0c1f5c50 </tarball-checksum>
 </plugin>
