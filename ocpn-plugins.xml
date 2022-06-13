@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2022-06-04 13:56</date>
+  <date>2022-06-13 14:06</date>
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.16.1 </version>
@@ -45,28 +45,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.16.1-debian-armhf-11-bullseye-armhf-tarball/versions/1.8.16.1+4587.a144d1f/ocpn_draw_pi-1.8.16.1-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.209.0+9506.069714e/testplugin_pi-1.0.209.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -116,7 +94,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -126,13 +104,13 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>20.08</target-version>
+    <target-version>11.4</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.209.0+9499.069714e/testplugin_pi-1.0.209.0-x86_64_flatpak-20.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.0.211.0+9573.5cb3314/testplugin_pi-1.0.211.0-darwin-wx315-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -157,50 +135,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.16.1-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.8.16.1+4588.a144d1f/ocpn_draw_pi-1.8.16.1-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/1.0.209.0+9508.069714e/testplugin_pi-1.0.209.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>20.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/1.0.209.0+9509.069714e/testplugin_pi-1.0.209.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -273,28 +207,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-msvc-10.0.14393-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.0.207.0+9445.3c50245/testplugin_pi-1.0.207.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -339,28 +251,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.16.1-debian-x86_64-10-buster-tarball/versions/1.8.16.1+4575.a144d1f/ocpn_draw_pi-1.8.16.1-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.204.0+9300.ad213be/testplugin_pi-1.0.204.0-x86_64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -409,72 +299,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.0.209.0+9497.069714e/testplugin_pi-1.0.209.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-android-armhf-16-android-armhf-tarball/versions/1.0.207.0+9444.3c50245/testplugin_pi-1.0.207.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-debian-x86_64-10-buster-tarball/versions/1.0.209.0+9494.069714e/testplugin_pi-1.0.209.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -499,6 +323,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-ubuntu-x86_64-18.04-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-android-armhf-16-android-armhf-tarball/versions/1.0.211.0+9577.5cb3314/testplugin_pi-1.0.211.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -519,6 +365,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.27.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.27.0+1324.95e2c22/windvane_pi-1.0.27.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.211.0+9582.5cb3314/testplugin_pi-1.0.211.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -566,73 +434,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.204.0+9296.ad213be/testplugin_pi-1.0.204.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-debian-x86_64-10-buster-tarball/versions/1.0.204.0+9301.ad213be/testplugin_pi-1.0.204.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.0.207.0+9433.3c50245/testplugin_pi-1.0.207.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -648,7 +450,7 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
     <target-version>20.08</target-version>
     <target-arch>aarch64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.209.0+9500.069714e/testplugin_pi-1.0.209.0-aarch64_flatpak-20.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.211.0+9571.5cb3314/testplugin_pi-1.0.211.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -719,50 +521,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.204.0+9288.ad213be/testplugin_pi-1.0.204.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.207.0+9436.3c50245/testplugin_pi-1.0.207.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -786,7 +544,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -796,13 +554,13 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.209.0+9505.069714e/testplugin_pi-1.0.209.0-debian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.211.0+9580.5cb3314/testplugin_pi-1.0.211.0-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -830,7 +588,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -840,57 +598,35 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.209.0+9503.069714e/testplugin_pi-1.0.209.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.204.0+1412.ad213be/testplugin_pi-1.0.204.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
     <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.207.0+9434.3c50245/testplugin_pi-1.0.207.0-ubuntu-x86_64-18.04-bionic.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-debian-x86_64-10-buster-tarball/versions/1.0.211.0+9575.5cb3314/testplugin_pi-1.0.211.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>20.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/1.0.211.0+9579.5cb3314/testplugin_pi-1.0.211.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -917,6 +653,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>18.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.211.0+9574.5cb3314/testplugin_pi-1.0.211.0-x86_64_flatpak-18.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -940,7 +698,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -950,13 +708,13 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64-wx315</target>
-    <build-target>flatpak</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-flatpak-x86_64-wx315-20.08-flatpak-tarball/versions/1.0.207.0+9447.3c50245/testplugin_pi-1.0.207.0-x86_64-wx315_flatpak-20.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.0.211.0+9565.5cb3314/testplugin_pi-1.0.211.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1051,28 +809,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.209.0+1433.069714e/testplugin_pi-1.0.209.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.16.1 </version>
     <release> 1 </release>
@@ -1093,50 +829,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.16.1-darwin-x86_64-11.4-macos-tarball/versions/1.8.16.1+4580.a144d1f/ocpn_draw_pi-1.8.16.1-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.207.0+9431.3c50245/testplugin_pi-1.0.207.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.207.0+9440.3c50245/testplugin_pi-1.0.207.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1184,7 +876,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1194,19 +886,41 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>ubuntu-gtk3-armhf</target>
+    <target>ubuntu-armhf</target>
     <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.0.211.0+9581.5cb3314/testplugin_pi-1.0.211.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
     <build-gtk/>
-    <target-version>20.04</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/1.0.204.0+9291.ad213be/testplugin_pi-1.0.204.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.211.0+1439.5cb3314/testplugin_pi-1.0.211.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1216,35 +930,13 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
+    <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.0.204.0+9297.ad213be/testplugin_pi-1.0.204.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.0.209.0+9510.069714e/testplugin_pi-1.0.209.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.211.0+9567.5cb3314/testplugin_pi-1.0.211.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1361,6 +1053,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64-wx315</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>20.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-flatpak-x86_64-wx315-20.08-flatpak-tarball/versions/1.0.211.0+9572.5cb3314/testplugin_pi-1.0.211.0-x86_64-wx315_flatpak-20.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -1407,28 +1121,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-android-armhf-16-android-armhf-tarball/versions/1.0.209.0+9493.069714e/testplugin_pi-1.0.209.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -1449,6 +1141,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.27.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.27.0+1326.95e2c22/windvane_pi-1.0.27.0-debian-armhf-10.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.211.0+9569.5cb3314/testplugin_pi-1.0.211.0-ubuntu-x86_64-18.04-bionic.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -1496,7 +1210,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1506,35 +1220,13 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64-wx315</target>
-    <build-target>flatpak</build-target>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-flatpak-x86_64-wx315-20.08-flatpak-tarball/versions/1.0.209.0+9507.069714e/testplugin_pi-1.0.209.0-x86_64-wx315_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>9.13</target-version>
+    <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.209.0+9502.069714e/testplugin_pi-1.0.209.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.211.0+9570.5cb3314/testplugin_pi-1.0.211.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1562,7 +1254,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1572,35 +1264,13 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.209.0+9501.069714e/testplugin_pi-1.0.209.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.0.209.0+9498.069714e/testplugin_pi-1.0.209.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-x86_64-22.04-jammy-tarball/versions/1.0.211.0+9568.5cb3314/testplugin_pi-1.0.211.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1673,6 +1343,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>raspbian-armhf</target>
+    <build-target>raspbian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>9.13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.211.0+9576.5cb3314/testplugin_pi-1.0.211.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -1697,6 +1389,28 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-ubuntu-gtk3-x86_64-18.04-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.211.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/jongough/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>20.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/1.0.211.0+9583.5cb3314/testplugin_pi-1.0.211.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -1717,28 +1431,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.27.0-android-arm64-16-android-arm64-tarball/versions/1.0.27.0+1332.95e2c22/windvane_pi-1.0.27.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/1.0.204.0+9294.ad213be/testplugin_pi-1.0.204.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -1764,7 +1456,7 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.207.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1774,35 +1466,13 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
     <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.207.0-android-arm64-16-android-arm64-tarball/versions/1.0.207.0+9438.3c50245/testplugin_pi-1.0.207.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
+    <target-version>20.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.209.0+9495.069714e/testplugin_pi-1.0.209.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.211.0+9566.5cb3314/testplugin_pi-1.0.211.0-x86_64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1830,7 +1500,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
+    <version> 1.0.211.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -1840,57 +1510,13 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.204.0+9287.ad213be/testplugin_pi-1.0.204.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.209.0+9496.069714e/testplugin_pi-1.0.209.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.204.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.204.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.204.0+9290.ad213be/testplugin_pi-1.0.204.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.211.0-android-arm64-16-android-arm64-tarball/versions/1.0.211.0+9578.5cb3314/testplugin_pi-1.0.211.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -1918,27 +1544,5 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-android-arm64-16-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_android-arm64-16.tar.gz </tarball-url>
     <meta-url> https://raw.githubusercontent.com/rgleason/plugins/rg-alpha/ocpn-plugins.xml </meta-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.209.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.209.0-android-arm64-16-android-arm64-tarball/versions/1.0.209.0+9504.069714e/testplugin_pi-1.0.209.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
 </plugins>
