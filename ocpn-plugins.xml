@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2022-06-22 13:24</date>
+  <date>2022-06-23 12:52</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 0.3.4.13 </version>
@@ -1219,6 +1219,24 @@ search LogbookKonni
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-v1.4.29-ubuntu-gtk3-A32-20.04-tarball/versions/v1.4.29/Logbook-v1.4.29_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
     <tarball-checksum> ebc5f9837818fde3d82086715ff82d44c17e885883df958237c30b02fb6e3ab1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NVCharts </name>
+    <version> v3.0.0 </version>
+    <release>  </release>
+    <summary> Using NV Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/nvc_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nvc.html </info-url>
+    <description> NV Charts
+ </description>
+    <target>msvc</target>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/nvc-prod/raw/names/NVCharts-v3.0.0-msvc-10.0.14393-tarball/versions/v3.0.0/NVCharts-v3.0.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
+    <tarball-checksum> 64c0f9952c1cff79f655459156594dec7ed585428bbcba4b885550885c05e1c8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -6571,24 +6589,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+264.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> nvc </name>
-    <version> v3.0.0 </version>
-    <release>  </release>
-    <summary> Using NV Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/nvc_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nvc.html </info-url>
-    <description> NV Charts
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/nvc-prod/raw/names/nvc-v3.0.0-msvc-10.0.14393-tarball/versions/v3.0.0/nvc-v3.0.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> c730a2d1595ac474223b6e3438a76e86e472799196afd25fcaca1526d783924b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
