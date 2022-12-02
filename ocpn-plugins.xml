@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2022-12-01 02:36</date>
+  <date>2022-12-02 16:31</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 0.3.4.13 </version>
@@ -7023,6 +7023,32 @@ oernc plugins. It thus obsoletes these two plugins.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-1.0.29.0-ubuntu-gtk3-armhf-20.04-tarball/versions/1.0.29.0/o-charts-1.0.29.0_ubuntu-gtk3-20.04-armhf.tar.gz </tarball-url>
     <tarball-checksum> 1740d81466fb72a850c3e8e123d9f470ce4be050273bb57b48014e3ad18116cb </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> o-charts </name>
+    <version> 2.0.0.7 </version>
+    <release> 7 </release>
+    <summary> Encrypted Vector Charts from o-charts.org </summary>
+    <api-version> 1.17 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/o-charts_pi </source>
+    <info-url> https://o-charts.org/ </info-url>
+    <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-wx32.wx32-11-tarball/versions/2.0.0.7/o-charts-2.0.0.7_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 99ac5b4cefe8aecce9813ed80bb4947b59b36f8c8e9bac971affe16e4e2951ce </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
