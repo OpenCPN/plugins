@@ -12,7 +12,7 @@ if [ -z $CI ] && [ -z $GITHUB_ACTION ]; then
         exit
     fi
     exit_rc=0
-    for file in metadata/$1-$2*.xml
+    for file in metadata/$1-*$2*.xml
     do
         `xmllint  --schema ocpn-plugins.xsd $file --noout 2> /dev/null`
         rc=$?
