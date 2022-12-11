@@ -14,13 +14,18 @@ if [ "$#" -ne "4" ]; then
 	exit
 fi
 
-REPO="https://cloudsmith.io/~$3/repos/"
-echo "Issuing command: wget -q -O - $REPO$1-$4/packages/?q=*$2*.xml"
+NAME="$1"
+VERSION="$2"
+USER="$3"
+LEVEL="$4"
+
+REPO="https://cloudsmith.io/~${USER}/repos/"
+echo "Issuing command: wget -q -O - $REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*.xml"
 my_array=()
 echo "Show current files that match criteria"
-ls metadata/$1*-$2*xml -la
+ls metadata/${NAME}*-*${VERSION}*xml -la
 echo "Deleting current files that match criteria"
-rm metadata/$1*-$2*xml
+rm metadata/${NAME}*-*${VERSION}*xml
 echo "Finding files on remote cloudsmith repository"
 delimiter="href=\""
 delimiter1=".xml\" title"
@@ -35,7 +40,7 @@ while read -r line; do
 		my_array+=( $line );
 		echo "found: $line"
 	fi
-done < <(wget -q -O - "$REPO$1-$4/packages/?q=*$2*xml")
+done < <(wget -q -O - "$REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*xml")
 
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
@@ -44,5 +49,5 @@ do
   wget --progress=bar:force:noscroll -c $URL -P metadata
 done
 echo "Files downloaded"
-ls metadata/$1*-$2*xml -la
+ls metadata/${NAME}*-*${VERSION}*xml -la
 
