@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/Rasbats/DR_pi/813 -->
+<plugin version="1">
+  <name> DR </name>
+  <version> v5.0.0 </version>
+  <release>  </release>
+  <summary> make GPX files for dead reckoning positions </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> yes </open-source>
+  <author> Mike Rossiter </author>
+  <source> https://github.com/Rasbats/DR_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/dreckoning.html </info-url>
+
+  <description> Create GPX files for dead reckoning positions using existing GPX route files
+ </description>
+
+  <target>flatpak-aarch64</target>
+  <target-version>22.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/dr-prod/raw/names/DR-v5.0.0-flatpak-A64-22.08-tarball/versions/v5.0.0/DR-v5.0.0_flatpak-22.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> 3ac4130e1e42fdb81e7d235947535f3ac877f4f77b95ace9fdb4511ae1ff164a </tarball-checksum>
+</plugin>
