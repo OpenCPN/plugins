@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-03-16 21:31</date>
+  <date>2023-03-22 00:08</date>
   <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta </version>
@@ -255,24 +255,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-debian-11-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> ef55b962585ca956fd94e75f9a8f55fc76ca8c989674eeb8dccb6275bc1fee6f </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -441,6 +423,24 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-armhf-11-bullseye-armhf-tarball/versions/0.36.3.0+1685.6ab4cd8/pypilot_pi-0.36.3.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-debian-11-tarball/versions/v0.30.2/IACFleet-v0.30.2_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 330051e5db672d752fe00a51aeb22a06aae764d7f8b50c5192221d94e3b83617 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -772,24 +772,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-debian-wx32.wx32-11-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1e1210962c55613c34b67cf6113551fca838d655b4d471d41eb064a891633dfc </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> pypilot </name>
     <version> 0.36.3.0 </version>
     <release> 0 </release>
@@ -1051,6 +1033,24 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64-wx32</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-flatpak.wx32-A64-22.08-tarball/versions/v0.30.2/IACFleet-v0.30.2_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 2d56d28cb712d9181948147ea7ac6b8244c5eefdfe8fe5e22b56b10b06f383ac </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -2159,24 +2159,6 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 8cde0beb54c4297d25ef4b0ebb7877f51110177c9bb4dc81bd34f7fc4c44d3cf </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-flatpak.wx32-A64-22.08-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> be1b5178903a464494046e2d2d48ed027e17ccb01bfe0d02396ada0393a79dbf </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -3175,6 +3157,24 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-msvc-wx32-10.0.20348-tarball/versions/v0.30.2/IACFleet-v0.30.2_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> 5d0d2338e948a2827eb2a81a535e0200d2e6aa0f336c89f90aff6bb9d0034c03 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.227.0 </version>
     <release> 0 </release>
@@ -3504,6 +3504,24 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/nsk_pi-v0.1-msvc-wx32-10.0.20348-tarball/versions/v0.1/nsk_pi-v0.1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> e1358fe95c1006189ac1cf590eb42e028022d0cf53f83ce0995f3bef933dfc60 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64-wx32</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-flatpak.wx32-22.08-tarball/versions/v0.30.2/IACFleet-v0.30.2_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c8b575e2b03ea78f21b81f90b60d128ed460f66201eb5a8c538a343d6526a59a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -4053,24 +4071,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-debian-x86_64-10-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-flatpak.wx32-22.08-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> b0b1be8902140bb045ef5e63a42afc8dfa7183ffbc584209aa27923402de8de4 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.24.1 </version>
     <release> 1 </release>
@@ -4301,6 +4301,24 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-android-arm64-A64-16-tarball/versions/3.2.2+17852.ff0ae9c/ShipDriver-3.2.2+17852.ff0ae9c_android-arm64-16-arm64.tar.gz </tarball-url>
     <tarball-checksum> cff5498a23688765407daa7f3eec3b54c019ee0099d2f83b52a748f9e85c0607 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>12.6.1</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-darwin-wx32-12.6.1-tarball/versions/v0.30.2/IACFleet-v0.30.2_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 575ce42a530553f13cd0bd609ca9a282ad8e244c00287b9bedd6f8c8c9781e42 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -5136,6 +5154,24 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.227.0+10290.edd18ea/testplugin_pi-1.0.227.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.30.2 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.30.2-debian-wx32.wx32-11-tarball/versions/v0.30.2/IACFleet-v0.30.2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> dd0be5f16947691964f8e23523815eb60efa9b5372062923fb55c89c22261c99 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -6387,24 +6423,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-darwin-wx32-12.6.1-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 0b49620e19117b6206e5a3d00d51f74a611e883dc60cd4fcf5abd016816cb473 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.24.1 </version>
     <release> 1 </release>
@@ -6619,24 +6637,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-msvc-x86_64-wx32-10.0.17763-MSVC-tarball/versions/1.0.227.0+1557.edd18ea/testplugin_pi-1.0.227.0-msvc-x86_64-wx32-10.0.17763-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> iacfleet_pi </name>
-    <version> v0.30.1-beta4 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/iacfleet_pi-v0.30.1-beta4-msvc-wx32-10.0.20348-tarball/versions/v0.30.1-beta4/iacfleet_pi-v0.30.1-beta4_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 0b2776683bd8baf378dd6137b3187848fb1fd8e0371bf26398f2401bc092542f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
