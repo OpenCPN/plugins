@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-03-22 00:08</date>
+  <date>2023-03-30 01:43</date>
   <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta </version>
@@ -319,28 +319,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-debian-x86_64-10-buster-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> nsk_pi </name>
     <version> v0.1 </version>
     <release>  </release>
@@ -403,28 +381,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-armhf-11-bullseye-armhf-tarball/versions/0.36.3.0+1685.6ab4cd8/pypilot_pi-0.36.3.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.30.2 </version>
     <release>  </release>
@@ -483,28 +439,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+56.b5236e0/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-x86_64-22.04-jammy-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -728,72 +662,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum> d503e8c499cb9e708f12e57d925cc4c632a0bdd28d9c5c8470b609e26945a6c8 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/0.36.3.0+1682.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/0.36.3.0+143.6ab4cd8/pypilot_pi-0.36.3.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-x86_64-22.04-jammy-tarball/versions/0.36.3.0+1677.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Radar </name>
     <version> v5.3.2-beta </version>
     <release>  </release>
@@ -841,28 +709,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-x86_64-10-buster-tarball/versions/0.36.3.0+1683.6ab4cd8/pypilot_pi-0.36.3.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -881,28 +727,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+266.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/0.36.3.0+1680.6ab4cd8/pypilot_pi-0.36.3.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -946,28 +770,6 @@ such as dual radar range and Doppler.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/dashboardsk_pi-v0.1.0-beta2-flatpak.wx32-A64-22.08-tarball/versions/v0.1.0-beta2/dashboardsk_pi-v0.1.0-beta2_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 36c8b71722e43783681d332608fcc78eba25f5c0f69d2aa0159405dd0d9e9842 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-armhf-10-buster-armhf-tarball/versions/0.36.3.0+1691.6ab4cd8/pypilot_pi-0.36.3.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1112,28 +914,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-ubuntu-16.04-tarball/versions/1.4.3+1308.v1.4.3-beta/TideFinder-1.4.3+1308.v1.4.3-beta_ubuntu-16.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 8461bb79cd79d1f42add37f3359e047c43f87fa1875e5207ee5624738676fe34 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -1375,50 +1155,6 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 4813cc21cca55d8f499ea43684f9196dfc073ffe8109337d489aa8d0de70362c </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>20.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/0.36.3.0+1689.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -1526,28 +1262,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 1ed1b02c6abfed034077fdb30cf75a64bfdc9f6a1a4f1f62a6d391af08aab826 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/0.36.3.0+1681.6ab4cd8/pypilot_pi-0.36.3.0-darwin-wx32-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -1652,28 +1366,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-darwin-x86_64-11.4-macos-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -1989,28 +1681,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-debian-armhf-11-bullseye-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -2203,28 +1873,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/1.0.227.0+10294.edd18ea/testplugin_pi-1.0.227.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -2289,28 +1937,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.0.227.0+10293.edd18ea/testplugin_pi-1.0.227.0-darwin-wx32-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1315.v1.4.3-beta </version>
     <release> 1 </release>
@@ -2370,28 +1996,6 @@ Configurable Autopilot Route following abilities.
     <target-arch>x86_64</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.227.0+10296.edd18ea/testplugin_pi-1.0.227.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -2503,28 +2107,6 @@ data from itself. This can be replayed to simulate collision situations.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-flatpak-x86_64-20.08-flatpak-tarball/versions/0.36.3.0+1684.6ab4cd8/pypilot_pi-0.36.3.0-x86_64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -2545,28 +2127,6 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-raspbian-armhf-9.13-stretch-armhf-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-raspbian-armhf-9.13.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-arm64-10-buster-arm64-tarball/versions/1.0.227.0+10282.edd18ea/testplugin_pi-1.0.227.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2677,50 +2237,6 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-flatpak-x86_64-18.08-flatpak-tarball/versions/0.36.3.0+1693.6ab4cd8/pypilot_pi-0.36.3.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-x86_64-18.04-bionic-tarball/versions/0.36.3.0+1692.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> nsk_pi </name>
     <version> v0.1 </version>
     <release>  </release>
@@ -2737,28 +2253,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/nsk_pi-v0.1-debian-wx32.wx32-11-tarball/versions/v0.1/nsk_pi-v0.1_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> c488cb6971f24f6858543677bf61af0e7b522a5c7bc8c8c85e58e88ce8266a30 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-android-armhf-16-android-armhf-tarball/versions/1.0.227.0+10285.edd18ea/testplugin_pi-1.0.227.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -2829,28 +2323,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/0.36.3.0+1678.6ab4cd8/pypilot_pi-0.36.3.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -3175,28 +2647,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <tarball-checksum> 5d0d2338e948a2827eb2a81a535e0200d2e6aa0f336c89f90aff6bb9d0034c03 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-x86_64-11-bullseye-tarball/versions/1.0.227.0+10298.edd18ea/testplugin_pi-1.0.227.0-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -3215,28 +2665,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+264.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-debian-arm64-11-bullseye-arm64-tarball/versions/0.36.3.0+1686.6ab4cd8/pypilot_pi-0.36.3.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -3422,50 +2850,6 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-mingw-x86_64-10-mingw-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>18.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.227.0+1557.edd18ea/testplugin_pi-1.0.227.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -3668,28 +3052,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -3710,28 +3072,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.27.0-flatpak-x86_64-18.08-flatpak-tarball/versions/1.0.27.0+1352.7cde51d/windvane_pi-1.0.27.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>20.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -3907,28 +3247,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 1f4669f9705319a54d58d7d7e031fc8238a02889e68b4f0082d5bcd8708679aa </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.227.0+10292.edd18ea/testplugin_pi-1.0.227.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> SailawayNMEA </name>
     <version> v0.4.1-beta1 </version>
     <release>  </release>
@@ -3945,28 +3263,6 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/sailawaynmea-beta/raw/names/SailawayNMEA-v0.4.1-beta1-msvc-10.0.14393-tarball/versions/v0.4.1-beta1/SailawayNMEA-v0.4.1-beta1_msvc-10.0.14393-win32.tar.gz </tarball-url>
     <tarball-checksum> 045e38d7b1f6a5c7877a5da8c1ea54632d08db9e2d2c4e54553627290a25b521 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-flatpak-x86_64-20.08-flatpak-tarball/versions/1.0.227.0+10289.edd18ea/testplugin_pi-1.0.227.0-x86_64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -4113,28 +3409,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.24.1 </version>
     <release> 1 </release>
@@ -4238,50 +3512,6 @@ easier future predictions.
     <tarball-checksum> e2e6aebb0aaec7217873eb92735687e23e41174628409ffd39f3d1f86854c603 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.0.227.0+10283.edd18ea/testplugin_pi-1.0.227.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.17763</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-msvc-x86_64-wx32-10.0.17763-MSVC-tarball/versions/0.36.3.0+143.6ab4cd8/pypilot_pi-0.36.3.0-msvc-x86_64-wx32-10.0.17763-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ShipDriver </name>
     <version> 3.2.2+17852.ff0ae9c </version>
     <release>  </release>
@@ -4341,28 +3571,6 @@ data from itself. This can be replayed to simulate collision situations.
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-debian-arm64-11-bullseye-arm64-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-debian-arm64-11-bullseye-arm64.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-darwin-x86_64-11.4-macos-tarball/versions/0.36.3.0+1690.6ab4cd8/pypilot_pi-0.36.3.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -4485,28 +3693,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -4541,50 +3727,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/dashboardsk_pi-v0.1.0-beta2-flatpak.wx32-22.08-tarball/versions/v0.1.0-beta2/dashboardsk_pi-v0.1.0-beta2_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> ecc517aab34f14b52ac1e7dd2ff290358cc107085202c6bce728c621a89f566c </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-x86_64-22.04-jammy-tarball/versions/1.0.227.0+10286.edd18ea/testplugin_pi-1.0.227.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>raspbian-armhf</target>
-    <build-target>raspbian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>9.13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.227.0+10299.edd18ea/testplugin_pi-1.0.227.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -4699,28 +3841,6 @@ Configurable Autopilot Route following abilities.
     <target-arch>x86_64</target-arch>
     <tarball-url>
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-flatpak-x86_64-18.08-flatpak-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-x86_64_flatpak-18.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.0.227.0+10280.edd18ea/testplugin_pi-1.0.227.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -4870,50 +3990,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-darwin-x86_64-11.4-macos-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-arm64-11-bullseye-arm64-tarball/versions/1.0.227.0+10281.edd18ea/testplugin_pi-1.0.227.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-debian-arm64-11-bullseye-arm64-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -5112,50 +4188,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 9f5dc42321e3e8a056aa46eaefb42489f21e2c677045f3a19c6a679d29a1648d </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.227.0+10290.edd18ea/testplugin_pi-1.0.227.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.30.2 </version>
     <release>  </release>
@@ -5211,28 +4243,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-debian-wx32.wx32-11-tarball/versions/3.2.2+17853.ff0ae9c/ShipDriver-3.2.2+17853.ff0ae9c_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 4ebe7523649fc43a22cc207f3368430847cbf691f613b9d773cc3d158fb307e8 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/0.36.3.0+1679.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -5339,72 +4349,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-debian-A64-11-tarball/versions/3.2.2+17855.ff0ae9c/ShipDriver-3.2.2+17855.ff0ae9c_debian-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 63995ecb4c912658aa90a3a6c17d663593a6e7f43f62e4f339d91055210310ea </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-x86_64-10-buster-tarball/versions/1.0.227.0+10295.edd18ea/testplugin_pi-1.0.227.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.227.0+10287.edd18ea/testplugin_pi-1.0.227.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -5605,28 +4549,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-darwin-x86_64-11.4-macos-tarball/versions/1.0.227.0+10288.edd18ea/testplugin_pi-1.0.227.0-darwin-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.6.18.0 </version>
     <release> 0 </release>
@@ -5649,28 +4571,6 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1307.v1.4.3-beta </version>
     <release> 1 </release>
@@ -5688,50 +4588,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-ubuntu-gtk3-18.04-tarball/versions/1.4.3+1307.v1.4.3-beta/TideFinder-1.4.3+1307.v1.4.3-beta_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 23d27d8179e5f2abb6aa2b61c2b8492881a1143004f087d065c2756b0159900d </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-android-arm64-16-android-arm64-tarball/versions/1.0.227.0+10291.edd18ea/testplugin_pi-1.0.227.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-gtk3-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>20.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/1.0.227.0+10284.edd18ea/testplugin_pi-1.0.227.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -5838,28 +4694,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-flatpak-x86_64-22.08-flatpak-tarball/versions/1.0.227.0+10279.edd18ea/testplugin_pi-1.0.227.0-x86_64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -5941,28 +4775,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.227.0+10297.edd18ea/testplugin_pi-1.0.227.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -6106,28 +4918,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/0.36.3.0+1688.6ab4cd8/pypilot_pi-0.36.3.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -6212,28 +5002,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ShipDriver </name>
     <version> 3.2.2+17850. </version>
     <release>  </release>
@@ -6298,28 +5066,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 3aa727dae9b55421a63e5d2bf9a6036758f45a5971f43f5eab268488a7ebac94 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-debian-armhf-10-buster-armhf-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -6355,50 +5101,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-ubuntu-18.04-tarball/versions/1.4.3+1314.v1.4.3-beta/TideFinder-1.4.3+1314.v1.4.3-beta_ubuntu-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 800f58962c6200dfc94f7967aa23208f7d1b3f151f290612391932e48de3c46a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-flatpak-x86_64-20.08-flatpak-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-x86_64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.34.4.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-x86_64-wx315</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.34.4.0-flatpak-x86_64-wx315-20.08-flatpak-tarball/versions/v0.34.4.0/pypilot_pi-0.34.4.0-x86_64-wx315_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -6617,28 +5319,6 @@ easier future predictions.
     <tarball-checksum> f06922fc8155c3e8ff7a2ef7216f3cf0db59d769ef8174714ae7ed27ceb52cf5 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.227.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/jongough/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.17763</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.227.0-msvc-x86_64-wx32-10.0.17763-MSVC-tarball/versions/1.0.227.0+1557.edd18ea/testplugin_pi-1.0.227.0-msvc-x86_64-wx32-10.0.17763-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -6679,28 +5359,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> pypilot </name>
-    <version> 0.36.3.0 </version>
-    <release> 0 </release>
-    <summary> Pypilot PlugIn for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/pypilot_pi </source>
-    <description>
-Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>20.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.36.3.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/0.36.3.0+1687.6ab4cd8/pypilot_pi-0.36.3.0-aarch64_flatpak-20.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
