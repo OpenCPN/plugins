@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-04-10 19:55</date>
+  <date>2023-04-11 14:09</date>
   <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
@@ -23,6 +23,31 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.27.0-debian-x86_64-10-buster-tarball/versions/1.0.27.0+1349.7cde51d/windvane_pi-1.0.27.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-wx32.wx32-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 229ba5d463637bfe56dcb9b4383e1f7cb556dda913a6485c64bd7cfd414b3d0c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -641,6 +666,31 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-flatpak-A64-22.08-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> dfdc9530cac882c9bea79fd6f03ca280eded0c23df313190c8084428911e03a7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> 3.2.2+17859.ff0ae9c </version>
     <release>  </release>
@@ -868,6 +918,31 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.34.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.0.34/tactics_pi-1.0.34.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-wx32-A64-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 4df36b7769dc6b880867f4180f0b7b1a9a5dcb137e61664f5c181a29b6a4b1c6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1231,6 +1306,31 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.34
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-darwin-wx32-10-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2a5fba7d238ff73f2524e8bae0a4ff677b825f45dba4c538abf03a236706e985 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -1310,7 +1410,7 @@ OpenCPN support for S63 Vector Charts
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> v5.5.0-beta </version>
+    <version> v5.5.0-beta2 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -1327,11 +1427,11 @@ Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
-    <target>debian-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-A64-11-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 6891d00bbcb0dbfff1924735eac593a40e0fa57f231d7d5d2dd0a718571a4dcc </tarball-checksum>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-12-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 5313355298756b342463def10b4f84240b3e077d5b46ea8e8141a386b0c426cc </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -1457,6 +1557,31 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-A64-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> b275c578e4c6a9d31cd7b8cff40082f0cc929376a0486eca81eb432292720712 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.8.3 </version>
     <release> 3 </release>
@@ -1479,6 +1604,31 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-A32-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 4dd925c01b51dc24646cb9bce16003ebadb259435676a6f4ba3cf6d046fead4f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.24.1 </version>
     <release> 1 </release>
@@ -1499,31 +1649,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-darwin-x86_64-11.4-macos-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-darwin-x86_64-11.4-macos.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-wx32-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-wx32-A64-11-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> d72b5c074544dcd8853bb37a0a47d1d54b7698a78bcf81f8d5b4eea8e31774cf </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -1697,6 +1822,31 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2dc7dda48398e61d94d7a90134b8cd30eac5da9d2dbe114b69ca541b24131809 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -1820,31 +1970,6 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-darwin-wx32-12.6.1-tarball/versions/v0.24.0/ObjSearch-v0.24.0_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
     <tarball-checksum> c70e1771df168302a1dab32997e09f41997436a8b076fe67d6a1d2c90c8cfb03 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-armhf</target>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-A32-11-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 22fb60d35e739f61eed54a22b8e79241356b73707a9aeaf7b1974a2a056860a9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2993,6 +3118,31 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-wx32-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-wx32.wx32-A32-11-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-wx32.wx32-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 0409171f9ce28ec641ad599dae20399de8971218bd301d2a5f01bf9c56850b20 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -3052,31 +3202,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-debian-wx32.wx32-11-tarball/versions/v1.3.2/Launcher-v1.3.2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> a1a593e85bde1cff1e40246e6ec5e78f43d53b3994a7fc819698992b3bb52987 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-12-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 2bca4ff95e87f32e6183a5d677bbd3c4612ef5139c8ddc673364f7720ea6c934 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -3223,31 +3348,6 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-wx32.wx32-11-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 5ce233e71607ffbc5d2e9c737adac8e4563403dabc236adbaa8efd4d5b1e69fb </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.31.0 </version>
     <release>  </release>
@@ -3371,31 +3471,6 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-11-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> ce025ba4ec529a465ea4a117050ae1de08a7075a5aaa6557788c9a507cc41f92 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -3625,6 +3700,31 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-flatpak-22.08-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7550bb7dce4c66051b9a03d0dcebbb5251590cb343f9b8573091a996b03c9b77 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.8.3 </version>
     <release> 3 </release>
@@ -3666,56 +3766,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-debian-A64-12-tarball/versions/3.2.2+17850./ShipDriver-3.2.2+17850._debian-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 9d9092333a49a1aa6a72b9c8276a74e406dd8b6bb698fc972ed4784a52f934d0 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-flatpak-22.08-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_flatpak-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 7c9c0b42331a02dc5151fe03c36c84b3cf1b21161c0b90e2d837859ba3c915bc </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-msvc-wx32-10-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_msvc-wx32-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> b28d94cca1fdc3a094969ba8f1517840aa8993c349a946d696030e9a5402ae80 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -3804,7 +3854,7 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
   </plugin>
   <plugin version="1">
     <name> Radar </name>
-    <version> v5.5.0-beta </version>
+    <version> v5.5.0-beta2 </version>
     <release>  </release>
     <summary> Overlays the radar picture on OpenCPN </summary>
     <api-version> 1.16 </api-version>
@@ -3821,11 +3871,11 @@ Supports MARPA (even on radars that do not support this themselves),
 Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-darwin-wx32-10-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_darwin-wx32-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 2d5edf5d4b6b8555eb134cf5b7dddd687c92df73ff087953baab7e9e37f381ab </tarball-checksum>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-A32-12-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f70cdf90c456c88a1e88da25fc904cee8c66ac837294f27571676cdebee3f9e4 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -4081,6 +4131,31 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-msvc-wx32-10-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_msvc-wx32-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> 9fa1a84ff2d4352f3e8551df3445cda277f254d4ca8a2ebae5eca4f9c5e58097 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -4191,31 +4266,6 @@ such as dual radar range and Doppler.
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-debian-x86_64-11-bullseye-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-debian-x86_64-11-bullseye.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-flatpak-A64-22.08-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 0ea2e793ee521b18f15eaaeb07814226b458423ae1cea7bbaaea07a48cafa1cf </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -4376,31 +4426,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-ubuntu-gtk3-18.04-tarball/versions/1.4.3+1307.v1.4.3-beta/TideFinder-1.4.3+1307.v1.4.3-beta_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 23d27d8179e5f2abb6aa2b61c2b8492881a1143004f087d065c2756b0159900d </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-armhf</target>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-A32-12-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 34436e2d4d270031dc2bee5a4e98936389aaa6cbdab834edeee9a9a740f5db8e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -5006,6 +5031,31 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Radar </name>
+    <version> v5.5.0-beta2 </version>
+    <release>  </release>
+    <summary> Overlays the radar picture on OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+    <description> Garmin, Navico and Raymarine radar support
+WARNING: OPENGL MODE IS REQUIRED!
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+Supports MARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta2-debian-A64-12-tarball/versions/v5.5.0-beta2/Radar-v5.5.0-beta2_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 103d0098d22672c74864816994f15d808fc9e6f85e4129705f9fed4455f85dd4 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -5309,31 +5359,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-debian-wx32.wx32-11-tarball/versions/v0.24.0/ObjSearch-v0.24.0_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> d8e8ec55ec019f0a083f3ef5478a204767f03e4c8364313fe9546bf630ffb1e5 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Radar </name>
-    <version> v5.5.0-beta </version>
-    <release>  </release>
-    <summary> Overlays the radar picture on OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
-    <source> https://github.com/opencpn-radar-pi/radar_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
-    <description> Garmin, Navico and Raymarine radar support
-WARNING: OPENGL MODE IS REQUIRED!
-Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
-When a compass heading is provided it will allow radar overlay on the chart(s).
-It also allows separate display of a traditional radar picture (PPI).
-Supports MARPA (even on radars that do not support this themselves),
-Guard zones, AIS overlay on PPI, and various radar dependent features
-such as dual radar range and Doppler.
- </description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta-debian-A64-12-tarball/versions/v5.5.0-beta/Radar-v5.5.0-beta_debian-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 2d0fcc9cd14ff7a89579fd96796db57e7aa8a5f4ee9e8b65e450c218687a02f9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
