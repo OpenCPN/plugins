@@ -49,5 +49,5 @@ do
   wget --progress=bar:force:noscroll -c $URL -P metadata
 done
 echo "Files downloaded"
-ls metadata/${NAME}*-*${VERSION}*xml -la
+ls -la metadata/${NAME}*-*${VERSION}*xml
 
