@@ -44,5 +44,5 @@ do
   wget --progress=bar:force:noscroll -c $URL -P metadata
 done
 echo "Files downloaded"
-ls metadata/$1*-$2*xml -la
+ls -l metadata/$1*-$2*xml
 
