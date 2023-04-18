@@ -1,7 +1,25 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-04-12 20:02</date>
+  <date>2023-04-18 14:25</date>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-flatpak-22.08-tarball/versions/v0.32.0/IACFleet-v0.32.0_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 71249bb755c081d7a08b0cb44bf9f1ae8dfe4745935bd073f7c81337417e5d75 </tarball-checksum>
+  </plugin>
   <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
@@ -67,22 +85,22 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
     <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <summary> DashboardSK plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
  </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-darwin-wx32-12.6.1-tarball/versions/v0.2.0/NSK-v0.2.0_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 3f34a88a97f06e9eb7efb62704ae241b758b0450135b4e1c040ba260e8722a10 </tarball-checksum>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-A64-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 861a284e4e8113597160b8cb4811ceef8f2504513b686953ec9aa273e5af44ca </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -123,6 +141,24 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-darwin-x86_64-11.4-macos-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-msvc-wx32-10.0.20348-tarball/versions/v0.26.0/ObjSearch-v0.26.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> f23023daec34854aac979d5804a5fb5929cc249f010e96ae3ad99932aa07e621 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -187,6 +223,24 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+266.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-msvc-wx32-10.0.20348-tarball/versions/v0.32.0/IACFleet-v0.32.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> 478971daf743660d107cfb8f21d3a96179677d3192d565f40ee3747f57a86d2f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -332,22 +386,40 @@ easier future predictions.
     <tarball-checksum> d3c80960a7936f08b74d0d4c121c3002d86050b52886f7448d39a290a6eb3f25 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
     <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <summary> Launcher plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-wx32-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 5e9744f559cfaa082370428a048cbdc68b59170a2afff7e5b240f91bf2bb05eb </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
  </description>
     <target>debian-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-debian-11-tarball/versions/v0.31.0/IACFleet-v0.31.0_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 4e030e27a93842f16cbd2342919ef64be5d1e730bc58634cd5fa325bb3d63d64 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 42c66e3ef1ec3de7c0c37bff8fd5e8bbcda4d096663fdd0ca5830161722ae999 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -433,6 +505,42 @@ easier future predictions.
     <tarball-checksum> 8a5198d04aca16fdfc5451cb4699da0d1ff1ecce7b026aadb5e0b909d0fe8f0b </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> dceb74780a1e021e2c27f79eef954b9e5fe3cbeb112c6206930058355faf2586 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-flatpak-22.08-tarball/versions/v0.26.0/ObjSearch-v0.26.0_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c1f25e1e696953f6f8bc9bd44a5f6181f59b68919a6c5cdb95e36090af33c952 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -451,6 +559,24 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-raspbian-armhf-10-buster-armhf-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> d5b4393baa696073ff1b8d4ede2629a16ba79366b54d75e8e6f627ac81413895 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -556,6 +682,24 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 0d0b6a372d3538c159e35f2242b4224e53510b965762faa60f4563961bb0ca53 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -659,6 +803,24 @@ data from itself. This can be replayed to simulate collision situations.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-A32-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 815c0dbb6d42c21d18bc929a81482b7180e9ae2c247b3cbed52c43c0d74141c8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -679,24 +841,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.27.0-android-armhf-16-android-armhf-tarball/versions/1.0.27.0+1341.7cde51d/windvane_pi-1.0.27.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-flatpak.wx32-A64-22.08-tarball/versions/v0.31.0/IACFleet-v0.31.0_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 2dd255300653b6d407f9c386240b39d9f2941247cfb00b4bd9b5dd66e6cf313d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -741,24 +885,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.2 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-debian-11-tarball/versions/v1.3.2/Launcher-v1.3.2_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 55038cbd560bf6ca253834813ab212348fd39a32fce894edc3201dc0d3663411 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -777,6 +903,24 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-darwin-x86_64-10.13.6-macos-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-darwin-x86_64-10.13.6-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-flatpak-A64-22.08-tarball/versions/v0.32.0/IACFleet-v0.32.0_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> ff4246b6c82db500b8bc48757bdfa2fe6e59fd714a693833459dc98239d6dd65 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -865,22 +1009,22 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.2 </version>
+    <name> NSK </name>
+    <version> v0.2.1 </version>
     <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
  </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-flatpak.wx32-22.08-tarball/versions/v1.3.2/Launcher-v1.3.2_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 491e3e4de128b2c08b230fd49652814595041f538fc0fc694296bfadb3205b0e </tarball-checksum>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A64-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 39aaa4dd1708f7c303b6d396273f0b61543d44808267fecd0dbaeba9bed58e92 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -1097,6 +1241,24 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-darwin-wx32-10-tarball/versions/v0.26.0/ObjSearch-v0.26.0_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 55598fe508c2fbc3e71f990dd1d20f790643f89f2c473d2747f63370fedca1ae </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -1178,22 +1340,40 @@ easier future predictions.
     <tarball-checksum> f06922fc8155c3e8ff7a2ef7216f3cf0db59d769ef8174714ae7ed27ceb52cf5 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
     <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <summary> DashboardSK plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
  </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-debian-11-tarball/versions/v0.2.0/NSK-v0.2.0_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 672f595d71ac6efdf2206ab30a0440075edbe4618c8ade44196a5d4b5b397a59 </tarball-checksum>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-A64-12-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 134d5efd06295852bcbcea5164df817f8a14251e0982b3e724175f5c80fb6062 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-flatpak-A64-22.08-tarball/versions/v1.3.4/Launcher-v1.3.4_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 23343290af275b3344877ff942289aba0b70a954bf56954318ad44df8b32ba31 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1234,6 +1414,24 @@ OpenCPN support for S63 Vector Charts
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-msvc-10.0.14393-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A32-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 57dc269528aa9be88458bba2d95ffab4747d1e57c8fe7682af65e76152a25167 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -1254,6 +1452,60 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.34.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.34/tactics_pi-1.0.34.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-msvc-wx32-10.0.20348-tarball/versions/v0.1.2/DashboardSK-v0.1.2_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> c41f2b999c9bafdc0749690538f1f1ab5109be142fb76663767082da268d44cc </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-flatpak-A64-22.08-tarball/versions/v0.26.0/ObjSearch-v0.26.0_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> a42410baface8661a7eef02ad26428bd4d8b68f15f4d817ba6648dc9c9f90cef </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-darwin-wx32-10-tarball/versions/v0.32.0/IACFleet-v0.32.0_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 1f656149187c23dad45c63ded499b20277a08a4c160981626e86ea206e90651b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -1298,24 +1550,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-flatpak.wx32-22.08-tarball/versions/v0.2.0/NSK-v0.2.0_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 6607b292d0a9ee91a3c9cb85c45b81106ded11f43430eed2ad0bd0ac84593777 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -1357,6 +1591,24 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 594b96293fe3fd361de0dc997ab54f60356ca0d82893bf18a1dc6525a4520361 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-A32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> bd9d66394f877206abe7c3163f983cf55494e4ccaa4bee3db9e9133373cd0ac6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -1526,6 +1778,24 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-wx32-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7d18641256ce1be5335efbfe1764be62de46089a8a117acc52477cff8bea58ee </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -1542,6 +1812,24 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-flatpak-x86_64-18.08-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_flatpak-x86_64-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> cd7feb3e4d66e1594e4cd5a927ea69c5119cbc053153d5c5197c2dc91bc95e50 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -1747,6 +2035,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 11524eb7d54c06d57535fb41fc51dd6f9a15285f73340a86c8da3884c4bf4737 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -1834,6 +2140,42 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A64-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 655b464c8d0340ccf19860dcf0b1b8de4e2217008302f344133379415eb6544d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f521ad7c588a146cfe256090d987b27f2be66672d6df6a8d1adf63e185f82cbf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -1852,24 +2194,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+56.b5236e0/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
-    <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-darwin-wx32-12.6.1-tarball/versions/v0.24.0/ObjSearch-v0.24.0_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> c70e1771df168302a1dab32997e09f41997436a8b076fe67d6a1d2c90c8cfb03 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -1934,24 +2258,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-msvc-wx32-10.0.20348-tarball/versions/v0.1.1/DashboardSK-v0.1.1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> f7716c035dc3e627208151449c355a67cbffba208bfa4595fa114cb027cf58ef </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta4 </version>
     <release>  </release>
@@ -1977,6 +2283,24 @@ such as dual radar range and Doppler.
     <tarball-checksum> 54129dd3f2f93c841e3c28796a6340eb442884d223dcc706d77e2bfa5b22bc56 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-wx32-A64-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 3d34b91ba3c317c8d56efd56fecc8dda210a83cc6b42ca4da8e2542dfb954f25 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -1995,24 +2319,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial-tarball/versions/1.2.0.2+261.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-msvc-wx32-10.0.20348-tarball/versions/v0.31.0/IACFleet-v0.31.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> af69b71ac34fec6c87efbe9e246959d08343abe92e8c3fbbf8f8963c865d983a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2037,24 +2343,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.2 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-darwin-wx32-12.6.1-tarball/versions/v1.3.2/Launcher-v1.3.2_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 61db581408cc545eb80bb463309f797633f7cbbd671f6bf37a45fa320aa40b6d </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.24.1 </version>
     <release> 1 </release>
@@ -2075,6 +2363,24 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-debian-armhf-10-gtk3-buster-armhf.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-wx32-A64-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 006124e96e8e72377907aeb5eb24736e3a7b032409836731359e259d551180f3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -2413,7 +2719,7 @@ data from itself. This can be replayed to simulate collision situations.
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
-    <version> v1.3.2 </version>
+    <version> v1.3.4 </version>
     <release>  </release>
     <summary> Launcher plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
@@ -2423,11 +2729,29 @@ data from itself. This can be replayed to simulate collision situations.
     <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
     <description>   Launcher plugin for OpenCPN
  </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-msvc-wx32-10.0.20348-tarball/versions/v1.3.2/Launcher-v1.3.2_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 3eb758e90542067cde9d9ac98467043141d93895bd163621546d87417013ecb0 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 125a957f1646c3baf4a3660a013fdd3364ab270adfea1169092ffde2f68f3421 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-12-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b636bb5ee3726795cd0887cbef53731ea3813e011cfbe167042cb919335ad3f1 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2517,24 +2841,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-flatpak.wx32-22.08-tarball/versions/v0.1.1/DashboardSK-v0.1.1_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 934b689dd92a1ccd2434b0d20d33e40ed6f86ddd2fe49cce8c73e29b1500cd87 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -2575,24 +2881,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.2 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-flatpak.wx32-A64-22.08-tarball/versions/v1.3.2/Launcher-v1.3.2_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 03e5ce7d9caacb1f2d76b1ccbf185bde2e115219b8b1482fc928492f84044f31 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta4 </version>
     <release>  </release>
@@ -2616,6 +2904,24 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-11-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 8a5a9c27d084df8c7fadb5209f98c778c353317bdafc6beafe806ff32157d6a7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-A64-12-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 7468d6d5c00389221ef3a2d66b5b59b8a1eb8fd2ce247a3708169b3916319005 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -2662,6 +2968,24 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-wx32-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> d3108cc0784e775bed4743d26f19b5a7f070699c4a49ea57fc3b80f766efcddf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -2700,24 +3024,6 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.34.0-debian-x86_64-10-buster-tarball/versions/v1.0.34/tactics_pi-1.0.34.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-msvc-wx32-10.0.20348-tarball/versions/v0.2.0/NSK-v0.2.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 8c28d980e1e19a8480c5293ab03a70d9cb3bb140ac5543650357ecac5f5c260b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> SailawayNMEA </name>
@@ -2776,6 +3082,24 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-raspbian-11-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_raspbian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 98f1da772563f51d32866b3ae7c096045c5915f4f0c9e56838af8d3c369a278f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-flatpak-22.08-tarball/versions/v1.3.4/Launcher-v1.3.4_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 22e51ec6983013aa8083307cb58ace8a3c387d488d81c8dddee0f611de89ff80 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2844,6 +3168,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-A64-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 5c8c2e3d3f5b399b7678381a4355d56464779b8e446208c62bd8004d840f0964 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -2864,6 +3206,24 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-flatpak-A64-22.08-tarball/versions/v0.1.2/DashboardSK-v0.1.2_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> ec88e49b466d301fe1d08756596a6395da6f152ad38efb5e23c55e169c15eb17 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -3036,22 +3396,22 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 4ebe7523649fc43a22cc207f3368430847cbf691f613b9d773cc3d158fb307e8 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.2 </version>
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
     <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
+    <summary> DashboardSK plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
  </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.2-debian-wx32.wx32-11-tarball/versions/v1.3.2/Launcher-v1.3.2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> a1a593e85bde1cff1e40246e6ec5e78f43d53b3994a7fc819698992b3bb52987 </tarball-checksum>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-A32-12-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 1cfb491e256354a66ed44d0ffc1aefe2ee5f2e279eb21ce62d3412ee74f92aee </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -3139,22 +3499,22 @@ easier future predictions.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
     <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <summary> Launcher plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
  </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-debian-wx32.wx32-11-tarball/versions/v0.2.0/NSK-v0.2.0_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 3b21c0c3a021ceb5c69b6999adf2dd77fdd8990cad661e940e423411a5566099 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-msvc-wx32-10.0.20348-tarball/versions/v1.3.4/Launcher-v1.3.4_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> 8728cd9035fdd1933b3edffa98c6ea4b707afc5f3e81a299db3130c31ffc6799 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -3196,24 +3556,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-debian-armhf-10-buster-armhf-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-flatpak.wx32-22.08-tarball/versions/v0.31.0/IACFleet-v0.31.0_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 25cb2c531203b61ffeb0619e94e873a2733fbcb70042e58b3030ce106b9aa0e9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -3277,6 +3619,24 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-flatpak-A64-22.08-tarball/versions/v0.2.1/NSK-v0.2.1_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 0839b9c0069ad0b958cab0ba92157aa05d67f2c61bf0c5c6379bd924c0659d6a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -3407,6 +3767,42 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-A64-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> a21d0d51c32668426641a9562640a46b13f55b5dec4a746a634a8a7c9a85cbee </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-darwin-wx32-10-tarball/versions/v0.1.2/DashboardSK-v0.1.2_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2585e395fe31e9d0f37879665047be6515140e8cbc9dc121d34a552021632e22 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -3423,42 +3819,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
-    <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-flatpak.wx32-22.08-tarball/versions/v0.24.0/ObjSearch-v0.24.0_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> dbf695288ce824be11b32279df94f11214ff613de84b5aa9c77eab8e2a22b6c7 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.0 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.0-flatpak.wx32-A64-22.08-tarball/versions/v0.2.0/NSK-v0.2.0_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 49233fc6ff270b305a7b7546c9289092b2da10ceda6ceab10fc6c97ee944e665 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -3481,6 +3841,24 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A32-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ff4b93a81f76364d3209a023d6645921e12f365d43eef9d0d2905aa8e30fb96e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -3566,6 +3944,42 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-debian-A64-12-tarball/versions/3.2.2+17850./ShipDriver-3.2.2+17850._debian-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 9d9092333a49a1aa6a72b9c8276a74e406dd8b6bb698fc972ed4784a52f934d0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-wx32-A64-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 67f4a071b778def0727d367337a3c6a3b285f7300d32ed45749f234fd0cdf170 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-flatpak-22.08-tarball/versions/v0.1.2/DashboardSK-v0.1.2_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> bbf2c5aa4bc4d93b043cc7bcee258cafdedf38d2d165b06e4bf94162008bdeb8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -3675,6 +4089,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A64-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 01273f49c3227482dc16dbe9ccd56ef19a97873252f4a556b71a01d389b84938 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -3697,6 +4129,24 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-A32-12-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> b90dc1860248295111efc27f1f413854ea76a62db3db600c2021924b52d25303 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -3715,6 +4165,42 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-12-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 49fe5b674e4f06a97918d5e90bd1c73ed2f0a4babb8e65efcb99207880c31c62 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
+    <release>  </release>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-darwin-wx32-10-tarball/versions/v1.3.4/Launcher-v1.3.4_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e8d9f673b43e4016ba500d14d6dfa06dd1773306cfc4863d63a23b5406057695 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3737,6 +4223,24 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-debian-x86_64-10-buster-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-debian-x86_64-10-buster.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-wx32-A64-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 876d69f1637e64f1509df28867f7a9bfd0dd4cd30e18f8863eead17391661d22 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -3783,6 +4287,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-A64-12-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 4f823074db855b59dd2da38652dd182c9ecb2d0ad28cf7fd3997470744b942c1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -3826,24 +4348,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 8d3a740a9befbdd64dab46bb3e0b218b8c5fd959521ee05a6ba249165421e03e </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-debian-wx32.wx32-11-tarball/versions/v0.31.0/IACFleet-v0.31.0_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> eab67ce2a26df50c89c0495720a66040942963ee9758f0a40133bd34f2181d7c </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.27.0 </version>
     <release> 0 </release>
@@ -3864,24 +4368,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.27.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.0.27.0+1348.7cde51d/windvane_pi-1.0.27.0-debian-armhf-11.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-debian-11-tarball/versions/v0.1.1/DashboardSK-v0.1.1_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 9678935fc425461be9c69d16219fa2f222fe22f9aa2b965ebd22009733922e56 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -4072,24 +4558,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
-    <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-flatpak.wx32-A64-22.08-tarball/versions/v0.24.0/ObjSearch-v0.24.0_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 8515554e1c2234a75febf798115646162011b94ff17278c531f32a5cce47d4eb </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1308.v1.4.3-beta </version>
     <release> 1 </release>
@@ -4148,6 +4616,42 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-darwin-wx32-10-tarball/versions/v0.2.1/NSK-v0.2.1_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 336859be18491d7763806f8fe98831f2defcd484a996ecc4692643666eb92fd0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-flatpak-22.08-tarball/versions/v0.2.1/NSK-v0.2.1_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 733cf61d3e8265c5a113f9404f66ff3b0a02d3d1a2eeaca722577785de5f9465 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -4164,6 +4668,24 @@ OpenCPN support for S63 Vector Charts
     <target-version>18.04</target-version>
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-arm64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A64-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> f88a2f688c0aa45a1fa2094ba5d54fb7f1fe9b91081b62963020917e2ca3c5fa </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -4343,6 +4865,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-wx32-A64-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 408d2b8d2e3870cafe3ba8415276f70850fd726d756520c90051a75abb8126fe </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.8.3 </version>
     <release> 3 </release>
@@ -4363,6 +4903,24 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-debian-x86_64-10-buster-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
+    <release>  </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-A32-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 3e51bfd1a27610e5b28b260858feb601dd877f9ddf291ce47b06b600437709bb </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -4447,6 +5005,24 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 3d957fbd9e13873a709c7efc8bd04bbc4b17e0fdd0dd96abde3c5da809759257 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.1 </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-msvc-wx32-10.0.20348-tarball/versions/v0.2.1/NSK-v0.2.1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> 2fb774a1651507ca199b43b3f53e99b58953069bba03f33c75d2a433e91b9f71 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -4487,6 +5063,24 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster-tarball/versions/1.2.0.2+263.b5236e0/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> ObjSearch </name>
+    <version> v0.26.0 </version>
+    <release>  </release>
+    <summary> Chart object search plugin for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/objsearch_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
+    <description> Vector chart object search  plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-wx32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b9eae4d7b8ead05fdd45fbf380e60746cd94cfef7a50561012bc1aa671f32269 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -4636,24 +5230,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-debian-wx32.wx32-11-tarball/versions/v0.1.1/DashboardSK-v0.1.1_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1806cca07f1b0baa60db071bdf5f61ef13fc52c2431494c206e3ca5401ef6230 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -4781,6 +5357,24 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-wx32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 85d3cae6a46d8839f7b00ea7c7063e864ea8576e2023283fbc1bb5ad50b8a979 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -4821,24 +5415,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-aarch64_flatpak-20.08.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> IACFleet </name>
-    <version> v0.31.0 </version>
-    <release>  </release>
-    <summary> IAC Fleetcode plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/iacfleet_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
-    <description> IAC Fleetcode plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.31.0-darwin-wx32-12.6.1-tarball/versions/v0.31.0/IACFleet-v0.31.0_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 63ea4d45ccf55fd9b5973b55b85dde41944c140f916c0cb326bff12a08b80ebd </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -4924,22 +5500,40 @@ easier future predictions.
     <tarball-checksum> e2e6aebb0aaec7217873eb92735687e23e41174628409ffd39f3d1f86854c603 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
+    <name> DashboardSK </name>
+    <version> v0.1.2 </version>
     <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
  </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-msvc-wx32-10.0.20348-tarball/versions/v0.24.0/ObjSearch-v0.24.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> b39b1ad862d2222c7d3e472984de881747a4b9b8aaf54a94786493ab9ed56e25 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-12-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f8b0ec136161aa7f171f38e4ec1c9c87bc38c24033d0e621964938cc8c22b552 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> IACFleet </name>
+    <version> v0.32.0 </version>
+    <release>  </release>
+    <summary> IAC Fleetcode plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/iacfleet_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/iacfleet.html </info-url>
+    <description> IAC Fleetcode plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A32-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ae5dd8331fbb47d7760c07abade80ed69fc8c144080b17bcdc7e9e30cdd0d5cd </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -4984,24 +5578,6 @@ easier future predictions.
     https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.24.1-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.8.24.1/ocpn_draw_pi-1.8.24.1-ubuntu-x86_64-18.04-bionic.tar.gz
   </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64-wx32</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-flatpak.wx32-A64-22.08-tarball/versions/v0.1.1/DashboardSK-v0.1.1_flatpak.wx32-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> d197982275d006ebb935256c6bdbebf9f6088468090982f66fcca4815584c5b6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -5068,22 +5644,22 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
+    <name> Launcher </name>
+    <version> v1.3.4 </version>
     <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
+    <summary> Launcher plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
+    <source> https://github.com/nohal/launcher_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
+    <description>   Launcher plugin for OpenCPN
  </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-debian-wx32.wx32-11-tarball/versions/v0.24.0/ObjSearch-v0.24.0_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d8e8ec55ec019f0a083f3ef5478a204767f03e4c8364313fe9546bf630ffb1e5 </tarball-checksum>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-A32-12-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 4253fa69514f14dd27cd9730252988a3593f56bcfc07603276ac300d998266fe </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -5152,24 +5728,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.1.1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardsk.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>12.6.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.1-darwin-wx32-12.6.1-tarball/versions/v0.1.1/DashboardSK-v0.1.1_darwin-wx32-12.6.1-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 4b3b92165aade2e80266c819473b8646829849d91f1f590114aec4a7993ef353 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.34.0 </version>
     <release> 0 </release>
@@ -5212,23 +5770,5 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.6.18.0-flatpak-x86_64-20.08-flatpak-tarball/versions/v1.6.18/dashboard_tactics_pi-1.6.18.0-x86_64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> ObjSearch </name>
-    <version> v0.24.0 </version>
-    <release>  </release>
-    <summary> Chart object search plugin for OpenCPN </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/objsearch_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/objsearch.html </info-url>
-    <description> Vector chart object search  plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.24.0-debian-11-tarball/versions/v0.24.0/ObjSearch-v0.24.0_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 51cc146ba0d8d9c01ddc04efbeb5d973969d0053218660f6321cc0a3d186c68a </tarball-checksum>
   </plugin>
 </plugins>
