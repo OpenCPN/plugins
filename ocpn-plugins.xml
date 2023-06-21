@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-06-18 19:35</date>
+  <date>2023-06-21 03:31</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 1.1.3.1 </version>
@@ -13875,8 +13875,8 @@ oernc plugins. It thus obsoletes these two plugins.
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 2.0.0.49 </version>
-    <release> 49 </release>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
     <open-source>  </open-source>
@@ -13896,13 +13896,91 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>darwin-wx32</target>
     <target-version>10.13.6</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-darwin-wx32-10.13.6-tarball/versions/2.0.0.49/o-charts-2.0.0.49_darwin-wx32-10.13.6-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 70f18b6850915a48cd4e5e373c73a8e18cd6a9a46cb55fabe7d0c50a7d413704 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-darwin-wx32-10.13.6-tarball/versions/2.0.0.50/o-charts-2.0.0.50_darwin-wx32-10.13.6-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> aea9a0934f5dde2707a523cf7938e8e77f5d3ade149162aeed37a9a5f6fe6b29 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 2.0.0.49 </version>
-    <release> 49 </release>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
+    <summary> Encrypted Vector Charts from o-charts.org </summary>
+    <api-version> 1.17 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/o-charts_pi </source>
+    <info-url> https://o-charts.org/ </info-url>
+    <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-11-tarball/versions/2.0.0.50/o-charts-2.0.0.50_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> aa0b9210f7ae35167c8362502fafbd1a66115644f6a4fd6186bf8afa4bfc7c51 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> o-charts </name>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
+    <summary> Encrypted Vector Charts from o-charts.org </summary>
+    <api-version> 1.17 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/o-charts_pi </source>
+    <info-url> https://o-charts.org/ </info-url>
+    <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-A32-10-tarball/versions/2.0.0.50/o-charts-2.0.0.50_debian-10-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 4963f9a32183a525eec273c67b57b0bfb04359bdb60b66597a4ff652a111b21c </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> o-charts </name>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
+    <summary> Encrypted Vector Charts from o-charts.org </summary>
+    <api-version> 1.17 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/o-charts_pi </source>
+    <info-url> https://o-charts.org/ </info-url>
+    <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-A64-11-tarball/versions/2.0.0.50/o-charts-2.0.0.50_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 7a605af9f0ecb20e71cab98ea78b1a7fa743247e07f00d35779a8eae882f8b29 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> o-charts </name>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
     <open-source>  </open-source>
@@ -13922,13 +14000,13 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-wx32-11-tarball/versions/2.0.0.49/o-charts-2.0.0.49_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 6e745119de075eef1ce8d969a702e636d600ffb072785284708f43426d65b766 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-debian-wx32-11-tarball/versions/2.0.0.50/o-charts-2.0.0.50_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c2dc603327dd5f659d39824fbd74308b6708360abb966c59c6655f52858e18da </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 2.0.0.48 </version>
-    <release> 48 </release>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
     <open-source>  </open-source>
@@ -13948,8 +14026,8 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>flatpak-x86_64</target>
     <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-flatpak-22.08-tarball/versions/2.0.0.48/o-charts-2.0.0.48_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 9921b23e66e1768fe5765108e1d72ec596a810af1d853eef714eaa0f4fd03443 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-flatpak-22.08-tarball/versions/2.0.0.50/o-charts-2.0.0.50_flatpak.wx32-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ddb9e322d8b0d5e4c496c578b975038f57716a272c7795bcdeea2cf14d0314c8 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -13979,8 +14057,8 @@ oernc plugins. It thus obsoletes these two plugins.
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
-    <version> 2.0.0.49 </version>
-    <release> 49 </release>
+    <version> 2.0.0.50 </version>
+    <release> 50 </release>
     <summary> Encrypted Vector Charts from o-charts.org </summary>
     <api-version> 1.17 </api-version>
     <open-source>  </open-source>
@@ -14000,8 +14078,8 @@ oernc plugins. It thus obsoletes these two plugins.
     <target>msvc-wx32</target>
     <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-msvc-wx32-10-tarball/versions/2.0.0.49/o-charts-2.0.0.49_msvc-wx32-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 83153e5cc5ebce978f7e0af6f07f50b86cfb957e9b7432780cd899fe5012fda5 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0-msvc-wx32-10-tarball/versions/2.0.0.50/o-charts-2.0.0.50_msvc-wx32-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> 5e8d32c41de73ea843f8db1f8f58a75582d498ef202425cc99e2352fce7a9315 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
