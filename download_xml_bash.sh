@@ -27,6 +27,7 @@ delimiter1=".xml\" title"
 my_array=();
 while read -r line; do
 	if [[ $line == *$delimiter* ]] && [[ $line == *$delimiter1* ]]; then
+		echo "line: $line"
 		start=`awk -v a="$line" -v b="$delimiter" 'BEGIN{print index(a,b)}'`
 		start=$((start + ${#delimiter} - 1))
 		end=`awk -v a="$line" -v b="$delimiter1" 'BEGIN{print index(a,b)}'`
@@ -35,7 +36,7 @@ while read -r line; do
 		my_array+=( $line );
 		echo "found: $line"
 	fi
-done < <(wget -q -O - "$REPO$1-$4/packages/?q=*$2*xml")
+done < <(wget -q -O - "$REPO$1-$4/packages/?q=*$2*xml+tag:latest&page_size=50")
 
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
