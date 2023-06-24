@@ -40,7 +40,7 @@ while read -r line; do
 		my_array+=( $line );
 		echo "found: $line"
 	fi
-done < <(wget -q -O - "$REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*xml")
+done < <(wget -q -O - "$REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*xml+tag:latest&page_size=50")
 
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
