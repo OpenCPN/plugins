@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Windvane </name>
-<version> 1.0.27.1 </version>
-<release> 1 </release>
+<version> 1.0.28.0 </version>
+<release> 0 </release>
 <summary> Plugin to provide windvane like autopilot </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,13 +14,13 @@
 Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
 </description>
 
-<target>flatpak-x86_64-wx315</target>
-<build-target>flatpak</build-target>
+<target>ubuntu-gtk3-armhf</target>
+<build-target>ubuntu</build-target>
 <build-gtk></build-gtk>
-<target-version>20.08</target-version>
-<target-arch>x86_64</target-arch>
+<target-version>20.04</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.27.1-flatpak-x86_64-wx315-20.08-flatpak-tarball/versions/1.0.27.1+1459.6b889f5/windvane_pi-1.0.27.1-x86_64-wx315_flatpak-20.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.28.0-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/1.0.28.0+1586.0752b1e/windvane_pi-1.0.28.0-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
 </plugin>
