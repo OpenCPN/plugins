@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Windvane </name>
-<version> 1.0.27.1 </version>
-<release> 1 </release>
+<version> 1.0.28.0 </version>
+<release> 0 </release>
 <summary> Plugin to provide windvane like autopilot </summary>
 
 <api-version> 1.16 </api-version>
@@ -14,13 +14,13 @@
 Windvane Autopilot is designed to use the wind instruments and autopilot on board the yatch to act like a standard windvane autopilot and allow the yatch to follow the wind.
 </description>
 
-<target>ubuntu-gtk3-x86_64</target>
-<build-target>ubuntu</build-target>
-<build-gtk>gtk3</build-gtk>
-<target-version>18.04</target-version>
-<target-arch>x86_64</target-arch>
+<target>android-armhf</target>
+<build-target>android</build-target>
+<build-gtk></build-gtk>
+<target-version>16</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.27.1-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.27.1+1466.6b889f5/windvane_pi-1.0.27.1-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.28.0-android-armhf-16-android-armhf-tarball/versions/1.0.28.0+1601.0752b1e/windvane_pi-1.0.28.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
 </plugin>
