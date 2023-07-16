@@ -152,6 +152,10 @@ def get_checksum(url):
 
 def is_accessible(url, path, tag, stats):
     """Check that  url is accessible, return boolean """
+    if not url:
+        stats.url_errors.append(path  + ": empty url")
+        stats.print_dot('F')
+        return False;
     status = get_status_code(url.strip())
     dot = '.'
     r = True
