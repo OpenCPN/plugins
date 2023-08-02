@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-07-30 14:18</date>
+  <date>2023-08-02 20:46</date>
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
@@ -1047,6 +1047,40 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.8.3-ubuntu-armhf-gtk3-20.04-focal-armhf-tarball/versions/v0.4.8.3/autopilot_route_pi-0.4.8.3-ubuntu-armhf-20.04-gtk3-focal-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> GRIB </name>
+    <version>4.1</version>
+    <release>0</release>
+    <summary> Grib weather info overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> DAvid Register </author>
+    <source> https://github.com/OpenCPN/opencpn </source>
+    <info-url> https://opencpn-manuals.github.io/main/opencpn-plugins/grib_weather/grib_weather.html </info-url>
+    <description> Provides basic GRIB file overlay
+capabilities for several GRIB file
+types and a request function to get GRIB
+files by eMail.
+Supported GRIB data include:
+- wind direction and speed (at 10 m)
+- wind gust
+- surface pressure
+- rainfall
+- cloud cover
+- significant wave height and direction
+- air surface temperature (at 2 m)
+- sea surface temperature
+- surface current direction and speed
+- Convective Available Potential Energy (CAPE)
+- wind, altitude, temperature and relative
+  humidity at 300, 500, 700, 850 hPa.
+ </description>
+    <target>all</target>
+    <target-version>0</target-version>
+    <target-arch>all</target-arch>
+    <tarball-url> </tarball-url>
+    <tarball-checksum> </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3242,6 +3276,39 @@ easier future predictions.
     <tarball-checksum> 8728cd9035fdd1933b3edffa98c6ea4b707afc5f3e81a299db3130c31ffc6799 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WMM </name>
+    <version>1.8</version>
+    <release>0</release>
+    <summary> Magnetic variation info</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/OpenCPN/opencpn </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:included_plugins:wmm </info-url>
+    <description>Allows users to cross reference
+magnetic variation values printed on many
+raster charts. Variation is the angle between
+true and magnetic north.  Inclination or dip,
+is the vertical angle of the magnetic field.
+\t(+- 90 at the magnetic poles)
+Field Strength is the magnetic field in nano
+tesla from \t20000 to 66000.
+The plotted lines are similar to a topographic
+map.  The space between them can be adjusted;
+more space takes less time to calculate.
+Step size and Pole accuracy sliders allow a
+trade off for speed vs computation time.
+The World Magnetic Model Plugin was written by
+Pavel Kalian and extended by Sean D'Epagnier to
+support plotting.
+ </description>
+    <target>all</target>
+    <target-version>0</target-version>
+    <target-arch>all</target-arch>
+    <tarball-url> </tarball-url>
+    <tarball-checksum> </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -3997,6 +4064,24 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <tarball-checksum> 3db3600558282c68ce934efc5bab96bbb9648397390bda179e62f4bea5004f70 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> ChartDownloader </name>
+    <version>1.13</version>
+    <release>0</release>
+    <summary> Download charts from NOAA Catalog </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/OpenCPN/opencpn </source>
+    <info-url>https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_downloader_tab </info-url>
+    <description> Manage chart downloads and updates from
+sources supporting NOAA Chart Catalog format</description>
+    <target>all</target>
+    <target-version>0</target-version>
+    <target-arch>all</target-arch>
+    <tarball-url> </tarball-url>
+    <tarball-checksum> </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.8.3 </version>
     <release> 3 </release>
@@ -4247,6 +4332,23 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Dashboard </name>
+    <version>1.8</version>
+    <release>0</release>
+    <summary> NMEA instruments display </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> David Register </author>
+    <source> https://github.com/OpenCPN/opencpn </source>
+    <info-url>  https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:included_plugins:dashboard </info-url>
+    <description> Configurable display of various NMEA sources </description>
+    <target>all</target>
+    <target-version>0</target-version>
+    <target-arch>all</target-arch>
+    <tarball-url> </tarball-url>
+    <tarball-checksum> </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
