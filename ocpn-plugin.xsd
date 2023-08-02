@@ -43,6 +43,7 @@
 <xs:element name="target-arch">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
+      <xs:enumeration value = "all"/>
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>    <!-- Used on Debian -->
