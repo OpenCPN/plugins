@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/leamas/shipdriver_pi/17861 -->
+<!-- https://ci.appveyor.com/project/Rasbats/shipdriver-pi/builds/47744117 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> 3.2.2+17861.ff0ae9c </version>
+  <version> v3.3.0-beta7 </version>
   <release>  </release>
   <summary> Simulate ship movements </summary>
 
@@ -18,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>flatpak-x86_64</target>
-  <target-version>22.08</target-version>
+  <target>msvc-wx32</target>
+  <target-version>10</target-version>
   <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.2-flatpak-22.08-tarball/versions/3.2.2+17861.ff0ae9c/ShipDriver-3.2.2+17861.ff0ae9c_flatpak-22.08-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 6322491e5df2a89ba22b38ba5080de24121b88d03d9a7b636134ce85e1a9cbf8 </tarball-checksum>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-msvc-wx32-10-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_msvc-wx32-10-win32.tar.gz </tarball-url>
+  <tarball-checksum> fdd054ea2e1ee79ed71f876c5c6ac5154798e1f906be23263d8b5778a55b783e </tarball-checksum>
 </plugin>
