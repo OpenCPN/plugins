@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/Rasbats/shipdriver_pi/9011 -->
+<plugin version="1">
+  <name> ShipDriver </name>
+  <version> v3.3.0-beta7 </version>
+  <release>  </release>
+  <summary> Simulate ship movements </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> yes </open-source>
+  <author> Mike Rossiter </author>
+  <source> https://github.com/Rasbats/shipdriver_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+
+  <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+
+  <target>darwin-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-darwin-wx32-10-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> b1cdb0f4c17f3185891a588ec9b1c5aa72cb03f98df7abb013579622e5001303 </tarball-checksum>
+</plugin>
