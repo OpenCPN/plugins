@@ -1,7 +1,29 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-08-09 01:08</date>
+  <date>2023-08-11 15:29</date>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-10-buster-arm64-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.14.0 </version>
@@ -507,6 +529,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>darwin</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-darwin-x86_64-11.4-macos-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-darwin-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -798,6 +842,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ObjSearch </name>
     <version> v0.26.0 </version>
     <release>  </release>
@@ -814,6 +880,50 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-A32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> bd9d66394f877206abe7c3163f983cf55494e4ccaa4bee3db9e9133373cd0ac6 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-wx32-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-wx32-12-bookworm-armhf-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-wx32-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-10-buster-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -1398,6 +1508,28 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTr
     <tarball-checksum> 39aaa4dd1708f7c303b6d396273f0b61543d44808267fecd0dbaeba9bed58e92 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-11-bullseye-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1314.v1.4.3-beta </version>
     <release> 1 </release>
@@ -1599,6 +1731,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-10-buster-armhf-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -1655,6 +1809,28 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A64-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 655b464c8d0340ccf19860dcf0b1b8de4e2217008302f344133379415eb6544d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.14393</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -1797,6 +1973,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.249.0-debian-x86_64-wx32-12-bookworm-tarball/versions/1.0.249.0+11693.643ba85/testplugin_pi-1.0.249.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2149,6 +2347,28 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.14.0-darwin-x86_64-11.4-macos-tarball/versions/v0.4.14.0/autopilot_route_pi-0.4.14.0-darwin-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-wx32-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-wx32-12-bookworm-arm64-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-wx32-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -3740,6 +3960,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -3866,6 +4108,28 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-wx32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> b9eae4d7b8ead05fdd45fbf380e60746cd94cfef7a50561012bc1aa671f32269 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -4229,6 +4493,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ObjSearch </name>
     <version> v0.26.0 </version>
     <release>  </release>
@@ -4377,6 +4663,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -4499,6 +4807,28 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.14.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v0.4.14.0/autopilot_route_pi-0.4.14.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-wx32-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-wx32-12-bookworm-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -5737,6 +6067,28 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta4 </version>
     <release>  </release>
@@ -6607,6 +6959,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -6928,6 +7302,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-debian-armhf-A32-12-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_debian-armhf-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 06bfb6c5e33b707b01ecc0adfb0364c5c4c21026b121fcdcf7fcc38719765e49 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.10.0 </version>
+    <release> 0 </release>
+    <summary> AutoTrackRaymarine PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Raymarine Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.18.10.0/AutoTrackRaymarine_pi-1.18.10.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
