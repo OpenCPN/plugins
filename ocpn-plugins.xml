@@ -1,7 +1,29 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-18 01:48</date>
+  <date>2023-09-20 14:11</date>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-flatpak-x86_64-22.08-flatpak-tarball/versions/2.4.74.0+5242.6b8b6be/watchdog_pi-2.4.74.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
   <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
@@ -60,7 +82,7 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -70,13 +92,13 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <description>
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>debian-gtk3-armhf</target>
+    <target>debian-armhf</target>
     <build-target>debian</build-target>
-    <build-gtk/>
+    <build-gtk>gtk2</build-gtk>
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-armhf-10-buster-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
@@ -99,28 +121,6 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-flatpak-x86_64-18.08-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_flatpak-x86_64-18.08.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-x86_64-10-buster-tarball/versions/1.9.71.0+5330.77a4f60/weatherfax_pi-1.9.71.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -139,28 +139,6 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -177,28 +155,6 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-wx32-11-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 7d18641256ce1be5335efbfe1764be62de46089a8a117acc52477cff8bea58ee </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-arm64-10-buster-arm64-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -226,26 +182,70 @@ such as dual radar range and Doppler.
     <tarball-checksum> d44bd02707143e00a04eb2adfc16b30f7d9ff00ad65342123dc343dee94880d7 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
     <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>android-arm64</target>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-arm64-10-buster-arm64-tarball/versions/2.4.74.0+5254.6b8b6be/watchdog_pi-2.4.74.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>android-armhf</target>
     <build-target>android</build-target>
     <build-gtk/>
     <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-android-arm64-16-android-arm64-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-android-armhf-16-android-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -336,48 +336,48 @@ such as dual radar range and Doppler.
     <tarball-checksum> 963e6091a688db483108ed2ad0394dd64271b7dbbec7b1a6dcf8b87092790459 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
     <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-darwin-wx315-x86_64-11.4-macos.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>debian-armhf</target>
+    <target>debian-arm64</target>
     <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-armhf-10-buster-armhf-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -438,28 +438,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-android-armhf-16-android-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -479,7 +457,7 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -489,41 +467,19 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-armhf-10-buster-armhf-tarball/versions/1.9.71.0+5323.77a4f60/weatherfax_pi-1.9.71.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -533,13 +489,13 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <description>
 Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
     <build-gtk/>
-    <target-version>11</target-version>
+    <target-version>10.0.20348</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-x86_64-11-bullseye-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-x86_64-11-bullseye.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/2.4.74.0+5244.6b8b6be/watchdog_pi-2.4.74.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
@@ -607,28 +563,6 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 3030f4bf7c102a66c33d1d44fad9d65c244b2e230a2f00b468c93941ab48dda3 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-arm64-12-bookworm-arm64-tarball/versions/1.9.71.0+5326.77a4f60/weatherfax_pi-1.9.71.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -651,28 +585,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -691,6 +603,28 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+270.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -731,6 +665,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <tarball-checksum> 655b464c8d0340ccf19860dcf0b1b8de4e2217008302f344133379415eb6544d </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -747,28 +703,6 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-debian-12-tarball/versions/v0.1.2/DashboardSK-v0.1.2_debian-12-x86_64.tar.gz </tarball-url>
     <tarball-checksum> f8b0ec136161aa7f171f38e4ec1c9c87bc38c24033d0e621964938cc8c22b552 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-arm64-10-buster-arm64-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -846,7 +780,7 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
     <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
@@ -856,13 +790,13 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <description>
 Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
     <build-gtk/>
-    <target-version>11</target-version>
+    <target-version>16</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.9.71.0+5328.77a4f60/weatherfax_pi-1.9.71.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-android-armhf-16-android-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -967,6 +901,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-x86_64-11-bullseye-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1315.v1.4.3-beta </version>
     <release> 1 </release>
@@ -1044,28 +1000,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <tarball-checksum> 71249bb755c081d7a08b0cb44bf9f1ae8dfe4745935bd073f7c81337417e5d75 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -1124,6 +1058,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> 5f9b3712641a3cbd897bf2f7f4424eaae802ec1e47bf7c2dc7a353d3b72da5d3 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1144,28 +1100,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.28.0+1628.a49c24b/windvane_pi-1.0.28.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1228,28 +1162,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -1307,6 +1219,50 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 915d08a199c06814eb47d0469496b5e1b5becf6add82e5f2ea9ab9e13f62f503 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/2.4.74.0+5240.6b8b6be/watchdog_pi-2.4.74.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1327,6 +1283,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-x86_64-wx32-22.04-jammy-tarball/versions/1.0.28.0+1620.a49c24b/windvane_pi-1.0.28.0-debian-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-x86_64-10-buster-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -1351,6 +1329,28 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -1371,6 +1371,28 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-raspbian-armhf-9.13-stretch-armhf-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-raspbian-armhf-9.13.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -1501,28 +1523,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <tarball-checksum> d5b4393baa696073ff1b8d4ede2629a16ba79366b54d75e8e6f627ac81413895 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-x86_64-12-bookworm-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1313.v1.4.3-beta </version>
     <release> 1 </release>
@@ -1540,28 +1540,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-flatpak-18.08-tarball/versions/1.4.3+1313.v1.4.3-beta/TideFinder-1.4.3+1313.v1.4.3-beta_flatpak-18.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 78a38a95d212c15621ce7d64ae7fb9ac7c3888cfd9d22ae62ebc7f0c632a50cf </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-darwin-wx32-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1606,28 +1584,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1669,6 +1625,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-debian-wx32-arm64-A64-11-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_debian-wx32-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 97e46c74834c8918c7d3ed7f8ed312b0b80b11c31ebd01ed771cc278534609f4 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -1792,6 +1770,28 @@ easier future predictions.
     <tarball-checksum> 23d27d8179e5f2abb6aa2b61c2b8492881a1143004f087d065c2756b0159900d </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -1808,28 +1808,6 @@ easier future predictions.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> f521ad7c588a146cfe256090d987b27f2be66672d6df6a8d1adf63e185f82cbf </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1852,28 +1830,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-debian-arm64-11-bullseye-arm64-tarball/versions/1.8.28.2+5954.4e12a45/ocpn_draw_pi-1.8.28.2-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -1913,28 +1869,6 @@ easier future predictions.
     <tarball-checksum> 82a82c81e2189b48143afd8c0dad358b7729df87697caeb5f100fc79e77a8c26 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -1955,6 +1889,50 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-debian-x86_64-11-bullseye-tarball/versions/1.8.28.2+5967.4e12a45/ocpn_draw_pi-1.8.28.2-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/2.4.74.0+5249.6b8b6be/watchdog_pi-2.4.74.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ObjSearch </name>
@@ -2051,6 +2029,28 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum> 336859be18491d7763806f8fe98831f2defcd484a996ecc4692643666eb92fd0 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -2069,6 +2069,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-x86_64-10-buster-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -2091,30 +2113,8 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-android-arm64-16-android-arm64-tarball/versions/1.9.71.0+5325.77a4f60/weatherfax_pi-1.9.71.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -2124,13 +2124,13 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <description>
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-android-arm64-16-android-arm64-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-darwin-wx315-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
@@ -2151,6 +2151,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> c26d43cc872860470e2de91e4341b1f17cabc536a9aefaae0543bd920bb6648b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-x86_64-10-buster-tarball/versions/2.4.74.0+5257.6b8b6be/watchdog_pi-2.4.74.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -2192,7 +2214,7 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
     <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
@@ -2202,13 +2224,35 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <description>
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-android-armhf-16-android-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-android-armhf-16-android-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
@@ -2307,72 +2351,6 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-x86_64-11-bullseye-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -2463,6 +2441,28 @@ Supported GRIB data include:
     <tarball-checksum> bbf2c5aa4bc4d93b043cc7bcee258cafdedf38d2d165b06e4bf94162008bdeb8 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-arm64-10-buster-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -2539,28 +2539,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-android-armhf-16-android-armhf-tarball/versions/1.9.71.0+5320.77a4f60/weatherfax_pi-1.9.71.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -2615,28 +2593,6 @@ OpenCPN support for S63 Vector Charts
     <tarball-checksum> 7468d6d5c00389221ef3a2d66b5b59b8a1eb8fd2ce247a3708169b3916319005 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -2677,28 +2633,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-armhf-12-bookworm-armhf-tarball/versions/1.9.71.0+5327.77a4f60/weatherfax_pi-1.9.71.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -2715,6 +2649,50 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-darwin-wx32-10-tarball/versions/v1.3.4/Launcher-v1.3.4_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> e8d9f673b43e4016ba500d14d6dfa06dd1773306cfc4863d63a23b5406057695 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64-tarball/versions/2.4.74.0+5253.6b8b6be/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -2773,6 +2751,50 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-wx32-A64-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-wx32-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 3d34b91ba3c317c8d56efd56fecc8dda210a83cc6b42ca4da8e2542dfb954f25 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-arm64-11-bullseye-arm64-tarball/versions/2.4.74.0+5245.6b8b6be/watchdog_pi-2.4.74.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -2835,6 +2857,50 @@ easier future predictions.
     <tarball-checksum> e2e6aebb0aaec7217873eb92735687e23e41174628409ffd39f3d1f86854c603 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-android-armhf-16-android-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-x86_64-11-bullseye-tarball/versions/2.4.74.0+5255.6b8b6be/watchdog_pi-2.4.74.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -2855,28 +2921,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-x86_64-10-buster-tarball/versions/1.0.28.0+1617.a49c24b/windvane_pi-1.0.28.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.9.71.0+5331.77a4f60/weatherfax_pi-1.9.71.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -3095,26 +3139,26 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-aarch64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -3133,6 +3177,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-flatpak-20.08-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_flatpak-20.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 3d957fbd9e13873a709c7efc8bd04bbc4b17e0fdd0dd96abde3c5da809759257 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -3156,7 +3222,7 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
     <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
@@ -3166,13 +3232,13 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <description>
 Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
     <build-gtk/>
-    <target-version>22.08</target-version>
+    <target-version>10.0.20348</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-flatpak-x86_64-22.08-flatpak-tarball/versions/1.9.71.0+5332.77a4f60/weatherfax_pi-1.9.71.0-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
@@ -3217,6 +3283,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.2.0.2 </version>
     <release> 2 </release>
@@ -3237,26 +3325,26 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -3277,6 +3365,50 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-14.04-trusty-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-14.04-trusty.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/2.4.74.0+5248.6b8b6be/watchdog_pi-2.4.74.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -3353,28 +3485,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-msvc-wx32-10-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_msvc-wx32-10-win32.tar.gz </tarball-url>
     <tarball-checksum> 85ef43663b6b2e3f13adf1dd403dd2e975f53d717846fbf12dc9789ee473613e </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -3525,6 +3635,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-android-arm64-16-android-arm64-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta4 </version>
     <release>  </release>
@@ -3570,6 +3702,28 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -3608,30 +3762,8 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-debian-x86_64-10-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_debian-x86_64-10.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-arm64-11-bullseye-arm64-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -3641,19 +3773,19 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.
     <description>
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-aarch64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -3663,19 +3795,19 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <description>
 Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
     <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-android-arm64-16-android-arm64-tarball/versions/2.4.74.0+5252.6b8b6be/watchdog_pi-2.4.74.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -3685,13 +3817,13 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.
     <description>
 Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
     <build-gtk/>
-    <target-version>12</target-version>
+    <target-version>10.0.20348</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-x86_64-12-bookworm-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-x86_64-12-bookworm.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/2.4.74.0+5250.6b8b6be/watchdog_pi-2.4.74.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
@@ -3716,6 +3848,28 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-armhf-11-bullseye-armhf-tarball/versions/2.4.74.0+5246.6b8b6be/watchdog_pi-2.4.74.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -3732,6 +3886,28 @@ https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeac
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-android-arm64-A64-16-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_android-arm64-16-arm64.tar.gz </tarball-url>
     <tarball-checksum> bfd7d0e3bfc8b13beac527509293aef97e5c263ea952d5819c9bae1518cbd287 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-armhf-10-buster-armhf-tarball/versions/2.4.74.0+5241.6b8b6be/watchdog_pi-2.4.74.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3845,28 +4021,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -3889,28 +4043,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ObjSearch </name>
     <version> v0.26.0 </version>
     <release>  </release>
@@ -3927,6 +4059,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-wx32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> b9eae4d7b8ead05fdd45fbf380e60746cd94cfef7a50561012bc1aa671f32269 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-armhf-12-bookworm-armhf-tarball/versions/2.4.74.0+5247.6b8b6be/watchdog_pi-2.4.74.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -3954,6 +4108,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> f42344036a775dbda56059b849e5b1f98b5326520d14baed60eb839010d48656 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-x86_64-11-bullseye-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -3976,26 +4152,26 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
     <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -4056,26 +4232,26 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 4c218cd19492f5254e72f1299eb3a3257c6d94cad733658d42627f8afb88452e </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
     <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.9.71.0+5337.77a4f60/weatherfax_pi-1.9.71.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -4100,6 +4276,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -4116,28 +4314,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-wx32-x86_64.wx32-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-wx32-x86_64.wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 41a47253057e65727af1a34ae1fd34f48709ae459d611b2081d5762a23318f2e </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-armhf-11-bullseye-armhf-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -4237,28 +4413,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-darwin-wx32-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -4295,28 +4449,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-arm64-A64-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 9888b4155ec9a70118e0dbcb9fe1ded9deeaedcd26ff34a0562efbf0eb88a738 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-x86_64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardSK </name>
@@ -4384,6 +4516,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> cb731ea5a7330de5961fe4a90561189b28aadc30d9feb95e07adcaab10815669 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -4422,6 +4576,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.0.28.0+1613.a49c24b/windvane_pi-1.0.28.0-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-x86_64-12-bookworm-tarball/versions/2.4.74.0+5258.6b8b6be/watchdog_pi-2.4.74.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -4521,6 +4697,28 @@ OpenCPN support for S63 Vector Charts
     <tarball-checksum> 478971daf743660d107cfb8f21d3a96179677d3192d565f40ee3747f57a86d2f </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -4559,72 +4757,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 23343290af275b3344877ff942289aba0b70a954bf56954318ad44df8b32ba31 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-x86_64-10-buster-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-x86_64-10-buster-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-arm64-10-buster-arm64-tarball/versions/1.9.71.0+5334.77a4f60/weatherfax_pi-1.9.71.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -4647,28 +4779,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-x86_64-12-bookworm-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -4689,28 +4799,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.0.28.0+1616.a49c24b/windvane_pi-1.0.28.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-x86_64-12-bookworm-tarball/versions/1.9.71.0+5336.77a4f60/weatherfax_pi-1.9.71.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -4752,8 +4840,30 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 88d1fe248044b51abb0967786199c5a8586bbc69df7054332ae5bd76607c7038 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -4763,13 +4873,13 @@ data from itself. This can be replayed to simulate collision situations.
     <description>
 Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/2.4.74.0+5259.6b8b6be/watchdog_pi-2.4.74.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
@@ -4792,28 +4902,6 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/1.9.71.0+5324.77a4f60/weatherfax_pi-1.9.71.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -4957,28 +5045,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 2f5fcabada22a54f282f0143c7541e7aae517b5ff037ebddfbd8d6b28a29cd5f </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -5020,6 +5086,28 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-11-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 1c3d52cfa72a9318399ec3e4bc7741b9a83d51606a185b4e4ef8df6bc95d8b71 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -5088,7 +5176,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
@@ -5098,15 +5186,37 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <description>
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-x86_64-11-bullseye-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -5188,26 +5298,26 @@ easier future predictions.
     <tarball-checksum> 8461bb79cd79d1f42add37f3359e047c43f87fa1875e5207ee5624738676fe34 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
     <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
     <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
-    <target>debian-gtk3-armhf</target>
+    <target>debian-x86_64</target>
     <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.9.71.0+5335.77a4f60/weatherfax_pi-1.9.71.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-x86_64-12-bookworm-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -5249,28 +5359,6 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-debian-10-tarball/versions/1.4.3+1309.v1.4.3-beta/TideFinder-1.4.3+1309.v1.4.3-beta_debian-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 8a5198d04aca16fdfc5451cb4699da0d1ff1ecce7b026aadb5e0b909d0fe8f0b </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ObjSearch </name>
@@ -5369,50 +5457,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <tarball-checksum> 67f4a071b778def0727d367337a3c6a3b285f7300d32ed45749f234fd0cdf170 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/1.9.71.0+5321.77a4f60/weatherfax_pi-1.9.71.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -5447,6 +5491,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-android-armhf-A32-16-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_android-armhf-16-armhf.tar.gz </tarball-url>
     <tarball-checksum> fc5850d571df3c045eaeb1e1eaf6e0f90e94fe5993ff177b10c62fff2c971dfe </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-android-arm64-16-android-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -5532,6 +5598,50 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-debian-armhf-A32-12-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_debian-armhf-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 06bfb6c5e33b707b01ecc0adfb0364c5c4c21026b121fcdcf7fcc38719765e49 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-x86_64-10-buster-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/2.4.74.0+5243.6b8b6be/watchdog_pi-2.4.74.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WMM </name>
@@ -5663,26 +5773,26 @@ OpenCPN support for S63 Vector Charts
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-msvc-10.0.14393-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_msvc-10.0.14393.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
     <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-armhf-12-bookworm-armhf-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-armhf-12-bookworm-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-android-arm64-16-android-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -5705,6 +5815,28 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -5723,38 +5855,16 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum> ebcdf39439d208213496f5008047ff10e218c9aca1a929607840a6d179544303 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
     <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
     <target>debian-armhf</target>
     <build-target>debian</build-target>
@@ -5762,9 +5872,31 @@ WR features include: optimal routing subject to various constraints based on wea
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-debian-armhf-10-buster-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-debian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-armhf-10-buster-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Testplugin </name>
+    <version> 1.0.258.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Jon Gough </author>
+    <source> https://github.com/rgleason/testplugin_pi </source>
+    <description>
+testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -5867,6 +5999,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-x86_64-12-bookworm-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -5910,48 +6064,26 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
     <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
     <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.9.71.0+5333.77a4f60/weatherfax_pi-1.9.71.0-darwin-wx315-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>debian-x86_64</target>
+    <target>debian-arm64</target>
     <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-x86_64-11-bullseye-tarball/versions/1.9.71.0+5329.77a4f60/weatherfax_pi-1.9.71.0-debian-x86_64-11-bullseye.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-arm64-10-buster-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-arm64-10-buster-arm64.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -6117,72 +6249,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
-    <release> 0 </release>
-    <summary> Open fax image, decode audio fax, chart overlay </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weatherfax_pi </source>
-    <description>
-Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/1.9.71.0+5319.77a4f60/weatherfax_pi-1.9.71.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.11.0 </version>
-    <release> 0 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.11.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.15.11.0/weather_routing_pi-1.15.11.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -6245,50 +6311,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-x86_64-11-bullseye-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -6305,28 +6327,6 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-darwin-wx32-10-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 14e7364138973c2f4dae0be23a451ad846a78f2a0521abdf5095127f615bc764 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -6372,6 +6372,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-debian-x86_64-10-buster-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-arm64-10-buster-arm64-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -6529,50 +6551,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Testplugin </name>
-    <version> 1.0.256.0 </version>
-    <release> 0 </release>
-    <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Jon Gough </author>
-    <source> https://github.com/rgleason/testplugin_pi </source>
-    <description>
-testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.256.0-debian-arm64-10-buster-arm64-tarball/versions/v1.0.256.0/testplugin_pi-1.0.256.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
-    <release> 0 </release>
-    <summary> Implement watchdog ability for opencpn </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/watchdog_pi </source>
-    <description>
-Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-arm64-12-bookworm-arm64-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -6613,6 +6591,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> 1f656149187c23dad45c63ded499b20277a08a4c160981626e86ea206e90651b </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Watchdog </name>
+    <version> 2.4.74.0 </version>
+    <release> 0 </release>
+    <summary> Implement watchdog ability for opencpn </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/watchdog_pi </source>
+    <description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-android-armhf-16-android-armhf-tarball/versions/2.4.74.0+5251.6b8b6be/watchdog_pi-2.4.74.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -6636,7 +6636,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
-    <version> 2.4.72.0 </version>
+    <version> 2.4.74.0 </version>
     <release> 0 </release>
     <summary> Implement watchdog ability for opencpn </summary>
     <api-version> 1.16 </api-version>
@@ -6646,15 +6646,59 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <description>
 Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
 </description>
-    <target>debian-x86_64</target>
+    <target>debian-gtk3-armhf</target>
     <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
+    <build-gtk/>
     <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/watchdog-beta/raw/names/watchdog_pi-2.4.72.0-debian-x86_64-10-buster-tarball/versions/v2.4.72.0/watchdog_pi-2.4.72.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/2.4.74.0+5256.6b8b6be/watchdog_pi-2.4.74.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-x86_64-12-bookworm-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.12.0 </version>
+    <release> 0 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -6716,7 +6760,7 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
-    <version> 1.9.71.0 </version>
+    <version> 1.9.73.0 </version>
     <release> 0 </release>
     <summary> Open fax image, decode audio fax, chart overlay </summary>
     <api-version> 1.16 </api-version>
@@ -6726,13 +6770,35 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <description>
 Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.71.0-debian-arm64-11-bullseye-arm64-tarball/versions/1.9.71.0+5322.77a4f60/weatherfax_pi-1.9.71.0-debian-arm64-11-bullseye-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherFax </name>
+    <version> 1.9.73.0 </version>
+    <release> 0 </release>
+    <summary> Open fax image, decode audio fax, chart overlay </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weatherfax_pi </source>
+    <description>
+Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
