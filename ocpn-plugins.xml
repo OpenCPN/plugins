@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-20 14:11</date>
+  <date>2023-09-25 14:03</date>
   <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
@@ -119,6 +119,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <target-version>18.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-flatpak-x86_64-18.08-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_flatpak-x86_64-18.08.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -293,6 +315,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> 81595a0878684f3eaca3fbb2e5472c7da2e466ac5a97579872628f7f7657b809 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> v5.5.0-beta4 </version>
     <release>  </release>
@@ -316,6 +360,28 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-11-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 8a5a9c27d084df8c7fadb5209f98c778c353317bdafc6beafe806ff32157d6a7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-armhf-10-buster-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -356,6 +422,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-darwin-wx315-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -585,24 +673,26 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
     <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
     <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/1.2.0.2+270.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -899,6 +989,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.0.28.0+180.a49c24b/windvane_pi-1.0.28.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -1217,6 +1329,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-flatpak-A64-22.08-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_flatpak-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 915d08a199c06814eb47d0469496b5e1b5becf6add82e5f2ea9ab9e13f62f503 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -2029,6 +2163,28 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum> 336859be18491d7763806f8fe98831f2defcd484a996ecc4692643666eb92fd0 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-android-arm64-16-android-arm64-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.12.0 </version>
     <release> 0 </release>
@@ -2091,26 +2247,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-x86_64-10-buster-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>14.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty-tarball/versions/1.2.0.2+267.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-14.04-trusty.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -2191,6 +2327,50 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-x86_64-12-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-x86_64-12-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 9632e104ce76a9e1b9c9ea2c8b8068acff30ceead7b2a7d2dc6fb15c3bb94d05 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-x86_64-11-bullseye-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -2331,6 +2511,28 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> cd7feb3e4d66e1594e4cd5a927ea69c5119cbc053153d5c5197c2dc91bc95e50 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -2499,6 +2701,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <tarball-checksum> 966c76d039a45436af7a039962d3ca9d335132c807331f8dc1abdd405aa93304 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-android-armhf-16-android-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -2609,6 +2833,50 @@ OpenCPN support for S63 Vector Charts
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-stable/raw/names/DashboardSK-v0.1.2-msvc-wx32-10.0.20348-tarball/versions/v0.1.2/DashboardSK-v0.1.2_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> c41f2b999c9bafdc0749690538f1f1ab5109be142fb76663767082da268d44cc </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2753,6 +3021,28 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <tarball-checksum> 3d34b91ba3c317c8d56efd56fecc8dda210a83cc6b42ca4da8e2542dfb954f25 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-arm64-10-buster-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.73.0 </version>
     <release> 0 </release>
@@ -2877,6 +3167,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-android-armhf-16-android-armhf-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -3063,26 +3375,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-tarball/versions/1.2.0.2+265.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -3101,6 +3393,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -3137,6 +3451,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3221,6 +3557,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.73.0 </version>
     <release> 0 </release>
@@ -3241,26 +3599,6 @@ Open image files, decode audio fax to an image, calibrate chart overlay image. C
 https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC-tarball/versions/1.2.0.2+56.b5236e0/nmeaconverter_pi-1.2.0.2-msvc-x86_64-10.0.14393-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -3303,26 +3641,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>16.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial-tarball/versions/1.2.0.2+261.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-16.04-xenial.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3487,6 +3805,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 85ef43663b6b2e3f13adf1dd403dd2e975f53d717846fbf12dc9789ee473613e </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -3503,6 +3843,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-wx32-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 5e9744f559cfaa082370428a048cbdc68b59170a2afff7e5b240f91bf2bb05eb </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-x86_64-12-bookworm-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -3682,26 +4044,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 8d3a740a9befbdd64dab46bb3e0b218b8c5fd959521ee05a6ba249165421e03e </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-arm64</target>
-    <target-version>18.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/1.2.0.2+1.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-arm64-18.04-bionic-armh64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.12.0 </version>
     <release> 0 </release>
@@ -3742,6 +4084,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -3826,26 +4190,6 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/2.4.74.0+5250.6b8b6be/watchdog_pi-2.4.74.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster-tarball/versions/1.2.0.2+263.b5236e0/nmeaconverter_pi-1.2.0.2-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -4413,6 +4757,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-armhf-10-buster-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -4697,6 +5063,28 @@ OpenCPN support for S63 Vector Charts
     <tarball-checksum> 478971daf743660d107cfb8f21d3a96179677d3192d565f40ee3747f57a86d2f </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.258.0 </version>
     <release> 0 </release>
@@ -4717,6 +5105,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -4757,6 +5167,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 23343290af275b3344877ff942289aba0b70a954bf56954318ad44df8b32ba31 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-x86_64-10-buster-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -4777,6 +5209,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.8.28.2+5960.4e12a45/ocpn_draw_pi-1.8.28.2-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -4924,6 +5378,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-arm64-10-buster-arm64-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Dashboard </name>
     <version>1.8</version>
     <release>0</release>
@@ -4957,6 +5433,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-wx32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 85d3cae6a46d8839f7b00ea7c7063e864ea8576e2023283fbc1bb5ad50b8a979 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -5043,6 +5541,28 @@ such as dual radar range and Doppler.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-arm64-A64-12-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-arm64-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 2f5fcabada22a54f282f0143c7541e7aae517b5ff037ebddfbd8d6b28a29cd5f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-x86_64-12-bookworm-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -5361,6 +5881,28 @@ easier future predictions.
     <tarball-checksum> 8a5198d04aca16fdfc5451cb4699da0d1ff1ecce7b026aadb5e0b909d0fe8f0b </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ObjSearch </name>
     <version> v0.26.0 </version>
     <release>  </release>
@@ -5377,26 +5919,6 @@ easier future predictions.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-flatpak-A64-22.08-tarball/versions/v0.26.0/ObjSearch-v0.26.0_flatpak-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> a42410baface8661a7eef02ad26428bd4d8b68f15f4d817ba6648dc9c9f90cef </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/1.2.0.2+260.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -5437,6 +5959,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.28.0+1619.a49c24b/windvane_pi-1.0.28.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-android-armhf-16-android-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ObjSearch </name>
@@ -5513,26 +6057,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-android-arm64-16-android-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>9.4</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf-tarball/versions/1.2.0.2+266.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-9.4-stretch-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -5622,6 +6146,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -5642,6 +6188,50 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/2.4.74.0+5243.6b8b6be/watchdog_pi-2.4.74.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-android-arm64-16-android-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WMM </name>
@@ -5897,6 +6487,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-x86_64-10-buster-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -6311,6 +6923,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -6470,26 +7104,6 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 5c8c2e3d3f5b399b7678381a4355d56464779b8e446208c62bd8004d840f0964 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>raspbian-armhf</target>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf-tarball/versions/1.2.0.2+258.b5236e0/nmeaconverter_pi-1.2.0.2-raspbian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -6549,6 +7163,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-gtk3-18.04-bionic-gtk3-tarball/versions/1.8.28.2+5955.4e12a45/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-18.04-gtk3-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-x86_64-11-bullseye-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -6719,6 +7355,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <tarball-checksum> 9893b5051be584212640265b19e930b79c0df70e54d601bd28348a560c0c060c </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AIS Radar view </name>
+    <version> 1.4.3.0 </version>
+    <release> 0 </release>
+    <summary> AIS Radar view Plugin </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Johan Sman </author>
+    <source> https://github.com/rgleason/AISradar_pi </source>
+    <description>
+Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -6757,6 +7415,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-android-arm64-16-android-arm64-tarball/versions/1.8.28.2+5952.4e12a45/ocpn_draw_pi-1.8.28.2-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NmeaConverter_pi </name>
+    <version> 1.4.4.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> RooieDirk </author>
+    <source> https://github.com/rgleason/NmeaConverter_pi </source>
+    <description>
+NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -6826,26 +7506,6 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 594b96293fe3fd361de0dc997ab54f60356ca0d82893bf18a1dc6525a4520361 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NmeaConverter_pi </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> Plugin to change and cherrypich from other NMEA sentences </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> RooieDirk </author>
-    <source> https://github.com/RooieDirk/NmeaConverter_pi </source>
-    <description>
-NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It is rather tricky and easy to make mistakes that will 'hang' OpenCPN, but if used right very powerfull
-</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/dirk-smits/ocpn-plugins-unstable/raw/names/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal-tarball/versions/1.2.0.2+264.b5236e0/nmeaconverter_pi-1.2.0.2-ubuntu-x86_64-20.04-focal.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
