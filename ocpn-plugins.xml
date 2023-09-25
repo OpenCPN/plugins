@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-25 14:03</date>
+  <date>2023-09-25 20:54</date>
   <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
@@ -161,6 +161,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -204,6 +226,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> d44bd02707143e00a04eb2adfc16b30f7d9ff00ad65342123dc343dee94880d7 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -226,6 +270,50 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.12.0 </version>
     <release> 0 </release>
@@ -246,6 +334,28 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-android-arm64-16-android-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -288,6 +398,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -424,6 +556,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-12-bookworm-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -484,6 +638,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-wx32-armhf-A32-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-wx32-armhf-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 4ca259bfb93f757fb266dd5f1c7eb8b936c9fd236114a4c54fb1608093208957 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -566,6 +742,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -586,6 +784,50 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/2.4.74.0+5244.6b8b6be/watchdog_pi-2.4.74.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-10-buster-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-android-arm64-16-android-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -651,6 +893,50 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 3030f4bf7c102a66c33d1d44fad9d65c244b2e230a2f00b468c93941ab48dda3 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-10-buster-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -671,6 +957,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-ubuntu-x86_64-18.04-bionic-tarball/versions/1.0.28.0+1608.a49c24b/windvane_pi-1.0.28.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -735,6 +1043,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-mingw-x86_64-10-mingw-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-mingw-x86_64-10-mingw.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-10-buster-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -928,6 +1258,28 @@ easier future predictions.
     <tarball-checksum> 4253fa69514f14dd27cd9730252988a3593f56bcfc07603276ac300d998266fe </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -991,6 +1343,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -1033,6 +1407,28 @@ Open image files, decode audio fax to an image, calibrate chart overlay image. C
 https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-x86_64-11-bullseye-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -1272,6 +1668,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-gtk3-20.04-focal-gtk3-tarball/versions/1.8.28.2+5963.4e12a45/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-20.04-gtk3-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
@@ -1657,6 +2075,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <tarball-checksum> d5b4393baa696073ff1b8d4ede2629a16ba79366b54d75e8e6f627ac81413895 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-android-arm64-16-android-arm64-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1313.v1.4.3-beta </version>
     <release> 1 </release>
@@ -1926,6 +2366,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -1942,6 +2404,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> f521ad7c588a146cfe256090d987b27f2be66672d6df6a8d1adf63e185f82cbf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-12-bookworm-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2023,6 +2507,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-debian-x86_64-11-bullseye-tarball/versions/1.8.28.2+5967.4e12a45/ocpn_draw_pi-1.8.28.2-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -2143,6 +2649,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -2271,6 +2799,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -2371,6 +2921,28 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-debian-x86_64-11-bullseye-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-x86_64-12-bookworm-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -2535,6 +3107,50 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -2551,6 +3167,50 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-x86_64-12-bookworm-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -2625,6 +3285,50 @@ Supported GRIB data include:
     <tarball-checksum> </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-android-arm64-16-android-arm64-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-x86_64-10-buster-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -2665,6 +3369,50 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -2681,6 +3429,50 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-msvc-wx32-10.0.20348-tarball/versions/v0.2.1/NSK-v0.2.1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> 2fb774a1651507ca199b43b3f53e99b58953069bba03f33c75d2a433e91b9f71 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -2879,6 +3671,28 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -2939,6 +3753,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64-tarball/versions/2.4.74.0+5253.6b8b6be/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-x86_64-10-buster-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -3041,6 +3877,28 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-arm64-10-buster-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-arm64-10-buster-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3353,6 +4211,28 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> f1ac455cfc0a47ba4f6e1945b140b14057310dff26cd266680234e6e067bea4b </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -3373,6 +4253,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.8.28.2+5956.4e12a45/ocpn_draw_pi-1.8.28.2-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -3475,6 +4377,50 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-android-armhf-16-android-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.73.0 </version>
     <release> 0 </release>
@@ -3555,6 +4501,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -3845,6 +4813,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-checksum> 5e9744f559cfaa082370428a048cbdc68b59170a2afff7e5b240f91bf2bb05eb </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-armhf-10-buster-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.4.3.0 </version>
     <release> 0 </release>
@@ -4066,6 +5056,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -4084,6 +5096,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-11-bullseye-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -4170,6 +5204,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-x86_64-11-bullseye-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -4254,6 +5310,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -4274,6 +5352,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.8.28.2+5962.4e12a45/ocpn_draw_pi-1.8.28.2-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -4365,6 +5465,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-arm64-10-buster-arm64-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -4403,6 +5525,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-wx32-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> b9eae4d7b8ead05fdd45fbf380e60746cd94cfef7a50561012bc1aa671f32269 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-11-bullseye-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -4452,6 +5596,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> f42344036a775dbda56059b849e5b1f98b5326520d14baed60eb839010d48656 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.258.0 </version>
     <release> 0 </release>
@@ -4494,6 +5660,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-debian-armhf-11-bullseye-armhf-tarball/versions/1.8.28.2+5968.4e12a45/ocpn_draw_pi-1.8.28.2-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -4642,6 +5830,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -4715,6 +5925,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-wx32-arm64-A64-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-wx32-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 0b5f02bafb421dee00e764a4a49dbe63c12f08494f9b2add3e7cdddd1d3f9bc7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-android-armhf-16-android-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -4966,6 +6198,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -5045,6 +6299,28 @@ OpenCPN support for S63 Vector Charts
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-arm64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-arm64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -5061,6 +6337,28 @@ OpenCPN support for S63 Vector Charts
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-msvc-wx32-10.0.20348-tarball/versions/v0.32.0/IACFleet-v0.32.0_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> 478971daf743660d107cfb8f21d3a96179677d3192d565f40ee3747f57a86d2f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -5167,6 +6465,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <tarball-checksum> 23343290af275b3344877ff942289aba0b70a954bf56954318ad44df8b32ba31 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.4.3.0 </version>
     <release> 0 </release>
@@ -5255,6 +6575,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -5292,6 +6634,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-flatpak-A64-22.08-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_flatpak-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 88d1fe248044b51abb0967786199c5a8586bbc69df7054332ae5bd76607c7038 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -5358,6 +6722,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -5417,6 +6803,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-checksum> </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-armhf-10-buster-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -5433,6 +6841,50 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-wx32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 85d3cae6a46d8839f7b00ea7c7063e864ea8576e2023283fbc1bb5ad50b8a979 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-debian-arm64-10-buster-arm64-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -5541,6 +6993,28 @@ such as dual radar range and Doppler.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-arm64-A64-12-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-arm64-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 2f5fcabada22a54f282f0143c7541e7aae517b5ff037ebddfbd8d6b28a29cd5f </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -5739,6 +7213,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-android-armhf-16-android-armhf-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -5757,6 +7253,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -6081,6 +7599,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -6168,6 +7708,28 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -6210,6 +7772,28 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-android-arm64-16-android-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-arm64-10-buster-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -6405,6 +7989,50 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
+    <name> squiddio </name>
+    <version> 1.3.34.0 </version>
+    <release> 0 </release>
+    <summary> Plugin to download and display Points of Interest on a chart </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Mauro Calvi </author>
+    <source> https://github.com/rgleason/squiddio_pi </source>
+    <description>
+User Sourced database to download and display harbours, anchorages, weather bouys, satellite maps and other interesting cruise-planning objects on the chart and log sharing.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.34.0-android-armhf-16-android-armhf-tarball/versions/v1.3.34.0/squiddio_pi-1.3.34.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.73.0 </version>
     <release> 0 </release>
@@ -6427,6 +8055,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -6443,6 +8093,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-msvc-10.0.14393-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_msvc-10.0.14393-win32.tar.gz </tarball-url>
     <tarball-checksum> ebcdf39439d208213496f5008047ff10e218c9aca1a929607840a6d179544303 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Raymarine autopilot </name>
+    <version> 1.0.9.0 </version>
+    <release> 0 </release>
+    <summary> Control a Raymarine Seatalk 1 Autopilot </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Bernd Cirotzki </author>
+    <source> https://github.com/rgleason/raymarine_autopilot_pi </source>
+    <description>
+Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -6531,6 +8203,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-flatpak-x86_64-22.08-flatpak-tarball/versions/1.8.28.2+5972.4e12a45/ocpn_draw_pi-1.8.28.2-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -6879,6 +8573,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> 733cf61d3e8265c5a113f9404f66ff3b0a02d3d1a2eeaca722577785de5f9465 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -6986,6 +8702,28 @@ such as dual radar range and Doppler.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A64-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 42a5a957457d02f80643c4403e1f8c66c43ae54cb2422e44f8960e7cc72caf23 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Climatology </name>
+    <version> 1.6.7.0 </version>
+    <release> 0 </release>
+    <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/climatology_pi </source>
+    <description>
+Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-x86_64-11-bullseye-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -7506,6 +9244,28 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 594b96293fe3fd361de0dc997ab54f60356ca0d82893bf18a1dc6525a4520361 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.24.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
