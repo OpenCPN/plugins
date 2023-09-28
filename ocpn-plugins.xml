@@ -1,7 +1,29 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-25 20:54</date>
+  <date>2023-09-28 01:02</date>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-x86_64-12-bookworm-tarball/versions/1.1.3.0+1648.6d12323/statusbar_pi-1.1.3.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
   <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
@@ -41,6 +63,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-debian-10-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_debian-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 3db3600558282c68ce934efc5bab96bbb9648397390bda179e62f4bea5004f70 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -161,6 +205,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-20.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-armhf-10-buster-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.7.0 </version>
     <release> 0 </release>
@@ -224,6 +290,28 @@ such as dual radar range and Doppler.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-flatpak-A64-22.08-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_flatpak-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> d44bd02707143e00a04eb2adfc16b30f7d9ff00ad65342123dc343dee94880d7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-android-arm64-16-android-arm64-tarball/versions/1.1.3.0+1642.6d12323/statusbar_pi-1.1.3.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -334,6 +422,28 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-x86_64-10-buster-tarball/versions/1.1.3.0+1644.6d12323/statusbar_pi-1.1.3.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -640,28 +750,6 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <tarball-checksum> 4ca259bfb93f757fb266dd5f1c7eb8b936c9fd236114a4c54fb1608093208957 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -764,6 +852,28 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/rayma
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-android-armhf-16-android-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -806,28 +916,6 @@ Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
 https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-10-buster-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-android-arm64-16-android-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -891,28 +979,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-debian-wx32-armhf-A32-11-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_debian-wx32-armhf-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 3030f4bf7c102a66c33d1d44fad9d65c244b2e230a2f00b468c93941ab48dda3 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-10-buster-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -981,6 +1047,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-armhf-12-bookworm-armhf-tarball/versions/1.1.3.0+1657.6d12323/statusbar_pi-1.1.3.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.4.3.0 </version>
     <release> 0 </release>
@@ -1001,6 +1089,72 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.3.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.4.3.0/aisradar_pi-1.4.3.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-android-arm64-16-android-arm64-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-flatpak-x86_64-22.08-flatpak-tarball/versions/1.1.3.0+1643.6d12323/statusbar_pi-1.1.3.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -1025,6 +1179,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -1045,26 +1221,26 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+Stowage PlugIn for OpenCPN
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
     <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-10-buster-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -1143,6 +1319,72 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardSK </name>
@@ -1258,8 +1500,30 @@ easier future predictions.
     <tarball-checksum> 4253fa69514f14dd27cd9730252988a3593f56bcfc07603276ac300d998266fe </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-armhf-10-buster-armhf-tarball/versions/1.1.3.0+1649.6d12323/statusbar_pi-1.1.3.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <version> 1.18.26.0 </version>
     <release> 0 </release>
     <summary> Route following for Raymarine EV-1 Autopilots </summary>
     <api-version> 1.18 </api-version>
@@ -1269,15 +1533,59 @@ easier future predictions.
     <description>
 Route tracking and remote control for Evolution pilots
 </description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
     <target>debian-armhf</target>
     <build-target>debian</build-target>
     <build-gtk/>
     <target-version>11</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-armhf-11-bullseye-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1319,6 +1627,28 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-darwin-wx32-10-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> b1cdb0f4c17f3185891a588ec9b1c5aa72cb03f98df7abb013579622e5001303 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-arm64-12-bookworm-arm64-tarball/versions/1.1.3.0+1651.6d12323/statusbar_pi-1.1.3.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -1450,6 +1780,28 @@ easier future predictions.
     <tarball-checksum> 53156ef062a2468def4448638b71b990613e6090b5ba9a36939bb326e6c6f79c </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -1548,6 +1900,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> bd9d66394f877206abe7c3163f983cf55494e4ccaa4bee3db9e9133373cd0ac6 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-x86_64-12-bookworm-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -1608,6 +1982,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-armhf-10-buster-armhf-tarball/versions/1.0.28.0+1628.a49c24b/windvane_pi-1.0.28.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-11-bullseye-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1815,6 +2211,28 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1879,6 +2297,28 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-darwin-x86_64-10.14.4-macos-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-darwin-x86_64-10.14.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -2013,6 +2453,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/1.1.3.0+1652.6d12323/statusbar_pi-1.1.3.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -2055,6 +2517,50 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-x86_64-wx32-12-bookworm-tarball/versions/1.0.28.0+1614.a49c24b/windvane_pi-1.0.28.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/1.1.3.0+1656.6d12323/statusbar_pi-1.1.3.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -2114,6 +2620,28 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-flatpak-18.08-tarball/versions/1.4.3+1313.v1.4.3-beta/TideFinder-1.4.3+1313.v1.4.3-beta_flatpak-18.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 78a38a95d212c15621ce7d64ae7fb9ac7c3888cfd9d22ae62ebc7f0c632a50cf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/1.1.3.0+1654.6d12323/statusbar_pi-1.1.3.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2201,6 +2729,28 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 97e46c74834c8918c7d3ed7f8ed312b0b80b11c31ebd01ed771cc278534609f4 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.12.0 </version>
     <release> 0 </release>
@@ -2221,6 +2771,28 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-x86_64-10-buster-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -2257,6 +2829,28 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/sailawaynmea-beta/raw/names/SailawayNMEA-v0.4.1-beta1-darwin-wx315-10.13.6-tarball/versions/v0.4.1-beta1/SailawayNMEA-v0.4.1-beta1_darwin-wx315-10.13.6-x86_64.tar.gz </tarball-url>
     <tarball-checksum> a0fb3a6d306299d78ab426e3ec7c146fceb33a87236aa3d3d2671dcd1cdf3555 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-android-arm64-16-android-arm64-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -2303,6 +2897,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-10-buster-arm64-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -2323,6 +2939,50 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-arm64-10-buster-arm64-tarball/versions/1.1.3.0+1646.6d12323/statusbar_pi-1.1.3.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -2366,6 +3026,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-android-armhf-16-android-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Raymarine autopilot </name>
     <version> 1.0.9.0 </version>
     <release> 0 </release>
@@ -2406,26 +3088,26 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/rayma
     <tarball-checksum> f521ad7c588a146cfe256090d987b27f2be66672d6df6a8d1adf63e185f82cbf </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
 </description>
-    <target>debian-x86_64</target>
+    <target>debian-armhf</target>
     <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-12-bookworm-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-12-bookworm.tar.gz
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.1.3.0+1640.6d12323/statusbar_pi-1.1.3.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2613,6 +3295,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -2629,6 +3333,50 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-debian-A32-11-tarball/versions/v1.3.4/Launcher-v1.3.4_debian-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 815c0dbb6d42c21d18bc929a81482b7180e9ae2c247b3cbed52c43c0d74141c8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-arm64-11-bullseye-arm64-tarball/versions/1.1.3.0+1641.6d12323/statusbar_pi-1.1.3.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-x86_64-12-bookworm-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -2649,6 +3397,28 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-ubuntu-arm64-18.04-bionic-armh64-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-ubuntu-arm64-18.04-bionic-armh64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/1.1.3.0+1655.6d12323/statusbar_pi-1.1.3.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -2673,6 +3443,50 @@ https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-arm64-10-buster-arm64-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-x86_64-10-buster-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -2689,6 +3503,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_p
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-darwin-wx32-10-tarball/versions/v0.2.1/NSK-v0.2.1_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 336859be18491d7763806f8fe98831f2defcd484a996ecc4692643666eb92fd0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-arm64-10-buster-arm64-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -3009,6 +3845,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardSK </name>
     <version> v0.1.2 </version>
     <release>  </release>
@@ -3085,6 +3943,28 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <tarball-checksum> cd7feb3e4d66e1594e4cd5a927ea69c5119cbc053153d5c5197c2dc91bc95e50 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-12-bookworm-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -3105,28 +3985,6 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -3211,6 +4069,28 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-debian-x86_64-12-bookworm-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -3347,6 +4227,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_p
     <tarball-checksum> bbf2c5aa4bc4d93b043cc7bcee258cafdedf38d2d165b06e4bf94162008bdeb8 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.258.0 </version>
     <release> 0 </release>
@@ -3453,28 +4355,6 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -3553,6 +4433,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-raspbian-armhf-9.13-stretch-armhf-tarball/versions/1.0.28.0+1625.a49c24b/windvane_pi-1.0.28.0-raspbian-armhf-9.13-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-armhf-10-buster-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardSK </name>
@@ -3671,28 +4573,6 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk/>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -3713,6 +4593,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/1.8.28.2+5959.4e12a45/ocpn_draw_pi-1.8.28.2-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -3753,6 +4655,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64-tarball/versions/2.4.74.0+5253.6b8b6be/watchdog_pi-2.4.74.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -3857,6 +4781,72 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <tarball-checksum> 3d34b91ba3c317c8d56efd56fecc8dda210a83cc6b42ca4da8e2542dfb954f25 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-10-buster-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -3879,26 +4869,26 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+Stowage PlugIn for OpenCPN
 </description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3984,6 +4974,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-android-armhf-16-android-armhf-tarball/versions/1.0.28.0+1618.a49c24b/windvane_pi-1.0.28.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> TideFinder </name>
@@ -4255,26 +5267,26 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
 </description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -4399,6 +5411,28 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/rayma
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/1.1.3.0+1647.6d12323/statusbar_pi-1.1.3.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.34.0 </version>
     <release> 0 </release>
@@ -4483,6 +5517,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-10-buster-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -4501,6 +5557,28 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -4589,6 +5667,28 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-arm64-12-bookworm-arm64-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.12.0 </version>
     <release> 0 </release>
@@ -4653,6 +5753,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-x86_64-11-bullseye-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -4673,6 +5795,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/2.4.74.0+5248.6b8b6be/watchdog_pi-2.4.74.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -5099,7 +6243,7 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
   </plugin>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <version> 1.18.26.0 </version>
     <release> 0 </release>
     <summary> Route following for Raymarine EV-1 Autopilots </summary>
     <api-version> 1.18 </api-version>
@@ -5109,13 +6253,13 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <description>
 Route tracking and remote control for Evolution pilots
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
     <build-gtk/>
-    <target-version>11</target-version>
+    <target-version>11.4</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-11-bullseye-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-x86_64-11-bullseye.tar.gz
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
@@ -5226,6 +6370,28 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -5310,26 +6476,26 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
 </description>
-    <target>flatpak-x86_64</target>
+    <target>flatpak-aarch64</target>
     <build-target>flatpak</build-target>
     <build-gtk/>
     <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>aarch64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -5441,6 +6607,28 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-x86_64.tar.gz </tarball-url>
     <tarball-checksum> c15fa5e301b45b63861456ff5539c2210ab137c4c69db8cb0cc152238c5137a8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -5888,6 +7076,28 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/rayma
     <tarball-checksum> d3108cc0784e775bed4743d26f19b5a7f070699c4a49ea57fc3b80f766efcddf </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-android-armhf-16-android-armhf-tarball/versions/1.1.3.0+1653.6d12323/statusbar_pi-1.1.3.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -5925,28 +7135,6 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-wx32-arm64-A64-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-wx32-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 0b5f02bafb421dee00e764a4a49dbe63c12f08494f9b2add3e7cdddd1d3f9bc7 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-android-armhf-16-android-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -6011,6 +7199,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -6067,6 +7277,28 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum> 861a284e4e8113597160b8cb4811ceef8f2504513b686953ec9aa273e5af44ca </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -6087,6 +7319,28 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-android-armhf-16-android-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -6383,6 +7637,28 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.1.3.0+1638.6d12323/statusbar_pi-1.1.3.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.258.0 </version>
     <release> 0 </release>
@@ -6405,6 +7681,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -6425,6 +7723,28 @@ NmeaConverter is a plugin where you can manipulate or add new nmea sentences. It
 https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconverter_pi-1.4.4.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.4.4.0/nmeaconverter_pi-1.4.4.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-x86_64-11-bullseye-tarball/versions/1.1.3.0+1645.6d12323/statusbar_pi-1.1.3.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -6553,6 +7873,50 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -6573,28 +7937,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/1.0.28.0+1616.a49c24b/windvane_pi-1.0.28.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -6678,6 +8020,28 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -6995,26 +8359,26 @@ such as dual radar range and Doppler.
     <tarball-checksum> 2f5fcabada22a54f282f0143c7541e7aae517b5ff037ebddfbd8d6b28a29cd5f </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
     <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
     <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
     <description>
-Route tracking and remote control for Evolution pilots
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
 </description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
     <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -7123,6 +8487,50 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-beta/raw/names/ShipDriver-v3.3.0-beta7-debian-wx32-x86_64-11-tarball/versions/v3.3.0-beta7/ShipDriver-v3.3.0-beta7_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 0cecdf82de20e5433a835c37a8f2b156a72902b739e32af28851b468fb6faaf0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-android-arm64-16-android-arm64-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-android-armhf-16-android-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -7380,6 +8788,50 @@ https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-android-arm64-16-android-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+1309.v1.4.3-beta </version>
     <release> 1 </release>
@@ -7439,6 +8891,50 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-checksum> a42410baface8661a7eef02ad26428bd4d8b68f15f4d817ba6648dc9c9f90cef </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-arm64-11-bullseye-arm64-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -7455,6 +8951,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-armhf-A32-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-armhf-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 7d85cef954979706d60301219f9bd3383a0e0bb2a01c8f60ee5500b491f3dbc1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -7643,6 +9161,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-arm64-10-buster-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -7708,28 +9248,6 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -7750,6 +9268,28 @@ Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, 
 https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4.74.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/2.4.74.0+5243.6b8b6be/watchdog_pi-2.4.74.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> AutoTrackRaymarine </name>
+    <version> 1.18.26.0 </version>
+    <release> 0 </release>
+    <summary> Route following for Raymarine EV-1 Autopilots </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Douwe Fokkema </author>
+    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
+    <description>
+Route tracking and remote control for Evolution pilots
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -7867,6 +9407,28 @@ support plotting.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-debian-11-tarball/versions/v0.26.0/ObjSearch-v0.26.0_debian-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 42c66e3ef1ec3de7c0c37bff8fd5e8bbcda4d096663fdd0ca5830161722ae999 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-x86_64-10-buster-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -8161,6 +9723,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-x86_64-11-bullseye-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -8205,28 +9789,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -8263,6 +9825,28 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTr
     <tarball-checksum> 2585e395fe31e9d0f37879665047be6515140e8cbc9dc121d34a552021632e22 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/1.1.3.0+1639.6d12323/statusbar_pi-1.1.3.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -8283,6 +9867,28 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -8327,6 +9933,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-armhf-12-bookworm-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -8368,6 +9996,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-arm64-wx32-12-bookworm-arm64-tarball/versions/1.0.28.0+1607.a49c24b/windvane_pi-1.0.28.0-debian-arm64-wx32-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -8446,6 +10096,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A32-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> ae5dd8331fbb47d7760c07abade80ed69fc8c144080b17bcdc7e9e30cdd0d5cd </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> StatusBar </name>
+    <version> 1.1.3.0 </version>
+    <release> 0 </release>
+    <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/statusbar_pi </source>
+    <description>
+The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.1.3.0+1650.6d12323/statusbar_pi-1.1.3.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -8555,6 +10227,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-x86_64-12-bookworm-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.1 </version>
     <release>  </release>
@@ -8571,28 +10265,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-flatpak-22.08-tarball/versions/v0.2.1/NSK-v0.2.1_flatpak-22.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 733cf61d3e8265c5a113f9404f66ff3b0a02d3d1a2eeaca722577785de5f9465 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> GPS Odometer </name>
@@ -8824,6 +10496,50 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Polar </name>
+    <version> 1.2.13.0 </version>
+    <release> 0 </release>
+    <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Peter Tulp </author>
+    <source> https://github.com/rgleason/polar_pi </source>
+    <description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-x86_64-11-bullseye-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -8925,6 +10641,28 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-armhf-10-buster-armhf-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -8963,6 +10701,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-darwin-wx32-10-tarball/versions/v0.32.0/IACFleet-v0.32.0_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 1f656149187c23dad45c63ded499b20277a08a4c160981626e86ea206e90651b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Autopilot Route </name>
+    <version> 0.4.21.0 </version>
+    <release> 0 </release>
+    <summary> Autopilot Route PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/autopilot_route_pi </source>
+    <description>
+Configurable Autopilot Route following abilities.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -9155,6 +10915,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.7.0 </version>
+    <release> 0 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.4.0 </version>
     <release> 0 </release>
@@ -9244,28 +11026,6 @@ such as dual radar range and Doppler.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-debian-A32-12-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_debian-12-armhf.tar.gz </tarball-url>
     <tarball-checksum> 594b96293fe3fd361de0dc997ab54f60356ca0d82893bf18a1dc6525a4520361 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> AutoTrackRaymarine </name>
-    <version> 1.18.24.0 </version>
-    <release> 0 </release>
-    <summary> Route following for Raymarine EV-1 Autopilots </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Douwe Fokkema </author>
-    <source> https://github.com/rgleason/AutoTrackRaymarine_pi </source>
-    <description>
-Route tracking and remote control for Evolution pilots
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.18.24/AutoTrackRaymarine_pi-1.18.24.0-darwin-wx32-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
