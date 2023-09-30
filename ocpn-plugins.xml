@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-29 17:28</date>
+  <date>2023-09-30 01:32</date>
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
@@ -222,6 +222,28 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-beta/raw/names/tactics_pi-1.0.43.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.43.0/tactics_pi-1.0.43.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-android-arm64-16-android-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -476,6 +498,28 @@ Open image files, decode audio fax to an image, calibrate chart overlay image. C
 https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-1.9.73.0-debian-armhf-10-buster-armhf-tarball/versions/v1.9.73.0/weatherfax_pi-1.9.73.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-armhf-10-buster-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-armhf-10-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -1956,6 +2000,28 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-beta/raw/names/pypilot_pi-0.40.1
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-x86_64-11-bullseye-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -2882,6 +2948,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-android-armhf-16-android-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -3216,6 +3304,28 @@ Nautical almanac: sun, moon, planets and navigational stars. Compute position fi
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.14.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v2.4.14.0/celestial_navigation_pi-2.4.14.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-gtk3-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -3776,6 +3886,28 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Plots </name>
     <version> 2.3.9.0 </version>
     <release> 0 </release>
@@ -3903,6 +4035,28 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-beta/raw/names/tactics_pi-1.0.43.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.0.43.0/tactics_pi-1.0.43.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-arm64-11-bullseye-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -5274,6 +5428,72 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-x86_64-10-buster-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-x86_64-10-buster.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>ubuntu-armhf</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>18.04</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-x86_64-12-bookworm-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.7.9.0 </version>
     <release> 0 </release>
@@ -6447,6 +6667,28 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk2</build-gtk>
+    <target-version>10</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-arm64-10-buster-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-arm64-10-buster-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -7052,6 +7294,28 @@ Admiralty tide calculations
 https://dl.cloudsmith.io/public/opencpn/admiralty-tide-beta/raw/names/admiralty_tide_tables_pi-0.1.9.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v0.1.9.0/admiralty_tide_tables_pi-0.1.9.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk/>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -7784,6 +8048,50 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-debian-armhf-10-buster-armhf-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>darwin-wx315</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>11.4</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-darwin-wx315-x86_64-11.4-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -9559,6 +9867,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-armhf-11-bullseye-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.73.0 </version>
     <release> 0 </release>
@@ -9841,6 +10171,28 @@ Sailing Performance: Plot speed and course over ground to make the result of sma
 https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.3.9.0-debian-armhf-10-buster-armhf-tarball/versions/v2.3.9.0/plots_pi-2.3.9.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-arm64-12-bookworm-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -10291,6 +10643,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.4.14.0 </version>
     <release> 0 </release>
@@ -10527,6 +10901,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-x86_64-wx32-22.04-jammy-tarball/versions/1.0.28.0+1620.a49c24b/windvane_pi-1.0.28.0-debian-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -11688,6 +12084,28 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-android-arm64-16-android-arm64-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-armhf-12-bookworm-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -13249,6 +13667,28 @@ easier future predictions.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-mingw-10-tarball/versions/1.4.3+1316.v1.4.3-beta/TideFinder-1.4.3+1316.v1.4.3-beta_mingw-10-win32.tar.gz </tarball-url>
     <tarball-checksum> 82a82c81e2189b48143afd8c0dad358b7729df87697caeb5f100fc79e77a8c26 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Deviation </name>
+    <version> 0.1.12.0 </version>
+    <release> 0 </release>
+    <summary> Compass deviation PlugIn for OpenCPN </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk Smits </author>
+    <source> https://github.com/rgleason/Deviation_pi </source>
+    <description>
+Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
     <name> FindIt </name>
