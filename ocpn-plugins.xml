@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-09-30 01:32</date>
+  <date>2023-10-03 19:55</date>
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
@@ -859,42 +859,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-beta/raw/names/tactics_pi-1.0.43
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-flatpak-A64-22.08-tarball/versions/v0.2.1/NSK-v0.2.1_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 0839b9c0069ad0b958cab0ba92157aa05d67f2c61bf0c5c6379bd924c0659d6a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 0d0b6a372d3538c159e35f2242b4224e53510b965762faa60f4563961bb0ca53 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> pypilot </name>
     <version> 0.40.11.0 </version>
     <release> 0 </release>
@@ -1217,24 +1181,6 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/rayma
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-darwin-wx32-10-tarball/versions/v0.2.1/NSK-v0.2.1_darwin-wx32-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 336859be18491d7763806f8fe98831f2defcd484a996ecc4692643666eb92fd0 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Watchdog </name>
     <version> 2.4.74.0 </version>
     <release> 0 </release>
@@ -1317,6 +1263,24 @@ https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-d
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-msvc-wx32-10.0.20348-tarball/versions/v1.3.4/Launcher-v1.3.4_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> 8728cd9035fdd1933b3edffa98c6ea4b707afc5f3e81a299db3130c31ffc6799 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-12-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 5a771da64c305dbb36ddb9340d10acfaef026488ac79b53e9349163e2adf4ee2 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -2283,24 +2247,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-d
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-wx32-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-wx32-A64-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 876d69f1637e64f1509df28867f7a9bfd0dd4cd30e18f8863eead17391661d22 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.21.0 </version>
     <release> 0 </release>
@@ -2387,6 +2333,24 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-ubuntu-x86_64-16.04-xenial.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-A64-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 794325255bd042a764071dc33a23021fb7690384a9ee48c86ebd4c1b3589e458 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -3208,24 +3172,6 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-armhf</target>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A32-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> ff4b93a81f76364d3209a023d6645921e12f365d43eef9d0d2905aa8e30fb96e </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> otidalplan </name>
     <version> v1.1.0-beta3 </version>
     <release>  </release>
@@ -3825,21 +3771,21 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1
   </plugin>
   <plugin version="1">
     <name> NSK </name>
-    <version> v0.2.1 </version>
+    <version> v0.2.3-beta </version>
     <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
+    <summary> NMEA0183 to SignalK converter </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Pavel Kalian </author>
     <source> https://github.com/nohal/nsk_pi </source>
     <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
+    <description>   NMEA0183 to SignalK converter
  </description>
-    <target>debian-armhf</target>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A32-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 57dc269528aa9be88458bba2d95ffab4747d1e57c8fe7682af65e76152a25167 </tarball-checksum>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-msvc-wx32-10.0.20348-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> eaa433d4de2918d64f14f92a8dbe0a9489962dd7e183943932a2afcaf095e3a3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -5191,24 +5137,6 @@ OpenCPN support for S63 Vector Charts
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-raspbian-armhf-9.4-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_raspbian-armhf-9.4.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A64-12-tarball/versions/v0.2.1/NSK-v0.2.1_debian-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> f88a2f688c0aa45a1fa2094ba5d54fb7f1fe9b91081b62963020917e2ca3c5fa </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -5470,6 +5398,24 @@ Set deviation table to correct incoming nmea compass course to true course sente
 https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-darwin-wx32-universal-10-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f0a4d6351e190b14eb7fe5ccca9b5f503fc177500ace4be047d431c594626c75 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Deviation </name>
@@ -5804,24 +5750,6 @@ easier future predictions.
     <tarball-checksum> bfd7d0e3bfc8b13beac527509293aef97e5c263ea952d5819c9bae1518cbd287 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-wx32-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d3108cc0784e775bed4743d26f19b5a7f070699c4a49ea57fc3b80f766efcddf </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Autopilot Route </name>
     <version> 0.4.21.0 </version>
     <release> 0 </release>
@@ -5910,6 +5838,24 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-flatpak-22.08-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 91da4a89369f1659eb00eaa512daf46f4407821700ad0dfc7f61632a23f3fef5 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> pypilot </name>
     <version> 0.40.11.0 </version>
     <release> 0 </release>
@@ -5974,6 +5920,24 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.258.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.0.258.0/testplugin_pi-1.0.258.0-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-A64-12-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> d49efb9845175573687e7f4cacf4d858c3d3507aa13ffbb1c83e2249e907d13a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -6082,24 +6046,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-A64-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 39aaa4dd1708f7c303b6d396273f0b61543d44808267fecd0dbaeba9bed58e92 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -7212,6 +7158,24 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-wx32-A64-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 70d45249311a7e3ec6f838bf36f4289ded8690a0fb452c7da88f75dfcf1730aa </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Raymarine autopilot </name>
     <version> 1.0.9.0 </version>
     <release> 0 </release>
@@ -7866,24 +7830,6 @@ Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
 https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-beta/raw/names/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-11-bullseye-tarball/versions/v1.0.9.0/raymarine_autopilot_pi-1.0.9.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-flatpak-22.08-tarball/versions/v0.2.1/NSK-v0.2.1_flatpak-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 733cf61d3e8265c5a113f9404f66ff3b0a02d3d1a2eeaca722577785de5f9465 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -9165,6 +9111,24 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-A32-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 47434494a72675e53a5969a766565a98053aec15402bb6eeb10d664d4f6481a0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.28.2 </version>
     <release> 2 </release>
@@ -9334,6 +9298,24 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-darwin-wx32-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-wx32-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6a8643f942501711752bff4e5fc17ff3ad631069f53ff0b299242d8e22b9886e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -9670,24 +9652,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-beta/raw/names/tactics_pi-1.0.43
     <tarball-checksum> f8b0ec136161aa7f171f38e4ec1c9c87bc38c24033d0e621964938cc8c22b552 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-msvc-wx32-10.0.20348-tarball/versions/v0.2.1/NSK-v0.2.1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 2fb774a1651507ca199b43b3f53e99b58953069bba03f33c75d2a433e91b9f71 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Tactics </name>
     <version> 1.0.43.0 </version>
     <release> 0 </release>
@@ -9708,6 +9672,24 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-beta/raw/names/tactics_pi-1.0.43.0-android-armhf-16-android-armhf-tarball/versions/v1.0.43.0/tactics_pi-1.0.43.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-flatpak-A64-22.08-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> a2d4cc88d051c3bea023c7d1e5a8f3c78a6dc9b403ec2bf6e765ffd83b1a5c70 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -10358,6 +10340,24 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-wx32-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-wx32-A32-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-wx32-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> be9452969efcc18ea5246d3c19c031260a15ec7180aa49d168f0a9f423d29418 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.7.0 </version>
     <release> 0 </release>
@@ -10491,24 +10491,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-msvc-wx32-10-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_msvc-wx32-10-win32.tar.gz </tarball-url>
     <tarball-checksum> 81595a0878684f3eaca3fbb2e5472c7da2e466ac5a97579872628f7f7657b809 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NSK </name>
-    <version> v0.2.1 </version>
-    <release>  </release>
-    <summary> NMEA0183 to SignalK converter plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/nsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
-    <description>   NMEA0183 to SignalK converter plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-stable/raw/names/NSK-v0.2.1-debian-11-tarball/versions/v0.2.1/NSK-v0.2.1_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> dceb74780a1e021e2c27f79eef954b9e5fe3cbeb112c6206930058355faf2586 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -11755,6 +11737,24 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-A32-12-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> f8c83c28c416cd0b463c3b4929500edd3bfb93325fbc8e4c4d982be1e91a781e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -13943,6 +13943,24 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.7.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.6.7.0/climatology_pi-1.6.7.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NSK </name>
+    <version> v0.2.3-beta </version>
+    <release>  </release>
+    <summary> NMEA0183 to SignalK converter </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/nsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/nsk.html </info-url>
+    <description>   NMEA0183 to SignalK converter
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-debian-11-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 567e4ae3b6dedd3b33b1e96f896b30b5d07c231a1e729d1185fbd876cc0e5e51 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
