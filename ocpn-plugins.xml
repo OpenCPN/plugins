@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2023-11-26 15:16</date>
+  <date>2023-12-01 05:20</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 1.18.26.0 </version>
@@ -866,6 +866,24 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-beta/raw/names/polar_pi-1.2.13.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.2.13.0/polar_pi-1.2.13.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-flatpak-A64-22.08-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_flatpak-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> bc7f08223c040b80d8747a27bf705ce3bc3907d34c59d18eda649521b4b30815 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -2987,6 +3005,24 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-A64-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 367e342dbccaeb8fabbfb38943272fe60c41ae64709efccc3e38306e5f2cdbdf </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.7.0 </version>
     <release> 0 </release>
@@ -3227,24 +3263,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.272.0-android-arm64-16-android-arm64-tarball/versions/1.0.272.0+12075.9f79dd6/testplugin_pi-1.0.272.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-flatpak-22.08-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_flatpak-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 37a5738f11c7cc15898b870ce4f39a92eef35dc991e0202be4b654d44f4a5f00 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -3665,24 +3683,6 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-beta/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-wx32-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-wx32-A64-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 651f36055dbca72e704ffe6a3dbf3e1857d6ea1ea7e29d549a6e2653e5c2e429 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> GPS Odometer </name>
     <version> 0.4.5.1 </version>
     <release> 1 </release>
@@ -3725,24 +3725,6 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.7.0-darwin-wx315-x86_64-11.4-macos-tarball/versions/v1.3.7.0/findit_pi-1.3.7.0-darwin-wx315-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 61fac0f4d5dbc3c70785e54e6bfb36ffc7727a4737c238f1da8006797be721dc </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
@@ -4091,24 +4073,6 @@ Route tracking and remote control for Evolution pilots
 https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-beta/raw/names/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-11-bullseye-tarball/versions/v1.18.26.0/AutoTrackRaymarine_pi-1.18.26.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-darwin-wx32-universal-10-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> c7c3db019e9a196bcdd983c42d95e4929bed48cff63ad765d480632beb1417f9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -4893,24 +4857,6 @@ Set deviation table to correct incoming nmea compass course to true course sente
 https://dl.cloudsmith.io/public/opencpn/deviation-beta/raw/names/deviation_pi-0.1.12.0-debian-arm64-10-buster-arm64-tarball/versions/v0.1.12.0/deviation_pi-0.1.12.0-debian-arm64-10-buster-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-armhf</target>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-A32-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 308452b361c39757eca8f8ce80051f54ccdde13feeca137d79875eae18b1df7e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -6054,24 +6000,6 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-beta/raw/names/autopilot_route_pi-0.4.21.0-debian-x86_64-12-bookworm-tarball/versions/v0.4.21.0/autopilot_route_pi-0.4.21.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-wx32-armhf</target>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-wx32-A32-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-wx32-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> a3718bca5da25f963f5ab64e58897347df572212c21d69d019b32740dab6faaf </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Deviation </name>
@@ -7242,6 +7170,42 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-alpha/raw/names/watchdog_pi-2.4
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/objsearch_pi-stable/raw/names/ObjSearch-v0.26.0-darwin-wx32-10-tarball/versions/v0.26.0/ObjSearch-v0.26.0_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 55598fe508c2fbc3e71f990dd1d20f790643f89f2c473d2747f63370fedca1ae </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4912b4fddcaa9cf3251e35ffa0b1927335faf88d2c9205c4fd7c1eb1c3088f32 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-darwin-wx32-universal-10-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c9fbf5a9f474ea2d3894d137186d1b2e7442626b033a97819088e60a43fa08ed </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Launcher </name>
@@ -8525,24 +8489,6 @@ https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-A64-12-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> edd9c196d8b56de301d42f662ea43090fa30e9b001218443bd3cbf8c729355ea </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.4.14.0 </version>
     <release> 0 </release>
@@ -8563,6 +8509,24 @@ Nautical almanac: sun, moon, planets and navigational stars. Compute position fi
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.14.0-debian-x86_64-12-bookworm-tarball/versions/v2.4.14.0/celestial_navigation_pi-2.4.14.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-msvc-wx32-10.0.20348-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
+    <tarball-checksum> 66b143c0a0836e61072251dae66abadc76b9b22db07b10fc8adfdebd3a4e96d6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -9157,6 +9121,24 @@ https://dl.cloudsmith.io/public/opencpn/plots-beta/raw/names/plots_pi-2.3.9.0-ub
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-12-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b595a5ac90b05c86606c7b784f76030875cbc6a7445eb9896bb6332f453ca014 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.3-beta </version>
     <release>  </release>
@@ -9409,6 +9391,24 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-flatpak-22.08-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_flatpak-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ae1ead40f2ee2c60acc3de8b7d5185d9fe6b6291a6608be80ba1719da3b2f860 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.44.0 </version>
     <release> 0 </release>
@@ -9429,6 +9429,24 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.44.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.8.44.0+7148.2de032d/ocpn_draw_pi-1.8.44.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-wx32-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-wx32-A64-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-wx32-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> a67efc598f11ab12488b18c81090cd4c36ddcb82792a96f82450fb889e7c54eb </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> SailawayNMEA </name>
@@ -9469,24 +9487,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.44.0-debian-x86_64-10-buster-tarball/versions/1.8.44.0+7145.2de032d/ocpn_draw_pi-1.8.44.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-msvc-wx32-10.0.20348-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 9815d54e8421d99b275a2c0ce160cf07558cd885021e01c9e73cc3e7b677ba04 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
@@ -9588,24 +9588,6 @@ WR features include: optimal routing subject to various constraints based on wea
 https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.12.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.12.0/weather_routing_pi-1.15.12.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-12-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> cb83bd44a0e64f912576ad495e525a717365ea268ef00be25b43b48c502fa59d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> IACFleet </name>
@@ -11234,6 +11216,24 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-beta/raw/names/weatherfax_pi-
     <tarball-checksum> 23343290af275b3344877ff942289aba0b70a954bf56954318ad44df8b32ba31 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-wx32-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-wx32-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-wx32-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b3c039e6a19aaac7eb5ae43d5c64529a518cf1e3777ea0147e969ea8ca3dccfd </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.3-beta </version>
     <release>  </release>
@@ -11836,24 +11836,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-A64-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> fc86e80e73f80adcc8d481b62f86aad69cbf90ba85ecb7cc190f8920bc29848c </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.272.0 </version>
     <release> 0 </release>
@@ -12129,6 +12111,24 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-beta/raw/names/chartscale_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-msvc-wx32-10.0.20348-tarball/versions/v1.3.4/Launcher-v1.3.4_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> 8728cd9035fdd1933b3edffa98c6ea4b707afc5f3e81a299db3130c31ffc6799 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-wx32-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-wx32-A32-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-wx32-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> efa355a75b0e08cd325d820fd09720db8f863e21050fb477b7f9cfd8706f545d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -12815,24 +12815,6 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-beta/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-wx32-11-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d158541307919e9e43f5605f7ffb996c862330e95bb86e8560d1928cb712489a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.272.0 </version>
     <release> 0 </release>
@@ -13241,6 +13223,24 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-alpha/raw/names/statusbar_pi-1.1.3.0-debian-x86_64-12-bookworm-tarball/versions/1.1.3.0+1648.6d12323/statusbar_pi-1.1.3.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-A64-12-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> a955703083697ce71cb3e9d5a7373a4e91cb68478fe784580e9f281411ccbbea </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -14019,6 +14019,24 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-A32-12-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> a754537ad6a48b70b8bafa1ddf3ec3ef6e798bf45054547c727f73e3646aac2d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Launcher </name>
     <version> v1.3.4 </version>
     <release>  </release>
@@ -14075,24 +14093,6 @@ GPS controlled Dashboard based Odometer plugin for OpenCPN, displays GPS calcula
 https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.4.5.1-debian-x86_64-10-buster-tarball/versions/v0.4.5.1/gpsodometer_pi-0.4.5.1-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:odometer </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-flatpak-A64-22.08-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> e0dbb3a96cc7133994499759ff7abba8b8b533004d7f9f99e950f0acc3fb62bb </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -14266,24 +14266,6 @@ such as dual radar range and Doppler.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-beta/raw/names/Radar-v5.5.0-beta4-flatpak-22.08-tarball/versions/v5.5.0-beta4/Radar-v5.5.0-beta4_flatpak-22.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 54129dd3f2f93c841e3c28796a6340eb442884d223dcc706d77e2bfa5b22bc56 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> DashboardSK </name>
-    <version> v0.2.0-beta1 </version>
-    <release>  </release>
-    <summary> DashboardSK plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/dashboardsk_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
-    <description> DashboardSK plugin for OpenCPN
- </description>
-    <target>debian-armhf</target>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta1-debian-A32-12-tarball/versions/v0.2.0-beta1/DashboardSK-v0.2.0-beta1_debian-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 438fc7ec3bb5a59b14f910ef9c80c761a5b2cb51d4946034777f9016c91d72fb </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -14672,6 +14654,24 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> DashboardSK </name>
+    <version> v0.2.0-beta2 </version>
+    <release> 0 </release>
+    <summary> DashboardSK plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/nohal/dashboardsk_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/dashboardSK.html </info-url>
+    <description> DashboardSK plugin for OpenCPN
+ </description>
+    <target>debian-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.2.0-beta2-debian-A32-11-tarball/versions/v0.2.0-beta2/DashboardSK-v0.2.0-beta2_debian-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> cd0b81fb8aee9625e6e8a7089f5d95fcb5e743761a63a2a2ca7dc95e8b62fa68 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
