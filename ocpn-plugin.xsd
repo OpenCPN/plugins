@@ -48,6 +48,8 @@
       <xs:enumeration value = "arm64"/>    <!-- Used on Debian -->
       <xs:enumeration value = "aarch64"/>  <!-- Used for flatpak -->
       <xs:enumeration value = "noarch"/>
+      <xs:enumeration value = "arm64;x86_64"/> <!-- For universal builds on macOS -->
+      <xs:enumeration value = "x86_64;arm64"/> <!-- For universal builds on macOS -->
     </xs:restriction>
   </xs:simpleType>
 </xs:element>
