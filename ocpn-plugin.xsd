@@ -43,11 +43,14 @@
 <xs:element name="target-arch">
   <xs:simpleType>
     <xs:restriction base = "xs:string">
+      <xs:enumeration value = "all"/>
       <xs:enumeration value = "x86_64"/>
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>    <!-- Used on Debian -->
       <xs:enumeration value = "aarch64"/>  <!-- Used for flatpak -->
       <xs:enumeration value = "noarch"/>
+      <xs:enumeration value = "arm64;x86_64"/> <!-- For universal builds on macOS -->
+      <xs:enumeration value = "x86_64;arm64"/> <!-- For universal builds on macOS -->
     </xs:restriction>
   </xs:simpleType>
 </xs:element>
@@ -73,6 +76,10 @@
       <xs:enumeration value = "debian-wx32-arm64"/>
       <xs:enumeration value = "flatpak-aarch64"/>
       <xs:enumeration value = "flatpak-x86_64"/>
+      <xs:enumeration value = "flatpak-x86_64-wx32"/>
+      <xs:enumeration value = "flatpak-aarch64-wx32"/>
+      <xs:enumeration value = "flatpak-x86_64-wx315"/>
+      <xs:enumeration value = "flatpak-aarch64-wx315"/>
       <xs:enumeration value = "mingw"/> <!-- transitional, see OpenCPN#2061 -->
       <xs:enumeration value = "mingw-x86_64"/>
       <xs:enumeration value = "msvc"/>
@@ -80,7 +87,9 @@
       <xs:enumeration value = "msvc-wx32"/>
       <xs:enumeration value = "raspbian-armhf"/>
       <xs:enumeration value = "ubuntu-armhf"/>
+      <xs:enumeration value = "ubuntu-arm64"/>
       <xs:enumeration value = "ubuntu-gtk3-armhf"/>
+      <xs:enumeration value = "ubuntu-gtk3-arm64"/>
       <xs:enumeration value = "ubuntu-gtk3-x86_64"/>
       <xs:enumeration value = "ubuntu-x86_64"/>
       <xs:enumeration value = "ubuntu-wx32-x86_64"/>
@@ -94,6 +103,7 @@
             <xs:enumeration value = "all"/>
             <xs:enumeration value = "darwin"/>
             <xs:enumeration value = "darwin-wx315"/>
+            <xs:enumeration value = "darwin-wx32"/>
             <xs:enumeration value = "debian"/>
             <xs:enumeration value = "flatpak"/>
             <xs:enumeration value = "mingw"/>
