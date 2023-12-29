@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> pypilot </name>
-<version> 0.40.31.0 </version>
+<version> 0.40.32.0 </version>
 <release> 0 </release>
 <summary> Pypilot PlugIn for OpenCPN </summary>
 
@@ -14,13 +14,13 @@
 Control the free software autopilot pypilot. See http://pypilot.org for more details. /n /;The plugin connects to pypilot directly implementing a control interface to configure, /n /;calibrate and command pypilot from opencpn. For more control and tuning route-following /n /;logic, consider the autopilot route plugin. /n /
 </description>
 
-<target>flatpak-aarch64</target>
-<build-target>flatpak</build-target>
+<target>msvc</target>
+<build-target>msvc</build-target>
 <build-gtk></build-gtk>
-<target-version>22.08</target-version>
-<target-arch>aarch64</target-arch>
+<target-version>10.0.20348</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.40.31.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v0.40.31.0/pypilot_pi-0.40.31.0-aarch64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.40.32.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v0.40.32.0/pypilot_pi-0.40.32.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
