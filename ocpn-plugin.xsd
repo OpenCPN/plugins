@@ -45,6 +45,7 @@
     <xs:restriction base = "xs:string">
       <xs:enumeration value = "all"/>
       <xs:enumeration value = "x86_64"/>
+      <xs:enumeration value = "x86"/>    <!-- windows, see opencpn/OpenCPN#2027 -->
       <xs:enumeration value = "armhf"/>
       <xs:enumeration value = "arm64"/>    <!-- Used on Debian -->
       <xs:enumeration value = "aarch64"/>  <!-- Used for flatpak -->
