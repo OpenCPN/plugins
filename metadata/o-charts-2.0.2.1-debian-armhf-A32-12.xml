@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/bdbcat/o-charts_pi/9178 -->
+<!--  -->
 <plugin version="1">
   <name> o-charts </name>
-  <version> 2.0.1.9 </version>
-  <release> 9 </release>
+  <version> 2.0.2.1 </version>
+  <release> 1 </release>
   <summary> Encrypted Vector Charts from o-charts.org </summary>
 
   <api-version> 1.17 </api-version>
@@ -25,9 +25,9 @@ o-charts can handle all charts previously handled by the oesenc and
 oernc plugins. It thus obsoletes these two plugins.
  </description>
 
-  <target>darwin-wx32</target>
-  <target-version>10</target-version>
-  <target-arch>arm64;x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0.1.9-darwin-wx32-universal-10-tarball/versions/2.0.1.9/o-charts-2.0.1.9_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 4712144cbaa463813ed64ad881c8298c50ce3c32085e402c7d5839fca026f2af </tarball-checksum>
+  <target>debian-armhf</target>
+  <target-version>12</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-2.0.2.1-debian-armhf-A32-12-tarball/versions/2.0.2.1/o-charts-2.0.2.1_debian-armhf-12-armhf.tar.gz </tarball-url>
+  <tarball-checksum> 74cbea6811a16d0c42217f82bed373f491605829acc9f1674a890053b1655dae </tarball-checksum>
 </plugin>
