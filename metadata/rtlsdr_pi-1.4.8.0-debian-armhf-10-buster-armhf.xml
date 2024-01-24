@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> rtlsdr </name>
-<version> 1.4.7.0 </version>
+<version> 1.4.8.0 </version>
 <release> 0 </release>
 <summary> rtlsdr PlugIn for OpenCPN </summary>
 
@@ -14,13 +14,13 @@
 Automatically controls external command-line tools for software radio, options for AIS data, as well as ADS-b FM radio and vhf audio.
 </description>
 
-<target>darwin-wx32</target>
-<build-target>darwin</build-target>
-<build-gtk></build-gtk>
-<target-version>11.4</target-version>
-<target-arch>x86_64</target-arch>
+<target>debian-armhf</target>
+<build-target>debian</build-target>
+<build-gtk>gtk2</build-gtk>
+<target-version>10</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/rtlsdr-prod/raw/names/rtlsdr_pi-1.4.7.0-darwin-wx32-x86_64-11.4-macos-tarball/versions/v1.4.7.0/rtlsdr_pi-1.4.7.0-darwin-wx32-x86_64-11.4-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/rtlsdr-prod/raw/names/rtlsdr_pi-1.4.8.0-debian-armhf-10-buster-armhf-tarball/versions/v1.4.8.0/rtlsdr_pi-1.4.8.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/rtlsdr.html </info-url>
 </plugin>
