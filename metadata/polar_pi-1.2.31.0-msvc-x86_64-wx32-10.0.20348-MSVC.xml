@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Polar </name>
-<version> 1.2.6.0 </version>
+<version> 1.2.31.0 </version>
 <release> 0 </release>
 <summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
 
-<api-version> 1.16 </api-version>
+<api-version> 1.17 </api-version>
 <open-source> yes </open-source>
 <author> Peter Tulp </author>
 <source> https://github.com/rgleason/polar_pi </source>
@@ -14,13 +14,13 @@
 Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
 </description>
 
-<target>debian-gtk3-armhf</target>
-<build-target>debian</build-target>
+<target>msvc-wx32</target>
+<build-target>msvc</build-target>
 <build-gtk></build-gtk>
-<target-version>10</target-version>
-<target-arch>armhf</target-arch>
+<target-version>10.0.20348</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.6.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.2.6.0/polar_pi-1.2.6.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.2.31.0/polar_pi-1.2.31.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
 </plugin>
