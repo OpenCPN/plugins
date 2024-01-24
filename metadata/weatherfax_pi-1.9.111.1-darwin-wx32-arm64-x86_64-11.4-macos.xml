@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherFax </name>
-<version> 1.9.110.0 </version>
-<release> 0 </release>
+<version> 1.9.111.1 </version>
+<release> 1 </release>
 <summary> Open fax image, decode audio fax, chart overlay </summary>
 
 <api-version> 1.17 </api-version>
@@ -14,13 +14,13 @@
 Open image files, decode audio fax to an image, calibrate chart overlay image. Convert images in mercator, polar, conic and uniform coordinates. Convert any image into a raster chart. Built in HF Radio Fax database for SSB and Internet retrieval from meterological sites.
 </description>
 
-<target>debian-armhf</target>
-<build-target>debian</build-target>
-<build-gtk>gtk2</build-gtk>
-<target-version>10</target-version>
-<target-arch>armhf</target-arch>
+<target>darwin-wx32</target>
+<build-target>darwin</build-target>
+<build-gtk></build-gtk>
+<target-version>11.4</target-version>
+<target-arch>arm64;x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.110.0-debian-armhf-10-buster-armhf-tarball/versions/v1.9.110.0/weatherfax_pi-1.9.110.0-debian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.111.1-darwin-wx32-arm64-x86_64-11.4-macos-tarball/versions/v1.9.111.1/weatherfax_pi-1.9.111.1-darwin-wx32-arm64-x86_64-11.4-macos.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
 </plugin>
