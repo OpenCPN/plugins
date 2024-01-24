@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> StatusBar </name>
-<version> 1.1.9.0 </version>
+<version> 1.1.12.0 </version>
 <release> 0 </release>
 <summary> StatusBar Plugin is an optional replacement for the builtin statusbar </summary>
 
@@ -14,13 +14,13 @@
 The builtin status bar (disable from the User Interface tab) has limited configuration options and can be very difficult to read. The statusbar plugin improves on some of these difficulties. Best used with OpenGL enabled (requires some basic OpenGL extensions).
 </description>
 
-<target>msvc-wx32</target>
-<build-target>msvc</build-target>
+<target>android-armhf</target>
+<build-target>android</build-target>
 <build-gtk></build-gtk>
-<target-version>10.0.20348</target-version>
-<target-arch>x86_64</target-arch>
+<target-version>16</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.1.9.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.1.9.0/statusbar_pi-1.1.9.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.1.12.0-android-armhf-16-android-armhf-tarball/versions/v1.1.12.0/statusbar_pi-1.1.12.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
 </plugin>
