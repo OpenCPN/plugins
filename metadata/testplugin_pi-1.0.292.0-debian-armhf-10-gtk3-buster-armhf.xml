@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Testplugin </name>
-<version> 1.0.290.0 </version>
+<version> 1.0.292.0 </version>
 <release> 0 </release>
 <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
 
@@ -14,13 +14,13 @@
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
 
-<target>flatpak-aarch64</target>
-<build-target>flatpak</build-target>
+<target>debian-gtk3-armhf</target>
+<build-target>debian</build-target>
 <build-gtk></build-gtk>
-<target-version>22.08</target-version>
-<target-arch>aarch64</target-arch>
+<target-version>10</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.290.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/1.0.290.0+12732.986a5f7/testplugin_pi-1.0.290.0-aarch64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.292.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/1.0.292.0+12802.e2006f4/testplugin_pi-1.0.292.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
