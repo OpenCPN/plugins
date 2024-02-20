@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> GPS Odometer </name>
-<version> 0.8.3.0 </version>
+<version> 0.8.4.0 </version>
 <release> 0 </release>
 <summary> GPS/GNSS based for release 5.8 and above </summary>
 
@@ -14,13 +14,13 @@
 Using GPS/GNSS satellite data to calculate log and trip information as well as deparure and arrival times
 </description>
 
-<target>debian-armhf</target>
-<build-target>debian</build-target>
-<build-gtk></build-gtk>
-<target-version>11</target-version>
-<target-arch>armhf</target-arch>
+<target>ubuntu-wx32-x86_64</target>
+<build-target>ubuntu</build-target>
+<build-gtk>gtk3</build-gtk>
+<target-version>22.04</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.8.3.0-debian-armhf-11-bullseye-armhf-tarball/versions/v0.8.3.0/gpsodometer_pi-0.8.3.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.8.4.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v0.8.4.0/gpsodometer_pi-0.8.4.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
 <info-url> https://opencpn-manuals.github.io/main/gps-odometer/index.html </info-url>
 </plugin>
