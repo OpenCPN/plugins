@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Testplugin </name>
-<version> 1.0.292.0 </version>
+<version> 1.0.297.0 </version>
 <release> 0 </release>
 <summary> Plugin to test examples of the ODAPI and JSON interface for ODRAW </summary>
 
@@ -14,13 +14,13 @@
 testplugin Plugin is used to test out the ODraw API and demonstrate how to use it successfully from another plugin
 </description>
 
-<target>darwin-wx32</target>
-<build-target>darwin</build-target>
+<target>flatpak-aarch64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>12.3.1</target-version>
-<target-arch>arm64;x86_64</target-arch>
+<target-version>22.08</target-version>
+<target-arch>aarch64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.292.0-darwin-wx32-arm64-x86_64-12.3.1-macos-tarball/versions/1.0.292.0+12825.0d6247e/testplugin_pi-1.0.292.0-darwin-wx32-arm64-x86_64-12.3.1-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.297.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/1.0.297.0+13162.9f3e369/testplugin_pi-1.0.297.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
 </plugin>
