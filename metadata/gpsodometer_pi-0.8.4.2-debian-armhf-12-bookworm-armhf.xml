@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> GPS Odometer </name>
-<version> 0.8.4.0 </version>
-<release> 0 </release>
+<version> 0.8.4.2 </version>
+<release> 2 </release>
 <summary> GPS/GNSS based for release 5.8 and above </summary>
 
 <api-version> 1.18 </api-version>
@@ -14,13 +14,13 @@
 Using GPS/GNSS satellite data to calculate log and trip information as well as deparure and arrival times
 </description>
 
-<target>debian-arm64</target>
+<target>debian-armhf</target>
 <build-target>debian</build-target>
-<build-gtk>gtk2</build-gtk>
-<target-version>10</target-version>
-<target-arch>arm64</target-arch>
+<build-gtk></build-gtk>
+<target-version>12</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.8.4.0-debian-arm64-10-buster-arm64-tarball/versions/v0.8.4.0/gpsodometer_pi-0.8.4.0-debian-arm64-10-buster-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/gps-odometer-prod/raw/names/gpsodometer_pi-0.8.4.2-debian-armhf-12-bookworm-armhf-tarball/versions/v0.8.4.2/gpsodometer_pi-0.8.4.2-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn-manuals.github.io/main/gps-odometer/index.html </info-url>
 </plugin>
