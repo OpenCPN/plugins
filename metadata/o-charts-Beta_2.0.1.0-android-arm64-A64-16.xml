@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/bdbcat/o-charts_pi/8770 -->
+<plugin version="1">
+  <name> o-charts </name>
+  <version> Beta_2.0.1.0 </version>
+  <release> 0 </release>
+  <summary> Encrypted Vector Charts from o-charts.org </summary>
+
+  <api-version> 1.17 </api-version>
+  <open-source>  </open-source>
+  <author> Dave register </author>
+  <source> https://github.com/bdbcat/o-charts_pi </source>
+  <info-url> https://o-charts.org/ </info-url>
+
+  <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+
+  <target>android-arm64</target>
+  <target-version>16</target-version>
+  <target-arch>arm64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-beta/raw/names/o-charts-Beta_2.0.1.0-android-arm64-A64-16-tarball/versions/Beta_2.0.1.0/o-charts-Beta_2.0.1.0_android-arm64-16-arm64.tar.gz </tarball-url>
+  <tarball-checksum> 4fc7716e3c3ed31099e391ae06c7cfe4e57a64266cab37dffe4e2f575657db73 </tarball-checksum>
+</plugin>

@@ -54,6 +54,8 @@ def check_urls(urls):
     col = 0
     bad_urls = []
     for url in urls:
+        if not url:
+            continue
         if col > 72:
             print("")
             col = 0

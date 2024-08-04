@@ -1,0 +1,33 @@
+<plugin version="1">
+    <name> WMM </name>
+    <version>1.8</version>
+    <release>0</release>
+    <summary> Magnetic variation info</summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Pavel Kalian </author>
+    <source> https://github.com/OpenCPN/opencpn </source>
+    <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:included_plugins:wmm </info-url>
+    <description>Allows users to cross reference
+magnetic variation values printed on many
+raster charts. Variation is the angle between
+true and magnetic north.  Inclination or dip,
+is the vertical angle of the magnetic field.
+\t(+- 90 at the magnetic poles)
+Field Strength is the magnetic field in nano
+tesla from \t20000 to 66000.
+The plotted lines are similar to a topographic
+map.  The space between them can be adjusted;
+more space takes less time to calculate.
+Step size and Pole accuracy sliders allow a
+trade off for speed vs computation time.
+The World Magnetic Model Plugin was written by
+Pavel Kalian and extended by Sean D'Epagnier to
+support plotting.
+ </description>
+    <target>all</target>
+    <target-version>0</target-version>
+    <target-arch>all</target-arch>
+    <tarball-url> </tarball-url>
+    <tarball-checksum> </tarball-checksum>
+</plugin>
