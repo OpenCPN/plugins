@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://ci.appveyor.com/project/rgleason/vdr-pi/builds/49043624 -->
+<plugin version="1">
+  <name> VDR </name>
+  <version> v1.3.30.0 </version>
+  <release> 0 </release>
+  <summary> Voyage Data Recorder </summary>
+
+  <api-version> 1.17 </api-version>
+  <open-source> yes </open-source>
+  <author> Rick Gleason </author>
+  <source>  </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+
+  <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Used to test plugins.
+ </description>
+
+  <target>msvc-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.30.0-msvc-wx32-10-tarball/versions/v1.3.30.0/VDR-v1.3.30.0_msvc-wx32-10-win32.tar.gz </tarball-url>
+  <tarball-checksum> 4e088282225f179d14bb960dbd9934e52d44362b628d5f0fb1e45efba5a1aa43 </tarball-checksum>
+</plugin>
