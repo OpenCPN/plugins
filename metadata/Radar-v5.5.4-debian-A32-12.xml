@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/1916 -->
+<!--  -->
 <plugin version="1">
   <name> Radar </name>
-  <version> v5.3.4 </version>
-  <release>  </release>
+  <version> v5.5.4 </version>
+  <release> 0 </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
   <api-version> 1.16 </api-version>
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>ubuntu-gtk3-x86_64</target>
-  <target-version>20.04</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-v5.3.4-ubuntu-gtk3-20.04-tarball/versions/v5.3.4/Radar-v5.3.4_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 2e3587159ebc86c56f44f41030cec5d9e7c53d36cbbed95e5ddfb3bcc3fb2995 </tarball-checksum>
+  <target>debian-armhf</target>
+  <target-version>12</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-prod/raw/names/Radar-v5.5.4-debian-A32-12-tarball/versions/v5.5.4/Radar-v5.5.4_debian-12-armhf.tar.gz </tarball-url>
+  <tarball-checksum> e88087cddae4fee668dd82c048d134df636c1bfd69e0bd7d1bed0af0a5dcb77e </tarball-checksum>
 </plugin>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://ci.appveyor.com/project/keesverruijt/radar-pi/builds/43809526 -->
+<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/3580 -->
 <plugin version="1">
   <name> Radar </name>
-  <version> v5.3.4 </version>
-  <release>  </release>
+  <version> v5.5.4 </version>
+  <release> 0 </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
   <api-version> 1.16 </api-version>
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>msvc</target>
-  <target-version>10.0.14393</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/opencpn-radar-pi-prod/raw/names/Radar-v5.3.4-msvc-10.0.14393-tarball/versions/v5.3.4/Radar-v5.3.4_msvc-10.0.14393-win32.tar.gz </tarball-url>
-  <tarball-checksum> ef0c7008a810312256413e992ac3c79d280ef0f745b7b35cf0c1e86c0c1f5c50 </tarball-checksum>
+  <target>flatpak-aarch64</target>
+  <target-version>22.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-prod/raw/names/Radar-v5.5.4-flatpak-A64-22.08-tarball/versions/v5.5.4/Radar-v5.5.4_flatpak-22.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> faf2fc3dd41c30695e82d20194ca1ba29880c2f6f5cfb976c17d8978ec17c000 </tarball-checksum>
 </plugin>
