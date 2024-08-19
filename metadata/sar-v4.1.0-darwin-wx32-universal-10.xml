@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/Rasbats/sar_pi/1208 -->
+<!-- https://circleci.com/gh/Rasbats/sar_pi/1601 -->
 <plugin version="1">
   <name> sar </name>
-  <version> v3.0.0 </version>
-  <release>  </release>
+  <version> v4.1.0 </version>
+  <release> 0 </release>
   <summary> Produces SAR search patterns as GPX files </summary>
 
-  <api-version> 1.16 </api-version>
+  <api-version> 1.18 </api-version>
   <open-source> yes </open-source>
   <author> Mike Rossiter </author>
   <source> https://github.com/Rasbats/sar_pi </source>
@@ -16,9 +16,9 @@
 be imported into OpenCPN to assist in performing searches.
  </description>
 
-  <target>debian-x86_64</target>
+  <target>darwin-wx32</target>
   <target-version>10</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v3.0.0-debian-10-tarball/versions/v3.0.0/sar-v3.0.0_debian-10-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 731d01c41403e0c2476b3f7c1c94fc4ba09e6ed6c647c22422e99a612b60fc87 </tarball-checksum>
+  <target-arch>arm64;x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/sar-prod/raw/names/sar-v4.1.0-darwin-wx32-universal-10-tarball/versions/v4.1.0/sar-v4.1.0_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 6409056f35adc04409731966b0cdcc251face903ff757183abc28ae3c4aad6bc </tarball-checksum>
 </plugin>
