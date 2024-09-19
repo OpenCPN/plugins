@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> OCPN Draw </name>
-<version> 1.8.39.0 </version>
+<version> 1.8.52.0 </version>
 <release> 0 </release>
 <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
@@ -14,13 +14,13 @@
 OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
 
-<target>debian-x86_64</target>
-<build-target>debian</build-target>
-<build-gtk>gtk2</build-gtk>
-<target-version>10</target-version>
-<target-arch>x86_64</target-arch>
+<target>darwin-wx32</target>
+<build-target>darwin</build-target>
+<build-gtk></build-gtk>
+<target-version>12.6.1</target-version>
+<target-arch>arm64;x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.39.0-debian-x86_64-10-buster-tarball/versions/1.8.39.0+6811.d855d42/ocpn_draw_pi-1.8.39.0-debian-x86_64-10-buster.tar.gz
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.52.0-darwin-wx32-arm64-x86_64-12.6.1-macos-tarball/versions/1.8.52.0+7634.8d840b5/ocpn_draw_pi-1.8.52.0-darwin-wx32-arm64-x86_64-12.6.1.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
 </plugin>
