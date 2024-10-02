@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2024-10-01 13:41</date>
+  <date>2024-10-02 00:15</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 1.18.34.0 </version>
@@ -4910,6 +4910,25 @@ data from itself. This can be replayed to simulate collision situations.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/uktides-prod/raw/names/UKTides-v2.5.0-msvc-wx32-10-tarball/versions/v2.5.0/UKTides-v2.5.0_msvc-wx32-10-win32.tar.gz </tarball-url>
     <tarball-checksum> 22c859d9f585b278439d28d46f01313ffbb8e7baa1896da95ffecffb61eeee6d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> VDR </name>
+    <version> v1.3.30.3 </version>
+    <release> 3 </release>
+    <summary> Voyage Data Recorder </summary>
+    <api-version> 1.16 </api-version>
+    <open-source> yes </open-source>
+    <author> Rick Gleason </author>
+    <source>  </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/vdr.html </info-url>
+    <description> A Voyage Data Recorder (VDR) to record and play NMEA files.
+Save NMEA stream to a file.  Replay NMEA stream previously saved. Used to test plugins.
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-prod/raw/names/VDR-v1.3.30.3-android-arm64-A64-16-tarball/versions/v1.3.30.3/VDR-v1.3.30.3_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 45fa1a116978ed084a890216a2b4dda1db4e3e77ee6d673658c0dc8c45071686 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
