@@ -4364,6 +4364,48 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
+    <version> 3.3.6+21561.154f7a1 </version>
+    <release> 0 </release>
+    <summary> Simulate ship movements </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.3-flatpak-aarch64-A64-24.08-tarball/versions/3.3.6+21561.154f7a1/ShipDriver-3.3.6+21561.154f7a1_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 94fd2b4cc4eae49c9e7a344177be18a7890a6a3b199e167c20ea14f249c028c0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> 3.3.6+21551.154f7a1 </version>
+    <release> 0 </release>
+    <summary> Simulate ship movements </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-unstable/raw/names/ShipDriver-3.3-flatpak-x86_64-24.08-tarball/versions/3.3.6+21551.154f7a1/ShipDriver-3.3.6+21551.154f7a1_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> d406ad02338eeaa4837c96218409b35d0de3410b45b6116c02babea7ecacf2e0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
     <version> v3.3.3 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
@@ -12325,26 +12367,6 @@ This is a large download, currently around 170 Mb.
     <target-arch>x86</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/manual-v0.0.2-msvc-wx32-10-tarball/versions/v0.0.2/manual-v0.0.2_msvc-wx32-10-x86.tar.gz </tarball-url>
     <tarball-checksum> 686fc891a969d18de6af9a2d1537f9c016490542389d03c2efbd1804106d59a3 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> manual </name>
-    <version> v0.0.3 </version>
-    <release> 0 </release>
-    <summary> Plugin and developer manual </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Alec Leamas </author>
-    <source> https://opencpn-manuals.github.io/main </source>
-    <info-url> https://opencpn-manuals.github.io/main </info-url>
-    <description> Off-line copies of the user, plugin and developer manuals
-available at https://opencpn-manuals.github.io/main
-This is a large download, currently around 170 Mb.
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>24.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/manual-v0.0.3-flatpak-aarch64-A64-24.08-tarball/versions/v0.0.3/manual-v0.0.3_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> e3b540423a784ceff416dfc0a1cc8004c9e74acb2d6b2b3570602b9d9ed56686 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> manual </name>
