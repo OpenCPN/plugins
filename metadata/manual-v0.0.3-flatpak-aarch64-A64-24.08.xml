@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/leamas/manual_pi/387 -->
+<plugin version="1">
+  <name> manual </name>
+  <version> v0.0.3 </version>
+  <release> 0 </release>
+  <summary> Plugin and developer manual </summary>
+
+  <api-version> 1.18 </api-version>
+  <open-source> yes </open-source>
+  <author> Alec Leamas </author>
+  <source> https://opencpn-manuals.github.io/main </source>
+  <info-url> https://opencpn-manuals.github.io/main </info-url>
+
+  <description> Off-line copies of the user, plugin and developer manuals
+available at https://opencpn-manuals.github.io/main
+
+This is a large download, currently around 170 Mb.
+ </description>
+
+  <target>flatpak-aarch64</target>
+  <target-version>24.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/alec-leamas/opencpn-plugins-stable/raw/names/manual-v0.0.3-flatpak-aarch64-A64-24.08-tarball/versions/v0.0.3/manual-v0.0.3_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> e3b540423a784ceff416dfc0a1cc8004c9e74acb2d6b2b3570602b9d9ed56686 </tarball-checksum>
+</plugin>
