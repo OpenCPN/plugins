@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Engine Dashboard </name>
-<version> 1.5.0.0 </version>
+<version> 1.9.0.0 </version>
 <release> 0 </release>
 <summary> Engine Dashboard, Displays Engine parameters. </summary>
 
@@ -14,13 +14,13 @@
 Engine Dashboard, Displays Engine RPM, Oil pressure, Water temperature, Alternator output and Tank levels.
 </description>
 
-<target>debian-armhf</target>
-<build-target>debian</build-target>
-<build-gtk></build-gtk>
-<target-version>11</target-version>
-<target-arch>armhf</target-arch>
+<target>ubuntu-wx32-x86_64</target>
+<build-target>ubuntu</build-target>
+<build-gtk>gtk3</build-gtk>
+<target-version>22.04</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.5.0.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.5/engine_dashboard_pi-1.5.0.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.9.0.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.9/engine_dashboard_pi-1.9.0.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
 </plugin>
