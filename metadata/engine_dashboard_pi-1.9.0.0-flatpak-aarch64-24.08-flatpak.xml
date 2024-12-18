@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Engine Dashboard </name>
-<version> 1.4.2.0 </version>
+<version> 1.9.0.0 </version>
 <release> 0 </release>
 <summary> Engine Dashboard, Displays Engine parameters. </summary>
 
-<api-version> 1.16 </api-version>
+<api-version> 1.18 </api-version>
 <open-source> yes </open-source>
 <author> twocanplugin@hotmail.com </author>
-<source> https://github.com/TwoCanPlugIn/EngineDashboard.git </source>
+<source> https://github.com/TwoCanPlugIn/EngineDashboard </source>
 
 <description>
 Engine Dashboard, Displays Engine RPM, Oil pressure, Water temperature, Alternator output and Tank levels.
 </description>
 
-<target>raspbian-armhf</target>
-<build-target>raspbian</build-target>
+<target>flatpak-aarch64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>10</target-version>
-<target-arch>armhf</target-arch>
+<target-version>24.08</target-version>
+<target-arch>aarch64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.4.2.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.4.2/engine_dashboard_pi-1.4.2.0-raspbian-armhf-10.tar.gz
+https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.9.0.0-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.9/engine_dashboard_pi-1.9.0.0-aarch64_flatpak-24.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
 </plugin>
