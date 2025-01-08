@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/3862 -->
+<plugin version="1">
+  <name> Radar </name>
+  <version> v5.5.5 </version>
+  <release> 0 </release>
+  <summary> Overlays the radar picture on OpenCPN </summary>
+
+  <api-version> 1.16 </api-version>
+  <open-source> yes </open-source>
+  <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
+  <source> https://github.com/opencpn-radar-pi/radar_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/radarPI.html </info-url>
+
+  <description> Garmin, Navico and Raymarine radar support
+
+WARNING: OPENGL MODE IS REQUIRED!
+
+Works with Garmin HD, xHD, Navico BR24, 3G, 4G, HALOxx and several Raymarine radars.
+
+When a compass heading is provided it will allow radar overlay on the chart(s).
+It also allows separate display of a traditional radar picture (PPI).
+
+Supports (M)ARPA (even on radars that do not support this themselves),
+Guard zones, AIS overlay on PPI, and various radar dependent features
+such as dual radar range and Doppler.
+ </description>
+
+  <target>flatpak-aarch64</target>
+  <target-version>22.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-prod/raw/names/Radar-v5.5.5-flatpak-A64-22.08-tarball/versions/v5.5.5/Radar-v5.5.5_flatpak-22.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> 1373d6fb75f8d92b0fe16058b6e18fa9279c1a2f8f2692be350267180b5a1a40 </tarball-checksum>
+</plugin>
