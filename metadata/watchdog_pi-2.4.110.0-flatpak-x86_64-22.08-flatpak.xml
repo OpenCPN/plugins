@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+<name> Watchdog </name>
+<version> 2.4.110.0 </version>
+<release> 0 </release>
+<summary> Implement watchdog ability for opencpn </summary>
+
+<api-version> 1.17 </api-version>
+<open-source> yes </open-source>
+<author> Sean d'Epagnier </author>
+<source> https://github.com/rgleason/watchdog_pi </source>
+
+<description>
+Set alarms for changing conditions, boundaries, cog, landfall, ais, wind, nmea, weather, pypilot, wind, deadman...
+</description>
+
+<target>flatpak-x86_64</target>
+<build-target>flatpak</build-target>
+<build-gtk></build-gtk>
+<target-version>22.08</target-version>
+<target-arch>x86_64</target-arch>
+<tarball-url>
+https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.110.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v2.4.110/watchdog_pi-2.4.110.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+<info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
+</plugin>
