@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+<name> Polar </name>
+<version> 1.2.37.0 </version>
+<release> 0 </release>
+<summary> Polar Plugin makes polar diagrams for Weather Routing Predictions </summary>
+
+<api-version> 1.18 </api-version>
+<open-source> yes </open-source>
+<author> Peter Tulp </author>
+<source> https://github.com/rgleason/polar_pi </source>
+
+<description>
+Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channel (Record Start/Stop at bottom) and direct from LogBoookKonni records, to creates a polar diagram which can then be edited manually, saved or loaded as a Boat Polar file. The LogbookKonni selection has several options.
+</description>
+
+<target>darwin-wx32</target>
+<build-target>darwin</build-target>
+<build-gtk></build-gtk>
+<target-version>14.1</target-version>
+<target-arch>arm64;x86_64</target-arch>
+<tarball-url>
+https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.37.0-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v1.2.37.0/polar_pi-1.2.37.0-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
+</tarball-url>
+<info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+</plugin>
