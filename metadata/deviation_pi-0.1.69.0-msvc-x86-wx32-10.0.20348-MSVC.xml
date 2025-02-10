@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Deviation </name>
-<version> 0.1.64.0 </version>
+<version> 0.1.69.0 </version>
 <release> 0 </release>
 <summary> Compass deviation PlugIn for OpenCPN </summary>
 
@@ -14,13 +14,13 @@
 Set deviation table to correct incoming nmea compass course to true course sentences, also activate wmm.
 </description>
 
-<target>debian-arm64</target>
-<build-target>debian</build-target>
+<target>msvc-wx32</target>
+<build-target>msvc</build-target>
 <build-gtk></build-gtk>
-<target-version>12</target-version>
-<target-arch>arm64</target-arch>
+<target-version>10.0.20348</target-version>
+<target-arch>x86</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.1.64.0-debian-arm64-12-bookworm-arm64-tarball/versions/v0.1.64.0/deviation_pi-0.1.64.0-debian-arm64-12-bookworm-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.1.69.0-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v0.1.69.0/deviation_pi-0.1.69.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
 <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
 </plugin>
