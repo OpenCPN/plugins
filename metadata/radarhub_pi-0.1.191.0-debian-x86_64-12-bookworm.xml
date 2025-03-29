@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+<name> KAHU Radar Hub </name>
+<version> 0.1.191.0 </version>
+<release> 0 </release>
+<summary> Contribute AIS and ARPA targets to crowdsourcing for marine safety </summary>
+
+<api-version> 1.18 </api-version>
+<open-source> yes </open-source>
+<author> Egil Moeller </author>
+<source> https://github.com/KAHU-radar/radarhub-opencpn </source>
+
+<description>
+Upload AIS and ARPA targets (or any NMEA) to an internet server. Upload can be continuous, over intermittent internet, or scheduled, and tracks can be downsampled to fit your bandwidth.
+</description>
+
+<target>debian-x86_64</target>
+<build-target>debian</build-target>
+<build-gtk></build-gtk>
+<target-version>12</target-version>
+<target-arch>x86_64</target-arch>
+<tarball-url>
+https://dl.cloudsmith.io/public/opencpn/radarhub-beta/raw/names/radarhub_pi-0.1.191.0-debian-x86_64-12-bookworm-tarball/versions/0.1.191.0+171.c2c0295/radarhub_pi-0.1.191.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+<info-url> https://opencpn.org/OpenCPN/plugins/radarhub.html </info-url>
+</plugin>
