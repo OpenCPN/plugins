@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherRouting </name>
-<version> 1.15.21.20 </version>
-<release> 20 </release>
+<version> 1.15.21.22 </version>
+<release> 22 </release>
 <summary> Compute optimal routes based on weather and constraints. </summary>
 
 <api-version> 1.18 </api-version>
@@ -14,13 +14,13 @@
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
 
-<target>android-arm64</target>
-<build-target>android</build-target>
+<target>flatpak-x86_64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>16</target-version>
-<target-arch>arm64</target-arch>
+<target-version>22.08</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.20-android-arm64-16-android-arm64-tarball/versions/v1.15.21.20/weather_routing_pi-1.15.21.20-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
 </plugin>
