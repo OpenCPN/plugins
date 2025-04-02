@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2025-03-31 19:42</date>
+  <date>2025-04-02 00:55</date>
   <plugin version="1">
     <name> otcurrent </name>
     <version> v4.3.0 </version>
@@ -20,28 +20,6 @@ OpenCPN.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.3.0-debian-wx32-arm64-A64-11-tarball/versions/v4.3.0/otcurrent-v4.3.0_debian-wx32-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 2ae419e8e637a80f7b0643ccf918e8b264464acadf1b579042d593880f39adc6 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> EarthExplorer </name>
@@ -164,6 +142,28 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-d
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-x86_64-12-bookworm-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> FindIt </name>
     <version> 1.3.51.0 </version>
     <release> 0 </release>
@@ -267,6 +267,28 @@ Route tracking and remote control for Evolution pilots
 https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTrackRaymarine_pi-1.18.36.0-darwin-wx315-x86_64-12.6.3-macos-tarball/versions/v1.18.36.0/AutoTrackRaymarine_pi-1.18.36.0-darwin-wx315-x86_64-12.6.3-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-android-arm64-16-android-arm64-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -520,6 +542,28 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.58.0 </version>
     <release> 0 </release>
@@ -688,6 +732,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-arm64-12-bookworm-arm64-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> pypilot </name>
     <version> 0.53.0.0 </version>
     <release> 0 </release>
@@ -708,28 +774,6 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0.0-debian-armhf-11-bullseye-armhf-tarball/versions/v0.53.0.0/pypilot_pi-0.53.0.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-armhf-11-bullseye-armhf-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Plots </name>
@@ -818,28 +862,6 @@ oernc plugins. It thus obsoletes these two plugins.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-beta/raw/names/o-charts-Beta_2.0.1.0-flatpak-aarch64-A64-22.08-tarball/versions/Beta_2.0.1.0/o-charts-Beta_2.0.1.0_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 553b3c282cab18acdbcaec50bcf71890ea66c8d7ae3be44dc06a13249cb3a39c </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-armhf-12-bookworm-armhf-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1615,28 +1637,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-android-arm64-16-android-arm64-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1931,6 +1931,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-aarch64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -1947,6 +1969,28 @@ https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-A64-12-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-12-arm64.tar.gz </tarball-url>
     <tarball-checksum> 655b464c8d0340ccf19860dcf0b1b8de4e2217008302f344133379415eb6544d </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-armhf-11-bullseye-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> pypilot </name>
@@ -1993,28 +2037,6 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-x86_64-11-bullseye-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NSK </name>
     <version> v0.2.3-beta </version>
     <release>  </release>
@@ -2031,50 +2053,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/nsk_pi-beta/raw/names/NSK-v0.2.3-beta-flatpak-22.08-tarball/versions/v0.2.3-beta/NSK-v0.2.3-beta_flatpak-22.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 91da4a89369f1659eb00eaa512daf46f4407821700ad0dfc7f61632a23f3fef5 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-arm64-12-bookworm-arm64-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-flatpak-aarch64-22.08-flatpak-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -2225,6 +2203,28 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.1.12.0-debian-x86_64-12-bookworm-tarball/versions/v1.1.12.0/statusbar_pi-1.1.12.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-x86_64-12-bookworm-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Plots </name>
@@ -2629,28 +2629,6 @@ OpenCPN.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.3.0-debian-armhf-A32-11-tarball/versions/v4.3.0/otcurrent-v4.3.0_debian-armhf-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 17a896a5a322ba707986bf9e7d6bf78bfb4217182121f511feaefdab3d5e2f96 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -3183,28 +3161,6 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.7.61.0 </version>
     <release> 0 </release>
@@ -3334,28 +3290,6 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/chartscale.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-armhf-12-bookworm-armhf-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.4.11.5 </version>
     <release> 5 </release>
@@ -3434,28 +3368,6 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/iacfleet_pi-stable/raw/names/IACFleet-v0.32.0-debian-wx32-11-tarball/versions/v0.32.0/IACFleet-v0.32.0_debian-wx32-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 85d3cae6a46d8839f7b00ea7c7063e864ea8576e2023283fbc1bb5ad50b8a979 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-msvc-x86-10.0.20348-MSVC-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-msvc-x86-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -3582,28 +3494,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.58.0-debian-x86_64-12-bookworm-tarball/versions/1.8.58.0+7942.18b94d9/ocpn_draw_pi-1.8.58.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-aarch64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -3882,28 +3772,6 @@ search LogbookKonni
     <tarball-checksum> d0774f2354cdf2295e0086dfcfe4a8c43326b33674c492a18cad0f1dd8f33d51 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-x86_64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WMM </name>
     <version>1.8</version>
     <release>0</release>
@@ -3935,28 +3803,6 @@ support plotting.
     <target-arch>all</target-arch>
     <tarball-url> </tarball-url>
     <tarball-checksum> </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -4553,6 +4399,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.4.
     <tarball-checksum> 81a2523239c3d41ad269a33dd4ff1f0e97f53886cee5f144c94ca40747c91ebe </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>14.1</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> otcurrent </name>
     <version> v4.3.0 </version>
     <release> 0 </release>
@@ -4820,28 +4688,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.7.61.0-android-armhf-16-android-armhf-tarball/versions/v1.7.61.0/dashboard_tactics_pi-1.7.61.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -5177,26 +5023,26 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardSK </name>
@@ -5284,28 +5130,6 @@ such as dual radar range and Doppler.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-beta/raw/names/Radar-v5.5.4-beta-debian-wx32-A64-11-tarball/versions/v5.5.4-beta/Radar-v5.5.4-beta_debian-wx32-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 2b722556da4abb9627dc69f8b0fc268f9121773dc1641258a4c69e0ee5749856 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-arm64-11-bullseye-arm64-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -5478,6 +5302,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -5584,6 +5430,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> o-charts </name>
     <version> Beta_2.0.1.0 </version>
     <release> 0 </release>
@@ -5608,28 +5476,6 @@ oernc plugins. It thus obsoletes these two plugins.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-beta/raw/names/o-charts-Beta_2.0.1.0-debian-wx32-x86_64-11-tarball/versions/Beta_2.0.1.0/o-charts-Beta_2.0.1.0_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 353e1c128f2eef5fb5d75f6abfc1b7d462c2d12e2e9999c251fd0e0e8a4695eb </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-android-armhf-16-android-armhf-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -5710,28 +5556,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.4-msvc-wx32-10.0.20348-tarball/versions/v1.3.4/Launcher-v1.3.4_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
     <tarball-checksum> 8728cd9035fdd1933b3edffa98c6ea4b707afc5f3e81a299db3130c31ffc6799 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-x86_64-12-bookworm-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -6020,26 +5844,26 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
     <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
     <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-debian-x86_64-12-bookworm-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-debian-x86_64-12-bookworm.tar.gz
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
@@ -7194,28 +7018,6 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-armhf-11-bullseye-armhf-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -7538,50 +7340,6 @@ https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-arm64-11-bullseye-arm64-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-flatpak-x86_64-24.08-flatpak-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-x86_64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.20.0 </version>
     <release> 0 </release>
@@ -7664,6 +7422,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.58.0-msvc-x86-10.0.20348-MSVC-tarball/versions/1.8.58.0+7946.18b94d9/ocpn_draw_pi-1.8.58.0-msvc-x86-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-armhf-12-bookworm-armhf-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-armhf-12-bookworm-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -8067,28 +7847,6 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-android-armhf-16-android-armhf-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.31.0 </version>
     <release> 0 </release>
@@ -8149,28 +7907,6 @@ User Sourced database to download and display harbours, anchorages, weather bouy
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.91.0-android-arm64-16-android-arm64-tarball/versions/v1.3.91.0/squiddio_pi-1.3.91.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>14.1</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -8319,6 +8055,28 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-beta/raw/names/aisradar_pi-1.4.
     <tarball-checksum> d945378eb0fd42fb0965e6736c60884673ea217d387fefa302f5563a23e9cdb0 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 1.18.34.0 </version>
     <release> 0 </release>
@@ -8425,28 +8183,6 @@ https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -8465,28 +8201,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-msvc-x86_64-10.0.14393-MSVC-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-msvc-x86_64-10.0.14393-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> VDR </name>
@@ -8958,6 +8672,28 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-m
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-ubuntu-x86_64-22.04-jammy.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Polar </name>
     <version> 1.2.31.0 </version>
     <release> 0 </release>
@@ -9104,28 +8840,6 @@ oernc plugins. It thus obsoletes these two plugins.
     <tarball-checksum> bb21f9193818c36301926b7e218cd94bcb859cdf25470919199cb48fd1a42d32 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.2.31.0 </version>
     <release> 0 </release>
@@ -9148,6 +8862,28 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-d
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-flatpak-x86_64-24.08-flatpak-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-x86_64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -9166,6 +8902,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-flatpak-x86_64-18.08-flatpak-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-x86_64_flatpak-18.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-arm64-11-bullseye-arm64-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ChartScale </name>
@@ -9473,26 +9231,26 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-armhf-10-buster-armhf-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-armhf-10-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-x86_64-24.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-x86_64_flatpak-24.08.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -9578,28 +9336,6 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.31.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.6.31/climatology_pi-1.6.31.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-x86_64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> sar </name>
@@ -9720,28 +9456,6 @@ search LogbookKonni
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-v1.4.34.0-debian-arm64-A64-11-tarball/versions/v1.4.34.0/Logbook-v1.4.34.0_debian-arm64-11-arm64.tar.gz </tarball-url>
     <tarball-checksum> 45609aad6e6c1138e121562ae6990d8b1b0fb1677dc29246360694928e694305 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>14.1</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -9912,28 +9626,6 @@ https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-arm64-10-buster-arm64-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Plots </name>
     <version> 2.3.13.0 </version>
     <release> 0 </release>
@@ -9954,6 +9646,28 @@ Sailing Performance: Plot speed and course over ground to make the result of sma
 https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.3.13.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v2.3.13.0/plots_pi-2.3.13.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-flatpak-aarch64-22.08-flatpak-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -10306,6 +10020,28 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-d
     <tarball-checksum> efa355a75b0e08cd325d820fd09720db8f863e21050fb477b7f9cfd8706f545d </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-msvc-x86-10.0.20348-MSVC-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-msvc-x86-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -10391,6 +10127,28 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-x86_64-12-bookworm-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-armhf-11-bullseye-armhf-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -10479,28 +10237,6 @@ Provide a slider to adjust chart scale
 https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-0.3.12.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v0.3.12.0/chartscale_pi-0.3.12.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/chartscale.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-flatpak-aarch64-22.08-flatpak-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -10903,6 +10639,28 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-msvc-x86-10.0.20348-MSVC-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-msvc-x86-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> WeatherFax </name>
     <version> 1.9.20.0 </version>
     <release> 0 </release>
@@ -10923,6 +10681,28 @@ Open image files, decode audio fax to an image, calibrate chart overlay image. C
 https://dl.cloudsmith.io/public/opencpn/weatherfax-prod/raw/names/weatherfax_pi-1.9.20.0-flatpak-aarch64-24.08-flatpak-arm64-tarball/versions/v1.9.20/weatherfax_pi-1.9.20.0-aarch64_flatpak-24.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherfax.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-android-armhf-16-android-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -11915,28 +11695,6 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-prod/raw/names/nmeaconvert
     <info-url> https://opencpn.org/OpenCPN/plugins/nmeaconvert.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-debian-x86_64-12-bookworm-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -11957,28 +11715,6 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-arm64-10-buster-arm64-tarball/versions/1.0.28.0+1610.a49c24b/windvane_pi-1.0.28.0-debian-arm64-10-buster-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-flatpak-x86_64-24.08-flatpak-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-x86_64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -12057,28 +11793,6 @@ Dashboard PlugIn with Tactics for OpenCPN Provides navigation instruments enhanc
 https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboard_tactics_pi-1.7.61.0-darwin-wx315-x86_64-12.3.1-macos-tarball/versions/v1.7.61.0/dashboard_tactics_pi-1.7.61.0-darwin-wx315-x86_64-12.3.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
@@ -12268,28 +11982,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.81
     <tarball-checksum> 5c8c2e3d3f5b399b7678381a4355d56464779b8e446208c62bd8004d840f0964 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-flatpak-aarch64-24.08-flatpak-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-aarch64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> squiddio </name>
     <version> 1.3.91.0 </version>
     <release> 0 </release>
@@ -12310,28 +12002,6 @@ User Sourced database to download and display harbours, anchorages, weather bouy
 https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.91.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.3.91.0/squiddio_pi-1.3.91.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
@@ -12536,28 +12206,6 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.31.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v0.4.31.0/autopilot_route_pi-0.4.31.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-arm64-12-bookworm-arm64-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> sar </name>
@@ -12777,6 +12425,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/calculator-prod/raw/names/Calculator-v3.0.0-ubuntu-18.04-tarball/versions/3.0.0+184.v3.0.0/Calculator-v3.0.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 4229dca9b47e851fe1453f7074e5e15979425a0b980701d6318caabdeb9d05ee </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-debian-x86_64-11-bullseye-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> frcurrents </name>
@@ -13063,28 +12733,6 @@ https://dl.cloudsmith.io/public/opencpn/nmeaconverter-prod/raw/names/nmeaconvert
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-ubuntu-gtk3-18.04-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 2eebbdd00dc33b9cd833e5abdb9d363277dd9d69ee23fdb27f953608d44c755a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-darwin-wx32-arm64-x86_64-11.4-macos-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-darwin-wx32-arm64-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -13374,6 +13022,28 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-arm64-11-bullseye-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ChartScale </name>
     <version> 0.3.12.0 </version>
     <release> 0 </release>
@@ -13416,6 +13086,28 @@ Set deviation table to correct incoming nmea compass course to true course sente
 https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.1.60.0-debian-arm64-12-bookworm-arm64-tarball/versions/v0.1.60.0/deviation_pi-0.1.60.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-aarch64-22.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
@@ -13707,6 +13399,28 @@ https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-android-arm64-16-android-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -13768,28 +13482,6 @@ Admiralty tide calculations
 https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_tide_tables_pi-0.1.18.0-darwin-wx315-x86_64-12.3.1-macos-tarball/versions/v0.1.18.0/admiralty_tide_tables_pi-0.1.18.0-darwin-wx315-x86_64-12.3.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.22 </version>
-    <release> 22 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.22-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.21.22/weather_routing_pi-1.15.21.22-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
@@ -14113,28 +13805,6 @@ Route tracking and remote control for Evolution pilots
 https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTrackRaymarine_pi-1.18.36.0-flatpak-aarch64-24.08-flatpak-arm64-tarball/versions/v1.18.36.0/AutoTrackRaymarine_pi-1.18.36.0-aarch64_flatpak-24.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-x86_64-11-bullseye-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ChartScale </name>
@@ -14591,28 +14261,6 @@ https://dl.cloudsmith.io/public/opencpn/rtlsdr-prod/raw/names/rtlsdr_pi-1.4.8.0-
     <info-url> https://opencpn.org/OpenCPN/plugins/rtlsdr.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-debian-x86_64-10-buster-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.31.0 </version>
     <release> 0 </release>
@@ -14699,6 +14347,28 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-android-arm64-16-android-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-x86_64-11-bullseye-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -15226,6 +14896,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.21.24 </version>
+    <release> 24 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> IACFleet </name>
     <version> v0.32.0 </version>
     <release>  </release>
@@ -15329,28 +15021,6 @@ Control the free software autopilot pypilot. See http://pypilot.org for more det
 https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0.0-android-arm64-16-android-arm64-tarball/versions/v0.53.0.0/pypilot_pi-0.53.0.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-android-arm64-16-android-arm64-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Deviation </name>
@@ -15630,28 +15300,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.47.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.47.0-msvc-x86-10.0.20348-MSVC-tarball/versions/v2.4.47.0/celestial_navigation_pi-2.4.47.0-msvc-x86-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -15691,23 +15339,23 @@ https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_st
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
+    <version> 2.4.48.0 </version>
     <release> 0 </release>
     <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Sean D'Epagnier </author>
     <source> https://github.com/rgleason/celestial_navigation_pi </source>
     <description>
 Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
 </description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>14.1</target-version>
+    <target-arch>arm64;x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
@@ -16283,6 +15931,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-android-armhf-16-android-armhf-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+152.v1.4.3-beta </version>
     <release> 1 </release>
@@ -16345,6 +16015,28 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 88d1fe248044b51abb0967786199c5a8586bbc69df7054332ae5bd76607c7038 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> Celestial Navigation </name>
+    <version> 2.4.48.0 </version>
+    <release> 0 </release>
+    <summary> Celestial Navigation Plugin for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean D'Epagnier </author>
+    <source> https://github.com/rgleason/celestial_navigation_pi </source>
+    <description>
+Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.48.0-flatpak-aarch64-24.08-flatpak-tarball/versions/v2.4.48.0/celestial_navigation_pi-2.4.48.0-aarch64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Engine Dashboard </name>
     <version> 1.3.0.0 </version>
     <release> 0 </release>
@@ -16385,28 +16077,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.328.0-debian-arm64-11-bullseye-arm64-tarball/versions/1.0.328.0+14122.37bf635/testplugin_pi-1.0.328.0-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> Celestial Navigation </name>
-    <version> 2.4.41.0 </version>
-    <release> 0 </release>
-    <summary> Celestial Navigation Plugin for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epagnier </author>
-    <source> https://github.com/rgleason/celestial_navigation_pi </source>
-    <description>
-Nautical almanac: sun, moon, planets and navigational stars. Compute position fix from celestial measurements.
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>12.3.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.4.41.0-darwin-wx315-x86_64-12.3.1-macos-tarball/versions/v2.4.41.0/celestial_navigation_pi-2.4.41.0-darwin-wx315-x86_64-12.3.1-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Raymarine autopilot </name>
