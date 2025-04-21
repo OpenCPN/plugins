@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherRouting </name>
-<version> 1.15.21.26 </version>
-<release> 26 </release>
+<version> 1.15.22.0 </version>
+<release> 0 </release>
 <summary> Compute optimal routes based on weather and constraints. </summary>
 
 <api-version> 1.18 </api-version>
@@ -14,13 +14,13 @@
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
 
-<target>msvc</target>
-<build-target>msvc</build-target>
+<target>flatpak-x86_64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>10.0.20348</target-version>
-<target-arch>x86</target-arch>
+<target-version>24.08</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.21.26-msvc-x86-10.0.20348-MSVC-tarball/versions/v1.15.21.26/weather_routing_pi-1.15.21.26-msvc-x86-10.0.20348-MSVC.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.22.0-flatpak-x86_64-24.08-flatpak-tarball/versions/v1.15.22.0/weather_routing_pi-1.15.22.0-x86_64_flatpak-24.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
 </plugin>
