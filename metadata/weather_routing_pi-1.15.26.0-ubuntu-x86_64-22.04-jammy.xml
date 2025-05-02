@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherRouting </name>
-<version> 1.15.23.0 </version>
+<version> 1.15.26.0 </version>
 <release> 0 </release>
 <summary> Compute optimal routes based on weather and constraints. </summary>
 
@@ -14,13 +14,13 @@
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
 
-<target>darwin-wx32</target>
-<build-target>darwin</build-target>
-<build-gtk></build-gtk>
-<target-version>14.1</target-version>
-<target-arch>arm64;x86_64</target-arch>
+<target>ubuntu-wx32-x86_64</target>
+<build-target>ubuntu</build-target>
+<build-gtk>gtk3</build-gtk>
+<target-version>22.04</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.23.0-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v1.15.23.0/weather_routing_pi-1.15.23.0-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.26.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.26.0/weather_routing_pi-1.15.26.0-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
 </plugin>
