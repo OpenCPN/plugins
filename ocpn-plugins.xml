@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2025-05-05 13:41</date>
+  <date>2025-05-05 23:24</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 1.18.37.0 </version>
@@ -2442,8 +2442,8 @@ search LogbookKonni
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2451,16 +2451,50 @@ search LogbookKonni
     <source> https://github.com/Rodemfr/meteovache_pi </source>
     <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
     <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-12-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 7037c005e6f6980140498395794543c434f585fca52c2b2f7d8cb9a275971446 </tarball-checksum>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-darwin-wx32-universal-10-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 29bfafe23fee09c0c4f0aa940db9b4ab075e6782fd4f77d4413082a16db30a2a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>debian-arm64</target>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-arm64-A64-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-arm64-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> e791371a7036023b9f850d041186430020e198550d90393900be46d4b18d30be </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-arm64-A64-12-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 2b12118fc6f24260a5313d75affd05b18007afb17f89c4cd24aa0aed260723e7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2471,13 +2505,13 @@ search LogbookKonni
     <target>debian-armhf</target>
     <target-version>11</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-A32-11-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 6a4d39a9cb57c1fb3162fa716a23b813eda51d92bf845e3682e9c5f2c7b1aafd </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-armhf-A32-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-armhf-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 3c63bd597e88ae9f768a178f5443a78a63de61d5676f97016f6ce42c7eb5d05c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2485,50 +2519,16 @@ search LogbookKonni
     <source> https://github.com/Rodemfr/meteovache_pi </source>
     <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
     <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
-    <target>debian-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-A64-11-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 1ce1009204724bf4fd123d5fe113a92d779b857d763afc700ee693d596082e4b </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> MeteoVache weather plug-in for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Ronan Demoment </author>
-    <source> https://github.com/Rodemfr/meteovache_pi </source>
-    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
-    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
-    <target>debian-arm64</target>
+    <target>debian-armhf</target>
     <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-A64-12-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 7698cf025b76d838448e56e14f2856f58e09943e7dab718957985923c4089ec0 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
-    <summary> MeteoVache weather plug-in for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Ronan Demoment </author>
-    <source> https://github.com/Rodemfr/meteovache_pi </source>
-    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
-    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
-    <target>debian-wx32-armhf</target>
-    <target-version>11</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-wx32-A32-11-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-wx32-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 6a0cffca825ee375bf90bcb9867f44142fcfa78fbc283cec8942065d56027f18 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-armhf-A32-12-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-armhf-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ba8f790b8382896e09dcd19125d11732524144a26498f9dfc0369a1b9e6c06db </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2539,13 +2539,30 @@ search LogbookKonni
     <target>debian-wx32-arm64</target>
     <target-version>11</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-wx32-A64-11-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 7026469799171cda1175d761bd38e687978a599cdae703c414d4772218394cad </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-wx32-arm64-A64-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-wx32-arm64-11-arm64.tar.gz </tarball-url>
+    <tarball-checksum> ed0f79eaebbb107e9507e47088e6104954251949b03e63508158e2f68fa4af8b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>debian-wx32-armhf</target>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-wx32-armhf-A32-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-wx32-armhf-11-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 2b022b63e6ca4c368a88f2854c947b78af7a777ffc7257155c43b0f3c27fca6e </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2556,13 +2573,47 @@ search LogbookKonni
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-debian-wx32.wx32-11-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> ca90b6aa2bd12b99ded3f72d9629c56d69bb126f9347d49af054d8f34191de50 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-wx32-x86_64-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 61c0e79d8975c334250eb4921c494a49537bde4844bba0c2537872b8998ace11 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-x86_64-11-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> c6470522d07813ca470c5590844e59c6ad4c4d1996a76460d97cdbddafb4c142 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-debian-x86_64-12-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f00eb97dcdd9e5bf904e74f47e127dc38ae83bc1005c7ea98e47761768fd76fc </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2573,13 +2624,13 @@ search LogbookKonni
     <target>flatpak-aarch64</target>
     <target-version>22.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-flatpak-A64-22.08-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 3f7c1bf7fe86fadadaf8bea1e576e1ae0105ef558aebcaf9783c6ea2e7e5f937 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-flatpak-aarch64-A64-22.08-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 7fc1d8f032ba1d2b3a987eca388ace892e064fa4a094c94e35bac5de10d28d35 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> MeteoVache </name>
-    <version> 1.2.0.2 </version>
-    <release> 2 </release>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
     <summary> MeteoVache weather plug-in for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -2587,11 +2638,45 @@ search LogbookKonni
     <source> https://github.com/Rodemfr/meteovache_pi </source>
     <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
     <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-flatpak-aarch64-A64-24.08-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> aab2125fad83186583e14b798872d68cfbb1bf74d0a2c19a894b2c17cbee0175 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-1.2.0.2-msvc-wx32-10-tarball/versions/1.2.0.2/MeteoVache-1.2.0.2_msvc-wx32-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 3f5c98011a88571233be6fab1783f3e6df92e3e6fdb9338d25725b3991eb89aa </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-flatpak-x86_64-22.08-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 6af98b073b50e98bcf057ed1e2d0726d9bfb4375dc808c3f4ea66f1565d231e7 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> MeteoVache </name>
+    <version> v1.3.0.1 </version>
+    <release> 1 </release>
+    <summary> MeteoVache weather plug-in for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Ronan Demoment </author>
+    <source> https://github.com/Rodemfr/meteovache_pi </source>
+    <info-url> https://github.com/Rodemfr/meteovache_pi </info-url>
+    <description> MeteoVache is a local weather plug-in for OpenCPN. It provides weather forecasts everywhere in the world even with a very low bandwidth Internet connection. </description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/meteovache_pi/meteovache_pi/raw/names/MeteoVache-v1.3.0.1-flatpak-x86_64-24.08-tarball/versions/v1.3.0.1/MeteoVache-v1.3.0.1_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> eb93a90e05323a26f1ac166fb1b163e1a9bf3b738edbaf47b48a59f6a3cbc0c6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NSK </name>
