@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherRouting </name>
-<version> 1.15.26.0 </version>
+<version> 1.15.27.0 </version>
 <release> 0 </release>
 <summary> Compute optimal routes based on weather and constraints. </summary>
 
@@ -14,13 +14,13 @@
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
 
-<target>debian-arm64</target>
+<target>debian-x86_64</target>
 <build-target>debian</build-target>
-<build-gtk></build-gtk>
-<target-version>12</target-version>
-<target-arch>arm64</target-arch>
+<build-gtk>gtk3</build-gtk>
+<target-version>11</target-version>
+<target-arch>x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.26.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.26.0/weather_routing_pi-1.15.26.0-debian-arm64-12-bookworm-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.27.0-debian-x86_64-11-bullseye-tarball/versions/v1.15.27.0/weather_routing_pi-1.15.27.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
 </plugin>
