@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/Rasbats/shipdriver_pi/10918 -->
+<!-- https://ci.appveyor.com/project/Rasbats/shipdriver-pi/builds/52315423 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> v3.4.4 </version>
+  <version> v3.4.5 </version>
   <release> 0 </release>
   <summary> Simulate ship movements </summary>
 
@@ -18,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>android-arm64</target>
-  <target-version>16</target-version>
-  <target-arch>arm64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.4-android-arm64-A64-16-tarball/versions/v3.4.4/ShipDriver-v3.4.4_android-arm64-16-arm64.tar.gz </tarball-url>
-  <tarball-checksum> 36bd59d17608fd6a02aee8af1a531a9fa8df87ae60793ae30da8e46101163b42 </tarball-checksum>
+  <target>msvc-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.5-msvc-wx32-10-tarball/versions/v3.4.5/ShipDriver-v3.4.5_msvc-wx32-10-x86.tar.gz </tarball-url>
+  <tarball-checksum> 39567d7bfd829f022e2a0568ea7fab3594be17eac322bcc142ffd38ad7a2115f </tarball-checksum>
 </plugin>
