@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  -->
+<!-- https://circleci.com/gh/Rasbats/shipdriver_pi/11003 -->
 <plugin version="1">
   <name> ShipDriver </name>
-  <version> v3.4.5 </version>
+  <version> v3.4.6 </version>
   <release> 0 </release>
   <summary> Simulate ship movements </summary>
 
@@ -18,9 +18,9 @@ those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
 
-  <target>debian-arm64</target>
-  <target-version>12</target-version>
-  <target-arch>arm64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.5-debian-arm64-A64-12-tarball/versions/v3.4.5/ShipDriver-v3.4.5_debian-arm64-12-arm64.tar.gz </tarball-url>
-  <tarball-checksum> e1d6d87447a4a193d109b9350f29623b6474d1e4f6650bf1ae2a8488b73131ff </tarball-checksum>
+  <target>flatpak-aarch64</target>
+  <target-version>24.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.6-flatpak-aarch64-A64-24.08-tarball/versions/v3.4.6/ShipDriver-v3.4.6_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> 45cea170e65a67024911e9f38e6a979c6797294de728b587bd9b48420e2bd08e </tarball-checksum>
 </plugin>
