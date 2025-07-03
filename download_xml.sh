@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne "4" ]; then
-	echo "Incorrect invocation: Should be download_xml_bash.sh cloudsmith_repository plugin_version cloudsmith_user cloudsmith_level"
+	echo "Incorrect invocation: Should be download_xml.sh cloudsmith_repository plugin_version cloudsmith_user cloudsmith_level"
 	echo "where:"
 	echo "   cloudsmith_repository is the name of the repository on cloudsmith the files are in, i.e. testplugin"
 	echo "   plugin_version is the version number, i.e. 1.0.114.0"
@@ -9,8 +9,8 @@ if [ "$#" -ne "4" ]; then
 	echo "   cloudsmith_level is the level of the repository and is one of: prod, beta, alpha"
 	echo ""
 	echo "   Full command should look like:"
-	echo "      download_xml_bash.sh testplugin_pi 1.0.114.0 jon-gough prod"
-	echo "      download_xml_bash.sh weather-routing 1.13.8.0 opencpn prod"
+	echo "      download_xml.sh testplugin_pi 1.0.114.0 jon-gough prod"
+	echo "      download_xml.sh weather-routing 1.13.8.0 opencpn prod"
 	exit
 fi
 
