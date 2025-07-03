@@ -21,27 +21,24 @@ LEVEL="$4"
 
 REPO="https://cloudsmith.io/~${USER}/repos/"
 echo "Issuing command: wget -q -O - $REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*.xml"
-my_array=()
 echo "Show current files that match criteria"
 ls metadata/${NAME}*-*${VERSION}*xml -la
 echo "Deleting current files that match criteria"
 rm metadata/${NAME}*-*${VERSION}*xml
 echo "Finding files on remote cloudsmith repository"
 delimiter="href=\""
-delimiter1=".xml\" title"
+delimiter1=".xml"
 my_array=();
 while read -r line; do
-	if [[ $line == *$delimiter* ]] && [[ $line == *$delimiter1* ]]; then
+	if [[ "$line" =~ ^$delimiter && "$line" =~ $delimiter1.$ ]]; then
 		start=`awk -v a="$line" -v b="$delimiter" 'BEGIN{print index(a,b)}'`
 		start=$((start + ${#delimiter} - 1))
 		end=`awk -v a="$line" -v b="$delimiter1" 'BEGIN{print index(a,b)}'`
 		end=$((end + 3 - start))
 		line=${line:$start:$end}
 		my_array+=( $line );
-		echo "found: $line"
 	fi
-done < <(wget -q -O - "$REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*xml+tag:latest&page_size=50")
-
+done < <(wget -q -O - "${REPO}${NAME}-${LEVEL}/packages/?q=*${VERSION}*")
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
 do
@@ -49,5 +46,4 @@ do
   wget --progress=bar:force:noscroll -c $URL -P metadata
 done
 echo "Files downloaded"
-ls -la metadata/${NAME}*-*${VERSION}*xml
-
+ls -la metadata/$NAME*-*$VERSION*xml
