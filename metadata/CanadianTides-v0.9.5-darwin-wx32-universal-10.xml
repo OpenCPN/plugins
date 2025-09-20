@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://ci.appveyor.com/project/Rasbats/canadiantides-pi/builds/52753198 -->
+<!-- https://circleci.com/gh/Rasbats/CanadianTides_pi/859 -->
 <plugin version="1">
   <name> CanadianTides </name>
-  <version> v0.9.4 </version>
+  <version> v0.9.5 </version>
   <release> 0 </release>
   <summary> Show Canadian tidal heights for LW/HW </summary>
 
@@ -15,9 +15,9 @@
   <description> Show Canadian Tides (HW/LW) at over 600 ports.
  </description>
 
-  <target>msvc-wx32</target>
+  <target>darwin-wx32</target>
   <target-version>10</target-version>
-  <target-arch>x86</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/canadiantides-prod/raw/names/CanadianTides-v0.9.4-msvc-wx32-10-tarball/versions/v0.9.4/CanadianTides-v0.9.4_msvc-wx32-10-x86.tar.gz </tarball-url>
-  <tarball-checksum> 59c7bc23eb1f533467f506d47b393d0b97ab4f475b0c1806a996840f1b44250b </tarball-checksum>
+  <target-arch>arm64;x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/canadiantides-prod/raw/names/CanadianTides-v0.9.5-darwin-wx32-universal-10-tarball/versions/v0.9.5/CanadianTides-v0.9.5_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> a894d4a2f74b2a59923f2ded94dee5f5f5121788365ff2b7b579250210873ad1 </tarball-checksum>
 </plugin>
