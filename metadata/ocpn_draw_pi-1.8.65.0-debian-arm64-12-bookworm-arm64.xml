@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> OCPN Draw </name>
-<version> 1.8.63.0 </version>
+<version> 1.8.65.0 </version>
 <release> 0 </release>
 <summary> Drawing Plugin to allow extra objects to be drawn and used within OCPN </summary>
 
@@ -14,13 +14,13 @@
 OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-standard object: Boundaries, Boundary Points, Text Points, Dead Reckoning paths, Electronic Bearing Lines (EBL) and Guard Zones. The plugin also has an API to allow other plugins to directly interact with it.
 </description>
 
-<target>debian-x86_64</target>
+<target>debian-arm64</target>
 <build-target>debian</build-target>
-<build-gtk>gtk3</build-gtk>
-<target-version>11</target-version>
-<target-arch>x86_64</target-arch>
+<build-gtk></build-gtk>
+<target-version>12</target-version>
+<target-arch>arm64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.63.0-debian-x86_64-11-bullseye-tarball/versions/1.8.63.0+8175.7547dc1/ocpn_draw_pi-1.8.63.0-debian-x86_64-11-bullseye.tar.gz
+https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.8.65.0-debian-arm64-12-bookworm-arm64-tarball/versions/1.8.65.0+8241.88173b8/ocpn_draw_pi-1.8.65.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
 </plugin>
