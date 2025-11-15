@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://ci.appveyor.com/project/Rasbats/vfkaps-pi/builds/49232012 -->
+<!-- https://circleci.com/gh/Rasbats/vfkaps_pi/836 -->
 <plugin version="1">
   <name> vfkaps </name>
-  <version> v4.1.1 </version>
+  <version> v4.1.2 </version>
   <release> 0 </release>
   <summary> Produce KAP charts from downloaded satellite images </summary>
 
@@ -15,9 +15,9 @@
   <description> Download and install KAP charts from VentureFarther.com.
  </description>
 
-  <target>msvc-wx32</target>
+  <target>darwin-wx32</target>
   <target-version>10</target-version>
-  <target-arch>x86</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps-v4.1.1-msvc-wx32-10-tarball/versions/v4.1.1/vfkaps-v4.1.1_msvc-wx32-10-x86.tar.gz </tarball-url>
-  <tarball-checksum> 71840454ef063ea75cd5356ddd10ff58cd14736163dd2e11c44f3ed1760e05e6 </tarball-checksum>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps-v4.1.2-darwin-wx32-10-tarball/versions/v4.1.2/vfkaps-v4.1.2_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> c6a4c8ed53a6e1f6551f00c309cd4afafe3cb10dab79b75a0fc13dab1943c0ec </tarball-checksum>
 </plugin>
