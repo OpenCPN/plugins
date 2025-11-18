@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/Rasbats/vfkaps_pi/837 -->
+<plugin version="1">
+  <name> vfkaps </name>
+  <version> v4.1.2 </version>
+  <release> 0 </release>
+  <summary> Produce KAP charts from downloaded satellite images </summary>
+
+  <api-version> 1.18 </api-version>
+  <open-source> yes </open-source>
+  <author> Mike Rossiter </author>
+  <source> https://github.com/Rasbats/vfkaps_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/vfkaps.html </info-url>
+
+  <description> Download and install KAP charts from VentureFarther.com.
+ </description>
+
+  <target>flatpak-aarch64</target>
+  <target-version>24.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/vfkaps-prod/raw/names/vfkaps-v4.1.2-flatpak-aarch64-A64-24.08-tarball/versions/v4.1.2/vfkaps-v4.1.2_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> b982fb43170f58bfa4433d9881ad85377087f77ac23fc2cb2b1b943519396938 </tarball-checksum>
+</plugin>
