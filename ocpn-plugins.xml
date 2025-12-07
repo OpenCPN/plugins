@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2025-12-06 21:14</date>
+  <date>2025-12-07 01:06</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.0.0 </version>
@@ -2011,238 +2011,256 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <tarball-checksum>f4ea5b9257130b2c3c06751369c83311059daf42d89cabcd284431d47a1d54d8</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-darwin-wx32-10-tarball/versions/v1.3.7/Launcher-v1.3.7_darwin-wx32-10-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>5533a9bebbd1f1e7ab467d0e387ecc82cfa14bb1c1cfdca33b5f5cc25ee04045</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
     <target>darwin-wx32</target>
     <target-version>10</target-version>
     <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-darwin-wx32-universal-10-tarball/versions/v1.3.6/Launcher-v1.3.6_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1f9d301ef63a6db333c6fdc8efd414236f1c97df00e8bf783f64fd10aa5d56b7 </tarball-checksum>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-darwin-wx32-universal-10-tarball/versions/v1.3.7/Launcher-v1.3.7_darwin-wx32-10-arm64-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>3a3a650ef18aa88b071bdda21bd42dd87cab736337db8d334b974f8cd076fbed</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f90ead0ab1cae50ed083f89d199026a22ff3de463808aa6dcc1eb8398dcf2894 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-12-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 204381ad4ff978d250e84e20910f2e7c0da5b1e9dc1bb7f6d8ea257e1ab3207a </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-armhf</target>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-A32-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> d54ffc1e3d0310086f5af62872a355295ca0f15d5a7e943c33d353cd96d8f6bc </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-armhf</target>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-A32-12-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> c2592849ee801ef45643b7da4e08eec3e3b4be5abee8b643269d74f14699f139 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-A64-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> e70b49756075e2cb9f30e5f7d07aeef7a86d44f19720d07f1b6fa6ddbd56d795 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
     <target>debian-arm64</target>
     <target-version>12</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-A64-12-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 867b07af4e7498ebd33800db94d3a3dfed51f9050da6094a47ae3f879efa7e8b </tarball-checksum>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-arm64-A64-12-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-arm64-12-arm64.tar.gz</tarball-url>
+    <tarball-checksum>a2fa1ef9b6bb86960c8b92ea1d68fad094b1885ceb56dfad8ff683f76b26ca54</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-arm64-A64-13-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-arm64-13-arm64.tar.gz</tarball-url>
+    <tarball-checksum>bf691f2bd701bd9f7cc6ba8651cee20151f0e8787f0105ac089c25fa50e37bcf</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-armhf-A32-12-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-armhf-12-armhf.tar.gz</tarball-url>
+    <tarball-checksum>85e5d810dd5c09ad08854723906be40d74d8f1e2b7449f594f85851c9dc65099</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <target-version>13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-armhf-A32-13-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-armhf-13-armhf.tar.gz</tarball-url>
+    <tarball-checksum>34b014b27d1e2fc3cfa4f7226a1b5ed87e8c577fa8182ac072991e67342c5464</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-wx32-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 45a7bacfdfd292a8f4599a818009f8b7da37ef9e1a1b61dfc6119b876ba14afd </tarball-checksum>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-wx32-x86_64-11-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-wx32-x86_64-11-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>38464c77cb3279992d4e73ffdd35bbe10137afc0a725080289386445509f5ea2</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-wx32-armhf</target>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-x86_64</target>
     <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-wx32-A32-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-wx32-11-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 08fa728c035c0c593113aa07e3ffbcdb2eaeaae1f0b825356b6e46dcc7ffc66e </tarball-checksum>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-x86_64-11-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-x86_64-11-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>7f1d5f066210927e0c5df71a21d450c509a6c28176c414e5a4663e6bdf5ff76f</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>debian-wx32-arm64</target>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-debian-wx32-A64-11-tarball/versions/v1.3.6/Launcher-v1.3.6_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 8be9179dd5135029110e4eb8d3c4f38cfd551467ee13d29befa4edacabb4d7d0 </tarball-checksum>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-x86_64-12-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-x86_64-12-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>78a14d35007f75a4dc2eb0a599c00e37a93717ff95ca11283866a8817373fdfa</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-debian-x86_64-13-tarball/versions/v1.3.7/Launcher-v1.3.7_debian-x86_64-13-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>5f6b5fde99804dceffee16e26b60ba587394a125129fa0bad877e33caa561b45</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-flatpak-aarch64-A64-24.08-tarball/versions/v1.3.7/Launcher-v1.3.7_flatpak-aarch64-24.08-aarch64.tar.gz</tarball-url>
+    <tarball-checksum>526b9887129dc2dd49e0243e6bdb1c31ba244b15955928fd7508e2b2df9d687e</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
     <target>flatpak-x86_64</target>
     <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-flatpak-22.08-tarball/versions/v1.3.6/Launcher-v1.3.6_flatpak-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 54699017c4efb73d9f42e9fab5a8e44088b25d42b462281f442d4c1c1edd8b66 </tarball-checksum>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-flatpak-x86_64-22.08-tarball/versions/v1.3.7/Launcher-v1.3.7_flatpak-x86_64-22.08-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>182789d2f3738865ef3ad14012a4a98bdc5d571ab599b2df0150a9961370ccfb</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-flatpak-A64-22.08-tarball/versions/v1.3.6/Launcher-v1.3.6_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> d40c8cbe7345300a510f0019b0e2fede418228decd3d62c83ff37be901094835 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> Launcher </name>
-    <version> v1.3.6 </version>
-    <release>  </release>
-    <summary> Launcher plugin for OpenCPN </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Pavel Kalian </author>
-    <source> https://github.com/nohal/launcher_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/launcher.html </info-url>
-    <description>   Launcher plugin for OpenCPN
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10.0.20348</target-version>
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.6-msvc-wx32-10.0.20348-tarball/versions/v1.3.6/Launcher-v1.3.6_msvc-wx32-10.0.20348-win32.tar.gz </tarball-url>
-    <tarball-checksum> 579374853775c9f9c6a3ac0dee00440c547356d92248cec530c1024881450dae </tarball-checksum>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-flatpak-x86_64-24.08-tarball/versions/v1.3.7/Launcher-v1.3.7_flatpak-x86_64-24.08-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>d7260cd83af572db028c029b1c05e22e0bc68929615562ab55e626c0ac029ac7</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>Launcher</name>
+    <version>v1.3.7</version>
+    <release>0</release>
+    <summary>Launcher plugin for OpenCPN</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Pavel Kalian</author>
+    <source>https://github.com/nohal/launcher_pi</source>
+    <info-url>https://opencpn.org/OpenCPN/plugins/launcher.html</info-url>
+    <description>  Launcher plugin for OpenCPN
+</description>
+    <target>msvc-wx32</target>
+    <target-version>10.0.26100</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/nohal/launcher_pi-stable/raw/names/Launcher-v1.3.7-msvc-wx32-10.0.26100-tarball/versions/v1.3.7/Launcher-v1.3.7_msvc-wx32-10.0.26100-x86.tar.gz</tarball-url>
+    <tarball-checksum>7cd41d84bd7a911524c1c2135e9674de83fe764ef9dddca40220bab6595b2ee3</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
