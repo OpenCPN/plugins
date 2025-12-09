@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> WeatherRouting </name>
-<version> 1.15.36.0 </version>
+<version> 1.15.42.0 </version>
 <release> 0 </release>
 <summary> Compute optimal routes based on weather and constraints. </summary>
 
@@ -14,13 +14,13 @@
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
 
-<target>android-arm64</target>
-<build-target>android</build-target>
+<target>darwin-wx32</target>
+<build-target>darwin</build-target>
 <build-gtk></build-gtk>
-<target-version>16</target-version>
-<target-arch>arm64</target-arch>
+<target-version>14.3.1</target-version>
+<target-arch>arm64;x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.36.0-android-arm64-16-android-arm64-tarball/versions/v1.15.36.0/weather_routing_pi-1.15.36.0-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.42.0-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/v1.15.42.0/weather_routing_pi-1.15.42.0-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
 </plugin>
