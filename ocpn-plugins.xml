@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2025-12-10 01:10</date>
+  <date>2025-12-15 22:04</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.0.0 </version>
@@ -4295,24 +4295,6 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/ </info-url>
     <description> OpenCPN support for S63 Vector Charts
  </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.5.0-darwin-wx32-universal-10-tarball/versions/1.30.5.0/S63-1.30.5.0_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 33f6624519970f457276f101da5847bc471d20a8cc17a19c3a17ae97b47b0434 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> S63 </name>
-    <version> 1.30.5.0 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for S63 Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source>  </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/ </info-url>
-    <description> OpenCPN support for S63 Vector Charts
- </description>
     <target>debian-arm64</target>
     <target-version>11</target-version>
     <target-arch>arm64</target-arch>
@@ -4429,7 +4411,7 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.30.5.0 </version>
+    <version> 1.30.9.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
@@ -4439,69 +4421,33 @@ such as dual radar range and Doppler.
     <info-url> https://opencpn.org/ </info-url>
     <description> OpenCPN support for S63 Vector Charts
  </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.5.0-debian-x86_64-12-tarball/versions/1.30.5.0/S63-1.30.5.0_debian-x86_64-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 56ed337d3617e1786a6e0b5df0678b0d377d44c795dade50439140b97341ffc1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> S63 </name>
-    <version> 1.30.5.0 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for S63 Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source>  </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/ </info-url>
-    <description> OpenCPN support for S63 Vector Charts
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.5.0-flatpak-aarch64-A64-22.08-tarball/versions/1.30.5.0/S63-1.30.5.0_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> aa74c63068af9c3de4715a6d4cf310ba0a3744c83a17ded3fe9ed0c3d1ed72a7 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> S63 </name>
-    <version> 1.30.5.0 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for S63 Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source>  </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/ </info-url>
-    <description> OpenCPN support for S63 Vector Charts
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.5.0-flatpak-x86_64-22.08-tarball/versions/1.30.5.0/S63-1.30.5.0_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 28091605f9682eb3b5b53ce4faf7f79fb41e56d514a5c907e3548ec77619765b </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> S63 </name>
-    <version> 1.30.5.0 </version>
-    <release> 0 </release>
-    <summary> OpenCPN support for S63 Vector Charts </summary>
-    <api-version> 1.16 </api-version>
-    <open-source>  </open-source>
-    <author> Dave register </author>
-    <source> https://github.com/bdbcat/s63_pi </source>
-    <info-url> https://opencpn.org/ </info-url>
-    <description> OpenCPN support for S63 Vector Charts
- </description>
-    <target>msvc-wx32</target>
+    <target>darwin-wx32</target>
     <target-version>10</target-version>
-    <target-arch/>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.5.0-msvc-wx32-10-tarball/versions/1.30.5.0/S63-1.30.5.0_msvc-wx32-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 546e8305fab7760b5c577997703eea1a8a25a504ed95045a6d49814b264263f4 </tarball-checksum>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-darwin-wx32-10-tarball/versions/1.30.9.0/S63-1.30.9.0_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a52dd33a83612a3e0dc17a2d77100c513d6ae4a7b4b40b163a4b2befa9837674 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.30.6.0 </version>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-darwin-wx32-universal-10-tarball/versions/1.30.9.0/S63-1.30.9.0_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 1c1a6dd75fe3a560fea5d1ff029d84b015316bdfc327ca3248d68773807a31dd </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
@@ -4514,12 +4460,84 @@ such as dual radar range and Doppler.
     <target>debian-arm64</target>
     <target-version>12</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.6.0-debian-arm64-A64-12-tarball/versions/1.30.6.0/S63-1.30.6.0_debian-arm64-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> f4f587c8897b14383e6178a48287ef02cae8403801f531f40d0ddb5db5a6dda5 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-debian-arm64-A64-12-tarball/versions/1.30.9.0/S63-1.30.9.0_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 65cd88affa992807f1b4c6af86bcab95861aef69d8cf221e35be1c525e99169b </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.30.8.0 </version>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-debian-arm64-A64-13-tarball/versions/1.30.9.0/S63-1.30.9.0_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> d5a4bbf417e8cacc16d037450fcade9d35d305d300a73864127c2ae95172a652 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-debian-x86_64-12-tarball/versions/1.30.9.0/S63-1.30.9.0_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7f3059923156ecd7b72e150ce88a0f492a3e7d597d774a7255c4ea89096aeb15 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-debian-x86_64-13-tarball/versions/1.30.9.0/S63-1.30.9.0_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b61762755c6c83358daf257d5c394ff5589fac6bc077668a54fa0b958ec4852e </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-flatpak-aarch64-A64-22.08-tarball/versions/1.30.9.0/S63-1.30.9.0_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 96f592f035ddebf0fee72ee9ab808f8f2690508323e2c5caedec103d0811a013 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
@@ -4532,12 +4550,30 @@ such as dual radar range and Doppler.
     <target>flatpak-aarch64</target>
     <target-version>24.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.8.0-flatpak-aarch64-A64-24.08-tarball/versions/1.30.8.0/S63-1.30.8.0_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> cdfe2ad9f3d4f00de097ddbc5b8111127e3c038913b9667d72b85c837852bb58 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-flatpak-aarch64-A64-24.08-tarball/versions/1.30.9.0/S63-1.30.9.0_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 02e60e45421479ff7def0c46d45a9862fa53b6457fb27166ef641bf0098e267c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
-    <version> 1.30.8.0 </version>
+    <version> 1.30.9.0 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-flatpak-x86_64-22.08-tarball/versions/1.30.9.0/S63-1.30.9.0_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 07248c5e464c11e1bdcd575eb8ce32f6e995b14db1f7efca8e63bf51eeb4c386 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.0 </version>
     <release> 0 </release>
     <summary> OpenCPN support for S63 Vector Charts </summary>
     <api-version> 1.16 </api-version>
@@ -4550,8 +4586,26 @@ such as dual radar range and Doppler.
     <target>flatpak-x86_64</target>
     <target-version>24.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.8.0-flatpak-x86_64-24.08-tarball/versions/1.30.8.0/S63-1.30.8.0_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f126b2fd0d8cc84b8404069f2314e8f92280c525cef2413637f5cb0ff8515f0c </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.0-flatpak-x86_64-24.08-tarball/versions/1.30.9.0/S63-1.30.9.0_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f1e47974aeea4119ee1f6a7aa956319ac3a0269653c1b35003ac95cfc640063e </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> S63 </name>
+    <version> 1.30.9.1 </version>
+    <release> 0 </release>
+    <summary> OpenCPN support for S63 Vector Charts </summary>
+    <api-version> 1.16 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/s63_pi </source>
+    <info-url> https://opencpn.org/ </info-url>
+    <description> OpenCPN support for S63 Vector Charts
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch/>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/s63-prod/raw/names/S63-1.30.9.1-msvc-wx32-10-tarball/versions/1.30.9.1/S63-1.30.9.1_msvc-wx32-10-win32.tar.gz </tarball-url>
+    <tarball-checksum> 3f20fd0873c932bcc298135b74c0b9d470e0ee0205b0114b6e3db2b1ab481055 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
