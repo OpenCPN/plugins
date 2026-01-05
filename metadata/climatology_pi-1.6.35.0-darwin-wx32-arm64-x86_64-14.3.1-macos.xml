@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Climatology </name>
-<version> 1.6.33.0 </version>
+<version> 1.6.35.0 </version>
 <release> 0 </release>
 <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
 
@@ -14,13 +14,13 @@
 Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
 </description>
 
-<target>flatpak-aarch64</target>
-<build-target>flatpak</build-target>
+<target>darwin-wx32</target>
+<build-target>darwin</build-target>
 <build-gtk></build-gtk>
-<target-version>22.08</target-version>
-<target-arch>aarch64</target-arch>
+<target-version>14.3.1</target-version>
+<target-arch>arm64;x86_64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.33.0-flatpak-aarch64-22.08-flatpak-tarball/versions/v1.6.33.0/climatology_pi-1.6.33.0-aarch64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.35.0-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/v1.6.35.0/climatology_pi-1.6.35.0-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
 </plugin>
