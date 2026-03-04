@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-03-04 06:13</date>
+  <date>2026-03-04 07:24</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.1.0 </version>
@@ -12684,6 +12684,32 @@ oernc plugins. It thus obsoletes these two plugins.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-v2.1.6-flatpak-x86_64-25.08-tarball/versions/v2.1.6/o-charts-v2.1.6_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
     <tarball-checksum> c12ce32f03efcec0023d551d60bc2394c303d3c42caef8586835b83c0ca6b8d3 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> o-charts </name>
+    <version> v2.1.7 </version>
+    <release> 0 </release>
+    <summary> Encrypted Vector Charts from o-charts.org </summary>
+    <api-version> 1.17 </api-version>
+    <open-source>  </open-source>
+    <author> Dave register </author>
+    <source> https://github.com/bdbcat/o-charts_pi </source>
+    <info-url> https://o-charts.org/ </info-url>
+    <description> OpenCPN  Vector Charts licensed and sourced from chart providers like
+Hydrographic Offices.
+While the charts are not officially approved official ENC charts they
+are based on the same data -- the legal conditions are described in the
+EULA. The charts has world-wide coverage and provides a cost-effective
+way to access the national chart databases. Charts are encrypted and
+can only be used after purchasing decryption keys from o-charts.org.
+o-charts can handle all charts previously handled by the oesenc and
+oernc plugins. It thus obsoletes these two plugins.
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/o-charts-prod/raw/names/o-charts-v2.1.7-msvc-wx32-10-tarball/versions/v2.1.7/o-charts-v2.1.7_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> 060ca021a803205ad31aac4b455db9a081b1197d64ed402c372fe0e15ea70d0a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
