@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-04-01 23:53</date>
+  <date>2026-04-02 14:45</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.1.0 </version>
@@ -6113,10 +6113,10 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6127,194 +6127,18 @@ Destination, Time/Date of arrival,
 effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
-    <target>debian-x86_64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-debian-10-tarball/versions/1.8.0/ais-vd-1.8.0_debian-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 2946995de429f4ca07b25cfab8ff7034f593449e84ab02448685967b561212d4 </tarball-checksum>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-android-arm64-A64-16-tarball/versions/1.8.5/ais-vd-1.8.5_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 54229342919eb4d521c2c5dac8ee7b99962ec537f4d0536ed029a1d319f83cff </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-debian-11-tarball/versions/1.8.0/ais-vd-1.8.0_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 067a11d39ffa19251ec7764bf13a66459c4df1e61cb634fdbc8e2fcdb221e316 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>20.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-flatpak-20.08-tarball/versions/1.8.0/ais-vd-1.8.0_flatpak-20.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f77967b6d233a532440e7af4c263e829deaf81d1d72e8a53126b235551228fe1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>msvc</target>
-    <target-version>10.0.14393</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-msvc-10.0.14393-tarball/versions/1.8.0/ais-vd-1.8.0_msvc-10.0.14393-win32.tar.gz </tarball-url>
-    <tarball-checksum> aaa505742a953e0ffaa86cbb3205520f6b3ae7d76cf5744f0a01c4191f139fd1 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>ubuntu-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-ubuntu-18.04-tarball/versions/1.8.0/ais-vd-1.8.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8f119a634a222b5e8ba2d32a04592a9bb5b96942fda8e29df724e5e482006b27 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>18.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-ubuntu-gtk3-18.04-tarball/versions/1.8.0/ais-vd-1.8.0_ubuntu-gtk3-18.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1e9aa7d76ea617d8d3473ddd141cbec8bbaa6ffedf7a27dc69a0bbfb2200fc71 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-ubuntu-gtk3-20.04-tarball/versions/1.8.0/ais-vd-1.8.0_ubuntu-gtk3-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 380e31bf4745c948c8dfa3d027a0f9f7d9ce1e02dc92ab0de42686a998b6e45e </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.0 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>ubuntu-wx315-x86_64</target>
-    <target-version>20.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-ubuntu-wx315-20.04-tarball/versions/1.8.0/ais-vd-1.8.0_ubuntu-wx315-20.04-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> f386e4dda5486a6463a670df19205275003d9c9d326c744f62a37b9989d44dcb </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.1 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
-    <open-source> yes </open-source>
-    <author> Dirk R and Hakan S </author>
-    <source> https://github.com/Hakansv/ais-vd_pi </source>
-    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
-    <description> Update AIS class A voyage static data as:
-Navigational status
-Destination, Time/Date of arrival,
-effective draught and persons on board
-using NMEA0183 ECVSD sentence.
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.1-msvc-wx32-10-tarball/versions/1.8.1/ais-vd-1.8.1_msvc-wx32-10-win32.tar.gz </tarball-url>
-    <tarball-checksum> 5b2fc17b07170e39db92d21209fa63c99ad13fbee4e2b0dc66e3db90155510ac </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
-    <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6328,15 +6152,15 @@ using NMEA0183 ECVSD sentence.
     <target>android-armhf</target>
     <target-version>16</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-android-armhf-A32-16-tarball/versions/1.8.2/ais-vd-1.8.2_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> a5a5fac25874c4f06e52466214b9d64c83516139f303caf8d3f9c3a2dacb02b7 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-android-armhf-A32-16-tarball/versions/1.8.5/ais-vd-1.8.5_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 62c9b653eeb7af45612fd18ef97324c82ff2461dcdd79db57c2decfd97b1cee0 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6347,18 +6171,40 @@ Destination, Time/Date of arrival,
 effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-debian-11-tarball/versions/1.8.2/ais-vd-1.8.2_debian-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1ba8d76fb495e36a4b321243bb40b4332c3afe77eef3493556f43fd1edc54e25 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-darwin-wx32-10-tarball/versions/1.8.5/ais-vd-1.8.5_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 849497a810cd09c17f7155fe2e9b51303679a42b5d67eae37e59e7cfb27587bf </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-darwin-wx32-universal-10-tarball/versions/1.8.5/ais-vd-1.8.5_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 1b4bf98d5943e447b8fad5f0ad526588abf811d4eba377c115bf4958eaf906fb </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6370,17 +6216,17 @@ effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
     <target>debian-arm64</target>
-    <target-version>11</target-version>
+    <target-version>12</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-debian-A64-11-tarball/versions/1.8.2/ais-vd-1.8.2_debian-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 6e9b51efde1f819d26488b9e0ed48b6f5faae3e4e74ebc733175a36046690755 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-arm64-A64-12-tarball/versions/1.8.5/ais-vd-1.8.5_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> ce09c12ace6c2da452120461cb4d4dcc23464a2c446660d8855ee9e322e4bbd5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6391,18 +6237,62 @@ Destination, Time/Date of arrival,
 effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
-    <target>debian-wx32-arm64</target>
-    <target-version>11</target-version>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-debian-wx32-A64-11-tarball/versions/1.8.2/ais-vd-1.8.2_debian-wx32-11-arm64.tar.gz </tarball-url>
-    <tarball-checksum> a0b65370170ed2e4450695fea11206d32f8d58c06928ae0cc3f09b8477e1fb3e </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-arm64-A64-13-tarball/versions/1.8.5/ais-vd-1.8.5_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> c794bf405d5d648ab7f09bdb615d974688c6518c63555670c8e5198a860328b1 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-armhf-A32-12-tarball/versions/1.8.5/ais-vd-1.8.5_debian-armhf-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 172279b6e23772308f49dcf7b6a534149741f4eac2a5f24bd75db361d26f0a78 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>debian-armhf</target>
+    <target-version>13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-armhf-A32-13-tarball/versions/1.8.5/ais-vd-1.8.5_debian-armhf-13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> a40d8c744bc6bf6113e5114faa3cc0de64cd0bcc04dc30c458304542993d846c </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6416,15 +6306,15 @@ using NMEA0183 ECVSD sentence.
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-debian-wx32.wx32-11-tarball/versions/1.8.2/ais-vd-1.8.2_debian-wx32.wx32-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d2d7a915e8828df8b9504455ad543ffcaba59564fb21644fe471a0c56fffa932 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-wx32-x86_64-11-tarball/versions/1.8.5/ais-vd-1.8.5_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> d33965760cdc8fb82ae36ae1e2db9a5e966dad756d3e2e3c070df36f13bca708 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6435,18 +6325,62 @@ Destination, Time/Date of arrival,
 effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
+    <target>debian-x86_64</target>
+    <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-flatpak-22.08-tarball/versions/1.8.2/ais-vd-1.8.2_flatpak-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 51c142cd9fac546337e96df52398a6a803059cef9d2e27629e5fb34055453f9b </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-x86_64-11-tarball/versions/1.8.5/ais-vd-1.8.5_debian-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 717d48d2988527658d8c2dc22a756a132ad00ee7c44077d517121135e275c199 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ais-vd </name>
-    <version> 1.8.2 </version>
-    <release>  </release>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
     <summary> Update AIS class A voyage data </summary>
-    <api-version> 1.16 </api-version>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-x86_64-12-tarball/versions/1.8.5/ais-vd-1.8.5_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 2b0f278eaa5355b0126a71e278ff23c2ee416877e70df7c6d7411bb6cef49c3b </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-x86_64-13-tarball/versions/1.8.5/ais-vd-1.8.5_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7754a5fca141a71a289e29df8a1920b6f707f4060955345ac1c5bd915e5fd99a </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
     <author> Dirk R and Hakan S </author>
     <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -6460,8 +6394,140 @@ using NMEA0183 ECVSD sentence.
     <target>flatpak-aarch64</target>
     <target-version>22.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.2-flatpak-A64-22.08-tarball/versions/1.8.2/ais-vd-1.8.2_flatpak-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 595acbdca25ecff388efe390d03fb8306c144f70f67d29cd02e5057c67888178 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-aarch64-A64-22.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> f12bf32a5f8f31ecd5c2eb4b0466f40052e56a9fd1a40c53ac92e85095815df0 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-aarch64-A64-24.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 35e8ac3017a36ac8bc4102fcb6a395add7beb580cd064d8c2dde6ba9ebe811f9 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>25.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-aarch64-A64-25.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 08aa47573443598cfa7aeab717cf0f6da7367f0c34d4517960d7656dd3faffe5 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-x86_64-22.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 3343b807182a245a76e8630b2f44662bc2f5f3c4b4defe1b65978c70b427be78 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-x86_64-24.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 4d3fb3514659412215d725cd5821971e2f6b33bfcf170b0ec8f39f7b2419f738 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>25.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-flatpak-x86_64-25.08-tarball/versions/1.8.5/ais-vd-1.8.5_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e81800475fd563af1cc1916a028ba49a5572148b2f16bf6428849995ebc6e246 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ais-vd </name>
+    <version> 1.8.5 </version>
+    <release> 0 </release>
+    <summary> Update AIS class A voyage data </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Dirk R and Hakan S </author>
+    <source> https://github.com/Hakansv/ais-vd_pi </source>
+    <info-url> https://opencpn-manuals.github.io/main/ais-vd/0.1/index.html </info-url>
+    <description> Update AIS class A voyage static data as:
+Navigational status
+Destination, Time/Date of arrival,
+effective draught and persons on board
+using NMEA0183 ECVSD sentence.
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-msvc-wx32-10-tarball/versions/1.8.5/ais-vd-1.8.5_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> c79cddb71d18c8d8f2ae205b6f074908f947f3498adda1622dfe2efc7d675c51 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
