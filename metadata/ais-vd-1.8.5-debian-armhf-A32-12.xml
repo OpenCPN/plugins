@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/Hakansv/ais-vd_pi/571 -->
+<!--  -->
 <plugin version="1">
   <name> ais-vd </name>
-  <version> 1.8.0 </version>
-  <release>  </release>
+  <version> 1.8.5 </version>
+  <release> 0 </release>
   <summary> Update AIS class A voyage data </summary>
 
-  <api-version> 1.16 </api-version>
+  <api-version> 1.18 </api-version>
   <open-source> yes </open-source>
   <author> Dirk R and Hakan S </author>
   <source> https://github.com/Hakansv/ais-vd_pi </source>
@@ -19,9 +19,9 @@ effective draught and persons on board
 using NMEA0183 ECVSD sentence.
  </description>
 
-  <target>ubuntu-x86_64</target>
-  <target-version>18.04</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.0-ubuntu-18.04-tarball/versions/1.8.0/ais-vd-1.8.0_ubuntu-18.04-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 8f119a634a222b5e8ba2d32a04592a9bb5b96942fda8e29df724e5e482006b27 </tarball-checksum>
+  <target>debian-armhf</target>
+  <target-version>12</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/ais-vd-prod/raw/names/ais-vd-1.8.5-debian-armhf-A32-12-tarball/versions/1.8.5/ais-vd-1.8.5_debian-armhf-12-armhf.tar.gz </tarball-url>
+  <tarball-checksum> 172279b6e23772308f49dcf7b6a534149741f4eac2a5f24bd75db361d26f0a78 </tarball-checksum>
 </plugin>
