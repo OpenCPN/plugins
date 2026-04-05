@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/quinton-hoole/weather_routing_pi/2065 -->
+<plugin version="1">
+  <name> WeatherRouting </name>
+  <version> 1.15.45.9+2065.64ca7af </version>
+  <release> 9 </release>
+  <summary> Compute optimal routes based on weather and constraints. </summary>
+
+  <api-version> 1.18 </api-version>
+  <open-source> yes </open-source>
+  <author> Sean D'Epaigner </author>
+  <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+
+  <description> Features include: optimal routing subject to various constraints based
+on weather data, automatic boat polar computation.
+ </description>
+
+  <target>darwin-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>arm64;x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-darwin-wx32-universal-10-tarball/versions/1.15.45.9+2065.64ca7af/WeatherRouting-1.15.45.9+2065.64ca7af_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 535100cd0220901f4e666c387317e162ff269c371f3ad5f5683c7bfc7ca4ff8f </tarball-checksum>
+</plugin>
