@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/4015 -->
+<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/4489 -->
 <plugin version="1">
   <name> Radar </name>
-  <version> v5.6.0-beta </version>
+  <version> v5.6.1-beta </version>
   <release> 0 </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
-  <api-version> 1.16 </api-version>
+  <api-version> 1.18 </api-version>
   <open-source> yes </open-source>
   <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
   <source> https://github.com/opencpn-radar-pi/radar_pi </source>
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>flatpak-aarch64</target>
-  <target-version>24.08</target-version>
-  <target-arch>aarch64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-beta/raw/names/Radar-v5.6.0-beta-flatpak-aarch64-A64-24.08-tarball/versions/v5.6.0-beta/Radar-v5.6.0-beta_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-  <tarball-checksum> bfac21071561cd0627f8fff319b80fcbee99953e1214bf33fa6d37b557c20980 </tarball-checksum>
+  <target>darwin-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-beta/raw/names/Radar-v5.6.1-beta-darwin-wx32-10-tarball/versions/v5.6.1-beta/Radar-v5.6.1-beta_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 27a270e122932fe1dd0b6747519018b4bcf086d11e3c6c3be401ee9b246a481e </tarball-checksum>
 </plugin>
