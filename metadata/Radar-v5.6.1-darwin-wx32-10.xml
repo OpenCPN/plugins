@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  -->
+<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/4513 -->
 <plugin version="1">
   <name> Radar </name>
-  <version> v5.5.5 </version>
+  <version> v5.6.1 </version>
   <release> 0 </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
-  <api-version> 1.16 </api-version>
+  <api-version> 1.18 </api-version>
   <open-source> yes </open-source>
   <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
   <source> https://github.com/opencpn-radar-pi/radar_pi </source>
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>debian-armhf</target>
-  <target-version>11</target-version>
-  <target-arch>armhf</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-prod/raw/names/Radar-v5.5.5-debian-A32-11-tarball/versions/v5.5.5/Radar-v5.5.5_debian-11-armhf.tar.gz </tarball-url>
-  <tarball-checksum> 6f63bc831648efc61af0bbcaa8b838c8f5b6696268404e6d23ccafc6b0e68056 </tarball-checksum>
+  <target>darwin-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-prod/raw/names/Radar-v5.6.1-darwin-wx32-10-tarball/versions/v5.6.1/Radar-v5.6.1_darwin-wx32-10-x86_64.tar.gz </tarball-url>
+  <tarball-checksum> 9905811a76a26dca046588340abd97bef5db1437bb87f8c26d26fea95a7ba37d </tarball-checksum>
 </plugin>
