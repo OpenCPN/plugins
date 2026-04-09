@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://circleci.com/gh/opencpn-radar-pi/radar_pi/4017 -->
+<!--  -->
 <plugin version="1">
   <name> Radar </name>
-  <version> v5.6.0-beta </version>
+  <version> v5.6.1-beta </version>
   <release> 0 </release>
   <summary> Overlays the radar picture on OpenCPN </summary>
 
-  <api-version> 1.16 </api-version>
+  <api-version> 1.18 </api-version>
   <open-source> yes </open-source>
   <author> Hakan Svensson / Douwe Fokkema / Kees Verruijt / David S Register </author>
   <source> https://github.com/opencpn-radar-pi/radar_pi </source>
@@ -26,9 +26,9 @@ Guard zones, AIS overlay on PPI, and various radar dependent features
 such as dual radar range and Doppler.
  </description>
 
-  <target>darwin-wx32</target>
-  <target-version>10</target-version>
-  <target-arch>arm64;x86_64</target-arch>
-  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-beta/raw/names/Radar-v5.6.0-beta-darwin-wx32-universal-10-tarball/versions/v5.6.0-beta/Radar-v5.6.0-beta_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 78c6b2019fd290b9380778c8c04dda1777da36ed298968e83e981b8d99b9ec36 </tarball-checksum>
+  <target>debian-armhf</target>
+  <target-version>13</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn-radar-pi/radar-beta/raw/names/Radar-v5.6.1-beta-debian-armhf-A32-13-tarball/versions/v5.6.1-beta/Radar-v5.6.1-beta_debian-armhf-13-armhf.tar.gz </tarball-url>
+  <tarball-checksum> c4d2b314899096e0b1926934872540092dc8dd0040bd96a5843f25953334c9e0 </tarball-checksum>
 </plugin>
