@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Climatology </name>
-<version> 1.6.35.0 </version>
-<release> 0 </release>
+<version> 1.6.36.1 </version>
+<release> 1 </release>
 <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
 
 <api-version> 1.18 </api-version>
@@ -14,13 +14,13 @@
 Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
 </description>
 
-<target>android-arm64</target>
-<build-target>android</build-target>
+<target>flatpak-aarch64</target>
+<build-target>flatpak</build-target>
 <build-gtk></build-gtk>
-<target-version>16</target-version>
-<target-arch>arm64</target-arch>
+<target-version>24.08</target-version>
+<target-arch>aarch64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.35.0-android-arm64-16-android-arm64-tarball/versions/v1.6.35.0/climatology_pi-1.6.35.0-android-arm64-16-android-arm64.tar.gz
+https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.36.1-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.6.36.1/climatology_pi-1.6.36.1-aarch64_flatpak-24.08.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
 </plugin>
