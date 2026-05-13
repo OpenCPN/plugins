@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> Climatology </name>
-<version> 1.6.36.1 </version>
-<release> 1 </release>
+<version> 1.6.37.0 </version>
+<release> 0 </release>
 <summary> Climatology PlugIn: 32 years of monthly NOAA Data </summary>
 
 <api-version> 1.18 </api-version>
@@ -14,13 +14,13 @@
 Climatology provides overlay capabilities for historic weather data. Supported Climatology types include: - Average wind directions and speed- Percentage of gale and calm conditions - Sea Surface Currents - Average swell and sea state (not yet implemented) - Precipitation, Humidity, Cloud Cover, and Lightning Strikes - Monthly average Sea Level pressure and Sea Temperature, Air Temperature - Tropical Cyclone tracks
 </description>
 
-<target>darwin-wx32</target>
-<build-target>darwin</build-target>
+<target>debian-arm64</target>
+<build-target>debian</build-target>
 <build-gtk></build-gtk>
-<target-version>14.3.1</target-version>
-<target-arch>arm64;x86_64</target-arch>
+<target-version>13</target-version>
+<target-arch>arm64</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.36.1-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/v1.6.36.1/climatology_pi-1.6.36.1-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-1.6.37.0-debian-arm64-13-trixie-arm64-tarball/versions/1.6.37.0+4264.0c6fabe/climatology_pi-1.6.37.0-debian-arm64-13-trixie-arm64.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
 </plugin>
