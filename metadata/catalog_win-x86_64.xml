@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Métadonnées du plugin stlaurent_indices_pi pour le catalogue OpenCPN.
+  Ce fichier est un template : les variables @VAR@ sont remplacées par le
+  script CI (packaging/build_tarball.sh) lors de la publication d'un tag.
+
+  Pour soumettre au catalogue officiel :
+    1. Fork https://github.com/OpenCPN/plugins
+    2. Copier le fichier XML généré dans metadata/
+    3. Ouvrir une PR
+-->
+<plugins>
+  <plugin version="1">
+    <name>stlaurent_indices_pi</name>
+    <version>1.0.4</version>
+    <release>1</release>
+    <summary>Indices Saint-Laurent — météo-marine ECCC/RDWPS</summary>
+    <api-version>1.16</api-version>
+    <author>André Plante</author>
+    <description>
+      Affiche les indices météo-marins du Saint-Laurent produits par
+      iMeteo.ca a à partir des données GRIB d'Environnement et Changement climatique Canada
+      sur la carte nautique OpenCPN : indice d'agitation, flèches de direction,
+      palette de couleurs 20 niveaux, navigation entre 48 pas de temps.
+    </description>
+    <git>https://github.com/toutoumeteo/stlaurent_indices_pi</git>
+    <source>https://github.com/toutoumeteo/stlaurent_indices_pi/releases</source>
+    <tarball-url>https://dl.cloudsmith.io/public/imeteo/stlaurent-indices-pi/raw/files/stlaurent_indices_pi-1.0.4-win-x86_64.zip</tarball-url>
+    <tarball-checksum>sha256:b096891f04b74506ebb6b1dee3c685cae79af635520160a5ca2c2b660e665b7d</tarball-checksum>
+    <info-url>https://github.com/toutoumeteo/stlaurent_indices_pi</info-url>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <target-archs>x86_64</target-archs>
+  </plugin>
+</plugins>
