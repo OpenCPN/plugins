@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
 <name> KAHU Radar Hub </name>
-<version> 0.1.194.0 </version>
+<version> 0.1.196.0 </version>
 <release> 0 </release>
 <summary> Contribute AIS and ARPA targets to crowdsourcing for marine safety </summary>
 
@@ -14,13 +14,13 @@
 Upload AIS and ARPA targets (or any NMEA) to an internet server. Upload can be continuous, over intermittent internet, or scheduled, and tracks can be downsampled to fit your bandwidth.
 </description>
 
-<target>ubuntu-wx32-x86_64</target>
-<build-target>ubuntu</build-target>
-<build-gtk>gtk3</build-gtk>
-<target-version>22.04</target-version>
-<target-arch>x86_64</target-arch>
+<target>android-armhf</target>
+<build-target>android</build-target>
+<build-gtk></build-gtk>
+<target-version>16</target-version>
+<target-arch>armhf</target-arch>
 <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/radarhub-prod/raw/names/radarhub_pi-0.1.194.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/release-0.1.194.0/radarhub_pi-0.1.194.0-ubuntu-x86_64-22.04-jammy.tar.gz
+https://dl.cloudsmith.io/public/opencpn/radarhub-prod/raw/names/radarhub_pi-0.1.196.0-android-armhf-16-android-armhf-tarball/versions/release-0.1.196/radarhub_pi-0.1.196.0-android-armhf-16-android-armhf.tar.gz
 </tarball-url>
 <info-url> https://opencpn.org/OpenCPN/plugins/radarhub.html </info-url>
 </plugin>
