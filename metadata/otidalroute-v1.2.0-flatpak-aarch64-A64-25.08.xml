@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://circleci.com/gh/Rasbats/otidalroute_pi/242 -->
+<plugin version="1">
+  <name> otidalroute </name>
+  <version> v1.2.0 </version>
+  <release> 0 </release>
+  <summary> Plan a route with tidal current grib data </summary>
+
+  <api-version> 1.20 </api-version>
+  <open-source> yes </open-source>
+  <author> Mike Rossiter </author>
+  <source> https://github.com/Rasbats/otidalroute_pi </source>
+  <info-url> https://opencpn.org/OpenCPN/plugins/otidalroute.html </info-url>
+
+  <description> Use tidal current grib files to plan routes. Show tidal current arrows on the chart. Display tidal current data in a table.
+ </description>
+
+  <target>flatpak-aarch64</target>
+  <target-version>25.08</target-version>
+  <target-arch>aarch64</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/otidalroute-prod/raw/names/otidalroute-v1.2.0-flatpak-aarch64-A64-25.08-tarball/versions/v1.2.0/otidalroute-v1.2.0_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
+  <tarball-checksum> 5b29cea7d5caa3a53c97b754c8b9bd745fbf9badfe2844f5c756d1e5dc0cae5f </tarball-checksum>
+</plugin>
