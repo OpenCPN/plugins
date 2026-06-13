@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+<name> WeatherFiles </name>
+<version> 0.1.0.0 </version>
+<release> 0 </release>
+<summary> Browse WeatherFiles models, slice an area, download GRIBs into OpenCPN </summary>
+
+<api-version> 1.18 </api-version>
+<open-source> yes </open-source>
+<author> Bart Manuel </author>
+<source> https://github.com/bartmanuel/weatherfiles_pi </source>
+
+<description>
+WeatherFiles plugin for OpenCPN: browse 27+ European weather models, pick an area on the chart, and download sliced GRIB2 files that open directly in the built-in GRIB display. Uses the WeatherFiles public API (api.weatherfiles.com/v1) with a personal access token. See developers.weatherfiles.com.
+</description>
+
+<target>flatpak-aarch64</target>
+<build-target>flatpak</build-target>
+<build-gtk></build-gtk>
+<target-version>25.08</target-version>
+<target-arch>aarch64</target-arch>
+<tarball-url>
+https://dl.cloudsmith.io/public/bartmanuel-fgsm/weatherfiles-alpha/raw/names/weatherfiles_pi-0.1.0.0-flatpak-aarch64-25.08-flatpak-tarball/versions/v0.1.0.0-alpha1/weatherfiles_pi-0.1.0.0-aarch64_flatpak-25.08.tar.gz
+</tarball-url>
+<info-url> https://developers.weatherfiles.com </info-url>
+</plugin>
