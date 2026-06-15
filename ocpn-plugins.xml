@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-06-11 21:38</date>
+  <date>2026-06-15 13:38</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.1.0 </version>
@@ -5454,15 +5454,36 @@ grib file for wind data, simulates how a sailing vessel might react in
 those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-android-arm64-A64-16-tarball/versions/v3.4.8/ShipDriver-v3.4.8_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 9f35576ebd35e70cc6d8dff5eeb465921f892e76901b75a1c26680b2f94e7d36 </tarball-checksum>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-msvc-wx32-10-tarball/versions/v3.4.8/ShipDriver-v3.4.8_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> 0f87de6bbe5673040cb57431c477a11eb4a3da63f8b5e7303308648a5d48fde2 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
+    <release> 0 </release>
+    <summary> Simulate ship movements </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-android-arm64-A64-16-tarball/versions/v3.5.0/ShipDriver-v3.5.0_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 9de2b09ea4595d33dfb27434590d3daefc7c1d3b7e7971ed67ebed20bbcc49e8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5478,12 +5499,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>android-armhf</target>
     <target-version>16</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-android-armhf-A32-16-tarball/versions/v3.4.8/ShipDriver-v3.4.8_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> df1af3f6551f8dfae951e0012f01309bd4c80e8176767536f25d989eaffd698f </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-android-armhf-A32-16-tarball/versions/v3.5.0/ShipDriver-v3.5.0_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> cc983a90da089a75fe9b4cc4bfbc052a8c8769f1927d79bed36033e5d35f8b6f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5499,12 +5520,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>darwin-wx32</target>
     <target-version>10</target-version>
     <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-darwin-wx32-universal-10-tarball/versions/v3.4.8/ShipDriver-v3.4.8_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> caee7348f13c826dc47ccef426ec2b5b641bd5d3e0ff52c6fbc4439854b2e874 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-darwin-wx32-universal-10-tarball/versions/v3.5.0/ShipDriver-v3.5.0_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 3f54f9c9353d99e4cf5ffadea0f3d867fd919d41a2ee657e77ced27b616ce1fa </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5520,12 +5541,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-arm64</target>
     <target-version>12</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-arm64-A64-12-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-arm64-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 874b530e412e51045933a62dc4a92f9638cb89025a1f7411431046381f2ed995 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-arm64-A64-12-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> fe929e89290249402f39a62e0da6068bfca1105d273c23981156b4ffa6b10437 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5541,12 +5562,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-arm64</target>
     <target-version>13</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-arm64-A64-13-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-arm64-13-arm64.tar.gz </tarball-url>
-    <tarball-checksum> d8207e6c3e2174d3fcc45d6416cff8193c7d0091bc5e50512a88a54311cff834 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-arm64-A64-13-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 62a9c159e06a9e8641291522205716b6d655774e496bab116dd375fc0c929bc1 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5562,12 +5583,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-armhf</target>
     <target-version>12</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-armhf-A32-12-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-armhf-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> bcf4e17b7e3e0248d275bd20103545d3f38406af960f08ace94c0681f0ebf214 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-armhf-A32-12-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-armhf-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> cee762dfa8edc354c208f156a5c2610719421f3b913a1401607ac39063df6418 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5583,12 +5604,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-armhf</target>
     <target-version>13</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-armhf-A32-13-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-armhf-13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 1282999d9c5ed4e0260d1d761286c3ac96d5def1137e8f944b4218395a952893 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-armhf-A32-13-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-armhf-13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> ce19f6df5ebdc1f44eb7b792bdeebc76755a93057d777935fa34d6e2aab2c2d6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5604,12 +5625,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-wx32-x86_64-11-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 733008c5b48fd7686ba7a9c9e0a8a4563202867262982054b0791bb4ffda12a1 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-wx32-x86_64-11-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> de26d160f5874bb28c26aec4071fa8233f68919c476b68f3cbc83effdfdf6d12 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5625,12 +5646,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-x86_64-11-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 684f875c591894a62aefef55f41d8b562bcbe959264d84efbf94a8c7e3f49466 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-x86_64-11-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ca87ab84ad6c985b17c0a6c2cf0ccd566a95033574864bf68074455de6374441 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5646,12 +5667,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-x86_64</target>
     <target-version>12</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-x86_64-12-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-x86_64-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 10ccc4d8bf70aeb24da251879478bceb4dbcf285a7fe3cb01756d67430c880f5 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-x86_64-12-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> da8cf52b88e29f28e55d8bbaf407a059ed9746f7503a8eabddaf213a021d66e3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5667,12 +5688,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>debian-x86_64</target>
     <target-version>13</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-debian-x86_64-13-tarball/versions/v3.4.8/ShipDriver-v3.4.8_debian-x86_64-13-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 40ef9918dd5d9c494c471e75b93851443f746eac6b6aebddcfb53fda29d3e8f4 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-debian-x86_64-13-tarball/versions/v3.5.0/ShipDriver-v3.5.0_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> aeabe9bb55c1009ea5c8643a7054b9d9f3ef9d1be280e683cb2e1be2d94a8c60 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5688,12 +5709,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>flatpak-aarch64</target>
     <target-version>22.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-flatpak-aarch64-A64-22.08-tarball/versions/v3.4.8/ShipDriver-v3.4.8_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 7390a17b3426a1bab28871f07ca54e24cc0fc9f0dc806d59708ab30db46edf87 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-aarch64-A64-22.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 7d4d7fbd1ac72d34c76a0f4785e5d92d54882abd3935d35f6bf6dbb5c53e5320 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5709,12 +5730,33 @@ data from itself. This can be replayed to simulate collision situations.
     <target>flatpak-aarch64</target>
     <target-version>24.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-flatpak-aarch64-A64-24.08-tarball/versions/v3.4.8/ShipDriver-v3.4.8_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> a3f2190b137587d6415f2a20d0488cd51ea9bdcc9b89c748ea8912c31ac5e1e2 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-aarch64-A64-24.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> b610074688d0e848bee24ecb11d97af1673ef4a0f1690b0f0b4c83471a2ce3a3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
+    <release> 0 </release>
+    <summary> Simulate ship movements </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/shipdriver_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/shipdriver.html </info-url>
+    <description> Simulates navigation of a vessel. Using the sail option and a current
+grib file for wind data, simulates how a sailing vessel might react in
+those conditions. Using 'Preferences' the simulator is able to record AIS
+data from itself. This can be replayed to simulate collision situations.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>25.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-aarch64-A64-25.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 1b736770e615af69acf9b159946038c754bd82de9f93bb1fdbc1f96faeb2fb25 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> ShipDriver </name>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5730,12 +5772,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>flatpak-x86_64</target>
     <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-flatpak-x86_64-22.08-tarball/versions/v3.4.8/ShipDriver-v3.4.8_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 9b80c928656697569734a779a7273bb9a84f39b40706280ee8d987aecf561e13 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-x86_64-22.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 7fa1f268017d8eb03a2aba9c59f1cf474e43677d23f3128c9090abfce8e21c3c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5751,12 +5793,12 @@ data from itself. This can be replayed to simulate collision situations.
     <target>flatpak-x86_64</target>
     <target-version>24.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-flatpak-x86_64-24.08-tarball/versions/v3.4.8/ShipDriver-v3.4.8_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> e4689f46fb6043e91a40bc65711f92c81e42911cdc82287665f72f6c22d1f796 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-x86_64-24.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> de4d7ab39ec2591c498acb07d6ebaa0ed25b5054472127248c3e5211a69bca0c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ShipDriver </name>
-    <version> v3.4.8 </version>
+    <version> v3.5.0 </version>
     <release> 0 </release>
     <summary> Simulate ship movements </summary>
     <api-version> 1.18 </api-version>
@@ -5769,11 +5811,11 @@ grib file for wind data, simulates how a sailing vessel might react in
 those conditions. Using 'Preferences' the simulator is able to record AIS
 data from itself. This can be replayed to simulate collision situations.
  </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.4.8-msvc-wx32-10-tarball/versions/v3.4.8/ShipDriver-v3.4.8_msvc-wx32-10-x86.tar.gz </tarball-url>
-    <tarball-checksum> 0f87de6bbe5673040cb57431c477a11eb4a3da63f8b5e7303308648a5d48fde2 </tarball-checksum>
+    <target>flatpak-x86_64</target>
+    <target-version>25.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/shipdriver-prod/raw/names/ShipDriver-v3.5.0-flatpak-x86_64-25.08-tarball/versions/v3.5.0/ShipDriver-v3.5.0_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e9cc296c2cb5a068ce9e6343e7bf3d13362ec971ce1156f0a9ce7dc0c8700699 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> UKTides </name>
