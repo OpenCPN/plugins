@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
   <name> xGRIB </name>
-  <version> 0.2.0.0 </version>
+  <version> 0.2.4.0 </version>
   <release> 0 </release>
   <summary> Display, download, and generate environmental GRIB files. </summary>
 
@@ -14,13 +14,13 @@
     A catalogue-installable GRIB viewer with integrated generation of combined weather, wave, and current GRIB files using an isolated native helper.
   </description>
 
-  <target>darwin-wx32</target>
-  <build-target>darwin</build-target>
-  <build-gtk></build-gtk>
-  <target-version>15.3.2</target-version>
-  <target-arch>arm64</target-arch>
+  <target>debian-x86_64</target>
+  <build-target>debian</build-target>
+  <build-gtk>gtk3</build-gtk>
+  <target-version>13</target-version>
+  <target-arch>x86_64</target-arch>
   <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xgrib-alpha/raw/names/xgrib_pi-0.2.0.0-darwin-wx32-15.3.2-tarball/versions/0.2.0.0+287.c098c9c/xgrib_pi-0.2.0.0-darwin-wx32-arm64-15.3.2-macos-arm64.tar.gz
+    https://dl.cloudsmith.io/public/pob220/xgrib-alpha/raw/names/xgrib_pi-0.2.4.0-debian-x86_64-13-tarball/versions/0.2.4.0+526.48a05c4/xgrib_pi-0.2.4.0-debian-x86_64-13-trixie.tar.gz
   </tarball-url>
   <info-url> https://github.com/pob220/xgrib_pi </info-url>
 </plugin>
