@@ -69,7 +69,10 @@ def get_args(paths):
             help='Overwrite possibly existing source files.')
     generate_parser.add_argument(
             '--userdir', metavar='dir', default=paths["userdir"],
-            help='source directory [%s]' % paths["userdir"])
+            help='regular source directory [%s]' % paths["userdir"])
+    generate_parser.add_argument(
+            '--frozendir', metavar='dir', default='',
+            help='frozen source directory [""]')
     generate_parser.add_argument(
             '--destfile', metavar='path', default=paths["destfile"],
             help='destination path [%s]' % paths["destfile"])
@@ -86,7 +89,7 @@ def get_args(paths):
     return args
 
 
-def generate(sourcedir, destfile, version, date):
+def generate(sourcedir, frozendir, destfile, version, date):
     """Generate a new ocpn-plugins.xml."""
     tree = ET.Element('plugins')
     version_elem = ET.SubElement(tree, "version")
@@ -94,7 +97,9 @@ def generate(sourcedir, destfile, version, date):
     date_elem = ET.SubElement(tree, "date")
     date_elem.text = \
         date if date else datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
-    for path in sorted(Path(sourcedir).glob("*.xml")):
+    paths = sorted(Path(sourcedir).glob("*.xml"))
+    if bool(frozendir): paths.extend(sorted(Path(frozendir).glob("*.xml")))
+    for path in paths:
         try:
             subtree = ET.parse(str(path))
         except ET.ParseError as ex:
@@ -142,7 +147,7 @@ def main():
             errprint("The file %s is in the way" % args.destfile)
             errprint("Please remove or use --force")
             sys.exit(1)
-        generate(args.userdir, args.destfile, args.version, args.date)
+        generate(args.userdir, args.frozendir, args.destfile, args.version, args.date)
         print("Generated new ocpn-plugins.xml at " + args.destfile)
 
 
