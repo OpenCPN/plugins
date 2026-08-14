@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-08-10 02:50</date>
+  <date>2026-08-14 12:55</date>
   <plugin version="1">
     <name> AutoTrackRaymarine </name>
     <version> 2.3.1.0 </version>
@@ -14632,15 +14632,34 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-prod/raw/names/ocpn_draw_pi-1.
     <description> Allows predictions of future tidal currents, based on the harmonics data in
 OpenCPN.
  </description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-android-arm64-A64-16-tarball/versions/v4.6.5/otcurrent-v4.6.5_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 65c183d6a96e0205889490777c3de9da3a81fec50b4439685671fcd40f2a446d </tarball-checksum>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-msvc-wx32-10-tarball/versions/v4.6.5/otcurrent-v4.6.5_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> 64693ecffe586ae0a2930664f6bae0508b16ef8dc9026467a7539458cc474d32 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
+    <release> 0 </release>
+    <summary> Predict future tidal currents </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike Rossiter </author>
+    <source> https://github.com/Rasbats/otcurrent_pi </source>
+    <info-url> https://opencpn.org/OpenCPN/plugins/otcurrent.html </info-url>
+    <description> Allows predictions of future tidal currents, based on the harmonics data in
+OpenCPN.
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-android-arm64-A64-16-tarball/versions/v4.6.7/otcurrent-v4.6.7_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 52798d7aa96a87f14b3c6d32c823f35d86b84b093c9fed0c98ff73ad93f83b96 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> otcurrent </name>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14654,31 +14673,12 @@ OpenCPN.
     <target>android-armhf</target>
     <target-version>16</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-android-armhf-A32-16-tarball/versions/v4.6.5/otcurrent-v4.6.5_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> d4ab5f0f2657ff4ff1949dc0908a7921633c319671079ec5341b5fc3e937357a </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-android-armhf-A32-16-tarball/versions/v4.6.7/otcurrent-v4.6.7_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 0bb926a071e66e122068f986a881bc1b2dcb3ae977ae79602ac3cf13bea7157c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
-    <release> 0 </release>
-    <summary> Predict future tidal currents </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/otcurrent.html </info-url>
-    <description> Allows predictions of future tidal currents, based on the harmonics data in
-OpenCPN.
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-darwin-wx32-10-tarball/versions/v4.6.5/otcurrent-v4.6.5_darwin-wx32-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> ed086f7d19cdf1d8c31406ae7ec22ae087cf8430698b1aa2dd6b1491565d29ac </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14692,12 +14692,12 @@ OpenCPN.
     <target>darwin-wx32</target>
     <target-version>10</target-version>
     <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-darwin-wx32-universal-10-tarball/versions/v4.6.5/otcurrent-v4.6.5_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> b25be5debaf547aa87f6cebdc7f5e18b9fcee1f010be1455a19c7a1e90eb6f7c </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-darwin-wx32-universal-10-tarball/versions/v4.6.7/otcurrent-v4.6.7_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> b1539e399fcbd770009b9585393756d9bfde0a277c3f8964e9ed0aef558b2064 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14711,12 +14711,12 @@ OpenCPN.
     <target>debian-arm64</target>
     <target-version>12</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-arm64-A64-12-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-arm64-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 006db6262bc00a8003964592b79f1733a7cb974e95d1b559893e60d29474290b </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-arm64-A64-12-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 2627e9e5b464dd637c9a5b74468787bb402b548a8c71f60e9835abd22cecffcd </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14730,12 +14730,12 @@ OpenCPN.
     <target>debian-arm64</target>
     <target-version>13</target-version>
     <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-arm64-A64-13-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-arm64-13-arm64.tar.gz </tarball-url>
-    <tarball-checksum> a8a6d71191ed700abb5227714cde4fba97c13f17133448e5ff4b00515da11c96 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-arm64-A64-13-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 13a687d7c20d5830fc7a6dc6d908245198eb1eecfdc910fbf3862dedded20eff </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14749,12 +14749,12 @@ OpenCPN.
     <target>debian-armhf</target>
     <target-version>12</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-armhf-A32-12-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-armhf-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 550d730ea74d1183bdd7232ca53117bf251850ab1f8d1d1cb55d524fe713ecda </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-armhf-A32-12-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-armhf-12-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 274457f295cc647c26a618ed7fd7d48b74cf4dff3749b2079978a67218601d8f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14768,12 +14768,12 @@ OpenCPN.
     <target>debian-armhf</target>
     <target-version>13</target-version>
     <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-armhf-A32-13-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-armhf-13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> db8a4f15e202adba7335c60a07d08422150b584c7bec0093a066bf94670b8e39 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-armhf-A32-13-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-armhf-13-armhf.tar.gz </tarball-url>
+    <tarball-checksum> e63b55bbc7c38dc48fdb428b7b6aa5b613b0abd279c9a6606d22a289d128fba6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14787,12 +14787,12 @@ OpenCPN.
     <target>debian-wx32-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-wx32-x86_64-11-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 7ecfc1ac1b966439865db816845f81387bcae61e3ed476e9441c14a0dfa40266 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-wx32-x86_64-11-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> ad99ae104f7ec2562caf0fe7e309c9c72a52ed9a5df4e77285b7127fcfa795d6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14806,12 +14806,12 @@ OpenCPN.
     <target>debian-x86_64</target>
     <target-version>11</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-x86_64-11-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 1ca2ede211cb8991159fc47e9d335a6c99174d003465e591c19139bdd7050a7b </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-x86_64-11-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-x86_64-11-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f9933f4d53376860ac013da31ad1e32a7ac81f6b1eff4a01ce925aff4d0026e7 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14825,12 +14825,12 @@ OpenCPN.
     <target>debian-x86_64</target>
     <target-version>12</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-x86_64-12-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-x86_64-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8001e9b21f69b5e5c0de8796c7302ead2fe74a98322f0b7db273b65352c118bc </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-x86_64-12-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 80c898940d1fe5bb296aa96e9d4d6736d458d373a4872d3f2c4ec3a0f72acc97 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14844,12 +14844,12 @@ OpenCPN.
     <target>debian-x86_64</target>
     <target-version>13</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-debian-x86_64-13-tarball/versions/v4.6.5/otcurrent-v4.6.5_debian-x86_64-13-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d4e6047f529aea6a1d0d32dbabb0e0caf41a0aef678f65b74a77e851c0415caf </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-debian-x86_64-13-tarball/versions/v4.6.7/otcurrent-v4.6.7_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 1d50d863dc38ecb8d9a30726b44b30531a1415c5f610956df0105844ac0e4664 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14863,12 +14863,12 @@ OpenCPN.
     <target>flatpak-aarch64</target>
     <target-version>22.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-aarch64-A64-22.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 41dacc935bda4240cee4f56d1b2a6f5fbf2f65b00a64e7c9fceb7703d872f13f </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-aarch64-A64-22.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 873d60555eb3307c6799152e4a11591dabffca8b420fab9cdf7eab8cb137697a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14882,12 +14882,12 @@ OpenCPN.
     <target>flatpak-aarch64</target>
     <target-version>24.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-aarch64-A64-24.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 6023eb5a0e6b1e33194b44573d092442032de3e613ff6cc37478b3235901bf22 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-aarch64-A64-24.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 28041dbc88670d6d972b2e6d08307ce390e6dd84d5e02f7859bee14b57f0825c </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14901,12 +14901,12 @@ OpenCPN.
     <target>flatpak-aarch64</target>
     <target-version>25.08</target-version>
     <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-aarch64-A64-25.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 3cac7bf714c55e84a1385844e6ef54cf6f44a60c7963e031d0e042b42b2fcac9 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-aarch64-A64-25.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> 07d34df15d35d99f8750113e59551cdb361ae59b7a629acae6b2f951ec886df0 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14920,12 +14920,12 @@ OpenCPN.
     <target>flatpak-x86_64</target>
     <target-version>22.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-x86_64-22.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8fe8f5349534f669598a750a74155b99b66aa6258faf67dfe5812f14f81a2e9c </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-x86_64-22.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 648c4405f657c4f64c0a5859938b2219d1350f7b0912a1b3562fad8740e9bc1a </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14939,12 +14939,12 @@ OpenCPN.
     <target>flatpak-x86_64</target>
     <target-version>24.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-x86_64-24.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 6cd4c78b501d4c89d4d522b90e2682e5446fb0dc52d9be3c1bb2afc3bcd5adab </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-x86_64-24.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a7610581f37441c1cbe1b1e5c3c2157a378afabbf22a665cc886d823516c038e </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
-    <version> v4.6.5 </version>
+    <version> v4.6.7 </version>
     <release> 0 </release>
     <summary> Predict future tidal currents </summary>
     <api-version> 1.18 </api-version>
@@ -14958,27 +14958,8 @@ OpenCPN.
     <target>flatpak-x86_64</target>
     <target-version>25.08</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-flatpak-x86_64-25.08-tarball/versions/v4.6.5/otcurrent-v4.6.5_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 8853684a630eed885b384f38fc9abb3228f38d2506de1881448b006a99e765ae </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> otcurrent </name>
-    <version> v4.6.5 </version>
-    <release> 0 </release>
-    <summary> Predict future tidal currents </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Mike Rossiter </author>
-    <source> https://github.com/Rasbats/otcurrent_pi </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/otcurrent.html </info-url>
-    <description> Allows predictions of future tidal currents, based on the harmonics data in
-OpenCPN.
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.5-msvc-wx32-10-tarball/versions/v4.6.5/otcurrent-v4.6.5_msvc-wx32-10-x86.tar.gz </tarball-url>
-    <tarball-checksum> 64693ecffe586ae0a2930664f6bae0508b16ef8dc9026467a7539458cc474d32 </tarball-checksum>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.6.7-flatpak-x86_64-25.08-tarball/versions/v4.6.7/otcurrent-v4.6.7_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 98748f5c7f9b1efb56e5be9f01b69ae0590b03db392f348d8fd1f4a4fec1a2d3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otidalplan </name>
