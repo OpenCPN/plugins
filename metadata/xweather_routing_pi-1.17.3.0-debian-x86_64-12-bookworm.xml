@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin version="1">
+  <name> xWeatherRouting </name>
+  <version> 1.17.3.0 </version>
+  <release> 0 </release>
+  <summary> Weather routing with Main/Quick engines and arrival planning. </summary>
+
+  <api-version> 1.21 </api-version>
+  <open-source> yes </open-source>
+  <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+  <source> https://github.com/pob220/xweather_routing_pi </source>
+
+  <description>
+    WeatherRouting offers Main and Quick engines with independent saved settings and explicit search presets. It computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
+  </description>
+
+  <target>debian-x86_64</target>
+  <build-target>debian</build-target>
+  <build-gtk>gtk3</build-gtk>
+  <target-version>12</target-version>
+  <target-arch>x86_64</target-arch>
+  <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.3.0-debian-x86_64-12-x86_64-tarball/versions/1.17.3.0+603.18291ba/xweather_routing_pi-1.17.3.0-debian-x86_64-12-bookworm.tar.gz
+  </tarball-url>
+  <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+</plugin>
