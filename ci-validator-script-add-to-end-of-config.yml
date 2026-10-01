@@ -1,0 +1,18 @@
+jobs:
+  validate_metadata:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+
+      - run:
+          name: Install XML + curl tools
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y libxml2-utils curl tar
+
+      - run:
+          name: Run metadata validator
+          command: |
+            chmod +x ./ci/ci-metadata-validator.sh
+            ./ci/ci-metadata-validator.sh
