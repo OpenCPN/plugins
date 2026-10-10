@@ -22,6 +22,7 @@
       <xs:element name="tarball-url" type="xs:token"/>
       <xs:element name="tarball-checksum" type="xs:token"
                   minOccurs="0" maxOccurs="1"/>
+      <xs:element name="meta-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
       <xs:element name="info-url" type="xs:token" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
     <xs:attribute name="version" type="xs:string" use="required"/>
@@ -76,7 +77,9 @@
       <xs:enumeration value = "debian-arm64"/>
       <xs:enumeration value = "debian-wx32-arm64"/>
       <xs:enumeration value = "flatpak-aarch64"/>
+      <xs:enumeration value = "flatpak-32-aarch64"/>
       <xs:enumeration value = "flatpak-x86_64"/>
+      <xs:enumeration value = "flatpak-32-x86_64"/>
       <xs:enumeration value = "flatpak-x86_64-wx32"/>
       <xs:enumeration value = "flatpak-aarch64-wx32"/>
       <xs:enumeration value = "flatpak-x86_64-wx315"/>
