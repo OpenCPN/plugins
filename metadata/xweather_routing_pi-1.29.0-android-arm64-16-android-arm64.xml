@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin version="1">
+  <name> xWeatherRouting </name>
+  <version> 1.29.0 </version>
+  <release> 0 </release>
+  <summary>Weather routing, faster optional chart awareness and route checks.</summary>
+  <api-version> 1.21 </api-version>
+  <open-source> yes </open-source>
+  <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+  <source> https://github.com/pob220/xweather_routing_pi </source>
+  <description>
+    Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. WeatherRouting offers Auto, Quick, Standard, Professional and All (slow), with independent saved engine settings and explicit search presets. Auto falls back through Quick and Standard to Professional up to 400% effort. All compares four engines, including the internal Alternative engine, and shares a bounded extra-search allowance across successful engines. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional keeps a validated Quick candidate and searches for a faster route with broader recovery methods. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+  <target>android-arm64</target>
+  <build-target>android</build-target>
+  <build-gtk />
+  <target-version>16</target-version>
+  <target-arch>arm64</target-arch>
+  <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.29.0-android-arm64-16-arm64-tarball/versions/1.29.0+1626.d5a0142/xweather_routing_pi-1.29.0-android-arm64-16-android-arm64.tar.gz
+  </tarball-url>
+  <tarball-checksum> d15d273f03654db5ef6de18aeaabadc916f946578a2e04f8a4075bee31fb5048 </tarball-checksum>
+  <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+</plugin>
