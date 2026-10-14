@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
   <name> Route Toolbar </name>
-  <version> 0.5.9 </version>
+  <version> 0.5.10 </version>
   <release> 0 </release>
   <summary> Route-aware coastal passage planning and pilotage tools </summary>
 
@@ -17,11 +17,11 @@
     of routes and waypoints. Alpha release for testing with OpenCPN 5.14.x.
   </description>
 
-  <target>msvc-wx32</target>
-  <build-target>msvc</build-target>
+  <target>darwin-wx32</target>
+  <build-target>darwin</build-target>
   <build-gtk></build-gtk>
   <target-version>10</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.9-alpha1/route_toolbar_pi-0.5.9_msvc-wx32-10-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> d9f5fc9c64d88b72462d78871fb2c866d1ac75e8f35649cf91ea9b14423f2db1 </tarball-checksum>
+  <target-arch>arm64;x86_64</target-arch>
+  <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.10-alpha2/route_toolbar_pi-0.5.10_darwin-wx32-10-universal.tar.gz </tarball-url>
+  <tarball-checksum> fc9db6c4c427e1add369861cf67b14980cb26f87a24657fd388062da8ab909fe </tarball-checksum>
 </plugin>
