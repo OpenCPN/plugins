@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+  <name> Route Toolbar </name>
+  <version> 0.5.10 </version>
+  <release> 0 </release>
+  <summary> Route-aware coastal passage planning and pilotage tools </summary>
+
+  <api-version> 1.21 </api-version>
+  <open-source> yes </open-source>
+  <author> Ulf Andreasson </author>
+  <source> https://github.com/UlfAndreasson/opencpn-route-toolbar </source>
+  <info-url> https://github.com/UlfAndreasson/opencpn-route-toolbar </info-url>
+
+  <description>
+    Route-aware EBL/VRM, parallel indexing, turn geometry, leg course/distance
+    labels, Route Objects and passage-plan reports. OpenCPN remains the owner
+    of routes and waypoints. Alpha release for testing with OpenCPN 5.14.x.
+  </description>
+
+  <target>darwin-wx32</target>
+  <build-target>darwin</build-target>
+  <build-gtk></build-gtk>
+  <target-version>10</target-version>
+  <target-arch>arm64;x86_64</target-arch>
+  <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.10-alpha2/route_toolbar_pi-0.5.10_darwin-wx32-10-universal.tar.gz </tarball-url>
+  <tarball-checksum> fc9db6c4c427e1add369861cf67b14980cb26f87a24657fd388062da8ab909fe </tarball-checksum>
+</plugin>
