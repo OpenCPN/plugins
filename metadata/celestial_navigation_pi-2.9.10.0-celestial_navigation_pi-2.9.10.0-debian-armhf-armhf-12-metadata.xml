@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin version="1">
   <name> Celestial Navigation </name>
-  <version> 2.9.9.0 </version>
+  <version> 2.9.10.0 </version>
   <release> 0 </release>
   <summary> Celestial Navigation Plugin for OpenCPN </summary>
 
@@ -14,11 +14,11 @@
     Offline nautical almanac, sight planning and ranking, time-tagged running fixes, sequence analysis, horizon events, time integrity, optional DE440s navigation precision and a solar-eclipse planner.
   </description>
 
-  <target>flatpak-x86_64</target>
-  <build-target>flatpak</build-target>
+  <target>debian-armhf</target>
+  <build-target>debian</build-target>
   <build-gtk />
-  <target-version>24.08</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url>https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.9.9.0-flatpak-x86-64-x86-64-24.08-tarball/versions/2.9.9.0%2B9415.c2c929e/celestial_navigation_pi-2.9.9.0-x86_64_flatpak-24.08.tar.gz</tarball-url>
+  <target-version>12</target-version>
+  <target-arch>armhf</target-arch>
+  <tarball-url>https://dl.cloudsmith.io/public/opencpn/celestial-navigation-prod/raw/names/celestial_navigation_pi-2.9.10.0-debian-armhf-armhf-12-tarball/versions/2.9.10.0%2B9482.9e08fce/celestial_navigation_pi-2.9.10.0-debian-armhf-12-bookworm-armhf.tar.gz</tarball-url>
   <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
 </plugin>
