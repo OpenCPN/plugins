@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://github.com/OpenCPN/OpenCPN/actions/runs/40107907818 -->
+<plugin version="1">
+  <name> CrossBearing </name>
+  <version> v0.1.0 </version>
+  <release> 0 </release>
+  <summary> Cross bearing fixes without GPS </summary>
+
+  <api-version> 1.20 </api-version>
+  <open-source> yes </open-source>
+  <author> Mike G0KAD </author>
+  <source> https://github.com/g0kad/crossbearing_pi </source>
+  <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+
+  <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+
+  <target>msvc-wx32</target>
+  <target-version>10</target-version>
+  <target-arch>x86</target-arch>
+  <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-msvc-wx32-10-tarball/versions/v0.1.0/CrossBearing-v0.1.0_msvc-wx32-10-x86.tar.gz </tarball-url>
+  <tarball-checksum> 087b3c66c723d97c3e3da55da9e2ef5808f9845f9ef204596a32bb5bb2e4a4e5 </tarball-checksum>
+</plugin>
