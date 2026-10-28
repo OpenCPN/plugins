@@ -19,26 +19,15 @@ VERSION="$2"
 USER="$3"
 LEVEL="$4"
 
-REPO="https://cloudsmith.io/~${USER}/repos/"
-echo "Issuing command: wget -q -O - $REPO${NAME}-${LEVEL}/packages/?q=*${VERSION}*.xml"
+# ponytail: web UI is behind a captcha now, use the public JSON API (one request, max 50 results)
+API="https://api.cloudsmith.io/v1/packages/${USER}/${NAME}-${LEVEL}/?query=filename:*${VERSION}*.xml+tag:latest&page_size=50"
+echo "Issuing command: wget -q -O - $API"
 echo "Show current files that match criteria"
 ls metadata/${NAME}*-*${VERSION}*xml -la
 echo "Deleting current files that match criteria"
 rm metadata/${NAME}*-*${VERSION}*xml
 echo "Finding files on remote cloudsmith repository"
-delimiter="href=\""
-delimiter1=".xml"
-my_array=();
-while read -r line; do
-	if [[ "$line" =~ ^$delimiter && "$line" =~ $delimiter1.$ ]]; then
-		start=`awk -v a="$line" -v b="$delimiter" 'BEGIN{print index(a,b)}'`
-		start=$((start + ${#delimiter} - 1))
-		end=`awk -v a="$line" -v b="$delimiter1" 'BEGIN{print index(a,b)}'`
-		end=$((end + 3 - start))
-		line=${line:$start:$end}
-		my_array+=( $line );
-	fi
-done < <(wget -q -O - "${REPO}${NAME}-${LEVEL}/packages/?q=*${VERSION}*+tag:latest&page_size=50")
+mapfile -t my_array < <(wget -q -O - "$API" | grep -oE '"cdn_url": *"[^"]*\.xml"' | cut -d'"' -f4 | sort -u)
 echo "Downloading files found that match criteria"
 for URL in "${my_array[@]}"
 do
