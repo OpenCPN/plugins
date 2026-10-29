@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-09-26 00:12</date>
+  <date>2026-10-24 19:40</date>
   <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.10.1.1 </version>
@@ -47,28 +47,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/cel
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-ubuntu-wx32-x86_64-22.04-x86_64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-ubuntu-x86_64-22.04-jammy.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> WeatherFiles </name>
     <version> 0.1.0.0 </version>
     <release> 0 </release>
@@ -111,6 +89,29 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.10.0.0-debian-armhf-11-bullseye-armhf-tarball/versions/1.10.0.0+8391.924d084/ocpn_draw_pi-1.10.0.0-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-debian-x86_64-12-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-debian-x86_64-12-bookworm.tar.gz
+  </tarball-url>
+    <tarball-checksum> 3e5ff2a46d6e06615f9c312cea30ce44b0ec5c21ebb2eb979485ab5ef195d835 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -399,6 +400,29 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>22.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-ubuntu-wx32-x86_64-22.04-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-ubuntu-x86_64-22.04-jammy.tar.gz
+  </tarball-url>
+    <tarball-checksum> 1e7426754886526cb6498e5ebd7012e41bcda4b02ff94a91401ca27c63a8e397 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -443,28 +467,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://github.com/pob220/offlinetides_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>25.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-flatpak-x86_64-25.08-x86_64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-x86_64_flatpak-25.08.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -489,6 +491,29 @@ can only be used after purchasing decryption keys from o-charts.org.
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-ubuntu-gtk3-x86_64-20.04-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_ubuntu-gtk3-x86_64-20.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>25.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-flatpak-x86_64-25.08-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-x86_64_flatpak-25.08.tar.gz
+  </tarball-url>
+    <tarball-checksum> 9ff07dfbaf03d7a0cc0881ef94d9e4560c0e531751016a7eafacc63cff8d6fc4 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> o-charts </name>
     <version> 0.9.0.6 </version>
     <release> 0 </release>
@@ -511,6 +536,29 @@ can only be used after purchasing decryption keys from o-charts.org.
     <target-version>10</target-version>
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/o-charts-raspbian-armhf-10-tarball/versions/0.9.0.6.0.4505b90/o-charts_pi-0.9.0.6-0_raspbian-armhf-10.tar.gz </tarball-url>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>ubuntu-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>24.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-ubuntu-x86_64-24.04-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-ubuntu-x86_64-24.04-noble.tar.gz
+  </tarball-url>
+    <tarball-checksum> a1285d7d91cfeb4c05f7a3988e04d3b644995def4171cc0b0450b28a270f0379 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -713,6 +761,50 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Route Toolbar </name>
+    <version> 0.5.11 </version>
+    <release> 0 </release>
+    <summary> Route-aware coastal passage planning and pilotage tools </summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Ulf Andreasson </author>
+    <source> https://github.com/UlfAndreasson/opencpn-route-toolbar </source>
+    <info-url> https://github.com/UlfAndreasson/opencpn-route-toolbar </info-url>
+    <description>
+    Route-aware EBL/VRM, parallel indexing, turn geometry, leg course/distance
+    labels, Route Objects and passage-plan reports. OpenCPN remains the owner
+    of routes and waypoints. Alpha release for testing with OpenCPN 5.14.x.
+  </description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.11-alpha1/route_toolbar_pi-0.5.11_darwin-wx32-10-universal.tar.gz </tarball-url>
+    <tarball-checksum> 16349b9d2febbb2342eae2d1b78df59c95d8588a0523c87678d6d8214acf256a </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>msvc-64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-msvc-64-10-tarball/versions/v0.1.0/CrossBearing-v0.1.0_msvc-64-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 58e431a37108748c35b8a6e1a128542f507f74f2c984ffc63065d0540d5f8ba5 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.361.0 </version>
     <release> 0 </release>
@@ -848,6 +940,48 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-debian-arm64-A64-12-tarball/versions/v0.1.0/CrossBearing-v0.1.0_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> a3bcb6ef2210f91a27993027f7203a81c327290f97cd18e4542ba9df650c67e8 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-debian-x86_64-12-tarball/versions/v0.1.0/CrossBearing-v0.1.0_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 59157f02cf27e530c7f8e26cccd5f9790f53f7860575f17f18547b0efeaae89a </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.9.1.0 </version>
     <release> 0 </release>
@@ -890,6 +1024,52 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.10.1.1-android-arm64-16-android-arm64-tarball/versions/1.10.1.1+8470.38599ea/ocpn_draw_pi-1.10.1.1-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-debian-arm64-12-arm64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-debian-arm64-12-bookworm-arm64.tar.gz
+  </tarball-url>
+    <tarball-checksum> 265a824a3900570289dfc50dcb5267de00965373adcb073ca99876e05bbc83e9 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>msvc-64</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-msvc-64-10-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-msvc-64-x86_64-10.0-MSVC-x64.tar.gz
+  </tarball-url>
+    <tarball-checksum> 5390f6293c15bc30de17cceacc2fd899d663fc6927d308bf5229e491a4450533 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -1134,6 +1314,27 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-flatpak-aarch64-A64-24.08-tarball/versions/v0.1.0/CrossBearing-v0.1.0_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> da4cf2598b0ee32bd8e3d6ea020f9d9fad779e97b2cc5e5ba05bca78eb48dde5 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.9.1.0 </version>
     <release> 0 </release>
@@ -1264,6 +1465,29 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     https://dl.cloudsmith.io/public/pob220/xgrib-alpha/raw/names/xgrib_pi-0.3.0.0-debian-x86_64-12-tarball/versions/0.3.0.0+975.1f515ce/xgrib_pi-0.3.0.0-debian-x86_64-12-bookworm.tar.gz
   </tarball-url>
     <info-url> https://github.com/pob220/xgrib_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>15.3.2</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-darwin-wx32-15.3.2-arm64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-darwin-wx32-arm64-15.3.2-macos-arm64.tar.gz
+  </tarball-url>
+    <tarball-checksum> 1af719a5c6b60b953506dc09ec15f52ec26c1b3b92dfa83a5d4bbe7ecacdf427 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OfflineTides </name>
@@ -1512,6 +1736,29 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> Route Toolbar </name>
+    <version> 0.5.11 </version>
+    <release> 0 </release>
+    <summary> Route-aware coastal passage planning and pilotage tools </summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Ulf Andreasson </author>
+    <source> https://github.com/UlfAndreasson/opencpn-route-toolbar </source>
+    <info-url> https://github.com/UlfAndreasson/opencpn-route-toolbar </info-url>
+    <description>
+    Route-aware EBL/VRM, parallel indexing, turn geometry, leg course/distance
+    labels, Route Objects and passage-plan reports. OpenCPN remains the owner
+    of routes and waypoints. Alpha release for testing with OpenCPN 5.14.x.
+  </description>
+    <target>ubuntu-gtk3-x86_64</target>
+    <build-target>ubuntu</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>24.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.11-alpha1/route_toolbar_pi-0.5.11_ubuntu-gtk3-x86_64-24.04.tar.gz </tarball-url>
+    <tarball-checksum> 93866c7c98cc0e852ceba654fb400286b242e3b46bc6c2add56421a6712bc969 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.10.1.1 </version>
     <release> 1 </release>
@@ -1532,50 +1779,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.10.1.1-debian-arm64-11-bullseye-arm64-tarball/versions/1.10.1.1+8474.38599ea/ocpn_draw_pi-1.10.1.1-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-debian-x86_64-12-x86_64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-debian-x86_64-12-bookworm.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>15.3.2</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-darwin-wx32-15.3.2-arm64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-darwin-wx32-arm64-15.3.2-macos-arm64.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -1712,28 +1915,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>ubuntu-gtk3-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>24.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-ubuntu-gtk3-x86_64-24.04-x86_64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-ubuntu-x86_64-24.04-gtk3-noble.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1868,6 +2049,28 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.361.0-flatpak-aarch64-24.08-flatpak-tarball/versions/1.0.361.0+15504.32a4153/testplugin_pi-1.0.361.0-aarch64_flatpak-24.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> Route Toolbar </name>
+    <version> 0.5.11 </version>
+    <release> 0 </release>
+    <summary> Route-aware coastal passage planning and pilotage tools </summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Ulf Andreasson </author>
+    <source> https://github.com/UlfAndreasson/opencpn-route-toolbar </source>
+    <info-url> https://github.com/UlfAndreasson/opencpn-route-toolbar </info-url>
+    <description>
+    Route-aware EBL/VRM, parallel indexing, turn geometry, leg course/distance
+    labels, Route Objects and passage-plan reports. OpenCPN remains the owner
+    of routes and waypoints. Alpha release for testing with OpenCPN 5.14.x.
+  </description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/UlfAndreasson/opencpn-route-toolbar/releases/download/v0.5.11-alpha1/route_toolbar_pi-0.5.11_msvc-wx32-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 43f2569f07f561a3ec00ab31ec06b9d79a0b5b0b1af25fe95c02a89bc08528d1 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -2068,28 +2271,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>13</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-debian-x86_64-13-x86_64-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-debian-x86_64-13-trixie.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.65.47 </version>
     <release> 47 </release>
@@ -2176,6 +2357,27 @@ Offline nautical almanac, sight planning and ranking, time-tagged running fixes,
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/celestial_navigation_pi-2.9.1.0-debian-armhf-13-trixie-armhf-tarball/versions/2.9.1.0+8406.b13dc9e/celestial_navigation_pi-2.9.1.0-debian-armhf-13-trixie-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-msvc-wx32-10-tarball/versions/v0.1.0/CrossBearing-v0.1.0_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> 087b3c66c723d97c3e3da55da9e2ef5808f9845f9ef204596a32bb5bb2e4a4e5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -2356,6 +2558,50 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-flatpak-x86_64-24.08-tarball/versions/v0.1.0/CrossBearing-v0.1.0_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> eb22a8cd497940deafb3ba23fc36b94db76fa3dd3a9e6c837484883e910c1233 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-android-arm64-16-arm64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-android-arm64-16-android-arm64.tar.gz
+  </tarball-url>
+    <tarball-checksum> e564b569b091f5d04296b8c294f494314f26e61eeea33789a33513201273dca0 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.10.1.1 </version>
     <release> 1 </release>
@@ -2510,6 +2756,27 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.28.0-debian-armhf-wx32-12-bookworm-armhf-tarball/versions/1.0.28.0+1591.0752b1e/windvane_pi-1.0.28.0-debian-armhf-wx32-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-debian-arm64-A64-13-tarball/versions/v0.1.0/CrossBearing-v0.1.0_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> ea85a95d80424999856c40ae6e0e21f0713998c1c139703b3ec0c53f321d46c7 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2776,6 +3043,29 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>25.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-flatpak-aarch64-25.08-aarch64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-aarch64_flatpak-25.08.tar.gz
+  </tarball-url>
+    <tarball-checksum> b753c8a41755f762006b00439ebd364bd75a721c775dc6f7b7672753c4cedc6f </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -2796,6 +3086,50 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.28.0-flatpak-aarch64-20.08-flatpak-arm64-tarball/versions/1.0.28.0+1602.0752b1e/windvane_pi-1.0.28.0-aarch64_flatpak-20.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-darwin-wx32-universal-10-tarball/versions/v0.1.0/CrossBearing-v0.1.0_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> e97a244121cf0a17075839ca174c32fd3d1b0a11c07883094ad14f3eec02a8fd </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-msvc-wx32-10.0.20348-x86-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
+  </tarball-url>
+    <tarball-checksum> 37d9259ace5b006a3f906c0e0c2b3b157450ca769b74c7a5f549739dab02190f </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2932,6 +3266,29 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> xWeatherRouting </name>
+    <version> 1.34.0 </version>
+    <release> 0 </release>
+    <summary>Weather routing with six engines and a clear multi-polar boat editor.</summary>
+    <api-version> 1.21 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
+    <source> https://github.com/pob220/xweather_routing_pi </source>
+    <description>
+    The boat editor keeps the polar list and its add, edit, remove and reorder controls visible. A separate Wind range page applies low- and high-wind handling to the selected polar, preserving multiple-polars boats, crossover selection and saved XML settings. Desktop tabs and the Android touch page selector provide the same settings. Failed All searches can retain bounded independently replayed prefixes for inspection. Partial results show their actual endpoint and remaining straight-line distance; they do not imply destination arrival or enable completed-passage exports. Live chart progress shows bounded search fronts and a provisional explored path while visible routes are calculating. Previews are labelled as unvalidated and do not change route acceptance. Motoring follows the configured STW threshold: when the best usable sailing performance is below it, motor-only routing can use headings outside sailing-angle limits, including directly into wind. Sailing, motor-sailing and stronger-wind motoring retain those limits; other safety checks still apply. Consistent route visibility: the eye hides all route overlays even when selected, and hidden computations stay hidden at completion. Clear computed results releases courses, contours and result data while preserving route settings for recomputation. Departure optimisation can show only the selected departure, all departures or a manually chosen subset, with matching chart and eye state and no recomputation. Improved optional chart-awareness performance with a compatible enhanced host; stock OpenCPN retains ordinary weather routing and GSHHG land avoidance. Check existing OpenCPN routes for charted land, drying areas, hazards, clearance and optional minimum depth without altering their waypoints. A per-leg report and chart markers distinguish hazards from unavailable coverage or depth; cancellation produces a partial report and route or chart changes invalidate results. Chart checks require a compatible host. Basic routing offers Auto and All (slow), with individual engines and independent Auto/All membership in Advanced. The Atlas engine adds continuous physical connection solving, adaptive spatial decisions and time-dependent weather guidance with independent route validation. The available order is Quick, Quick2, Atlas, Standard, Alternative and Professional, skipping unchecked engines. Existing Auto/All memberships are preserved; Atlas is opt-in. Alternative is unchecked in Auto by default. Auto stops on Quick success; Quick2 success is retained while later selected engines start independently with fresh normal allowances. Later successful engines are compared against the retained Quick2 candidate. All compares every selected engine. Quick2 is an independent bounded CPU frontier search using the shared motion kernel, original safety providers and authoritative replay; no GPU is required. A bounded extra-search allowance is shared across retained candidates. Optional fastest/comfort alternatives also work with individual engines and Auto, with saved percentage and seconds limits. A retained-route comparison table and slider balance passage time against discomfort exposure while preserving the worst known leg. Wind-only ranking is enabled by default and remembered. Extra comfort limits never reduce the ordinary engines' budgets; All initially selects the earliest validated arrival. Quick uses hardened contour routing with independent chronological validation. Standard provides bounded adaptive search; Professional preserves validated incumbents, uses unrestricted and focused native recovery as appropriate, and enforces the requested arrival horizon. All support plugin-managed GSHHG shorelines; optional chart-backed safety requires a compatible host.
+  </description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.34.0-debian-x86_64-13-x86_64-tarball/versions/1.34.0+2241.7a28b14/xweather_routing_pi-1.34.0-debian-x86_64-13-trixie.tar.gz
+  </tarball-url>
+    <tarball-checksum> 9ccddc84bc9098d07f3146bf63b2079fe89ce37eea2c26aa0bb255c64104ad62 </tarball-checksum>
+    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -3018,28 +3375,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.10.1.1-flatpak-aarch64-22.08-flatpak-tarball/versions/1.10.1.1+8476.38599ea/ocpn_draw_pi-1.10.1.1-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> xWeatherRouting </name>
-    <version> 1.17.2.0 </version>
-    <release> 0 </release>
-    <summary> Upgraded weather routing with departure and arrival planning. </summary>
-    <api-version> 1.21 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier; Weather Routing Plugin Team </author>
-    <source> https://github.com/pob220/xweather_routing_pi </source>
-    <description>
-    WeatherRouting computes land-aware sailing routes using deterministic forward isochrones, reverse recovery, graph fallback, concurrent departure optimisation, and planned-arrival routing. Stock OpenCPN uses GSHHS land checks; optional chart-backed safety is available only when the host provides it.
-  </description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xweather-routing-alpha-oss/raw/names/xweather_routing_pi-1.17.2.0-msvc-wx32-10.0.20348-x86-tarball/versions/1.17.2.0+380.6c4d5b2/xweather_routing_pi-1.17.2.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
-  </tarball-url>
-    <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -3370,6 +3705,27 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.361.0-debian-x86_64-11-bullseye-tarball/versions/1.0.361.0+15508.32a4153/testplugin_pi-1.0.361.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> CrossBearing </name>
+    <version> v0.1.0 </version>
+    <release> 0 </release>
+    <summary> Cross bearing fixes without GPS </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> Mike G0KAD </author>
+    <source> https://github.com/g0kad/crossbearing_pi </source>
+    <info-url> https://github.com/g0kad/crossbearing_pi </info-url>
+    <description> Plot a position fix from hand bearing compass bearings when GPS is not
+available. Right-click charted objects, enter the magnetic bearings, and the
+plugin draws the position lines and drops a fix mark in the cocked hat.
+Variation comes from the WMM plugin.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-debian-x86_64-13-tarball/versions/v0.1.0/CrossBearing-v0.1.0_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 9444d64ee94bbadbf003ec51a56a8ee541e0f511396a4ad5c4fb838adc0308be </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
