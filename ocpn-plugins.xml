@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-10-28 19:44</date>
+  <date>2026-10-29 19:50</date>
   <plugin version="1">
     <name> Mayara </name>
     <version> 0.1.4.0 </version>
@@ -552,6 +552,28 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/chartscale.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-arm64-12-bookworm-arm64-tarball/versions/1.3.56.8+1758.99958c7/findit_pi-1.3.56.8-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.58.0 </version>
     <release> 0 </release>
@@ -722,28 +744,6 @@ Route tracking and remote control for Evolution pilots
 https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTrackRaymarine_pi-1.18.36.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.18.36.0/AutoTrackRaymarine_pi-1.18.36.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-android-armhf-16-android-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name>NSK</name>
@@ -982,6 +982,28 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/chartscale.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-arm64-13-trixie-arm64-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-arm64-13-trixie-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> DashboardTactics </name>
     <version> 1.7.61.0 </version>
     <release> 0 </release>
@@ -1105,25 +1127,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.10.0.0-android-arm64-16-android-arm64-tarball/versions/1.10.0.0+8396.82b3adb/ocpn_draw_pi-1.10.0.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+58.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-msvc-wx32-10-tarball/versions/1.15.45.9-beta+58.873d998/WeatherRouting-1.15.45.9-beta+58.873d998_msvc-wx32-10-x86.tar.gz </tarball-url>
-    <tarball-checksum> a520451a1f9cba3f8475d6f14ec4034426d9a242d10b3d9e34f21f043f939df6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -1407,28 +1410,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.8.60.0-debian-armhf-12-bookworm-armhf-tarball/versions/1.8.60.0+8089.1d3288b/ocpn_draw_pi-1.8.60.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-flatpak-aarch64-22.08-flatpak-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -1932,6 +1913,28 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-prod/raw/names/rayma
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>14.3.1</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -2099,6 +2102,28 @@ such as dual radar range and Doppler.
     <tarball-checksum> 85ba0bae9d9fbdb17b430317305c2bf0da55ac714228f60582fe2634cd35e14c </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-flatpak-aarch64-22.08-flatpak-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Climatology </name>
     <version> 1.6.31.0 </version>
     <release> 0 </release>
@@ -2141,25 +2166,6 @@ Nautical almanac: sun, moon, planets and navigational stars. Compute position fi
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/celestial_navigation_pi-2.4.53.0-debian-arm64-11-bullseye-arm64-tarball/versions/v2.4.53.0/celestial_navigation_pi-2.4.53.0-debian-arm64-11-bullseye-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1896.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-x86_64-12-tarball/versions/1.15.45.9-beta+1896.873d998/WeatherRouting-1.15.45.9-beta+1896.873d998_debian-x86_64-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 46afbb4e8ff901913a5f565cd80bfe51a46aa3242339a7d20db4b83524deb2e3 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> sar </name>
@@ -2265,6 +2271,28 @@ https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.3.13.0-d
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>android-armhf</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-android-armhf-16-android-armhf-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-android-armhf-16-android-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.63.0 </version>
     <release> 0 </release>
@@ -2332,22 +2360,25 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-d
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1897.873d998 </version>
-    <release> 9 </release>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-darwin-wx32-universal-10-tarball/versions/1.15.45.9-beta+1897.873d998/WeatherRouting-1.15.45.9-beta+1897.873d998_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> c32f876ad6aac81141d0c4a147ba1fe28d3159869bdbb79f966fba475bfe30bd </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name>DashboardSK</name>
@@ -2567,6 +2598,28 @@ Tactics PlugIn for OpenCPN Provides performance data and instrument display from
 https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.81.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.0.81.0/tactics_pi-1.0.81.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/tactics.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> ChartScale </name>
@@ -3229,47 +3282,6 @@ https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>14.1</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-darwin-wx32-arm64-x86_64-14.1-macos-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-darwin-wx32-arm64-x86_64-14.1-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1902.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-darwin-wx32-10-tarball/versions/1.15.45.9-beta+1902.873d998/WeatherRouting-1.15.45.9-beta+1902.873d998_darwin-wx32-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d6a63ad479af251ad8caf09fbb8187b142e5f292ff09c4b81b97bdc7d74afc59 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -3350,26 +3362,26 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
     <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+Stowage PlugIn for OpenCPN
 </description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-x86_64_flatpak-22.08.tar.gz
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-armhf-12-bookworm-armhf-tarball/versions/1.3.56.8+1762.99958c7/findit_pi-1.3.56.8-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -3666,6 +3678,28 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <tarball-checksum> 803bc52448f9a8e56fb328b74c4528d7e58246f86a3a0d20e29c1d0b746a2acc </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-armhf-13-trixie-armhf-tarball/versions/1.3.56.8+1757.99958c7/findit_pi-1.3.56.8-debian-armhf-13-trixie-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -3831,28 +3865,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-aarch64-22.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-aarch64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 2.0.0.0 </version>
     <release> 0 </release>
@@ -3871,28 +3883,6 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-2.0.0.0-ubuntu-x86_64-18.04-bionic-gtk3-tarball/versions/V2.0/twocan_plugin_pi-2.0.0.0-ubuntu-x86_64-18.04-bionic-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:other:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -4025,6 +4015,28 @@ Route tracking and remote control for Evolution pilots
 https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTrackRaymarine_pi-1.18.34.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.18.34/AutoTrackRaymarine_pi-1.18.34.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-x86_64-13-trixie-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-x86_64-13-trixie.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Calculator </name>
@@ -4693,28 +4705,6 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-msvc-x86-10.0.20348-MSVC-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-msvc-x86-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -4928,6 +4918,28 @@ https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-prod/raw/names/rayma
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-armhf-11-bullseye-armhf-tarball/versions/1.3.56.8+1760.99958c7/findit_pi-1.3.56.8-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 2.0.0.0 </version>
     <release> 0 </release>
@@ -5050,28 +5062,6 @@ Radar PlugIn for OpenCPN Shows AIS targets in a radar style view.
 https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.4.11.5-debian-armhf-11-bullseye-armhf-tarball/versions/v1.4.11.5/aisradar_pi-1.4.11.5-debian-armhf-11-bullseye-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> SailawayNMEA </name>
@@ -5813,28 +5803,6 @@ oernc plugins. It thus obsoletes these two plugins.
     <tarball-checksum> fd5bf99a8e44e79f4073c28d86fae26179596a56ed3020472a9047aaf3438c4b </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-aarch64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-aarch64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.10.0.0 </version>
     <release> 0 </release>
@@ -6136,6 +6104,28 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-x86_64-12-bookworm-tarball/versions/1.3.56.8+1765.99958c7/findit_pi-1.3.56.8-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Plots </name>
     <version> 2.3.13.0 </version>
     <release> 0 </release>
@@ -6156,6 +6146,28 @@ Sailing Performance: Plot speed and course over ground to make the result of sma
 https://dl.cloudsmith.io/public/opencpn/plots-prod/raw/names/plots_pi-2.3.13.0-debian-x86_64-11-bullseye-tarball/versions/v2.3.13.0/plots_pi-2.3.13.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/sweepplot.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>darwin-wx32</target>
+    <build-target>darwin</build-target>
+    <build-gtk/>
+    <target-version>14.3.1</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/1.3.56.8+1751.99958c7/findit_pi-1.3.56.8-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> WeatherFax </name>
@@ -6222,28 +6234,6 @@ Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
 https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-prod/raw/names/raymarine_autopilot_pi-1.0.40.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.0.40.0/raymarine_autopilot_pi-1.0.40.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-x86_64-11-bullseye-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-x86_64-11-bullseye.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -6475,28 +6465,6 @@ Set deviation table to correct incoming nmea compass course to true course sente
 https://dl.cloudsmith.io/public/opencpn/deviation-prod/raw/names/deviation_pi-0.1.60.0-debian-x86_64-11-bullseye-tarball/versions/v0.1.60.0/deviation_pi-0.1.60.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/deviation/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-armhf-12-bookworm-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-armhf-12-bookworm-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -6871,6 +6839,28 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <info-url> https://opencpn-manuals.github.io/main/autotrackraymarine/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-flatpak-aarch64-22.08-flatpak-tarball/versions/1.3.56.8+1755.99958c7/findit_pi-1.3.56.8-aarch64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name>IACFleet</name>
     <version>v0.40.0-beta1</version>
     <release>0</release>
@@ -7103,28 +7093,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <tarball-checksum>6d7216c9535596b1106f9b41e1b859048a7bd7be13782c3cccbda6c2951bebfe</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Deviation </name>
     <version> 0.1.60.0 </version>
     <release> 0 </release>
@@ -7235,26 +7203,26 @@ oernc plugins. It thus obsoletes these two plugins.
     <tarball-checksum> 1de212a32728cdbb10e9760d16f5ea644c37237ec8f336c79590484a6e451eb1 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Stowage PlugIn for OpenCPN
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
+    <target>ubuntu-wx32-x86_64</target>
+    <build-target>ubuntu</build-target>
     <build-gtk>gtk3</build-gtk>
-    <target-version>11</target-version>
+    <target-version>22.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-x86_64-11-bullseye-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-x86_64-11-bullseye.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-ubuntu-x86_64-22.04-jammy.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Climatology </name>
@@ -7939,6 +7907,28 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-gtk3-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-gtk3-x86_64-18.04.tar.gz </tarball-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-flatpak-x86_64-24.08-flatpak-tarball/versions/1.3.56.8+1756.99958c7/findit_pi-1.3.56.8-x86_64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -8342,25 +8332,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1893.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-arm64-A64-12-tarball/versions/1.15.45.9-beta+1893.873d998/WeatherRouting-1.15.45.9-beta+1893.873d998_debian-arm64-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> f144a98441724beeb6e6c65b62fa2de015181f8774e5ed642a40a5025effd6fb </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.2.31.0 </version>
     <release> 0 </release>
@@ -8643,28 +8614,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-1.0.361.0-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/1.0.361.0+15524.b4d1a38/testplugin_pi-1.0.361.0-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>android-armhf</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-android-armhf-16-android-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-android-armhf-16-android-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -9368,25 +9317,6 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <info-url> https://opencpn.org/OpenCPN/plugins/chartscale.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1901.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-arm64</target>
-    <target-version>13</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-arm64-A64-13-tarball/versions/1.15.45.9-beta+1901.873d998/WeatherRouting-1.15.45.9-beta+1901.873d998_debian-arm64-13-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 101c11c60c7ff65166c27f884972b1ddd0c82f9d44a2c39dc28c8f7962540352 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.60.0 </version>
     <release> 0 </release>
@@ -9871,6 +9801,28 @@ https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-armhf-13-trixie-armhf-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-armhf-13-trixie-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TwoCan Plugin </name>
     <version> 1.9.1.0 </version>
     <release> 0 </release>
@@ -9908,6 +9860,28 @@ Save NMEA stream to a file.  Replay NMEA stream previously saved. Used to test p
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/vdr-alpha/raw/names/VDR-1.3-android-arm64-A64-16-tarball/versions/1.3.35.0+219.370e699/VDR-1.3.35.0+219.370e699_android-arm64-16-arm64.tar.gz </tarball-url>
     <tarball-checksum> 0b0ba52d8179dd78d0c5c422c7ff3e4cc85699655016a99a093cea8cffd8f0ba </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-x86_64-13-trixie-tarball/versions/1.3.56.8+1764.99958c7/findit_pi-1.3.56.8-debian-x86_64-13-trixie.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Tactics </name>
@@ -10157,28 +10131,6 @@ OpenCPN.
     <tarball-checksum> 6fb696cec3bbed6d8fd47f05abcf37021e7ed818024b09c0fe78681a510a0584 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-armhf-11-bullseye-armhf-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-armhf-11-bullseye-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.361.0 </version>
     <release> 0 </release>
@@ -10315,28 +10267,6 @@ https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_
     <tarball-checksum>58cae7d1ddcba4f69b1844a02894d27fb8261594cca89bf4f92087fd12a40a14</tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-arm64-10-buster-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-arm64-10-buster-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.58.0 </version>
     <release> 0 </release>
@@ -10439,28 +10369,6 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-20.04-focal-gtk3.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-x86_64-10-buster-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-x86_64-10-buster.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -10567,25 +10475,6 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <target-arch>x86_64</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.4.0-beta4-debian-x86_64-12-tarball/versions/v0.4.0-beta4/DashboardSK-v0.4.0-beta4_debian-x86_64-12-x86_64.tar.gz</tarball-url>
     <tarball-checksum>cc084c47b31c13e819ff949b2bbd0a811c3505c235610fbac34205e4999445f2</tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1890.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>13</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-x86_64-13-tarball/versions/1.15.45.9-beta+1890.873d998/WeatherRouting-1.15.45.9-beta+1890.873d998_debian-x86_64-13-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> e6e88f725d57a220c30fe41d71798b9c291be58b4e2a1c90d6ae1918727d7ee5 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -10722,25 +10611,6 @@ Automatically controls external command-line tools for software radio, options f
 https://dl.cloudsmith.io/public/opencpn/rtlsdr-prod/raw/names/rtlsdr_pi-1.4.8.0-darwin-wx32-arm64-x86_64-11.4-macos-tarball/versions/v1.4.8.0/rtlsdr_pi-1.4.8.0-darwin-wx32-arm64-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/rtlsdr.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1889.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-armhf</target>
-    <target-version>13</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-armhf-A32-13-tarball/versions/1.15.45.9-beta+1889.873d998/WeatherRouting-1.15.45.9-beta+1889.873d998_debian-armhf-13-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 4dd6e511a68eac4b8fbdbf018f7fef95be52822e8798bd8200b140e6eecd198d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -11013,6 +10883,28 @@ be imported into OpenCPN to assist in performing searches.
     <tarball-checksum> ae4ec2de99f571e7f659cfc34b66ca4ec78d504a93f18f4747c4c49acd755922 </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-x86_64-11-bullseye-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.63.0 </version>
     <release> 0 </release>
@@ -11119,6 +11011,28 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.81
     <tarball-checksum>6017914dba79158398bba89cceeb8fc0d88171e9cec34c9a5c363b66e674052e</tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>android-arm64</target>
+    <build-target>android</build-target>
+    <build-gtk/>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-android-arm64-16-android-arm64-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-android-arm64-16-android-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Raymarine autopilot </name>
     <version> 1.0.40.0 </version>
     <release> 0 </release>
@@ -11161,6 +11075,28 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.10.0.0-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/1.10.0.0+8406.82b3adb/ocpn_draw_pi-1.10.0.0-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-flatpak-aarch64-24.08-flatpak-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-aarch64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -11289,28 +11225,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-beta/raw/names/cele
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-gtk3-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-armhf-gtk3-10-buster-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-armhf-10-gtk3-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> ChartScale </name>
     <version> 0.3.12.0 </version>
     <release> 0 </release>
@@ -11421,27 +11335,8 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
   </plugin>
   <plugin version="1">
     <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1892.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>24.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-flatpak-x86_64-24.08-tarball/versions/1.15.45.9-beta+1892.873d998/WeatherRouting-1.15.45.9-beta+1892.873d998_flatpak-x86_64-24.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 5483dbb0bb0c258d48a3d0a7261dba4592d1d705dad87a73118e2fc6298749a6 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
     <summary> Compute optimal routes based on weather and constraints. </summary>
     <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
@@ -11450,13 +11345,13 @@ on weather data, automatic boat polar computation.
     <description>
 WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>debian-x86_64</target>
+    <target>debian-armhf</target>
     <build-target>debian</build-target>
     <build-gtk/>
     <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
+    <target-arch>armhf</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-x86_64-12-bookworm-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-x86_64-12-bookworm.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-armhf-12-bookworm-armhf-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
@@ -11700,6 +11595,28 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-msvc-x86-10.0.20348-MSVC-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-msvc-x86-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> TideFinder </name>
     <version> 1.4.3+152.v1.4.3-beta </version>
     <release> 1 </release>
@@ -11847,6 +11764,28 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <tarball-checksum> cc313027b7ecfb31e3f9fbda7f7fa75754e4db11b9d91e4fe7e7b0644ed65d8a </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-x86_64-12-bookworm-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-x86_64-12-bookworm.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Radar </name>
     <version> v5.7.2-beta </version>
     <release> 0 </release>
@@ -11941,25 +11880,6 @@ such as dual radar range and Doppler.
     <tarball-checksum> 71ea2921e43466bf2414597b3c1fbbe652b2e0b884427a5aad779abf773c5df1 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1900.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-wx32-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-wx32-x86_64-11-tarball/versions/1.15.45.9-beta+1900.873d998/WeatherRouting-1.15.45.9-beta+1900.873d998_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 19192ab14558fef9c79c999b72b5d489450bebf683878bc2810741e1e2262ef7 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> otcurrent </name>
     <version> v4.3.0 </version>
     <release> 0 </release>
@@ -12023,25 +11943,6 @@ https://dl.cloudsmith.io/public/opencpn/watchdog-prod/raw/names/watchdog_pi-2.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/watchdog.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1891.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-armhf</target>
-    <target-version>12</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-armhf-A32-12-tarball/versions/1.15.45.9-beta+1891.873d998/WeatherRouting-1.15.45.9-beta+1891.873d998_debian-armhf-12-armhf.tar.gz </tarball-url>
-    <tarball-checksum> b4917a3bf69ebd02db574f390d64487b33676c3b3a30849c38d1d083dc8637a9 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name>NSK</name>
     <version>v0.4.0-beta1</version>
     <release>0</release>
@@ -12102,6 +12003,28 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.31.0-darwin-wx32-arm64-x86_64-11.4-macos-tarball/versions/v0.4.31.0/autopilot_route_pi-0.4.31.0-darwin-wx32-arm64-x86_64-11.4-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-flatpak-x86_64-24.08-flatpak-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-x86_64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Plots </name>
@@ -12190,25 +12113,6 @@ Admiralty tide calculations
 https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_tide_tables_pi-0.1.18.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v0.1.18.0/admiralty_tide_tables_pi-0.1.18.0-x86_64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1898.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>24.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-flatpak-aarch64-A64-24.08-tarball/versions/1.15.45.9-beta+1898.873d998/WeatherRouting-1.15.45.9-beta+1898.873d998_flatpak-aarch64-24.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 707bef7729776b1ad085ba383d4aeaba4c05404771a1f77ecfab1d820c183de6 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Polar </name>
@@ -12345,28 +12249,6 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.81
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otidalplan-beta/raw/names/otidalplan-v1.1.0-beta3-msvc-10.0.14393-tarball/versions/v1.1.0-beta3/otidalplan-v1.1.0-beta3_msvc-10.0.14393-win32.tar.gz </tarball-url>
     <tarball-checksum> ebcdf39439d208213496f5008047ff10e218c9aca1a929607840a6d179544303 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>darwin-wx315</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>12.3.1</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-darwin-wx315-x86_64-12.3.1-macos-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-darwin-wx315-x86_64-12.3.1-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -12512,25 +12394,6 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-debian-x86_64-10-buster-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1895.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>22.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-flatpak-aarch64-A64-22.08-tarball/versions/1.15.45.9-beta+1895.873d998/WeatherRouting-1.15.45.9-beta+1895.873d998_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 49639ee512fa744894d3f45399c770f3a307ad054f0fdfee442c200e47c862ee </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name>NSK</name>
@@ -12717,28 +12580,6 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.10.0.0-flatpak-aarch64-22.08-flatpak-tarball/versions/1.10.0.0+8409.82b3adb/ocpn_draw_pi-1.10.0.0-aarch64_flatpak-22.08.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-arm64-11-bullseye-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Plots </name>
@@ -12980,6 +12821,28 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-arm64-13-trixie-arm64-tarball/versions/1.3.56.8+1750.99958c7/findit_pi-1.3.56.8-debian-arm64-13-trixie-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> Logbook </name>
     <version> v1.4.34.0 </version>
     <release> 0 </release>
@@ -12998,28 +12861,6 @@ search LogbookKonni
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/logbookkonni-prod/raw/names/Logbook-v1.4.34.0-debian-wx32-x86_64-11-tarball/versions/v1.4.34.0/Logbook-v1.4.34.0_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> d0774f2354cdf2295e0086dfcfe4a8c43326b33674c492a18cad0f1dd8f33d51 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-msvc-x86_64-wx32-10.0.20348-MSVC-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-msvc-x86_64-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name>ObjSearch</name>
@@ -13237,6 +13078,28 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>msvc</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-msvc-x86-10.0.20348-MSVC-tarball/versions/1.3.56.8+1763.99958c7/findit_pi-1.3.56.8-msvc-x86-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> ChartScale </name>
     <version> 0.3.12.0 </version>
     <release> 0 </release>
@@ -13391,25 +13254,6 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1899.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-flatpak-x86_64-22.08-tarball/versions/1.15.45.9-beta+1899.873d998/WeatherRouting-1.15.45.9-beta+1899.873d998_flatpak-x86_64-22.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 6f892cfb9270a40bbff950caaada8beb61cdb61352bd37749135b58d6365618f </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.361.0 </version>
     <release> 0 </release>
@@ -13474,6 +13318,28 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.28.0-debian-arm64-wx32-12-bookworm-arm64-tarball/versions/1.0.28.0+1607.a49c24b/windvane_pi-1.0.28.0-debian-arm64-wx32-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-x86_64</target>
+    <build-target>debian</build-target>
+    <build-gtk>gtk3</build-gtk>
+    <target-version>11</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-x86_64-11-bullseye-tarball/versions/1.3.56.8+1761.99958c7/findit_pi-1.3.56.8-debian-x86_64-11-bullseye.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Watchdog </name>
@@ -13554,28 +13420,6 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-raspbian-armhf-10-buster-armhf-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-raspbian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>msvc</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> StatusBar </name>
@@ -13727,28 +13571,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>ubuntu-armhf</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>18.04</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Plots </name>
     <version> 2.3.13.0 </version>
     <release> 0 </release>
@@ -13877,6 +13699,28 @@ https://dl.cloudsmith.io/public/opencpn-radar-pi/mayara-beta/raw/names/mayara_pi
     <info-url> https://github.com/opencpn-radar-pi/mayara_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-arm64-11-bullseye-arm64-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -13895,48 +13739,26 @@ https://dl.cloudsmith.io/public/opencpn-radar-pi/mayara-beta/raw/names/mayara_pi
     <tarball-checksum> bfd7d0e3bfc8b13beac527509293aef97e5c263ea952d5819c9bae1518cbd287 </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
     <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
     <description>
-Stowage PlugIn for OpenCPN
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
 </description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-android-arm64-16-android-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-armhf</target>
+    <target>debian-arm64</target>
     <build-target>debian</build-target>
     <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>armhf</target-arch>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
     <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-armhf-11-bullseye-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-armhf-11-bullseye-armhf.tar.gz
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -14351,28 +14173,6 @@ https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>darwin-wx32</target>
-    <build-target>darwin</build-target>
-    <build-gtk/>
-    <target-version>11.4</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-darwin-wx32-arm64-x86_64-11.4-macos-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-darwin-wx32-arm64-x86_64-11.4-macos.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Raymarine autopilot </name>
     <version> 1.0.40.0 </version>
     <release> 0 </release>
@@ -14760,6 +14560,28 @@ data from itself. This can be replayed to simulate collision situations.
     <tarball-checksum> 246d60a13640bb0579fa583157ad5ad733f9d65852bc018b5dcf334f71fd606a </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-aarch64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-flatpak-aarch64-24.08-flatpak-tarball/versions/1.3.56.8+1766.99958c7/findit_pi-1.3.56.8-aarch64_flatpak-24.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
     <name>DashboardSK</name>
     <version>v0.4.0-beta4</version>
     <release>0</release>
@@ -14962,28 +14784,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>24.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-flatpak-x86_64-24.08-flatpak-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-x86_64_flatpak-24.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> NmeaConverter_pi </name>
     <version> 1.4.15.0 </version>
     <release> 0 </release>
@@ -15069,28 +14869,6 @@ Automatically controls external command-line tools for software radio, options f
 https://dl.cloudsmith.io/public/opencpn/rtlsdr-prod/raw/names/rtlsdr_pi-1.4.8.0-debian-armhf-10-buster-armhf-tarball/versions/v1.4.8.0/rtlsdr_pi-1.4.8.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/rtlsdr.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-x86_64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-x86_64-12-bookworm-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-x86_64-12-bookworm.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
@@ -15362,28 +15140,6 @@ https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_p
     <target-arch>x86_64</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/nohal/iacfleet_pi-beta/raw/names/IACFleet-v0.40.0-beta1-flatpak-x86_64-26.08-tarball/versions/v0.40.0-beta1/IACFleet-v0.40.0-beta1_flatpak-x86_64-26.08-x86_64.tar.gz</tarball-url>
     <tarball-checksum>d46bd886f02fc3e1fcb38ca7563d6ba1d260e9ff671a25653ac1566058bb347b</tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-armhf</target>
-    <build-target>debian</build-target>
-    <build-gtk>gtk2</build-gtk>
-    <target-version>10</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-armhf-10-buster-armhf-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-armhf-10-buster-armhf.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Admiralty Tide Tables Calculation </name>
@@ -16055,28 +15811,6 @@ https://dl.cloudsmith.io/public/opencpn/admiralty-tide-prod/raw/names/admiralty_
     <info-url> https://opencpn-manuals.github.io/main/admiralty/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>11</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-debian-arm64-11-bullseye-arm64-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-debian-arm64-11-bullseye-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> otcurrent </name>
     <version> v4.3.0 </version>
     <release> 0 </release>
@@ -16094,28 +15828,6 @@ OpenCPN.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/otcurrent-prod/raw/names/otcurrent-v4.3.0-debian-wx32-x86_64-11-tarball/versions/v4.3.0/otcurrent-v4.3.0_debian-wx32-x86_64-11-x86_64.tar.gz </tarball-url>
     <tarball-checksum> e67936567388476e2998ddb98d8ce92314558c86a9bc40fd23bc38e7ba9fe4ba </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>ubuntu-wx32-x86_64</target>
-    <build-target>ubuntu</build-target>
-    <build-gtk>gtk3</build-gtk>
-    <target-version>22.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-ubuntu-x86_64-wx32-22.04-jammy-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-ubuntu-x86_64-22.04-jammy.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Engine Dashboard </name>
@@ -16264,6 +15976,50 @@ Climatology provides overlay capabilities for historic weather data. Supported C
 https://dl.cloudsmith.io/public/opencpn/climatology-prod/raw/names/climatology_pi-1.6.31.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.6.31/climatology_pi-1.6.31.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>msvc-wx32</target>
+    <build-target>msvc</build-target>
+    <build-gtk/>
+    <target-version>10.0.20348</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/1.3.56.8+1767.99958c7/findit_pi-1.3.56.8-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> WeatherRouting </name>
+    <version> 1.15.45.7 </version>
+    <release> 7 </release>
+    <summary> Compute optimal routes based on weather and constraints. </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Sean d'Epagnier </author>
+    <source> https://github.com/rgleason/weather_routing_pi </source>
+    <description>
+WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
+</description>
+    <target>debian-armhf</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_routing_pi-1.15.45.7-debian-armhf-11-bullseye-armhf-tarball/versions/v1.15.45.7/weather_routing_pi-1.15.45.7-debian-armhf-11-bullseye-armhf.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Autopilot Route </name>
@@ -16461,28 +16217,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-debian-arm64-12-bookworm-arm64-tarball/versions/v1.2.31.0/polar_pi-1.2.31.0-debian-arm64-12-bookworm-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>debian-arm64</target>
-    <build-target>debian</build-target>
-    <build-gtk/>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-debian-arm64-12-bookworm-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-debian-arm64-12-bookworm-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
     <name> Radar </name>
@@ -16874,28 +16608,6 @@ https://dl.cloudsmith.io/public/opencpn/chartscale-prod/raw/names/chartscale_pi-
     <tarball-checksum> c26d43cc872860470e2de91e4341b1f17cabc536a9aefaae0543bd920bb6648b </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>android-arm64</target>
-    <build-target>android</build-target>
-    <build-gtk/>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-android-arm64-16-android-arm64-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-android-arm64-16-android-arm64.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> Admiralty Tide Tables Calculation </name>
     <version> 0.1.18.0 </version>
     <release> 0 </release>
@@ -17241,6 +16953,28 @@ Race Start Display, A simple tool for yacht racing, Displays countdown timer, di
 https://dl.cloudsmith.io/public/steven-adler/racingplugin-prod/raw/names/race_start_display_pi-1.1.0.0-raspbian-armhf-9.4-stretch-armhf-tarball/versions/v1.1/race_start_display_pi-1.1.0.0-raspbian-armhf-9.4-stretch-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>flatpak-x86_64</target>
+    <build-target>flatpak</build-target>
+    <build-gtk/>
+    <target-version>22.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-flatpak-x86_64-22.08-flatpak-tarball/versions/1.3.56.8+1754.99958c7/findit_pi-1.3.56.8-x86_64_flatpak-22.08.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
@@ -17769,25 +17503,6 @@ https://dl.cloudsmith.io/public/opencpn/pypilot-prod/raw/names/pypilot_pi-0.53.0
     <info-url> https://opencpn-manuals.github.io/main/pypilot/index.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.45.9-beta+1894.873d998 </version>
-    <release> 9 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean D'Epaigner </author>
-    <source> https://github.com/quinton-hoole/weather_routing_pi.git </source>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-    <description> Features include: optimal routing subject to various constraints based
-on weather data, automatic boat polar computation.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>11</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-debian-x86_64-11-tarball/versions/1.15.45.9-beta+1894.873d998/WeatherRouting-1.15.45.9-beta+1894.873d998_debian-x86_64-11-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 0e6ff6db4d493c86887598d0790ba038fc6c8d53c8c70eb8cc589a86cee1fe74 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.10.0.0 </version>
     <release> 0 </release>
@@ -17826,6 +17541,28 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <target-arch>arm64</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/nohal/objsearch_pi-beta/raw/names/ObjSearch-v0.30.0-beta1-debian-arm64-A64-13-tarball/versions/v0.30.0-beta1/ObjSearch-v0.30.0-beta1_debian-arm64-13-arm64.tar.gz</tarball-url>
     <tarball-checksum>9c5f7c15e35233a7deb05eb59bdaeb19c1e07717b2430dd5329bd6406276d332</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> FindIt </name>
+    <version> 1.3.56.8 </version>
+    <release> 8 </release>
+    <summary> Stowage PlugIn for OpenCPN </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> Del Elson </author>
+    <source> https://github.com/rgleason/FindIt_pi </source>
+    <description>
+Stowage PlugIn for OpenCPN
+</description>
+    <target>debian-arm64</target>
+    <build-target>debian</build-target>
+    <build-gtk/>
+    <target-version>11</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>
+https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-arm64-11-bullseye-arm64-tarball/versions/1.3.56.8+1753.99958c7/findit_pi-1.3.56.8-debian-arm64-11-bullseye-arm64.tar.gz
+</tarball-url>
+    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name>NSK</name>
@@ -17926,28 +17663,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <tarball-checksum> 41a47253057e65727af1a34ae1fd34f48709ae459d611b2081d5762a23318f2e </tarball-checksum>
   </plugin>
   <plugin version="1">
-    <name> WeatherRouting </name>
-    <version> 1.15.21.24 </version>
-    <release> 24 </release>
-    <summary> Compute optimal routes based on weather and constraints. </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> Sean d'Epagnier </author>
-    <source> https://github.com/rgleason/weather_routing_pi </source>
-    <description>
-WR features include: optimal routing subject to various constraints based on weather data, automatic boat polar computation.
-</description>
-    <target>msvc-wx32</target>
-    <build-target>msvc</build-target>
-    <build-gtk/>
-    <target-version>10.0.20348</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_routing_pi-1.15.21.24-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v1.15.21.42/weather_routing_pi-1.15.21.24-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
-  </plugin>
-  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -17964,28 +17679,6 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-beta/raw/names/weather_r
     <target-version>18.04</target-version>
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/david-register/ocpn-plugins-unstable/raw/names/s63-ubuntu-x86_64-18.04-tarball/versions/1.17.1.0.bcaad82/s63_pi-1.17.1-0_ubuntu-x86_64-18.04.tar.gz </tarball-url>
-  </plugin>
-  <plugin version="1">
-    <name> FindIt </name>
-    <version> 1.3.51.0 </version>
-    <release> 0 </release>
-    <summary> Stowage PlugIn for OpenCPN </summary>
-    <api-version> 1.17 </api-version>
-    <open-source> yes </open-source>
-    <author> Del Elson </author>
-    <source> https://github.com/rgleason/FindIt_pi </source>
-    <description>
-Stowage PlugIn for OpenCPN
-</description>
-    <target>flatpak-x86_64</target>
-    <build-target>flatpak</build-target>
-    <build-gtk/>
-    <target-version>22.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>
-https://dl.cloudsmith.io/public/opencpn/findit-prod/raw/names/findit_pi-1.3.51.0-flatpak-x86_64-22.08-flatpak-tarball/versions/v1.3.51.0/findit_pi-1.3.51.0-x86_64_flatpak-22.08.tar.gz
-</tarball-url>
-    <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
   </plugin>
   <plugin version="1">
     <name> AIS Radar view </name>
