@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="1">
+<name> Climatology </name>
+<version> 2.0.1.0 </version>
+<release> 0 </release>
+<summary> Climatology PlugIn: global monthly climate and cyclone data </summary>
+
+<api-version> 1.18 </api-version>
+<open-source> yes </open-source>
+<author> Sean D'Epagnier </author>
+<source> https://github.com/rgleason/climatology_pi </source>
+
+<description>
+Climatology provides overlay capabilities for historical weather and ocean data. Supported types include average wind direction and speed, gale and calm probabilities, sea-surface currents, precipitation, humidity, cloud cover, lightning strikes, sea-level pressure, sea and air temperature, and tropical-cyclone tracks. Versioned datasets report their exact source products and climatological periods.
+</description>
+
+<target>debian-arm64</target>
+<build-target>debian</build-target>
+<build-gtk></build-gtk>
+<target-version>12</target-version>
+<target-arch>arm64</target-arch>
+<tarball-url>
+https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-2.0.1.0-debian-arm64-12-bookworm-arm64-tarball/versions/2.0.1.0+5013.ac01791/climatology_pi-2.0.1.0-debian-arm64-12-bookworm-arm64.tar.gz
+</tarball-url>
+<info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+</plugin>
