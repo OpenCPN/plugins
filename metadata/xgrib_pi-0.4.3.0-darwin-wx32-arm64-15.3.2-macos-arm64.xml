@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="1">
   <name> xGRIB </name>
-  <version> 0.4.2.0 </version>
+  <version> 0.4.3.0 </version>
   <release> 0 </release>
   <summary> Display, download, and generate environmental GRIB files. </summary>
 
@@ -11,7 +11,7 @@
   <source> https://github.com/pob220/xgrib_pi </source>
 
   <description>
-    A catalogue-installable GRIB viewer with integrated generation of combined weather, wave, and current GRIB files using an isolated native helper. Disable bundled GRIB before enabling xGRIB, then restart OpenCPN. Requires OpenCPN with plugin API 1.21 and a matching platform package.
+    A catalogue-installable GRIB viewer with integrated generation of combined weather, wave, and current GRIB files using an isolated native helper. Disable bundled GRIB before enabling xGRIB, then restart OpenCPN. Requires OpenCPN with plugin API 1.21 and a matching platform package. The bundled generator runtime requires macOS 15.0 or later.
   </description>
 
   <target>darwin-wx32</target>
@@ -20,7 +20,7 @@
   <target-version>15.3.2</target-version>
   <target-arch>arm64</target-arch>
   <tarball-url>
-    https://dl.cloudsmith.io/public/pob220/xgrib-prod/raw/names/xgrib_pi-0.4.2.0-darwin-wx32-15.3.2-tarball/versions/0.4.2.0+175.162de0c/xgrib_pi-0.4.2.0-darwin-wx32-arm64-15.3.2-macos-arm64.tar.gz
+    https://dl.cloudsmith.io/public/pob220/xgrib-prod/raw/names/xgrib_pi-0.4.3.0-darwin-wx32-15.3.2-arm64-tarball/versions/0.4.3.0+182.3bf1207/xgrib_pi-0.4.3.0-darwin-wx32-arm64-15.3.2-macos-arm64.tar.gz
   </tarball-url>
   <info-url> https://github.com/pob220/xgrib_pi </info-url>
 </plugin>
