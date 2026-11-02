@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-11-02 01:58</date>
+  <date>2026-11-02 13:52</date>
   <plugin version="1">
     <name> AisLive </name>
     <version> v1.0.0 </version>
@@ -9536,6 +9536,23 @@ Climatology provides overlay capabilities for historical weather and ocean data.
 https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-2.0.1.0-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/2.0.1.0+5008.ac01791/climatology_pi-2.0.1.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/climatology.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>Climatology</name>
+    <version>2.0.2.0</version>
+    <release>0</release>
+    <summary>Global monthly climate and cyclone data with source provenance</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Sean D'Epagnier; modernisation contributors</author>
+    <source>https://github.com/pob220/climatology_pi/tree/7fca2357cc7097d468de8baac4a9c9a72c52472f</source>
+    <description>Monthly ERA5 winds and atmosphere, OSCAR currents, OISST sea temperature, IBTrACS cyclones and GEBCO bathymetric context. Includes the complete ocpn-climatology-2026.2 dataset, source periods, checksums and validation. Historical LIS/OTD lightning is retained with its provenance limitation. Research and passage planning climatology; not a forecast or official navigation data.</description>
+    <target>msvc-64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/opencpn/climatology-beta/raw/names/climatology_pi-2.0.2.0-msvc-64-10-x86_64-wx334-tarball/versions/2.0.2.0%2B5065.7fca235/climatology_pi-2.0.2.0-msvc-64-10-x86_64-wx334.tar.gz</tarball-url>
+    <tarball-checksum>05256ad62d6f7c26f4cd50d8ed99a25d01da07314ac8e65763815e48dc06377b</tarball-checksum>
+    <info-url>https://github.com/rgleason/climatology_pi</info-url>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
