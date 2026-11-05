@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-11-02 13:51</date>
+  <date>2026-11-04 14:17</date>
   <plugin version="1">
     <name> Mayara </name>
     <version> 0.1.4.0 </version>
@@ -1151,6 +1151,23 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-beta/raw/names/ocpn_draw_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-armhf</target>
+    <target-version>n/a</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-armhf-13-armhf/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-armhf-13-armhf.tar.gz</tarball-url>
+    <tarball-checksum>15ff823aeb9293b6d23c10306c1813aea8b4433d043f99355d607b403733f842</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Race Start Display </name>
     <version> 1.1.0.0 </version>
     <release> 0 </release>
@@ -1412,6 +1429,23 @@ https://dl.cloudsmith.io/public/opencpn/squiddio-prod/raw/names/squiddio_pi-1.3.
     <info-url> https://opencpn.org/OpenCPN/plugins/squiddio.html </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>flatpak-aarch64</target>
+    <target-version>25.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-flatpak-aarch64-25.08-aarch64/versions/2026.10.7/chartgrabber_pi-2026.10.7-flatpak-aarch64-25.08-aarch64.tar.gz</tarball-url>
+    <tarball-checksum>150d747d078997fcd16543fc725825d3516f553854fabd5118226d0412b87222</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OCPN Draw </name>
     <version> 1.8.60.0 </version>
     <release> 0 </release>
@@ -1638,23 +1672,6 @@ TwoCan Plugin, integrates OpenCPN with NMEA 2000 networks by converting NMEA 200
 https://dl.cloudsmith.io/public/steven-adler/twocanplugin-prod/raw/names/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic-tarball/versions/V1.91/twocan_plugin_pi-1.9.1.0-ubuntu-x86_64-18.04-bionic.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:twocan_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-arm64-12-arm64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-arm64-12-arm64.tar.gz</tarball-url>
-    <tarball-checksum>d29581902b0d2d72aeba1a281f86a285d11fb4d9bd9aa6a88c04031b20f09b24</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -2376,23 +2393,6 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-f
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
   </plugin>
   <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>ubuntu-arm64</target>
-    <target-version>26.04</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-ubuntu-arm64-26.04-arm64/versions/2026.10.6/chartgrabber_pi-2026.10.6-ubuntu-arm64-26.04-arm64.tar.gz</tarball-url>
-    <tarball-checksum>83370f04143a0a9aeef0d0d01308707d174695a9ba715da3e7039cbc44ff2279</tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Polar </name>
     <version> 1.2.31.0 </version>
     <release> 0 </release>
@@ -2544,6 +2544,23 @@ Configurable Autopilot Route following abilities.
 https://dl.cloudsmith.io/public/opencpn/autopilot-route-prod/raw/names/autopilot_route_pi-0.4.31.0-debian-x86_64-11-bullseye-tarball/versions/v0.4.31.0/autopilot_route_pi-0.4.31.0-debian-x86_64-11-bullseye.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-macos-universal/versions/2026.10.7/chartgrabber_pi-2026.10.7-macos-universal.tar.gz</tarball-url>
+    <tarball-checksum>137e88f77619710f562936299b42d708aa837efd5fc76d312603eabe8136b59b</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> ChartScale </name>
@@ -3312,6 +3329,40 @@ https://dl.cloudsmith.io/public/opencpn/windvane-beta/raw/names/windvane_pi-1.0.
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-arm64</target>
+    <target-version>n/a</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-arm64-13-arm64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-arm64-13-arm64.tar.gz</tarball-url>
+    <tarball-checksum>6bf775cfc4012cc9aa172977aa30e3af5b50149e0c2a11e70ff3a01755e7ff2b</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-arm64-12-arm64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-arm64-12-arm64.tar.gz</tarball-url>
+    <tarball-checksum>668e82e5a9155fde2aa7dbeeb233ffe4efe28e2965cbc58311834d663d8bac31</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> S63 </name>
     <version> 1.17.1 </version>
     <release> 0 </release>
@@ -3544,6 +3595,23 @@ https://dl.cloudsmith.io/public/opencpn/tactics-prod/raw/names/tactics_pi-1.0.81
     <tarball-checksum> ca8f5740ab66b19b38a68e2ba6f44c9912909309875492221436af702b3ede9c </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>ubuntu-x86_64</target>
+    <target-version>26.04</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-ubuntu-x86_64-26.04-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-ubuntu-x86_64-26.04-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>541fed7e28af6c147446b04113649029cb96f7cbb64bef73cb795bef75075c79</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> frcurrents </name>
     <version> v1.0.2-beta1 </version>
     <release>  </release>
@@ -3688,6 +3756,23 @@ Stowage PlugIn for OpenCPN
 https://dl.cloudsmith.io/public/opencpn/findit-beta/raw/names/findit_pi-1.3.56.8-debian-armhf-13-trixie-armhf-tarball/versions/1.3.56.8+1757.99958c7/findit_pi-1.3.56.8-debian-armhf-13-trixie-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/findit.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-armhf</target>
+    <target-version>12</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-armhf-12-armhf/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-armhf-12-armhf.tar.gz</tarball-url>
+    <tarball-checksum>264c3c400c61e3c528e08fce2d9350e05888d57c5424e5858c66de60215d7082</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> S63 </name>
@@ -4233,23 +4318,6 @@ https://dl.cloudsmith.io/public/opencpn/autotrackraymarine-prod/raw/names/AutoTr
     <target-arch>armhf</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/nohal/objsearch_pi-beta/raw/names/ObjSearch-v0.30.0-beta1-debian-armhf-A32-12-tarball/versions/v0.30.0-beta1/ObjSearch-v0.30.0-beta1_debian-armhf-12-armhf.tar.gz</tarball-url>
     <tarball-checksum>5b3add498f6169a68e65b066c067588c235956fcd3fac6eacec564f4e1fabea6</tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-windows-x86/versions/2026.10.6/chartgrabber_pi-2026.10.6-windows-x86.tar.gz</tarball-url>
-    <tarball-checksum>1e9474836f03a922e2bbb37ad8338258e89c973dce87797762037d5ed0749a73</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -4798,23 +4866,6 @@ mayara_pi displays marine radar as a chart overlay and in a PPI window. Unlike r
 https://dl.cloudsmith.io/public/opencpn-radar-pi/mayara-beta/raw/names/mayara_pi-0.1.4.0-msvc-x86-wx32-10.0.20348-MSVC-tarball/versions/v0.1.4/mayara_pi-0.1.4.0-msvc-x86-wx32-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://github.com/opencpn-radar-pi/mayara_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-x86_64</target>
-    <target-version>12</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-x86_64-12-x86_64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-x86_64-12-x86_64.tar.gz</tarball-url>
-    <tarball-checksum>e1e28342a70ccd3d2e1f926596779684ba0b59d2a5f49d0025e5ec4dd25f2428</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Logbook </name>
@@ -6557,6 +6608,23 @@ https://dl.cloudsmith.io/public/opencpn/dashboardtactics-beta/raw/names/dashboar
     <info-url> https://opencpn.org/OpenCPN/plugins/dashboardtactics.html </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-x86_64</target>
+    <target-version>13</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-x86_64-13-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-x86_64-13-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>6ef84c097a06fa83fb289070634db6bc6616ca1a81054c84f4454d3edf32ff11</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> rtlsdr </name>
     <version> 1.4.8.0 </version>
     <release> 0 </release>
@@ -6865,6 +6933,23 @@ https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-d
     <target-arch>armhf</target-arch>
     <tarball-url>https://dl.cloudsmith.io/public/nohal/dashboardsk_pi-beta/raw/names/DashboardSK-v0.4.0-beta4-debian-armhf-A32-13-tarball/versions/v0.4.0-beta4/DashboardSK-v0.4.0-beta4_debian-armhf-13-armhf.tar.gz</tarball-url>
     <tarball-checksum>fdc08d4c3df91f02742d6b13fd68e5e83d1df950946f499ef75859c9c7163c18</tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-x86_64</target>
+    <target-version>12</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-x86_64-12-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-x86_64-12-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>cacf676c27e004e2a548a29ac199a2358cb19fccf5c4295fac7054fd3c1f8ee9</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> NmeaConverter_pi </name>
@@ -8229,23 +8314,6 @@ https://dl.cloudsmith.io/public/opencpn/aisradar-prod/raw/names/aisradar_pi-1.4.
     <info-url> https://opencpn.org/OpenCPN/plugins/aisradarview.html </info-url>
   </plugin>
   <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>ubuntu-x86_64</target>
-    <target-version>26.04</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-ubuntu-x86_64-26.04-x86_64/versions/2026.10.6/chartgrabber_pi-2026.10.6-ubuntu-x86_64-26.04-x86_64.tar.gz</tarball-url>
-    <tarball-checksum>e9c9ba05475943e46f2daea4fbcf0462bf94e9f47f7cb7aa1f09443b502f7880</tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -8415,23 +8483,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-msvc-x86_64-10.0.20348-MSVC-tarball/versions/v1.2.31.0/polar_pi-1.2.31.0-msvc-x86_64-10.0.20348-MSVC.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-arm64</target>
-    <target-version>13</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-arm64-13-arm64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-arm64-13-arm64.tar.gz</tarball-url>
-    <tarball-checksum>f09fa35edc098c4bf6a461481f7b4dd46b66025f86c0ec4b6994cab1f7bfbdd8</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> OCPN Draw </name>
@@ -8672,6 +8723,23 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-debian-armhf-10-buster-armhf-tarball/versions/v1.2.31.0/polar_pi-1.2.31.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-armhf</target>
+    <target-version>13</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-armhf-13-armhf/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-armhf-13-armhf.tar.gz</tarball-url>
+    <tarball-checksum>15ff823aeb9293b6d23c10306c1813aea8b4433d043f99355d607b403733f842</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> EarthExplorer </name>
@@ -9223,6 +9291,23 @@ easier future predictions.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/tidefinder-beta/raw/names/TideFinder-1.4-raspbian-10-tarball/versions/1.4.3+1310.v1.4.3-beta/TideFinder-1.4.3+1310.v1.4.3-beta_raspbian-10-armhf.tar.gz </tarball-url>
     <tarball-checksum> 4debb26687970fce3b254ab101e3058ab6d594a8278480a1936b798a89a82bd4 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-windows-x86/versions/2026.10.7/chartgrabber_pi-2026.10.7-windows-x86.tar.gz</tarball-url>
+    <tarball-checksum>17f2eb99810be25180fd4e2aa8b3b5bc01dbea51869f1e0c39e02d46ec00d7ae</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -9796,6 +9881,23 @@ Control Raymarine ST1 Autopilot using a NMEA0183 to ST1 Converter
 https://dl.cloudsmith.io/public/opencpn/raymarine-autopilot-prod/raw/names/raymarine_autopilot_pi-1.0.40.0-debian-armhf-10-buster-armhf-tarball/versions/v1.0.40.0/raymarine_autopilot_pi-1.0.40.0-debian-armhf-10-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn-manuals.github.io/main/autopilot-rm/0.1/index.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-arm64-13-arm64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-arm64-13-arm64.tar.gz</tarball-url>
+    <tarball-checksum>6bf775cfc4012cc9aa172977aa30e3af5b50149e0c2a11e70ff3a01755e7ff2b</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> DashboardTactics </name>
@@ -11179,6 +11281,23 @@ https://dl.cloudsmith.io/public/opencpn/testplugin-beta/raw/names/testplugin_pi-
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>flatpak-aarch64</target>
+    <target-version>24.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-flatpak-aarch64-24.08-aarch64/versions/2026.10.7/chartgrabber_pi-2026.10.7-flatpak-aarch64-24.08-aarch64.tar.gz</tarball-url>
+    <tarball-checksum>53a94c3c633e22e65d3b38bfc0fc79e8c8d5fa89d866b8313517b81af5bc160f</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> AIS Radar view </name>
     <version> 1.4.11.5 </version>
     <release> 5 </release>
@@ -11961,7 +12080,7 @@ such as dual radar range and Doppler.
   </plugin>
   <plugin version="1">
     <name>ChartGrabber</name>
-    <version>2026.10.6</version>
+    <version>2026.10.7</version>
     <release>1</release>
     <summary>Download charts for use offline</summary>
     <api-version>1.18</api-version>
@@ -11970,11 +12089,11 @@ such as dual radar range and Doppler.
     <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
     <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
     <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-arm64</target>
+    <target>debian-x86_64</target>
     <target-version>n/a</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-arm64-13-arm64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-arm64-13-arm64.tar.gz</tarball-url>
-    <tarball-checksum>f09fa35edc098c4bf6a461481f7b4dd46b66025f86c0ec4b6994cab1f7bfbdd8</tarball-checksum>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-debian-x86_64-13-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-debian-x86_64-13-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>6ef84c097a06fa83fb289070634db6bc6616ca1a81054c84f4454d3edf32ff11</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> otcurrent </name>
@@ -12124,23 +12243,6 @@ https://dl.cloudsmith.io/public/opencpn/weather-routing-prod/raw/names/weather_r
     <info-url> https://opencpn.org/OpenCPN/plugins/weatherroute.html </info-url>
   </plugin>
   <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-x86_64</target>
-    <target-version>n/a</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-x86_64-13-x86_64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-x86_64-13-x86_64.tar.gz</tarball-url>
-    <tarball-checksum>9f082523555cd54282217f1609ed5529b6cdf22ade22152c66d0dfa124495f5f</tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Plots </name>
     <version> 2.3.13.0 </version>
     <release> 0 </release>
@@ -12249,23 +12351,6 @@ Polar Plugin reads VDR data files directly, reads from Opencpn input Nmea channe
 https://dl.cloudsmith.io/public/opencpn/polar-prod/raw/names/polar_pi-1.2.31.0-ubuntu-armhf-18.04-buster-armhf-tarball/versions/v1.2.31.0/polar_pi-1.2.31.0-ubuntu-armhf-18.04-buster-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/polar.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name>ChartGrabber</name>
-    <version>2026.10.6</version>
-    <release>1</release>
-    <summary>Download charts for use offline</summary>
-    <api-version>1.18</api-version>
-    <open-source>yes</open-source>
-    <author>Chart Grabber contributors</author>
-    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
-    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
-    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
-    <target>debian-x86_64</target>
-    <target-version>13</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.6-debian-x86_64-13-x86_64/versions/2026.10.6/chartgrabber_pi-2026.10.6-debian-x86_64-13-x86_64.tar.gz</tarball-url>
-    <tarball-checksum>9f082523555cd54282217f1609ed5529b6cdf22ade22152c66d0dfa124495f5f</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> TwoCan Plugin </name>
@@ -12525,6 +12610,23 @@ Engine Dashboard, Displays Engine RPM, Oil Pressure, Water Temperature, Alternat
 https://dl.cloudsmith.io/public/steven-adler/engineplugin-prod/raw/names/engine_dashboard_pi-1.3.0.0-debian-x86_64-10-buster-tarball/versions/v1.3/engine_dashboard_pi-1.3.0.0-debian-x86_64-10-buster.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:plugins:beta_plugins:engine-dash </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>flatpak-x86_64</target>
+    <target-version>25.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-flatpak-x86_64-25.08-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-flatpak-x86_64-25.08-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>fd7194f5fa3fae604120222f3311b60fad3c33596759f23982465d86fe48c49f</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name>NSK</name>
@@ -13987,6 +14089,23 @@ be imported into OpenCPN to assist in performing searches.
     <target-arch>armhf</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/mike-rossiter/frcurrents-beta/raw/names/frcurrents-v1.0.2-beta1-debian-armhf-A32-11-tarball/versions/v1.0.2-beta1/frcurrents-v1.0.2-beta1_debian-armhf-11-armhf.tar.gz </tarball-url>
     <tarball-checksum> 7d85cef954979706d60301219f9bd3383a0e0bb2a01c8f60ee5500b491f3dbc1 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>ubuntu-arm64</target>
+    <target-version>26.04</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-ubuntu-arm64-26.04-arm64/versions/2026.10.7/chartgrabber_pi-2026.10.7-ubuntu-arm64-26.04-arm64.tar.gz</tarball-url>
+    <tarball-checksum>dbfa14c17cf171937cd9ea943a8406136b76fdbc2cb3a2d455aa5b5b74b846cb</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> squiddio </name>
@@ -16416,6 +16535,23 @@ https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
   </plugin>
   <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>raspbian-armhf</target>
+    <target-version>n/a</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-raspbian-armhf-13-armhf/versions/2026.10.7/chartgrabber_pi-2026.10.7-raspbian-armhf-13-armhf.tar.gz</tarball-url>
+    <tarball-checksum>1ef3f4cffef307c68f0f256bd1996ecd1615aeec8e8c171e24bf3cae06e7b41e</tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> ShipDriver </name>
     <version> v3.3.0-beta7 </version>
     <release>  </release>
@@ -16998,6 +17134,23 @@ The builtin status bar (disable from the User Interface tab) has limited configu
 https://dl.cloudsmith.io/public/opencpn/statusbar-prod/raw/names/statusbar_pi-1.1.12.0-debian-x86_64-12-bookworm-tarball/versions/v1.1.12.0/statusbar_pi-1.1.12.0-debian-x86_64-12-bookworm.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/statusbar.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name>ChartGrabber</name>
+    <version>2026.10.7</version>
+    <release>1</release>
+    <summary>Download charts for use offline</summary>
+    <api-version>1.18</api-version>
+    <open-source>yes</open-source>
+    <author>Chart Grabber contributors</author>
+    <source>https://github.com/Sea-For-Friends/chartgrabber_pi</source>
+    <info-url>https://github.com/Sea-For-Friends/chartgrabber_pi</info-url>
+    <description>Pick an area on the chart, a chart source and the detail; Chart Grabber downloads it with Chart Grabber CLI and adds it to OpenCPN as a chart that works without internet.</description>
+    <target>flatpak-x86_64</target>
+    <target-version>24.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url>https://dl.cloudsmith.io/public/sea4friends/chartgrabber-ocpn/raw/names/chartgrabber_pi-2026.10.7-flatpak-x86_64-24.08-x86_64/versions/2026.10.7/chartgrabber_pi-2026.10.7-flatpak-x86_64-24.08-x86_64.tar.gz</tarball-url>
+    <tarball-checksum>96739b77c0f9414f7cd04ecfca1a54ece4ffc918caf58c2fce3f470889c21eb7</tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Race Start Display </name>
