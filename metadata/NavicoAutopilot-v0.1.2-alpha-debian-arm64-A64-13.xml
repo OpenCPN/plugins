@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://github.com/OpenCPN/OpenCPN/actions/runs/43578714462 -->
+<!-- 440d778ec3b0 - 2611201619 -->
 <plugin version="1">
   <name> NavicoAutopilot </name>
-  <version> v0.1.1-alpha </version>
+  <version> v0.1.2-alpha </version>
   <release> 0 </release>
   <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
 
@@ -20,9 +20,9 @@ OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
 button press sends one command.
  </description>
 
-  <target>flatpak-x86_64</target>
-  <target-version>25.08</target-version>
-  <target-arch>x86_64</target-arch>
-  <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.1-alpha/NavicoAutopilot-v0.1.1-alpha_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
-  <tarball-checksum> 66b8c633aaf4028288738134f72e4113c9fc2888763dfe90c792c14fc25058b1 </tarball-checksum>
+  <target>debian-arm64</target>
+  <target-version>13</target-version>
+  <target-arch>arm64</target-arch>
+  <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.2-alpha/NavicoAutopilot-v0.1.2-alpha_debian-arm64-13-arm64.tar.gz </tarball-url>
+  <tarball-checksum> 3b014091471c21233a64213dba37e41ca5e91ddb40ead192bccd493e9c8807b8 </tarball-checksum>
 </plugin>
