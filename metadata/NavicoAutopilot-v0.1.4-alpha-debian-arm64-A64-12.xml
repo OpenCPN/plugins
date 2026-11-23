@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- https://github.com/OpenCPN/OpenCPN/actions/runs/44802702913 -->
+<!-- 8ef27e14ef6a - 2611230812 -->
 <plugin version="1">
   <name> NavicoAutopilot </name>
-  <version> v0.1.3-alpha </version>
+  <version> v0.1.4-alpha </version>
   <release> 0 </release>
-  <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+  <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
 
   <api-version> 1.20 </api-version>
   <open-source> yes </open-source>
@@ -12,7 +12,7 @@
   <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
   <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
 
-  <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
+  <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
 directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
 and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
 and the target heading or wind angle. Uses the NMEA 2000 connections of
@@ -20,9 +20,9 @@ OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
 button press sends one command.
  </description>
 
-  <target>flatpak-aarch64</target>
-  <target-version>25.08</target-version>
-  <target-arch>aarch64</target-arch>
-  <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
-  <tarball-checksum> 1b8ad0520107be841b8bbefc9b00b0edd05fe3c04341260df87b8d63de89ebab </tarball-checksum>
+  <target>debian-arm64</target>
+  <target-version>12</target-version>
+  <target-arch>arm64</target-arch>
+  <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-arm64-12-arm64.tar.gz </tarball-url>
+  <tarball-checksum> f03d0738665789eccbc2b83bbed591da7951da0f46ccd8e8925b851a959c83df </tarball-checksum>
 </plugin>
