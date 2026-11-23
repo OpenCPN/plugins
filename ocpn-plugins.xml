@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <plugins>
   <version>0.0.0</version>
-  <date>2026-11-20 20:59</date>
+  <date>2026-11-23 14:17</date>
   <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
@@ -111,6 +111,29 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.11.1.0-debian-armhf-12-bookworm-armhf-tarball/versions/1.11.1.0+8605.d25c527/ocpn_draw_pi-1.11.1.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>android-arm64</target>
+    <target-version>16</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_android-arm64-16-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 4a43f645f2258a451c6e025527c58db2dad7af43feae5ac1553b7525eca2c03f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -399,6 +422,29 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://github.com/pob220/xgrib_pi </info-url>
   </plugin>
   <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>14</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-arm64-14-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 0a6fcbd22b99ed8735957842f66781640bcae1fecac33e4dfb8901a6fd282b40 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> OfflineTides </name>
     <version> 1.0.2.0 </version>
     <release> 0 </release>
@@ -445,26 +491,26 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
   </plugin>
   <plugin version="1">
     <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
+    <version> v0.1.4-alpha </version>
     <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
     <api-version> 1.20 </api-version>
     <open-source> yes </open-source>
     <author> xanderburchartz </author>
     <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
     <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
 directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
 and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
 and the target heading or wind angle. Uses the NMEA 2000 connections of
 OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
 button press sends one command.
  </description>
-    <target>debian-arm64</target>
+    <target>debian-x86_64</target>
     <target-version>13</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-arm64-13-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 24a3d01663c6f609c354b1a9cc36ca549b303fc91a5269585dc19393f6f28bda </tarball-checksum>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-x86_64-13-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> f380b14c6c75e50b4ce3d8c07243ad4497af46c130f8ff2e49cebfe68a7f50da </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -535,6 +581,29 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>flatpak-aarch64</target>
+    <target-version>25.08</target-version>
+    <target-arch>aarch64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
+    <tarball-checksum> ee010f5d26b8ad647753cb2e7563e379a4e7796731a873f91deeabee9c3a2af9 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Testplugin </name>
     <version> 1.0.361.0 </version>
     <release> 0 </release>
@@ -555,6 +624,29 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.361.0-debian-armhf-12-bookworm-armhf-tarball/versions/1.0.361.0+15509.32a4153/testplugin_pi-1.0.361.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.18 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>android-armhf</target>
+    <target-version>16</target-version>
+    <target-arch>armhf</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_android-armhf-16-armhf.tar.gz </tarball-url>
+    <tarball-checksum> 30427321f5d7b30ddf009e1f4b5b90acf99b58b9588c1b20c436903ff0a5d74f </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -983,29 +1075,6 @@ https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
   </plugin>
   <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>debian-arm64</target>
-    <target-version>14</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-arm64-14-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 0452de933b6f2025c1942f9c3b9d28c5ad109bef95e1560aa067213457086591 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> Windvane </name>
     <version> 1.0.28.0 </version>
     <release> 0 </release>
@@ -1139,6 +1208,29 @@ can only be used after purchasing decryption keys from o-charts.org.
   </tarball-url>
     <tarball-checksum> b753c8a41755f762006b00439ebd364bd75a721c775dc6f7b7672753c4cedc6f </tarball-checksum>
     <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>13</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-arm64-13-arm64.tar.gz </tarball-url>
+    <tarball-checksum> 13269b5cd44d9297033ab4d27e8091eeccd558e6bfa5ac47b2a5b0207307807d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> xGRIB </name>
@@ -1335,6 +1427,29 @@ on weather data, automatic boat polar computation.
     <tarball-checksum> b5a689961430ac8de22738b26a92369f6977b1740b0ef213bfd0043419a3ed8a </tarball-checksum>
   </plugin>
   <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>debian-x86_64</target>
+    <target-version>14</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-x86_64-14-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> a6b24ead3b2be08a9fb56e3b61f53a480dfd6b7fa3d308480954295db0f9b227 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.9.1.0 </version>
     <release> 0 </release>
@@ -1399,6 +1514,29 @@ Windvane Autopilot is designed to use the wind instruments and autopilot on boar
 https://dl.cloudsmith.io/public/opencpn/windvane-alpha/raw/names/windvane_pi-1.0.28.0-debian-x86_64-wx32-22.04-jammy-tarball/versions/1.0.28.0+1598.0752b1e/windvane_pi-1.0.28.0-debian-x86_64-22.04-jammy.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:sailing:windvane </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>debian-arm64</target>
+    <target-version>12</target-version>
+    <target-arch>arm64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-arm64-12-arm64.tar.gz </tarball-url>
+    <tarball-checksum> f03d0738665789eccbc2b83bbed591da7951da0f46ccd8e8925b851a959c83df </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -1578,52 +1716,6 @@ can only be used after purchasing decryption keys from o-charts.org.
     https://dl.cloudsmith.io/public/pob220/offlinetides-alpha-oss/raw/names/offlinetides_pi-1.0.2.0-debian-arm64-12-tarball/versions/1.0.2.0+22.2483ab1/offlinetides_pi-1.0.2.0-debian-arm64-12-bookworm-arm64.tar.gz
   </tarball-url>
     <info-url> https://github.com/pob220/offlinetides_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>flatpak-x86_64</target>
-    <target-version>25.08</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 48a36ba29af738de95964afab80f6837b27b04d4d78b8197a06b694f28f08af4 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>13</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-x86_64-13-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 6d85b8e717492e34087704db3834c5aaae98cca59dff8c6d9a44a3a19570d7ee </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -1848,6 +1940,29 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/cel
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>msvc-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>x86</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_msvc-wx32-10-x86.tar.gz </tarball-url>
+    <tarball-checksum> eaf6b28baafa2a39c629dcb3eb8cfad7d7fdcf0a8671dc4655a32166e2081416 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> Celestial Navigation </name>
     <version> 2.9.1.0 </version>
     <release> 0 </release>
@@ -1868,29 +1983,6 @@ Offline nautical almanac, sight planning and ranking, time-tagged running fixes,
 https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/celestial_navigation_pi-2.9.1.0-debian-armhf-12-bookworm-armhf-tarball/versions/2.9.1.0+8404.b13dc9e/celestial_navigation_pi-2.9.1.0-debian-armhf-12-bookworm-armhf.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>debian-x86_64</target>
-    <target-version>14</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-x86_64-14-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> a751183d310a25f72776c599f3e1de5eb6425514a8ef394d62c8264955f52bc0 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -1954,29 +2046,6 @@ on weather data, automatic boat polar computation.
     <target-arch>x86</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-msvc-wx32-10-tarball/versions/1.15.45.9+81.1887013/WeatherRouting-1.15.45.9+81.1887013_msvc-wx32-10-x86.tar.gz </tarball-url>
     <tarball-checksum> 049c732960ce01e0071cf5919a2381a1649f4dc871be19454e2d56e859bc8a63 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>android-armhf</target>
-    <target-version>16</target-version>
-    <target-arch>armhf</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_android-armhf-16-armhf.tar.gz </tarball-url>
-    <tarball-checksum> 64113146bc948efbca147c2791547a6d2a515340c2e32d966c607920f20d1aa9 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Windvane </name>
@@ -2104,29 +2173,6 @@ testplugin Plugin is used to test out the ODraw API and demonstrate how to use i
 https://dl.cloudsmith.io/public/opencpn/testplugin-alpha/raw/names/testplugin_pi-1.0.361.0-android-arm64-16-android-arm64-tarball/versions/1.0.361.0+15507.32a4153/testplugin_pi-1.0.361.0-android-arm64-16-android-arm64.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.6_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>msvc-64</target>
-    <target-version>10</target-version>
-    <target-arch>x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_msvc-64-10-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> d816e8e82e1bdbf96a510bc7029f9ecab137715f9052839266efc297231d3ed7 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Testplugin </name>
@@ -2342,29 +2388,6 @@ on weather data, automatic boat polar computation.
     <target-arch>aarch64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-flatpak-aarch64-A64-22.08-tarball/versions/1.15.45.9+2067.64ca7af/WeatherRouting-1.15.45.9+2067.64ca7af_flatpak-aarch64-22.08-aarch64.tar.gz </tarball-url>
     <tarball-checksum> 1c452fbf67a2170da7527bb03efcfbafaf36d27398371b8a0025899807ea4433 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>msvc-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>x86</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_msvc-wx32-10-x86.tar.gz </tarball-url>
-    <tarball-checksum> c1c490922c893e03273a6e5f54f3dc9d0f9ac1638a67b78d0d04a05ad8550360 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> xWeatherRouting </name>
@@ -2697,29 +2720,6 @@ Variation comes from the WMM plugin.
     <target-arch>arm64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/opencpn/crossbearing-prod/raw/names/CrossBearing-v0.1.0-debian-arm64-A64-13-tarball/versions/v0.1.0/CrossBearing-v0.1.0_debian-arm64-13-arm64.tar.gz </tarball-url>
     <tarball-checksum> ea85a95d80424999856c40ae6e0e21f0713998c1c139703b3ec0c53f321d46c7 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>debian-arm64</target>
-    <target-version>12</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-arm64-12-arm64.tar.gz </tarball-url>
-    <tarball-checksum> ec99e1c41c281432625f4d9ed9d6dfafd57b3170c0850bdf22b4ea89bbb7ee70 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
@@ -3141,29 +3141,6 @@ https://dl.cloudsmith.io/public/opencpn/celestial-navigation-alpha/raw/names/cel
     <info-url> https://opencpn.org/OpenCPN/plugins/celestialnav.html </info-url>
   </plugin>
   <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.18 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>android-arm64</target>
-    <target-version>16</target-version>
-    <target-arch>arm64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_android-arm64-16-arm64.tar.gz </tarball-url>
-    <tarball-checksum> 536984ee748bd418c7909e36784aba0b75509bd0ca0a0bc05f74144946a41e66 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
     <name> WeatherRouting </name>
     <version> 1.15.45.9+2059.64ca7af </version>
     <release> 9 </release>
@@ -3252,15 +3229,15 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
   </plugin>
   <plugin version="1">
     <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
+    <version> v0.1.4-alpha </version>
     <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
     <api-version> 1.20 </api-version>
     <open-source> yes </open-source>
     <author> xanderburchartz </author>
     <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
     <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
 directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
 and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
 and the target heading or wind angle. Uses the NMEA 2000 connections of
@@ -3270,8 +3247,8 @@ button press sends one command.
     <target>debian-x86_64</target>
     <target-version>12</target-version>
     <target-arch>x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_debian-x86_64-12-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 124062ff787a22761d099ba242a4b5392e2a8481c02bdfbfbec70332a613b357 </tarball-checksum>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_debian-x86_64-12-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 8974fb5d8324c04ef64724ef11f846f4bba4472e7fd37ed7557373aa13bd4f8d </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> xGRIB </name>
@@ -3408,6 +3385,29 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
   </plugin>
   <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>flatpak-x86_64</target>
+    <target-version>25.08</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_flatpak-x86_64-25.08-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> dce972b0b37a06625f1357ba510c0e8e198aa03629f92aff963feeb62d7b2613 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
     <name> xWeatherRouting </name>
     <version> 1.34.0 </version>
     <release> 0 </release>
@@ -3429,29 +3429,6 @@ https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1
   </tarball-url>
     <tarball-checksum> 37d9259ace5b006a3f906c0e0c2b3b157450ca769b74c7a5f549739dab02190f </tarball-checksum>
     <info-url> https://github.com/pob220/xweather_routing_pi </info-url>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>darwin-wx32</target>
-    <target-version>10</target-version>
-    <target-arch>arm64;x86_64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
-    <tarball-checksum> 82cc95b29e7aba62deb1f0cd84acf179f7c9326208d8a7a38c2fb5a8a2b15bfc </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> WeatherFiles </name>
@@ -3515,29 +3492,6 @@ on weather data, automatic boat polar computation.
     <target-arch>x86_64</target-arch>
     <tarball-url> https://dl.cloudsmith.io/public/quinton/weather_routing_pi-alpha/raw/names/WeatherRouting-1.15-darwin-wx32-10-tarball/versions/1.15.45.9+2063.64ca7af/WeatherRouting-1.15.45.9+2063.64ca7af_darwin-wx32-10-x86_64.tar.gz </tarball-url>
     <tarball-checksum> 77acad2e9cb81c53062cfcea9663fae72585b6904a48807403092e267daa2698 </tarball-checksum>
-  </plugin>
-  <plugin version="1">
-    <name> NavicoAutopilot </name>
-    <version> v0.1.3-alpha </version>
-    <release> 0 </release>
-    <summary> Control a B&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
-    <api-version> 1.20 </api-version>
-    <open-source> yes </open-source>
-    <author> xanderburchartz </author>
-    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
-    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
-    <description> Controls a Navico autopilot computer (B&amp;G and Simrad NAC-1/2/3, AC12/42)
-directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
-and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
-and the target heading or wind angle. Uses the NMEA 2000 connections of
-OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
-button press sends one command.
- </description>
-    <target>flatpak-aarch64</target>
-    <target-version>25.08</target-version>
-    <target-arch>aarch64</target-arch>
-    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.3-alpha/NavicoAutopilot-v0.1.3-alpha_flatpak-aarch64-25.08-aarch64.tar.gz </tarball-url>
-    <tarball-checksum> 1b8ad0520107be841b8bbefc9b00b0edd05fe3c04341260df87b8d63de89ebab </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> o-charts </name>
@@ -3628,6 +3582,52 @@ OCPN_DRAW (OD) is a plugin that extends the capability of OCPN to include non-st
 https://dl.cloudsmith.io/public/opencpn/ocpn_draw-alpha/raw/names/ocpn_draw_pi-1.11.1.0-darwin-wx32-arm64-x86_64-14.3.1-macos-tarball/versions/1.11.1.0+8600.d25c527/ocpn_draw_pi-1.11.1.0-darwin-wx32-arm64-x86_64-14.3.1-macos.tar.gz
 </tarball-url>
     <info-url> https://opencpn.org/OpenCPN/plugins/draw.html </info-url>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>msvc-64</target>
+    <target-version>10</target-version>
+    <target-arch>x86_64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_msvc-64-10-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> faa1173984e950cdd71f5e06b962cfc38043a34cfb9e74f15bd52257ff0e3438 </tarball-checksum>
+  </plugin>
+  <plugin version="1">
+    <name> NavicoAutopilot </name>
+    <version> v0.1.4-alpha </version>
+    <release> 0 </release>
+    <summary> Control a B&amp;&amp;G or Simrad (Navico) autopilot over NMEA 2000 </summary>
+    <api-version> 1.20 </api-version>
+    <open-source> yes </open-source>
+    <author> xanderburchartz </author>
+    <source> https://github.com/xanderburchartz/navico_autopilot_pi </source>
+    <info-url> https://github.com/xanderburchartz/navico_autopilot_pi </info-url>
+    <description> Controls a Navico autopilot computer (B&amp;&amp;G and Simrad NAC-1/2/3, AC12/42)
+directly over NMEA 2000: Standby, Auto (heading hold), Wind, Nav, No Drift
+and course changes of 1 and 10 degrees. Shows the pilot mode, the heading
+and the target heading or wind angle. Uses the NMEA 2000 connections of
+OpenCPN itself, so any gateway OpenCPN can transmit through works. Each
+button press sends one command.
+ </description>
+    <target>darwin-wx32</target>
+    <target-version>10</target-version>
+    <target-arch>arm64;x86_64</target-arch>
+    <tarball-url> https://github.com/xanderburchartz/navico_autopilot_pi/releases/download/v0.1.4-alpha/NavicoAutopilot-v0.1.4-alpha_darwin-wx32-10-arm64-x86_64.tar.gz </tarball-url>
+    <tarball-checksum> 9d59bb3f29c38bf74aee41b9c172ebab9fc5ee079dfd7ff6fd56d08455633b71 </tarball-checksum>
   </plugin>
   <plugin version="1">
     <name> Celestial Navigation </name>
